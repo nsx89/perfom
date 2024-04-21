@@ -1,0 +1,211 @@
+.pacc-nav-filt-params {
+    align-items: center;
+}
+.pacc-period-all {
+    margin-right: 30px;
+}
+.pacc-period-per {
+    margin-right: 10px;
+}
+.pacc-period-choose {
+    display: flex;
+    margin-top: 0;
+}
+.e-qm-period-item:first-child {
+    margin-bottom: 0;
+    margin-right: 10px;
+}
+.e-qm-period-item {
+    width: 170px;
+}
+.pacc-nav-filt-title {
+    justify-content: flex-start;
+}
+.pacc-nav-filt-title i {
+    margin-left: 20px;
+}
+.pacc-nav-filt.pacc-nav-filt-period {
+    width: 100%;
+}
+.pacc-nav-filt-params {
+    justify-content: flex-start;
+}
+.pacc-nav-filt-btn {
+    margin-left: 30px;
+    height: 40px;
+    width: 170px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    border: 2px solid #849795;
+    background-color: #849795;
+    color: #fff;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+body:not(.touchable) .pacc-nav-filt-btn:hover {
+    background-color: #fff;
+    color: #849795;
+}
+.search-used {
+    padding-bottom: 20px;
+}
+.ss-results-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.ss-success-wrap {
+    width: 60%;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px 30px 0 0;
+}
+.ss-fail-wrap {
+    width: 40%;
+    background-color: #e6e6e6;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 20px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+.orders-list .ss-fail-wrap tr:nth-child(even) td {
+    background-color: transparent;
+}
+.orders-list .ss-fail-wrap tr:nth-child(2) td:before {
+    background-color: transparent;
+}
+.ss-results-wrap .order-table-title th {
+    text-align: center!important;
+}
+.ss-results-wrap .order-table-title th:first-child {
+    text-align: left!important;
+}
+.ss-results-wrap td {
+    text-align: center;
+}
+.ss-results-wrap td:first-child {
+    text-align: left;
+}
+.ss-fail-wrap-title {
+    color: #849795;
+    margin-bottom: 20px;
+}
+.ss-fail-wrap tr {
+    border-bottom: 1px dotted #a9a9a9;
+}
+.ss-fail-wrap tr:last-child {
+    border-bottom: none;
+}
+@media screen and (max-width: 1180px) {
+    .pacc-period-choose {
+        width: calc(100% - 176px);
+    }
+    .pacc-nav-filt-btn {
+        margin-top: 20px;
+        margin-left: 0;
+    }
+    .pacc-nav-filt.pacc-nav-filt-period {
+        margin-bottom: 0;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .orders-list {
+        width: 100%;
+    }
+    .ss-results-wrap table {
+        margin: 0;
+    }
+    .ss-success-wrap {
+        padding-right: 20px;
+    }
+    .pacc-nav-main {
+        position: relative;
+        top: auto;
+        left: auto;
+        width: 100%;
+        bottom: auto;
+        padding-top: 20px;
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+        z-index: 1;
+    }
+    .om-left-section {
+        width: 100%;
+        order: 2;
+        padding: 0;
+        background: transparent;
+        position: relative;
+        top: auto;
+        right: auto;
+        margin-top: 20px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .ss-results-wrap {
+        flex-wrap: wrap;
+    }
+    .ss-success-wrap {
+        width: 100%;
+        padding-right: 0;
+    }
+    .ss-fail-wrap {
+        margin-top: 40px;
+        width: calc(100% + 40px);
+        margin-left: -20px;
+        margin-right: -20px;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        padding-bottom: 50px;
+    }
+    .search-stat-list {
+        padding-bottom: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .pacc-period {
+        width: 100%;
+        margin-right: 0;
+    }
+    .pacc-nav-filt-btn {
+        width: 100%;
+    }
+    .pacc-period-choose {
+        width: 100%;
+    }
+    .e-qm-period-item {
+        width: calc(50% - 5px);
+    }
+    .pacc-nav-filt-title {
+        justify-content: space-between;
+    }
+}
+@media screen and (max-width: 500px) {
+   .orders-list {
+       margin-left: 0;
+   }
+}
+@media screen and (max-width: 400px) {
+    .e-qm-period-item {
+        width: 100%;
+    }
+    .e-qm-period-item:first-child {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}

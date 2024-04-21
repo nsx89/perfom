@@ -1,0 +1,308 @@
+/*
+.......................................................
+.                Выбор месяца и года                  .
+.                версия от 18.08.2015                 .
+.                                                     .
+.                  (C) By Protocoder                  .
+.                     protocoder.ru                   .
+.                                                     .
+. распространяется по лицензии Creative Commons BY-NC .
+.   http://creativecommons.org/licenses/by-nc/3.0/    .
+.......................................................
+*/
+
+.ymCal {
+	text-align: center;
+}
+
+.ymCal table {
+	font-family: Nekst, sans-serif;
+	font-size: 15px;
+}
+
+.ymCal table td {
+	white-space: nowrap;
+}
+
+.ymCal table td div {
+	padding: 0 0.2em;
+	cursor: pointer;
+	border: solid 1px transparent;
+	margin: 1px 1px 0 0;
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.ymCal table td:last-child div {
+	margin-right: 0;
+}
+
+.ymCal table tr:last-child td div {
+	margin-bottom: 0;
+}
+
+.ymCal table td div:hover {
+	border-color: #849795;
+}
+
+.ymCal table .m {
+	padding: 0 0.5em 0 0;
+}
+
+.ymCal table .m div {
+	width: 6.9em;
+	text-align: left;
+}
+
+.ymCal table .m span {
+	color: #000;
+}
+
+.ymCal table .y {
+	border: solid #C0C0C0;
+	border-width: 0 0 0 1px;
+	padding: 0 0 0 0.5em;
+}
+
+.ymCal table .y div {
+	text-align: center;
+	width: 2.6em;
+}
+
+.ymCal table .sel div,
+.ymCal table .sel div span {
+	background-color: #849795 !important;
+	color: #FFFFFF !important;
+	border-color: transparent !important;
+}
+
+.ymCal table .cur div,
+.ymCal table .cur div span {
+	font-weight: 500;
+}
+
+.ymCal .btn {
+	display: inline-block;
+	width: 5em;
+	text-align: center;
+	position: relative;
+	vertical-align: top;
+	padding: 0.2em 0.5em;
+	color: #000;
+	cursor: pointer;
+	font-family: inherit;
+	font-size: 10px;
+	text-decoration: none;
+	background-color: #f5f5f5;
+	-webkit-transition: .2s;
+	-moz-transition: .2s;
+	-ms-transition: .2s;
+	-o-transition: .2s;
+	transition: .2s;
+	border: none;
+}
+
+.ymCal .btn:hover {
+	background-color: silver;
+	border: none;
+}
+
+.ymCal .btn:active {
+	border-color: #9A9A9A;
+
+    color: #555555;
+
+	background: #E6E6E6;
+
+	box-shadow: inset 0 0 1px #959595;
+	-webkit-box-shadow: inset 0 0 1px #959595;
+
+	text-shadow: #FFFFFF 0 1px 0;
+}
+
+.ymCal .ok {
+	float: left;
+}
+
+.ymCal .curDate {
+	width: 1em;
+}
+
+.ymCal .cancel {
+	float: right;
+}
+
+.ymCal .mInc,
+.ymCal .mDec,
+.ymCal .yInc,
+.ymCal .yDec {
+	padding: 4px;
+	width: auto;
+	display: block;
+	margin: 0 2px;
+	line-height: 0.3em;
+}
+
+.ymCal .mDec,
+.ymCal .yDec {
+	margin-bottom: 0.5em;
+}
+
+.ymCal .mInc,
+.ymCal .yInc {
+	margin-top: 0.5em;
+}
+
+.ymCal .mc {
+	padding: 0 0.5em 0 0;
+}
+
+.ymCal .yc {
+	border: solid #C0C0C0;
+	border-width: 0 0 0 1px;
+	padding: 0 0 0 0.5em;
+}
+
+.ymCal .ok,
+.ymCal .curDate,
+.ymCal .cancel {
+	margin: 1em 0.5em 0 0.5em;
+	font-size: 14px;
+}
+
+.ymCal .ok {
+	margin-left: 0;
+}
+
+.ymCal .cancel {
+	margin-right: 0;
+}
+
+
+/* === UNI TIPS ================================================= */
+.ymCal {
+	display: inline-block;
+	position: relative;
+}
+
+.ymCal.ymLeft,
+.ymCal.ymRight {
+	padding: 8px 5px;
+}
+
+.ymCal.ymTop,
+.ymCal.ymBottom {
+	padding: 8px 15px;
+}
+
+.ymCal,
+.ymCal .ugol div {
+	background-color: #FFFFFF;
+	color: #000;
+	border: 1px solid silver;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.ymCal .ugol {
+	position: absolute;
+	overflow: hidden;
+}
+
+.ymCal .ugol div {
+	position: absolute;
+	width: 18px;
+	height: 18px;
+}
+
+.ymCal.ymLeft {
+	margin-right: 14px;
+}
+
+.ymCal.ymLeft .ugol {
+	top: 0;
+	right: -13px;
+	width: 13px;
+	height: 100%;
+}
+
+.ymCal.ymLeft .ugol div {
+	top: 50%;
+	margin-top: -9px;
+	left: -9px;
+	-webkit-transform: rotate( 45deg );
+	-ms-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+	-webkit-box-shadow: 2px 2px 1px rgba( 0, 0, 0, 0.30 );
+	box-shadow: 2px 2px 1px rgba( 0, 0, 0, 0.30 );
+}
+
+.ymCal.ymRight {
+	margin-left: 13px;
+}
+
+.ymCal.ymRight .ugol {
+	top: 0;
+	left: -13px;
+	width: 13px;
+	height: 100%;
+}
+
+.ymCal.ymRight .ugol div {
+	top: 50%;
+	margin-top: -9px;
+	left: 5px;
+	-webkit-transform: rotate( 45deg );
+	-ms-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+	-webkit-box-shadow:  2px 2px 1px rgba( 0, 0, 0, 0.30 );
+	box-shadow: 2px 2px 1px rgba( 0, 0, 0, 0.30 );
+}
+
+.ymCal.ymTop {
+	margin-bottom: 13px;
+}
+
+.ymCal.ymTop .ugol {
+	bottom: -13px;
+	left: 0;
+	width: 100%;
+	height: 13px;
+}
+
+.ymCal.ymTop .ugol div {
+	top: -9px;
+	left: 50%;
+	margin-left: -9px;
+	-webkit-transform: rotate( 45deg );
+	-ms-transform: rotate( 45deg );
+	transform: rotate( 45deg );
+		-webkit-box-shadow: 2px -2px 1px rgba( 0, 0, 0, 0.30 );
+		box-shadow: 2px -2px 1px rgba( 0, 0, 0, 0.30 );
+}
+
+.ymCal.ymBottom {
+	margin-top: 13px;
+}
+
+.ymCal.ymBottom .ugol {
+	top: -13px;
+	left: 0;
+	width: 100%;
+	height: 13px;
+}
+
+.ymCal.ymBottom .ugol div {
+	top: 5px;
+	left: 50%;
+	margin-left: -9px;
+	-webkit-transform: rotate( -45deg );
+	-ms-transform: rotate( -45deg );
+	transform: rotate( -45deg );
+	-webkit-box-shadow: 2px 2px 1px rgba( 0, 0, 0, 0.30 );
+	box-shadow: 2px 2px 1px rgba( 0, 0, 0, 0.30 );
+}
+.ymCal .mDec, .ymCal .yDec {
+	background-color: #f5f5f5;
+}

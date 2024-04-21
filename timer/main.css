@@ -1,0 +1,313 @@
+.timer-page-main *,
+.timer-page-main *::before,
+.timer-page-main *::after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.timer-page-main {
+    font-family: 'TildaSans',Arial,sans-serif;
+}
+
+.timer-block {
+    width: 100%;
+    min-height: 100vh;
+    position: relative;
+    padding: 30px 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.timer-block-bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    outline: none;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.timer-block-cover {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.2));
+}
+
+.timer-block-cover-2 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.timer-block-content {
+    position: relative;
+    z-index: 3;
+    width: 100%;
+}
+
+.timer-container {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+}
+
+.timer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-block-text {
+    color: #fff;
+    text-align: center;
+}
+
+.timer-block-title {
+    font-size: 52px;
+    line-height: 1.23;
+    font-weight: 600;
+}
+
+.timer-block-description {
+    font-size: 20px;
+    line-height: 1.55;
+    font-weight: 300;
+    margin-top: 18px;
+}
+
+.countdown-container {
+    margin-top: 55px;
+    display: flex;
+}
+
+.days-container,
+.hours-container,
+.minutes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding-right: 32px;
+    margin-right: 30px;
+    position: relative;
+    min-width: 90px;
+}
+
+.days-container::after,
+.hours-container::after,
+.minutes-container::after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    opacity: .2;
+    background: #fff;
+    width: 1px;
+}
+
+.days,
+.hours,
+.minutes,
+.seconds {
+    color: #fff;
+    font-size: 64px;
+    line-height: 1.23;
+    font-weight: 600;
+}
+
+.days-label,
+.hours-label,
+.minutes-label,
+.seconds-label {
+    font-size: 14px;
+    line-height: 1.55;
+    color: #fff;
+    padding-bottom: 7px;
+    font-weight: 300;
+}
+
+.timer-subscribe-form-container {
+    margin-top: 55px;
+    width: 100%;
+}
+
+.timer-subscribe-form {
+    display: flex;
+}
+
+.timer-subscribe-form input {
+    width: 100%;
+    color: #ffffff;
+    border: 1px solid #ff8562;
+    border-radius: 20px;
+    -moz-border-radius: 20px;
+    -webkit-border-radius: 20px;
+    background-color: transparent;
+
+    margin: 0;
+    height: 60px;
+    padding: 0 20px;
+    font-size: 16px;
+    line-height: 1.33;
+    outline: none;
+    -webkit-appearance: none;
+}
+.timer-subscribe-form .input-red {
+    box-shadow: 0px 0px 14px #f00;
+}
+
+.timer-orange-btn {
+    text-align: center;
+    height: 60px;
+    border: 0 none;
+    font-size: 16px;
+    padding-left: 60px;
+    padding-right: 60px;
+    -webkit-appearance: none;
+    font-weight: 700;
+    white-space: nowrap;
+    background-image: none;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    color: #ffffff;
+    background-color: #ff4500;
+    border-radius: 30px;
+    -moz-border-radius: 30px;
+    -webkit-border-radius: 30px;
+
+    flex-shrink: 0;
+}
+
+.timer-social-container {
+    background-color: #000000;
+    padding: 60px 0;
+}
+
+
+.timer-social-list {
+    display: flex;
+    justify-content: center;
+}
+
+.timer-social-list a {
+    padding: 0 5px;
+    display: flex;
+}
+
+.timer-social-list a svg,
+.timer-social-list a img {
+    width: 64px;
+    height: 64px;
+}
+
+
+.timer-cards-container {
+    width: 100%;
+    margin-top: 70px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.timer-card {
+    max-width: 360px;
+    margin: 0 20px;
+    width: 100%;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timer-card__img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+}
+
+.timer-card__img img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
+}
+
+.timer-card__text {
+    margin-top: 20px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.35;
+
+    text-align: center;
+}
+
+@media all and (max-width: 640px) {
+    .timer-subscribe-form {
+        flex-direction: column;
+    }
+
+    .timer-orange-btn {
+        width: 100%;
+        margin-top: 20px;
+        margin-left: 0;
+    }
+
+    .timer-block-title {
+        font-size: 30px;
+    }
+
+    .timer-block-description {
+        font-size: 18px;
+    }
+
+    .days, .hours, .minutes, .seconds {
+        font-size: 30px;
+    }
+
+    .days-label, .hours-label, .minutes-label, .seconds-label {
+        font-size: 12px;
+    }
+
+    .days-container, .hours-container, .minutes-container {
+        padding-right: 16px;
+        margin-right: 10px;
+        min-width: 35px;
+    }
+
+    .timer-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .timer-card:not(:first-child) {
+        margin-top: 40px;
+    }
+}
+
+body {
+    font-family: 'TildaSans', Arial, sans-serif;
+}
+
+

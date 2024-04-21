@@ -1,0 +1,78 @@
+#scrollbar1
+{
+    position: relative;
+}
+
+.viewport
+{
+    height: 100%;
+    overflow:hidden;
+    position:relative;
+    padding-right: 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.overview
+{
+    position:absolute;
+    left:0;
+    top:0;
+    margin:0;
+}
+
+.scrollbar
+{
+    background:transparent;
+    position:absolute;
+    background-position:0 0;
+    right: 0;
+    top:0;
+    width:2px;
+}
+
+.track
+{
+    background:transparent;
+    height:100%;
+    width:2px;
+    position:relative;
+    padding:0 1px;
+}
+
+.thumb
+{
+    background: #66473d;;
+    height:20px;
+    width:2px;
+    cursor:pointer;
+    overflow:hidden;
+    position:absolute;
+    top:0;
+    left:0;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+}
+
+.thumb .end
+{
+    overflow:hidden;
+    height:2px;
+    width:2px;
+}
+
+.disable
+{
+    display:none;
+}
+
+.noSelect
+{
+    user-select:none;
+    -o-user-select:none;
+    -moz-user-select:none;
+    -khtml-user-select:none;
+    -webkit-user-select:none;
+}
