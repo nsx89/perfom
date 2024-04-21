@@ -21,6 +21,7 @@ if(!empty($sections)) $sections = explode("|", implode("|", $sections));
 
 
 global $main_section;
+global $APPLICATION;
 $main_section = 'interernyj-dekor';//для подсветки меню
 
 $section_first = $sections[count($sections)-1];
@@ -44,7 +45,8 @@ for ($i = count($sections)-1; $i >= 0; $i--) {
         echo '</pre>';
     }*/
 
-    $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr, 'ACTIVE'=>'Y');
+    //$arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr, 'ACTIVE'=>'Y');
+    $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr);
     $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array('UF_*'));
     $last_section = Array();
     if (intval($db_list->SelectedRowsCount())>0) {
@@ -53,8 +55,13 @@ for ($i = count($sections)-1; $i >= 0; $i--) {
         $sec_info = Array();
         $sec_sort = Array();
         while($section_item = $db_list->GetNext()) {
+
+            /*if ($section_item['ACTIVE'] <> 'Y') {
+                $APPLICATION->SetPageProperty("robots", "noindex, nofollow");
+            }*/
+
             if(empty($last_section)) $last_section = $section_item;
-            if ($section_item['UF_HIDECATALOG'] == 1) {
+            if ($section_item['UF_HIDECATALOG'] == 1 || $section_item['ACTIVE'] == 'N') {
                 require_once($_SERVER["DOCUMENT_ROOT"] . "/404.php"); exit;
             }
             //закрываем композиты если на каталог попытка перехода
@@ -78,14 +85,20 @@ for ($i = count($sections)-1; $i >= 0; $i--) {
     } else {
         //проверим, может товар
         if (count($sections)-1 == $i) {
-            $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr, 'ACTIVE'=>'Y');
+            //$arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr, 'ACTIVE'=>'Y');
+            $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$sec_arr);
             $db_list = CIBlockElement::GetList(Array('NAME'=>'ASC'), $arFilter);
             $product_item = $db_list->GetNextElement();
             if (!$product_item) {
                 require_once($_SERVER["DOCUMENT_ROOT"] . "/404.php"); exit;
             }
+
             $is_product = array_merge($product_item->GetFields(), $product_item->GetProperties());
             $section_id = Array($is_product['IBLOCK_SECTION_ID']);
+
+            if ($is_product['ACTIVE'] == 'N') {
+                $APPLICATION->SetPageProperty("robots", "noindex, nofollow");
+            }
 
             // Вырезаем композит у товара даже при кривом линке
             /*if($is_product['IBLOCK_SECTION_ID'] == 1614 || $is_product['IBLOCK_SECTION_ID'] == 1615 || $is_product['IBLOCK_SECTION_ID'] == 1616 || $is_product['IBLOCK_SECTION_ID'] == 1617) {
@@ -182,12 +195,14 @@ if (!$is_product) { // каталог
             <? /* <a href="/collection/new_art_deco/" class="filt-collection-link">новая коллекция <span>NEW&nbsp;ART&nbsp;DECO</span> <i class="icon-angle-right"></i></a> */ ?>
 
             <? if ($main_section == 'composite') { ?>
+                <? /*
                 <div class="cat-filt-item mob-filt-wrap active cat-filt-item-category" data-type="filt-item">
                     <div class="cat-filt-item-title mob-filters-title" data-type="filt-title">Категории <i class="icon-angle-down-2"></i></div>
                     <div class="cat-filt-item-cont mob-filt-cont category" data-type="filt-cont">
                         <?= build_drop_categories('composite') ?>
                     </div>
                 </div>
+                */ ?>
             <? } else { ?>
                 <div class="cat-filt-item mob-filt-wrap active cat-filt-item-category" data-type="filt-item">
                     <div class="cat-filt-item-title mob-filters-title" data-type="filt-title">Элементы лепнины <i class="icon-angle-down-2"></i></div>

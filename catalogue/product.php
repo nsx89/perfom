@@ -80,8 +80,7 @@ for ($i = 0; $i <= count($back_catalogue)-1; $i++) {
 $back_catalogue_path .= '/';
 
 if($item['IBLOCK_SECTION_ID'] == 1587 && !in_array($item['ID'],$glue_arr) && ($item['ID'] != 6429) && ($item['ID'] != 160323)) { // Последняя проверка дать возможность зайти на страницу Е03 и старый Е13
-    LocalRedirect('/404.php');
-    exit;
+    //LocalRedirect('/404.php'); exit;
 }
 $web_path = web_path($item);
 $img_path = get_resized_img($web_path,713,713);
@@ -423,9 +422,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                 </div>
             </div>
             <? if($last_section['CODE'] != 'klei-90') { // если не клей ?>
-            <?if($item['HAS_SAMPLE']['VALUE'] == 'Y' && $loc['ID'] == 3109) {
-            $samplePrice = $item['SAMPLE_PRICE']['VALUE'] != '' ? $item['SAMPLE_PRICE']['VALUE'] : DEFAULT_SAMPLE_PRICE;
-            ?>
+            <? /*if($item['HAS_SAMPLE']['VALUE'] == 'Y' && $loc['ID'] == 3109) {
+                $samplePrice = $item['SAMPLE_PRICE']['VALUE'] != '' ? $item['SAMPLE_PRICE']['VALUE'] : DEFAULT_SAMPLE_PRICE;
+                ?>
                 <div class="prod-info-sample prod-info-line">
                     <div class="sample-add-cart<?if(in_array('s'.$item['ID'],$cart_ids)) echo ' active'?>" data-type="buy-sample-page">Купить образец</div>
                     <div class="sample-add-wrap">
@@ -433,7 +432,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                         <div class="sample-add-option"><span>Цена:</span> <?=$samplePrice?> RUB</div>
                     </div>
                 </div>
-            <? } ?>
+            <? } */ ?>
             <?
             $inst_link = '';
             $name_inst_link = 'Инструкция по монтажу';

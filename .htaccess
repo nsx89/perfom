@@ -1,0 +1,154 @@
+Options -Indexes 
+ErrorDocument 404 /404.php
+
+<IfModule mod_php5.c>
+	php_flag allow_call_time_pass_reference 1
+	php_flag session.use_trans_sid off
+
+	#php_value display_errors 1
+
+	#php_value mbstring.internal_encoding UTF-8
+</IfModule>
+
+<IfModule mod_headers.c>
+<FilesMatch "\.(max|obj|gsm|dwg|3ds)$">
+	Header set Content-Disposition "attachment"
+</FilesMatch>
+<FilesMatch "\.(pdf)$">
+ForceType application/octet-stream
+Header set Content-type application/pdf
+Header set Content-Disposition inline
+</FilesMatch>
+</IfModule>
+
+<IfModule mod_rewrite.c>
+	Options +FollowSymLinks
+	RewriteEngine On
+		
+	# убираем странный урл /%26/ в конце	
+	RewriteCond %{REQUEST_URI} ^(.*)\&/
+	RewriteRule ^(.*)\&/(.*)$ $1 [R=301,L]
+	
+	RewriteBase /
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_URI} !(.*)/$
+	RewriteRule ^(.*[^/])$ $1/ [L,R=301]
+	
+#	RewriteCond %{SERVER_PORT} !^443$
+#	RewriteRule .* https://%{SERVER_NAME}%{REQUEST_URI} [R,L]
+	
+#	RewriteCond %{HTTP_HOST} ^www\.(.*) [NC]
+#	RewriteRule ^(.*)$ https://perfom-decor.ru/$1 [R=301,L]	
+
+	RewriteCond %{HTTP_HOST} ^www\.(.*)$
+	RewriteRule ^(.*)$ http://%1/$1 [L,R=301] 
+
+Redirect 301 /klei-90/E12-S-290/ /klei-90/E13-S-60/
+#Redirect 301 /klei-90/E03-S-60/ /klei-90/E13-S-60/
+Redirect 301 /catalogue/interernyj-dekor/klei-90/E03-S-60/ /adhesive/qr/
+Redirect 301 /baljustrady/montazhnyy-komplekt/m_comp_b201/ /baljustrady/montazhnyy-komplekt/m-comp-b201/
+	
+	#MEDIA CENTER
+	RewriteRule ^media/(.*)/(.*)/$ /media/index.php?category=$1&detail=$2 [L,QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^media/(.*)/(.*)$ /media/index.php?category=$1&detail=$2 [L,QSA]
+
+	RewriteRule ^media/(.*)/$ /media/index.php?category=$1 [L,QSA]
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteRule ^media/(.*)$ /media/index.php?category=$1 [L,QSA]
+    #MEDIA CENTER END
+	
+	RewriteCond %{REQUEST_FILENAME} !-f
+	RewriteCond %{REQUEST_FILENAME} !-l
+	RewriteCond %{REQUEST_FILENAME} !-d
+	RewriteCond %{REQUEST_FILENAME} !/bitrix/urlrewrite.php$
+	RewriteRule ^(.*)$ /bitrix/urlrewrite.php [L]
+	RewriteRule .* - [E=REMOTE_USER:%{HTTP:Authorization}]
+</IfModule>
+
+<IfModule mod_dir.c>
+	DirectoryIndex index.php index.html
+</IfModule>
+
+<FilesMatch "\.(pem)">
+Order deny,allow
+Deny from all
+</FilesMatch>
+
+
+#Deny from all
+#Allow from 91.234.152.117
+#Allow from 185.97.201.241
+
+
+# кеширование в браузере на стороне пользователя
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresDefault "access 7 days"
+ExpiresByType application/javascript "access plus 1 year"
+ExpiresByType text/javascript "access plus 1 year"
+ExpiresByType text/css "access plus 1 year"
+ExpiresByType text/html "access plus 7 day"
+ExpiresByType text/x-javascript "access 1 year"
+ExpiresByType image/gif "access plus 1 year"
+ExpiresByType image/jpeg "access plus 1 year"
+ExpiresByType image/png "access plus 1 year"
+ExpiresByType image/jpg "access plus 1 year"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresByType application/x-shockwave-flash "access 1 year"
+</IfModule>
+# Cache-Control
+<ifModule mod_headers.c>
+# 30 дней
+<filesMatch "\.(ico|pdf|flv|jpg|jpeg|png|gif|swf)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# 30 дней
+<filesMatch "\.(css|js)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+# 2 дня
+<filesMatch "\.(xml|txt)$">
+Header set Cache-Control "max-age=172800, public, must-revalidate"
+</filesMatch>
+
+# 1 день
+#<filesMatch "\.(html|htm|php)$">
+#Header set Cache-Control "max-age=172800, private, must-revalidate"
+#</filesMatch>
+</ifModule>
+
+# использование кеша браузеров
+FileETag MTime Size
+<ifmodule mod_expires.c>
+<filesmatch ".(jpg|jpeg|gif|png|ico|css|js)$">
+ExpiresActive on
+ExpiresDefault "access plus 1 year"
+</filesmatch>
+</ifmodule>
+
+
+# ----------------------------------------------------------------------
+# Gzip сжатие
+# ----------------------------------------------------------------------
+<IfModule mod_deflate.c>
+	# Включаем deflate для не стандартных заголовков:
+	# http://developer.yahoo.com/blogs/ydn/posts/2010/12/pushing-beyond-gzipping/
+	<IfModule mod_setenvif.c>
+		<IfModule mod_headers.c>
+			SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+			RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+		</IfModule>
+	</IfModule>
+	<IfModule mod_filter.c>
+		AddOutputFilterByType DEFLATE text/html text/plain text/css \
+		application/json text/javascript application/javascript application/x-javascript text/x-js text/ecmascript application/ecmascript text/vbscript text/fluffscript \
+		text/xml application/xml text/x-component \
+		application/xhtml+xml application/rss+xml application/atom+xml \
+		image/x-icon image/svg+xml application/vnd.ms-fontobject application/x-font-ttf font/opentype
+	</IfModule>
+</IfModule>

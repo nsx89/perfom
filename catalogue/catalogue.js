@@ -318,11 +318,15 @@ $('.wrapper').on('click','*[data-type="filt-title"]',function() {
     wrap.toggleClass('active');
 })
 $('.cat-filters').on('click','[data-type="filter-class"]',function() {
+    var parent = $(this).closest('ul');
+    $('.active', parent).not(this).removeClass('active');
     $(this).toggleClass('active');
     changeFiltInAddr();
     getFilteredItems();
 })
 $('.cat-filters').on('click','[data-type="filter-style"]',function() {
+    var parent = $(this).closest('ul');
+    $('.active', parent).not(this).removeClass('active');
     $(this).toggleClass('active');
     changeFiltInAddr();
     getFilteredItems();
@@ -369,10 +373,11 @@ $('.cat-wrap').on('click','[data-type="reset-filt"]',function() {
     });
     let wrap = $('.cat-filters');
     wrap.removeClass('active');
-    $('.cat-filt-item.mob-filt-wrap').show();
-    $('.cat-filters-wrap').show();
-    $('.cat-sort-mob').show();
-
+    if ($(window).outerWidth() <= 1180) {
+        $('.cat-filt-item.mob-filt-wrap').show();
+        $('.cat-filters-wrap').show();
+        $('.cat-sort-mob').show();
+    }
 })
 $('.cat-wrap').on('click','[data-type="apply-filt"]',function() {
     let wrap = $('.cat-filters');
