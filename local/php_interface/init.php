@@ -74,7 +74,7 @@ function main_phone_number() {
 function my_city_fixed() {
     global $APPLICATION;
 
-    $time = time() + 60 * 60; //время жизни куки в секундах (1 час)
+    $time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
 
     $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.$_SERVER['HTTP_HOST']);
 }
