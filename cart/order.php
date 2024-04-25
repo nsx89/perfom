@@ -136,12 +136,12 @@
 
         $pr_list = _get_email_product_list();
         $number_r = __number_order_sale(true);
-        $number_l = "Европласт Ваш заказ № ".$number_r." - ".$loc['NAME'];
+        $number_l = "Перфом Ваш заказ № ".$number_r." - ".$loc['NAME'];
         $number_tr = $number_r." - ".$loc['NAME'];
         //$fields = array('EMAIL'=>$_REQUEST['email'], 'PRODUCT_LIST'=>$pr_list, 'DEALER_INFO'=>'Информация по дилеру');
         $from = "";
-        $from = '<div style="font-size: 140%;">&nbsp;&nbsp;Здравствуйте, '. $_REQUEST['name'].'</div><br>';
-        $from .= 'Спасибо за Ваш заказ №<b>'.$number_r.'</b> на сайте <a href="http://evroplast.ru" target="_blank">evroplast.ru</a><br><br>';
+        $from = '<div style="font-size: 140%;">Здравствуйте, '. $_REQUEST['name'].'</div><br>';
+        $from .= 'Спасибо за Ваш заказ №<b>'.$number_r.'</b> на сайте <a href="https://perfom-decor.ru/" target="_blank">perfom-decor.ru</a><br><br>';
 //$from .= 'Номер заказа: <b>'.$number_r.'</b><br><br>';
         $from .= '<table style="width: 500px;">';
         $from .= '<tr><td style="width: 30%; padding: 0 6px 1px 0; vertical-align: top; border-bottom: 1px dotted #ccc;">Имя:</td>
@@ -499,7 +499,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	*/
 } // Дилер
         if($_COOKIE['mount']) {
-            $mess = '<p style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;margin-bottom:0;">На сайте <a href="http://evroplast.ru" target="_blank">evroplast.ru</a> пользователь воспользовался калькулятором расчета стоимости монтажа <br>во время оформления заказа № <b>'.$number_r.'</b>.</p><br>';
+            $mess = '<p style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;margin-bottom:0;">На сайте <a href="https://perfom-decor.ru/" target="_blank">evroplast.ru</a> пользователь воспользовался калькулятором расчета стоимости монтажа <br>во время оформления заказа № <b>'.$number_r.'</b>.</p><br>';
             $mess .= '<table>';
             $mess .= '<tr>';
             $mess .= '<td style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;padding-right:15px;">Имя:</td>';
@@ -535,7 +535,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
                 CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", s1, $fields, "N");
             }
 
-            $mess = '<p style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;margin-bottom:0;">На сайте <a href="http://evroplast.ru" target="_blank">evroplast.ru</a> вы воспользовались калькулятором расчета стоимости монтажа <br>во время оформления заказа № <b>'.$number_r.'</b>.</p><br>';
+            $mess = '<p style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;margin-bottom:0;">На сайте <a href="https://perfom-decor.ru/" target="_blank">perfom-decor.ru</a> вы воспользовались калькулятором расчета стоимости монтажа <br>во время оформления заказа № <b>'.$number_r.'</b>.</p><br>';
             $mess .= getEmailList();
             $fields = array('EMAIL'=>$_REQUEST['email'], 'MESS'=>$mess, 'SUBJ' => $subj);
             CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", s1, $fields, "N");

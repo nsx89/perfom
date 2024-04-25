@@ -56,7 +56,7 @@ if (isset($_GET['pay'])) $pay_method = $_GET['pay'];
     if (strcmp($_SERVER['REQUEST_METHOD'],'POST') == 0) { // Пост запрос
         $error_1c =''; // Ошибка
         $dns_scan = dns_get_record("pid.evroplast.ru", DNS_A); // доступ только по ip списку домена
-        echo '<pre>'; print_r($dns_scan); echo '</pre>';
+		//echo '<pre>'; print_r($dns_scan); echo '</pre>';
 //$ip_client = '85.140.49.98'; //$_SERVER['REMOTE_ADDR'];
         $ip_client = $_SERVER['REMOTE_ADDR'];
 //$user_aut = 'Basic bWFuX3NpdGVAZGVrb3IuZGVtbzoxMjMxMjMxMjM='; //$_SERVER['REDIRECT_REMOTE_USER']; 
