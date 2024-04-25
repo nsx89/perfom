@@ -53,7 +53,10 @@ const countDownClock = (date, format = 'seconds') => {
     }
 };
 
-countDownClock('2024-04-28 15:30');
+//countDownClock('2024-04-28 15:30');
+if ($('.countdown-container').length > 0) {
+    countDownClock('2024-04-26 10:00');
+}
 
 
 /* --- Subs email --- */
