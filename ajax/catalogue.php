@@ -67,6 +67,8 @@ switch ($CATEGORY_ID) {
 }
 $SORTING = array_merge($SORT_FIRST, $SORT_SECOND, $SORT_CATEGORY, $SORT);
 
+//$SORTING = $SORT;
+
 /* --- // --- */
 
 //сортировка новинки

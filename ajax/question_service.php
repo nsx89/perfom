@@ -841,7 +841,7 @@ if( $type == "answ") {
 
 		   $answ_text = '<p style="margin:0px;font-size:16px;color:#000;"><strong>Ответ:</strong><br></p>
 		               <p style="font-size:16px;color:#000;margin-top:0;margin-bottom:0;">'.$text.$attach.'</p><br>';
-		   $answ_sign = '<p style="margin:0px;font-size:16px;color:#000;">С уважением, Ваш Европласт.<br>'.$who.'<br>'.$prof.'<br>'.$tel.'</p>';
+		   $answ_sign = '<p style="margin:0px;font-size:16px;color:#000;">С уважением, Ваш Перфом.<br>'.$who.'<br>'.$prof.'<br>'.$tel.'</p>';
 
 		   //пользователю
 		   $user_link = $base_url."/question_service/answer.php?ext_id=".$ext_id."&stat=user";

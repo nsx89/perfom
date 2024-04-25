@@ -1878,7 +1878,7 @@ function _get_email_product_list()
         </td>
         </tr>
         <tr><td style="text-align: left; padding: 0px 12px; font: 18px Arial;border: 0px #eaeaea solid;"
-                colspan="5">Ваш Европласт<br><br>
+                colspan="5">Ваш Перфом<br><br>
             </td></tr>
         </tbody>
     </table>
