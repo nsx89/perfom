@@ -80,7 +80,7 @@
 
 .timer-block-title {
     font-size: 52px;
-    line-height: 1.23;
+    line-height: 1.15em;
     font-weight: 600;
 }
 
@@ -263,9 +263,59 @@
     text-align: center;
 }
 
+.timer-block-video-wrap {
+    width: 100%;
+    margin-top: 32px;
+}
+.timer-block-video-wrap video {
+    width: 100%;
+}
+.timer-block-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2px;
+    width: auto;
+    /* height: 45px; */
+    padding: 11px 35px 12px;
+    background: transparent;
+    border: 2px solid #9ccdc8;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    color: #fff;
+    font-size: 21px;
+    margin: 36px 0px 0px;
+    text-transform: lowercase;
+    pointer-events: auto !important;
+    white-space: nowrap;
+    /*font-family: Nekst, sans-serif;*/
+    -webkit-transition: all 0.15s ease-out;
+    -moz-transition: all 0.15s ease-out;
+    -o-transition: all 0.15s ease-out;
+    transition: all 0.15s ease-out;
+    cursor: pointer;
+    text-decoration: none;
+}
+.timer-block-btn:hover {
+    background: #849795;
+    border: 2px solid #849795;
+    color: #fff;
+}
+.timer-block-title2 {
+    font-size: 45px;
+}
+
 @media all and (max-width: 640px) {
     .timer-subscribe-form {
         flex-direction: column;
+    }
+
+    .timer-container2 {
+        padding: 0px 0px 80px;
     }
 
     .timer-orange-btn {
@@ -276,6 +326,11 @@
 
     .timer-block-title {
         font-size: 30px;
+    }
+    .timer-block-title2 {
+        font-size: 39px;
+        padding: 0px 20px;
+        margin-top: -35px;
     }
 
     .timer-block-description {

@@ -168,7 +168,7 @@
 
 <script src='/js/jquery-3.5.1.min.js?v=1'></script>
 <script src='/timer/swal.js'></script>
-<script src='/timer/main.js?v=<?= md5_file('main.js') ?>'></script>
+<script src='/timer/main.js?v=<?= time() ?>'></script>
 
 </body>
 </html>
