@@ -437,7 +437,7 @@ if($type == 'send_pay_link') {
 
     $date = explode(" ",$item['DATE']['VALUE']);
     $date = $date[0];
-    $from .= '<p style="margin-bottom:10px;">Вы можете оплатить онлайн заказ № <b>'.$item['NAME'].'</b> от '.$date.' на сайте <a href="http://evroplast.ru" target="_blank" style="color:#000;">evroplast.ru</a> по ссылке: </p>';
+    $from .= '<p style="margin-bottom:10px;">Вы можете оплатить онлайн заказ № <b>'.$item['NAME'].'</b> от '.$date.' на сайте <a href="http://perfom-decor.ru" target="_blank" style="color:#000;">perfom-decor.ru</a> по ссылке: </p>';
     $from .= '<a href="https://'.$_SERVER['HTTP_HOST'].$payment_link.'" style="background:##849795; color:#fff;text-decoration:none;display:block;width:185px;height:32px;line-height:32px;text-align:center;" target="_blank">Оплатить заказ</a>';
     $from .= '<p style="margin-top:20px;">При возникновении вопросов Вы можете обратиться по контактам:</p>';
     $from .= '<p><b>Телефон: </b>'.$item['PHONE_DEALER']['VALUE'].'<br>';
@@ -446,7 +446,7 @@ if($type == 'send_pay_link') {
     $from .= '<a href="https://'.$_SERVER['HTTP_HOST'].'/personal/show_order?number='.$item['NAME'].'" style="color:##849795;text-decoration:underline;" target="_blank">Посмотреть заказ</a><br>';
     $from .= '</div><br>';
 
-    $title = 'Ссылка на онлайн-оплату заказа №'.$item['NAME'].' на сайте evroplast.ru';
+    $title = 'Ссылка на онлайн-оплату заказа №'.$item['NAME'].' на сайте perfom-decor.ru';
 
     $email_arr  = array(
         $mail
