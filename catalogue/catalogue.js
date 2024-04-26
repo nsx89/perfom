@@ -692,6 +692,10 @@ $('.category').on('click','li',function(e) {
         } else {
             $('.pagination').hide();
         }
+
+        //постранично скрыть
+        $('.show-per-page').removeClass('active');
+        $('.pag-wrap').show();
     });
     return false;
 })
