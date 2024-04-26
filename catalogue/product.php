@@ -720,12 +720,37 @@ foreach ($item['CONFORMITY']['VALUE'] as $comp_item) { // проверка на 
         $main_elements[] = $comp_element;
     }
 }
+/* --- Блок "Сопутствующие товары" --- */
+if (!empty($item['RELATED']['VALUE'])) {
+    $RELATED = $item['RELATED']['VALUE'];
+    $RELATED_ARR = explode(',', $RELATED);
+    $RELATED_ARTICULS = array();
+    foreach ($RELATED_ARR AS $RELATED_ARTICUL) {
+        $RELATED_ARTICULS[] = trim($RELATED_ARTICUL);
+    }
+    if (!empty($RELATED_ARTICULS)) {
+        $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'PROPERTY_ARTICUL' => $RELATED_ARTICULS);
+        $db_list = CIBlockElement::GetList(Array(), $arFilter);
+        while ($add_element = $db_list->GetNextElement()) {
+            $add_element = array_merge($add_element->GetFields(), $add_element->GetProperties());
+            if (in_array($add_element['ID'], $main_elements_ids)) {
+                continue;
+            }
+            $main_elements[] = $add_element;
+            $main_elements_ids[] = $add_element['ID'];
+        }
+    }
+}
+/* --- // --- */
 if (is_array($main_elements) && count($main_elements)) {
 ?>
 <section class="prod-similar">
-    <div class="prod-similar-title prod-related-title">Используется с&nbsp;товаром</div>
+    <br>
+    <div class="prod-similar-title prod-related-title">Используется с <?= count($main_elements) > 1 ? 'товарами' : 'товаром' ?></div>
     <div class="prod-similar-slider prod-prev-slider" data-type="similar-slider">
-        <? foreach ($main_elements as $comp_item) {
+        <? 
+
+        foreach ($main_elements as $comp_item) {
             echo get_product_preview($comp_item);
         } ?>
     </div>

@@ -813,7 +813,7 @@ function getPdfList($list) {
     </head>
 
     <body>
-    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.png" class="logo">
+    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.jpg" class="logo">
 
     <div class="header-title">
         <h1>Предварительная <br>стоимость монтажа</h1>
@@ -888,7 +888,7 @@ function getPdfList($list) {
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
         </tr>
     </table>

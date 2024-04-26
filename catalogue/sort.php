@@ -46,6 +46,8 @@ function getSort($section_id,$get_sort_params = false) {
 
     $wtf = Array();
 
+    $is_popular = false;
+
     $sec_sort = getSortParams($section_id);
 
     if(isset($_COOKIE['sort_params'])) {
@@ -74,7 +76,8 @@ function getSort($section_id,$get_sort_params = false) {
     }
 
     $section_id = implode(',',$section_id);
-    if($sort_params->prop_param && $section_id == $sort_params->id_sec) {
+    //if($sort_params->prop_param && $section_id == $sort_params->id_sec) {
+    if($sort_params->prop_param) {
         // по свойству
         if ($sort_params->main_param && $sort_params->main_param == 1) {
             $wtf = Array('PROPERTY_'.$sort_params->prop_param->val=>$sort_params->prop_param->sort,'catalog_PRICE_1'=>'ASC');  // по цене по возрастанию
@@ -104,13 +107,48 @@ function getSort($section_id,$get_sort_params = false) {
         $wtf = Array('created'=>'desc');   // новинки
     } elseif ($sort_params->main_param && $sort_params->main_param == 6) {
         $wtf = Array('sort'=>'asc');   // популярное
+        $is_popular = true;
     } else {
         $wtf = Array('sort'=>'asc');
+        $is_popular = true;
     }
     if($get_sort_params) {
         return $sort_params;
     } else {
-        return $wtf;
+
+        /* --- СОРТИРОВКА НОВАЯ ДЛЯ 6. --- */
+
+        $SORT_FIRST = array('PROPERTY_SORT_FIRST'=>'DESC');
+        $SORT_SECOND = array('PROPERTY_SORT'=>'DESC');
+        $CATEGORY_ID = (int)$section_id;
+        switch ($CATEGORY_ID) {
+            case '1542': 
+                $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
+                break;
+            case '1544': 
+                $SORT_CATEGORY = array('PROPERTY_SORT2'=>'DESC');
+                break;
+            case '1546': 
+                $SORT_CATEGORY = array('PROPERTY_SORT3'=>'DESC');
+                break;
+            case '1601': 
+                $SORT_CATEGORY = array('PROPERTY_SORT4'=>'DESC');
+                break;
+            default: 
+                $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
+                break;
+        }
+
+        if ($is_popular) {
+            $SORTING = array_merge($SORT_FIRST, $SORT_SECOND, $SORT_CATEGORY, $wtf);
+        }
+        else {
+            $SORTING = array_merge($SORT_FIRST, $wtf, $SORT_SECOND, $SORT_CATEGORY);
+        }
+
+        /* --- // --- */
+
+        return $SORTING;
     }
 }
 
