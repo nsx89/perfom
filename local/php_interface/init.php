@@ -1972,7 +1972,7 @@ function _get_email_product_list_pdf($my_city = null)
         }
     </style>
     <? // Лого ?>
-    <a href="http://<?=$_SERVER['HTTP_HOST']?>"> <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo-mail.png" width="270"/></a>
+    <a href="http://<?=$_SERVER['HTTP_HOST']?>"> <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.jpg" width="157"/></a>
 
     <? // Контакт ?>
 
@@ -2486,7 +2486,7 @@ function _get_pricelist_pdf($type,$my_city)
     </head>
 
     <body>
-    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.png" class="logo">
+    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.jpg" class="logo">
 
     <div class="header-title">
         <h1>Прайс-лист<br><?=$tit?></h1>
@@ -2547,7 +2547,7 @@ function _get_pricelist_pdf($type,$my_city)
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
             <td class="footer-page">
                 [<?=$n?>]
@@ -2586,7 +2586,7 @@ function _get_pricelist_pdf($type,$my_city)
                     дер. Ивачково, ул. Лесная, вл. 12, стр. 7
                 </td>
                 <td class="footer-site">
-                    <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                    <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
                 </td>
                 <td class="footer-page">
                     [<?=$n?>]
@@ -2937,7 +2937,7 @@ function _get_stat_pdf()
                     if($product = $resProd->GetNextElement()) {
                         $product = array_merge($product->GetFields(), $product->GetProperties());?>
                         <tr class="pacc-nav-bestsells-item">
-                            <td class="pacc-bestsells-lbl"><a href="https://evroplast.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?><?if($isSample) echo ' образец'?></a></td>
+                            <td class="pacc-bestsells-lbl"><a href="https://perfom-decor.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?><?if($isSample) echo ' образец'?></a></td>
                             <td class="pacc-bestsells-val"><?=$v?> шт. (<?=round($v/$prod_qty*100,2)?>%)</td>
                         </tr>
                     <? }
@@ -2966,7 +2966,7 @@ function _get_stat_pdf()
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
         </tr>
     </table>
@@ -3278,7 +3278,7 @@ function _get_stat_dealer_pdf($id)
                     if($product = $resProd->GetNextElement()) {
                         $product = array_merge($product->GetFields(), $product->GetProperties());?>
                         <tr class="pacc-nav-bestsells-item">
-                            <td class="pacc-bestsells-lbl"><a href="https://evroplast.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?></a></td>
+                            <td class="pacc-bestsells-lbl"><a href="https://perfom-decor.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?></a></td>
                             <td class="pacc-bestsells-val"><?=$v?> шт. (<?=round($v/$prod_qty*100,2)?>%)</td>
                         </tr>
                     <? }
@@ -3307,7 +3307,7 @@ function _get_stat_dealer_pdf($id)
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
         </tr>
     </table>
