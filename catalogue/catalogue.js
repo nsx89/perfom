@@ -517,6 +517,8 @@ $('.cat-wrap').on('click','[data-type="sort-param"]',function () {
         if(sort_direct == 'desc') $(this).closest('.cat-sort-item').find('.cat-sort-item-title').attr('data-sort','asc');
     }
     let sort_params = JSON.stringify(sort_obj);
+    console.log('sort_params');
+    console.log(sort_params);
     $.cookie('sort_params', sort_params, {domain: domain, path: '/'});
     $('[data-type="sort-param"]').each(function() {
         if($(this).attr('data-val') == id_sort && $(this).attr('data-sort') == sort) {
@@ -545,17 +547,20 @@ $('.cat-wrap').on('click','[data-type="sort-param"]',function () {
         wrap = $('[data-type="items-list"]'),
         filters = getFilters(),
         sections = wrap.attr('data-id'),
-        req = '/ajax/catalogue.php?page='+newPage+'&'+filters+'&sections='+sections;
+        req = '/ajax/catalogue.php?page='+newPage+'&'+filters+'&sections='+sections+'&sorting=1';
     if($('[data-type="pag"]').attr('data-current') == 'all') {
         req += '&all=all';
         newPage = 'all';
     }
+    wrap.addClass('cat-items-loading');
     $.get(req, function(data){
         let elems = $.parseJSON(data);
         wrap.html(elems.items);
+        wrap.removeClass('cat-items-loading');
         $('html,body').animate({scrollTop: 0}, 500);
         changePageInAddr(newPage);
         $('[data-type="pag"]').pagination('drawPage', 1);
+        console.log(elems.sorting);
     });
     if($('.cat-filters').hasClass('active')) {
         $('.cat-filters').removeClass('active');
@@ -687,6 +692,10 @@ $('.category').on('click','li',function(e) {
         } else {
             $('.pagination').hide();
         }
+
+        //постранично скрыть
+        $('.show-per-page').removeClass('active');
+        $('.pag-wrap').show();
     });
     return false;
 })

@@ -41,35 +41,7 @@ if($all || $is_new_sort) $arNavStartParams = Array();//показать все /
 
 
 $CATALOG_FILTER = CatalogFilter($section_id, $filter, $classes, $styles);
-$SORT = getSort($section_id);
-
-/* --- СОРТИРОВКА НОВАЯ ДЛЯ 6. --- */
-
-$SORT_FIRST = array('PROPERTY_SORT_FIRST'=>'DESC');
-$SORT_SECOND = array('PROPERTY_SORT'=>'DESC');
-$CATEGORY_ID = (int)$section_id;
-switch ($CATEGORY_ID) {
-    case '1542': 
-        $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
-        break;
-    case '1544': 
-        $SORT_CATEGORY = array('PROPERTY_SORT2'=>'DESC');
-        break;
-    case '1546': 
-        $SORT_CATEGORY = array('PROPERTY_SORT3'=>'DESC');
-        break;
-    case '1601': 
-        $SORT_CATEGORY = array('PROPERTY_SORT4'=>'DESC');
-        break;
-    default: 
-        $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
-        break;
-}
-$SORTING = array_merge($SORT_FIRST, $SORT_SECOND, $SORT_CATEGORY, $SORT);
-
-//$SORTING = $SORT;
-
-/* --- // --- */
+$SORTING = getSort($section_id);
 
 //сортировка новинки
 if($is_new_sort) $CATALOG_FILTER['>DATE_CREATE'] = date('d.m.Y', strtotime('-150 days'));
@@ -112,7 +84,7 @@ $html = ob_get_clean();
 
 if(!$type) {
     //если не меняется категория
-    print json_encode(Array('items'=>$html,'qty'=>$item_count,'desc'=>$sec_desc));
+    print json_encode(Array('items'=>$html,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING));
 } elseif($type == 'rebuild') {
     //меняется категория - меняем также фильтры и сортировку
     if(!$all) {
@@ -128,8 +100,8 @@ if(!$type) {
     }
     $sort = renderSort($section_id);
     $filters = renderFilters($section_id,$product_items_full);
-    print json_encode(Array('items'=>$html,'sort'=>$sort,'filters'=>$filters,'qty'=>$item_count,'desc'=>$sec_desc));
+    print json_encode(Array('items'=>$html,'sort'=>$sort,'filters'=>$filters,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING));
 } elseif($type == 'newFilters') {
-    print json_encode(Array('items'=>$html,'qty'=>$item_count,'desc'=>$sec_desc));
+    print json_encode(Array('items'=>$html,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING));
 }
 

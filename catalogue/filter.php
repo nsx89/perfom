@@ -5,7 +5,7 @@ function FilterRegion($CATALOG_FILTER) {
     return $CATALOG_FILTER;
 
     /*
-    Убираем различия по регионам
+    Убираем различия по регионам 
 
     $my_city = $APPLICATION->get_cookie('my_city');
 
@@ -24,7 +24,8 @@ function FilterRegion($CATALOG_FILTER) {
 }
 
 function CatalogFilter($section_id,$filter = null,$classes = null,$styles = null) {
-    $CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
+    //$CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
+    $CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "TAGS" => "Y");
     $CATALOG_FILTER = FilterRegion($CATALOG_FILTER);
 
     foreach ($filter as $k => $itemf) {
@@ -75,7 +76,8 @@ function CatalogFilter($section_id,$filter = null,$classes = null,$styles = null
 }
 
 function CatalogFullFilter($section_id,$filter = null,$classes = null,$styles = null) {
-    $CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
+    //$CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
+    $CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "TAGS" => "Y");
     $CATALOG_FILTER_FULL = FilterRegion($CATALOG_FILTER_FULL);
     
 			$classes = explode(',', $classes);
@@ -273,28 +275,52 @@ if($gr_class_f || $gr_style_f || count($all)) { ?>
                     }
                     $filt_sec = mb_substr($filt_sec,0,-2);
                 } ?>
-                <div class="cat-filt-item active" data-type="filt-item">
-                    <div class="cat-filt-item-title" data-type="filt-title">Класс <i class="icon-angle-down-2"></i></div>
-                    <? if(!empty($filt_sec)) { ?>
-                        <div class="cat-filt-item-sec">Только для: <?=$filt_sec?></div>
-                    <? } ?>
-                    <div class="cat-filt-item-cont" data-type="filt-cont">
-                        <ul>
-                            <? if ($gr_class_array['class_02']) { ?>
-                                <li <?=$cl_array['class_02']?'class="active" ':''?>data-type="filter-class"><a data-val="class_02">с орнаментом</a></li>
-                            <? } ?>
-                            <? if ($gr_class_array['class_03']) { ?>
-                                <li <?=$cl_array['class_03']?'class="active" ':''?>data-type="filter-class"><a data-val="class_03">гладкие</a></li>
-                            <? } ?>
-                            <? if ($gr_class_array['class_01']) { ?>
-                                <li <?=$cl_array['class_01']?'class="active" ':''?>data-type="filter-class"><a data-val="class_01">для скрытого освещения</a></li>
-                            <? } ?>
-                            <? if ($gr_class_array['class_20']) { ?>
-                                <li <?=$cl_array['class_20']?'class="active" ':''?>data-type="filter-class"><a data-val="class_20">для натяжного потолка</a></li>
-                            <? } ?>
-                        </ul>
+
+                <?
+                /*
+                1. Класс "с арнаментом" убрать в категориях "молдинги" и "карнизы".
+                2. В категории "карнизы" убираем стили "классика" и "барокко"
+                3. В категории "молдинги" классы убираем
+                4. В категории "плинтусы" стили "классика" и "барокко" убираем
+                
+                1542 - карнизы
+                1544 - молдинги
+                1546 - плинтусы
+                1550 - розетки
+                1552 - кессины
+                1548 - угловые
+                */
+                $SECT_ID = 0; //id категории
+                if (is_array($section_id)) $SECT_ID = $section_id[0];
+                else $SECT_ID = $section_id;
+                //echo $SECT_ID;
+                ?>
+
+                <? if (!in_array($SECT_ID, [1544])) { ?>
+                    <div class="cat-filt-item active" data-type="filt-item">
+                        <div class="cat-filt-item-title" data-type="filt-title">Класс <i class="icon-angle-down-2"></i></div>
+                        <? if(!empty($filt_sec)) { ?>
+                            <div class="cat-filt-item-sec">Только для: <?=$filt_sec?></div>
+                        <? } ?>
+                        <div class="cat-filt-item-cont" data-type="filt-cont">
+                            <ul>
+                                <? if ($gr_class_array['class_02'] && !in_array($SECT_ID, [1542, 1544])) { ?>
+                                    <li <?=$cl_array['class_02']?'class="active" ':''?>data-type="filter-class"><a data-val="class_02">с орнаментом</a></li>
+                                <? } ?>
+                                <? if ($gr_class_array['class_03']) { ?>
+                                    <li <?=$cl_array['class_03']?'class="active" ':''?>data-type="filter-class"><a data-val="class_03">гладкие</a></li>
+                                <? } ?>
+                                <? if ($gr_class_array['class_01']) { ?>
+                                    <li <?=$cl_array['class_01']?'class="active" ':''?>data-type="filter-class"><a data-val="class_01">для скрытого освещения</a></li>
+                                <? } ?>
+                                <? if ($gr_class_array['class_20']) { ?>
+                                    <li <?=$cl_array['class_20']?'class="active" ':''?>data-type="filter-class"><a data-val="class_20">для натяжного потолка</a></li>
+                                <? } ?>
+                            </ul>
+                        </div>
                     </div>
-                </div>
+                <? } ?>
+
             <? } ?>
 
             <? if ($gr_style_f) { ?>
@@ -330,10 +356,10 @@ if($gr_class_f || $gr_style_f || count($all)) { ?>
                     <? } ?>
                     <div class="cat-filt-item-cont" data-type="filt-cont">
                         <ul>
-                            <? if ($gr_class_array['class_04']) { ?>
+                            <? if ($gr_class_array['class_04'] && !in_array($SECT_ID, [1542, 1546])) { ?>
                                 <li <?=$cl_array['class_04']?'class="active" ':''?>data-type="filter-style"><a data-val="class_04">классика</a></li>
                             <? } ?>
-                            <? if ($gr_class_array['class_05']) { ?>
+                            <? if ($gr_class_array['class_05'] && !in_array($SECT_ID, [1542, 1546])) { ?>
                                 <li <?=$cl_array['class_05']?'class="active" ':''?>data-type="filter-style"><a data-val="class_05">барокко</a></li>
                             <? } ?>
                             <? if ($gr_class_array['class_06']) { ?>

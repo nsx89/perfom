@@ -229,7 +229,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                             <? $curr_img = $img_big!='' ? $img_big : $files_by_type[$img_sld]; ?>
                             <img class="sp-image<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($curr_img,713,713)?>" data-val="<?=$img_sld?>" alt="<?=__get_product_name($item)?> - превью <?= ($k + 1) ?>">
 
-                            <img class="sp-thumbnail<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($files_by_type[$img_sld],127,127)?>" alt="<?=__get_product_name($item)?> - фото <?= ($k + 1) ?>"> 
+                            <img class="sp-thumbnail<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($files_by_type[$img_sld],127,127)?>" alt="<?=__get_product_name($item)?> - фото <?= ($k + 1) ?>">
                         </div>
 
                         <?if($k == 0 && $item_flex) { ?>
@@ -548,7 +548,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 					<?if($item['ARTICUL']['VALUE'] == '1.64.811' || $item['ARTICUL']['VALUE'] == '1.64.813' || $item['ARTICUL']['VALUE'] == '1.64.801' || $item['ARTICUL']['VALUE'] == '1.64.803') {?>
                          <div class="desc-warning">
                             <i class="icomoon icon-warning"></i> <span>Внимание! Для сборки готового камина необходимо приобрести 3 отдельных элемента камина.</span>
-                        </div>             
+                        </div>
                     <? } ?>
                     <?if(($item['IBLOCK_SECTION_ID'] == 1601) && ($item['NEW_ART_DECO']['VALUE'] == 'Y')) { // декоративная панель NAD?>
                         <div class="desc-warning">
@@ -717,15 +717,48 @@ foreach ($item['CONFORMITY']['VALUE'] as $comp_item) { // проверка на 
         $comp_element = $db_list->GetNextElement();
         if (!$comp_element) continue;
         $comp_element = array_merge($comp_element->GetFields(), $comp_element->GetProperties());
+
+        if (in_array($comp_element['ID'], $main_elements_ids)) {
+            continue;
+        }
+
         $main_elements[] = $comp_element;
+        $main_elements_ids[] = $comp_element['ID'];
     }
 }
+/* --- Блок "Сопутствующие товары" --- */
+if (!empty($item['RELATED']['VALUE'])) {
+    $RELATED = $item['RELATED']['VALUE'];
+    $RELATED_ARR = explode(',', $RELATED);
+    $RELATED_ARTICULS = array();
+    foreach ($RELATED_ARR AS $RELATED_ARTICUL) {
+        $RELATED_ARTICULS[] = trim($RELATED_ARTICUL);
+    }
+    if (!empty($RELATED_ARTICULS)) {
+        $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'PROPERTY_ARTICUL' => $RELATED_ARTICULS);
+        $db_list = CIBlockElement::GetList(Array(), $arFilter);
+        while ($add_element = $db_list->GetNextElement()) {
+            $add_element = array_merge($add_element->GetFields(), $add_element->GetProperties());
+            if (in_array($add_element['ID'], $main_elements_ids)) {
+                continue;
+            }
+            if ($add_element['ID'] == $item['ID']) continue;
+
+            $main_elements[] = $add_element;
+            $main_elements_ids[] = $add_element['ID'];
+        }
+    }
+}
+/* --- // --- */
 if (is_array($main_elements) && count($main_elements)) {
 ?>
 <section class="prod-similar">
-    <div class="prod-similar-title prod-related-title">Используется с&nbsp;товаром</div>
+    <br>
+    <div class="prod-similar-title prod-related-title">Используется с <?= count($main_elements) > 1 ? 'товарами' : 'товаром' ?></div>
     <div class="prod-similar-slider prod-prev-slider" data-type="similar-slider">
-        <? foreach ($main_elements as $comp_item) {
+        <?
+
+        foreach ($main_elements as $comp_item) {
             echo get_product_preview($comp_item);
         } ?>
     </div>
@@ -849,4 +882,3 @@ $ya_cont = array(
         gtag('event', 'view_item', <?=json_encode($ga_arr)?>);
     })
 </script>
-

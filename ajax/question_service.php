@@ -6,7 +6,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 
 $type = $_GET['type'];
 
-$base_url = "https://evroplast.ru";
+$base_url = "https://perfom-decor.ru";
 if($_SERVER['HTTP_HOST'] == 'eplast.loc') {
     $base_url = "http://eplast.loc";
 }
@@ -411,7 +411,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 
 	$attention = $subj == 2 ? "<p style='margin-bottom:0;font-size:16px;'>Просим принять во внимание, что ответ на вопрос по монтажу может занять дополнительное время.</p>" : "";
 
-   $user_mail = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#010101;"><strong>Здравствуйте! Вы оставили вопрос на сайте <a href="https://evroplast.ru" target="_blank" style="color:#849795;text-decoration: none;">evroplast.ru</a>.</strong></p><br>';
+   $user_mail = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#010101;"><strong>Здравствуйте! Вы оставили вопрос на сайте <a href="https://perfom-decor.ru" target="_blank" style="color:#849795;text-decoration: none;">perfom-decor.ru</a>.</strong></p><br>';
    $user_mail .= $qst_text;
    $user_mail .= $attention;
 
@@ -1987,7 +1987,7 @@ if ( $type == "need_comm" ) {
         $spec_link = $base_url."/question_service/answer.php?ext_id=".$ext_id.'&d='.$dealer_id.'&stat=dealer';
         $spec_subj = "На сайте evroplast.ru запрошен комментарий к вопросу №".$number;
 
-        $spec_first = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#000;">Уважаемые партнёры, в&nbsp;службу технической поддержки сайта <a href="https://evroplast.ru/"  target="_blank"style="color: #000;">evroplast.ru</a> поступил запрос на&nbsp;продукцию Европласт в&nbsp;вашем регионе.</p>';
+        $spec_first = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#000;">Уважаемые партнёры, в&nbsp;службу технической поддержки сайта <a href="https://perfom-decor.ru/"  target="_blank"style="color: #000;">perfom-decor.ru</a> поступил запрос на&nbsp;продукцию Европласт в&nbsp;вашем регионе.</p>';
 
         $spec_last .= '<p style="font-size:16px;margin:0;color:#000;">Просьба связаться с&nbsp;клиентом и&nbsp;заполнить комментарий о&nbsp;проделанной работе <a href="'.$spec_link.'" target="_blank" style="color:#849795;">по&nbsp;ссылке</a>.</p>';
 

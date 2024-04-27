@@ -3,7 +3,7 @@
 error_reporting(E_ALL);*/
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.php");
 $APPLICATION->SetTitle("Корзина");
-$APPLICATION->SetPageProperty("description", "Европласт - производство полиуретановых изделий, лидер на российском рынке");
+$APPLICATION->SetPageProperty("description", "Перфом - производство полиуретановых изделий, лидер на российском рынке");
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
@@ -11,6 +11,10 @@ require($_SERVER["DOCUMENT_ROOT"] . "/cart/mounting/mounting_data.php");
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 global $my_city;
 
+
+if (!empty($_GET['msk'])) {
+    $loc['ID'] = 3109;
+}
 
 if ($my_city == NULL) $my_city = $APPLICATION->get_cookie('my_city');
 if($my_city == '3109') {
@@ -23,7 +27,8 @@ if($my_city == '3109') {
             $citemId = substr($citem->id, 1);
             $isSample = true;
         }
-        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $citemId);
         $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         $ob = $db_list->GetNextElement();
         if (!$ob) continue;
@@ -292,7 +297,7 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                 </div>
                                 <div class="del-title-reg">Условия получения</div>
                                 <div class="del-condition-reg">
-                                    условия получения уточнит представитель Европласт в&nbsp;вашем регионе после&nbsp;обработки заказа.
+                                    условия получения уточнит представитель Перфом в&nbsp;вашем регионе после&nbsp;обработки заказа.
                                 </div>
                             <? } else {?>
                                 <div class="cart-order-sum">
@@ -325,17 +330,23 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                         1. Монтажные материалы
                                     </div>
                                     <div class="cart-form-point-wrap" data-type="cart-point-cont">*/?>
+
                                         <?if($mount !== undefined && $mount_list['total'] > 0) { ?>
                                             <div class="mount-calc-amount">предварительная стоимость монтажа - <span data-type="cart-mount-total"><?=__cost_format($mount_list['total'])?></span></div>
                                             <div class="att-mount-amount" data-type="mount-warn">Внимание! Вы произвели предварительный расчет монтажа до&nbsp;того, как&nbsp;была изменена ваша&nbsp;корзина. Если вы хотите, чтобы ассортимент и/или&nbsp;количество товара совпадали с&nbsp;актуальной корзиной, произведите расчет&nbsp;повторно.</div>
                                         <? } ?>
+
                                         <div class="mount-btns">
+
                                             <a class="mount-btn go-to-mount" href="/cart/mounting/" title="Перейти">Калькулятор стоимости монтажа <i class="icomoon icon-angle-right"></i></a>
+
                                             <div class="cart-mount-rbtn" data-type="mounting">
                                                 Получить расчет стоимости монтажа специалистом
                                             </div>
                                         </div>
+
                                         <div class="mount-btns-desc">* Гарантия на монтаж 5 лет</div>
+
                                         <?/*</div>
                                 </div>*/?>
 
@@ -464,7 +475,7 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                                         <i class="icomoon icon-cashcard"></i>
                                                     </div>
                                                 </div>
-                                                <div class="cart-form-rbtn-payment cart-form-rbtn-pay active" data-type="payment" data-val="online">
+                                                <div class="cart-form-rbtn-payment cart-form-rbtn-pay active-off" data-type="payment" data-val="online">
                                                     <span>Онлайн</span>
                                                     <div class="payment-banks">
                                                         <i class="icon-mir"></i>
@@ -478,6 +489,7 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                     </div>
                                 </div>
                             <? } ?>
+                            <div class="js-error-submit" style="color: #f00; display: none; margin: -5px 0px 15px"></div>
                             <div class="cart-form-submit" data-type="form-submit" data-user="save">
                                 Оформить заказ
                             </div>

@@ -349,6 +349,17 @@ function smartSearchResClearTotal() {
     $('[data-type="smart-search-input"]').val('');
 }
 
+function searchScrollInit(){
+    if(typeof searchScroll === 'undefined') {
+        var searchScroll = $('[data-type="search-scroll"]').jScrollPane({
+            showArrows: false,
+            maintainPosition: false
+        }).data('jsp');
+    } else {
+        searchScroll.reinitialise();
+    }
+}
+
 function smartSearchShortRes() {
 
     let q = $('[data-type="smart-search-input"]').val().trim();
@@ -367,15 +378,9 @@ function smartSearchShortRes() {
                         let smartSearchHtml = getSmartSearchShortPreview(result);
                         $('[data-type="smart-search-items-wrap"]').html(smartSearchHtml);
                         $('.smart-search-short-res').show(function(){
-                            if(typeof searchScroll === 'undefined') {
-                                var searchScroll = $('[data-type="search-scroll"]').jScrollPane({
-                                    showArrows: false,
-                                    maintainPosition: false
-                                }).data('jsp');
-                            } else {
-                                searchScroll.reinitialise();
-                            }
+                            searchScrollInit();
                         });
+                        searchScrollInit();
                         $('.smart-search-result-short-link').show();
                         $('.smart-search-result-qty span').html(result.length);
                         $('.smart-search-result-short').css('display','flex');
@@ -386,49 +391,44 @@ function smartSearchShortRes() {
                     } else {
 
                         /* --- Точный поиск по артикулу (если ничего не найдено) --- */
-                        if(result.length == 0) {
-                            $.ajax({
-                                type: "GET",
-                                url: "/smart_search/ajax.php",
-                                data: {
-                                    'type': 'get_list_by_articul'
-                                    , 'FIND_BY_ARTICUL_VALUE': q
-                                },
-                                success: function(resp){
-                                    smartSearchObjArt = $.parseJSON(resp);
-                                    if (smartSearchObjArt.length) {
-                                        let smartSearchHtml = getSmartSearchShortPreview(smartSearchObjArt, true);
-                                        $('[data-type="smart-search-items-wrap"]').html(smartSearchHtml);
-                                        $('.smart-search-short-res').show(function(){
-                                            if(typeof searchScroll === 'undefined') {
-                                                var searchScroll = $('[data-type="search-scroll"]').jScrollPane({
-                                                    showArrows: false,
-                                                    maintainPosition: false
-                                                }).data('jsp');
-                                            } else {
-                                                searchScroll.reinitialise();
-                                            }
-                                        });
-                                        $('.smart-search-result-short-link').show();
-                                        $('.smart-search-result-qty span').html(smartSearchObjArt.length);
-                                        $('.smart-search-result-short').css('display','flex');
-                                        $('.smart-search-no-results').hide();
-                                        $('[data-type="smart-search-show-all"]').each(function() {
-                                            $(this).attr('href','/search/?q='+q).show();
-                                        })
-                                    }
+                        $.ajax({
+                            type: "GET",
+                            url: "/smart_search/ajax.php",
+                            data: {
+                                'type': 'get_list_by_articul'
+                                , 'FIND_BY_ARTICUL_VALUE': q
+                            },
+                            success: function(resp){
+                                smartSearchObjArt = $.parseJSON(resp);
+                                if (smartSearchObjArt.length) {
+                                    let smartSearchHtml = getSmartSearchShortPreview(smartSearchObjArt, true);
+                                    $('[data-type="smart-search-items-wrap"]').html(smartSearchHtml);
+                                    $('.smart-search-result-short-link').show();
+                                    $('.smart-search-result-qty span').html(smartSearchObjArt.length);
+                                    $('.smart-search-result-short').css('display','flex');
+                                    $('.smart-search-no-results').hide();
+                                    $('[data-type="smart-search-show-all"]').each(function() {
+                                        $(this).attr('href','/search/?q='+q).show();
+                                    });
+                                    $('.smart-search-short-res').show(function(){
+                                        searchScrollInit();
+                                    });
+                                    searchScrollInit();
+                                    setTimeout(function(){
+                                        searchScrollInit();
+                                    }, 1000);
                                 }
-                            });
-                        }
-                        else {
-                            $('[data-type="smart-search-items-wrap"]').html('');
-                            $('.smart-search-short-res').hide();
-                            $('[data-type="smart-search-show-all"]').hide();
-                            $('.smart-search-result-short-link').hide();
-                            $('.smart-search-result-qty span').html('0');
-                            $('.smart-search-result-short').css('display','flex');
-                            $('.smart-search-no-results').html('Поиск не дал результатов').show();
-                        }
+                                else {
+                                    $('[data-type="smart-search-items-wrap"]').html('');
+                                    $('.smart-search-short-res').hide();
+                                    $('[data-type="smart-search-show-all"]').hide();
+                                    $('.smart-search-result-short-link').hide();
+                                    $('.smart-search-result-qty span').html('0');
+                                    $('.smart-search-result-short').css('display','flex');
+                                    $('.smart-search-no-results').html('Поиск не дал результатов').show();
+                                }
+                            }
+                        });
                         /* --- // --- */
                     }
                 })
@@ -536,36 +536,33 @@ function smartSearchFullRes() {
                         $('[data-type="search-resSP-qty"]').show();
                         $('[data-type="search-messSP"]').hide();
                     } else {
-
                         /* --- Точный поиск по артикулу (если ничего не найдено) --- */
-                        if(result.length == 0) {
-                            $.ajax({
-                                type: "GET",
-                                url: "/smart_search/ajax.php",
-                                data: {
-                                    'type': 'get_list_by_articul'
-                                    , 'FIND_BY_ARTICUL_VALUE': q
-                                },
-                                success: function(resp){
-                                    smartSearchObjArt = $.parseJSON(resp);
-                                    if (smartSearchObjArt.length) {
-                                        let smartSearchHtml = getSmartSearchFullPreview(smartSearchObjArt, true);
-                                        $('[data-type="search-resSP-prod"]').html(smartSearchHtml);
-                                        $('[data-type="search-resSP"]').show();
-                                        $('[data-type="search-resSP-qty"] span').html(result.length);
-                                        $('[data-type="search-resSP-qty"]').show();
-                                        $('[data-type="search-messSP"]').hide();
-                                    }
+                        $.ajax({
+                            type: "GET",
+                            url: "/smart_search/ajax.php",
+                            data: {
+                                'type': 'get_list_by_articul'
+                                , 'FIND_BY_ARTICUL_VALUE': q
+                            },
+                            success: function(resp){
+                                smartSearchObjArt = $.parseJSON(resp);
+                                if (smartSearchObjArt.length) {
+                                    let smartSearchHtml = getSmartSearchFullPreview(smartSearchObjArt, true);
+                                    $('[data-type="search-resSP-prod"]').html(smartSearchHtml);
+                                    $('[data-type="search-resSP"]').show();
+                                    $('[data-type="search-resSP-qty"] span').html(result.length);
+                                    $('[data-type="search-resSP-qty"]').show();
+                                    $('[data-type="search-messSP"]').hide();
                                 }
-                            });
-                        }
-                        else {
-                            $('[data-type="search-resSP-prod"]').html('');
-                            $('[data-type="search-resSP"]').hide();
-                            $('[data-type="search-resSP-qty"] span').html('0');
-                            $('[data-type="search-resSP-qty"]').show();
-                            $('[data-type="search-messSP"]').html('Поиск не дал результатов').show();
-                        }
+                                else {
+                                    $('[data-type="search-resSP-prod"]').html('');
+                                    $('[data-type="search-resSP"]').hide();
+                                    $('[data-type="search-resSP-qty"] span').html('0');
+                                    $('[data-type="search-resSP-qty"]').show();
+                                    $('[data-type="search-messSP"]').html('Поиск не дал результатов').show();
+                                }
+                            }
+                        });
                         /* --- // --- */
                     }
                 }

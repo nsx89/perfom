@@ -33,12 +33,14 @@ if($type == 'get_list') {
     print json_encode($products);
 }
 
+/* --- Точный поиск по артикулу --- */
 if ($type == 'get_list_by_articul') {
-    $FIND_BY_ARTICUL_VALUE = htmlspecialcharsbx($_REQUEST['FIND_BY_ARTICUL_VALUE']);
+
     $products = createProductCache($loc['country']['VALUE'],true);
 
     print json_encode($products);
 }
+/* --- // --- */
 
 if($type == 'set_stat') {
    $q = $_REQUEST['q'];

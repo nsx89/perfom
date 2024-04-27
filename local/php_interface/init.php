@@ -762,7 +762,8 @@ $cart = json_decode($_COOKIE['basket']);
 $total = 0;
 	foreach ($cart as $citem) {
         if(strpos($citem->id,'s') !== false) continue;
-        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+        //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $citem->id);
         $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         $ob = $db_list->GetNextElement();
         if (!$ob) continue;
@@ -770,7 +771,8 @@ $total = 0;
 		if ($ob['COMPOSITEPART']['VALUE']) { 
 		$ids = $ob['COMPOSITEPART']['VALUE'];
         	$ids['LOGIC'] = 'OR';
-        	$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+        	//$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+            $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $ids);
         	$db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         		while ($ob_comp = $db_list->GetNextElement()) {
         			$ob_comp = array_merge($ob_comp->GetFields(), $ob_comp->GetProperties());
@@ -836,7 +838,8 @@ function __discount_mob($money, $prod = false) {
     $total = 0;
     foreach ($cart as $citem) {
         if(strpos($citem->id,'s') !== false) continue;
-        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+        //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $citem->id);
         $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         $ob = $db_list->GetNextElement();
         if (!$ob) continue;
@@ -844,7 +847,8 @@ function __discount_mob($money, $prod = false) {
         if ($ob['COMPOSITEPART']['VALUE']) {
             $ids = $ob['COMPOSITEPART']['VALUE'];
             $ids['LOGIC'] = 'OR';
-            $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+            //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+            $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $ids);
             $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
             while ($ob_comp = $db_list->GetNextElement()) {
                 $ob_comp = array_merge($ob_comp->GetFields(), $ob_comp->GetProperties());
@@ -1398,7 +1402,9 @@ function build_drop_categories($sections,$collapse = false) {
     }*/
     $l1 = array_merge($ob->GetFields(), $ob->GetProperties());
 
-    $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "2", '=SECTION_ID' => $l1['ID'], '=UF_HIDECATALOG' => '0');
+    $l2_ids = ['1542', '1544', '1546', '1550', '1601', '1622', '1552', '1548'];
+
+    $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "2", '=SECTION_ID' => $l1['ID'], '=UF_HIDECATALOG' => '0', 'ID' => $l2_ids);
     $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
 
     $all = (int)$_GET['all'];
@@ -1422,7 +1428,9 @@ function build_drop_categories($sections,$collapse = false) {
                             <?=$l2['NAME']?>
                         </a>
                     </li>
+ 
                 <? } ?>
+
             </ul>
             <? if($collapse) { ?>
                 <? if (!empty($all)) { ?>
@@ -1504,7 +1512,8 @@ function getObjectItems()
             $tempId = $citem->id;
             $isSample = true;
         }
-        $arFilter = Array('IBLOCK_ID' => 12, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        //$arFilter = Array('IBLOCK_ID' => 12, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        $arFilter = Array('IBLOCK_ID' => 12, 'ID' => $citemId);
         $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         $ob = $db_list->GetNextElement();
         if (!$ob) continue;
@@ -1559,7 +1568,8 @@ function _itemParams($item = null,$flex = false,$show_flex = false)
 {
     if (!item) return '';
     if (($item['FLEX']['VALUE'] != 'Y') && $flex) {
-        $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$item['CODE'].'-f', 'ACTIVE'=>'Y', 'PROPERTY_FLEX'=>'Y');
+        //$arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$item['CODE'].'-f', 'ACTIVE'=>'Y', 'PROPERTY_FLEX'=>'Y');
+        $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$item['CODE'].'-f', 'PROPERTY_FLEX'=>'Y');
         $db_list = CIBlockElement::GetList(Array(), $arFilter);
         $item_flex = null;
         if ($item_flex = $db_list->GetNextElement()) {
@@ -1972,7 +1982,7 @@ function _get_email_product_list_pdf($my_city = null)
         }
     </style>
     <? // Лого ?>
-    <a href="http://<?=$_SERVER['HTTP_HOST']?>"> <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo-mail.png" width="270"/></a>
+    <a href="http://<?=$_SERVER['HTTP_HOST']?>"> <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.jpg" width="157"/></a>
 
     <? // Контакт ?>
 
@@ -2095,7 +2105,8 @@ function _get_email_product_list_pdf($my_city = null)
                 <?
                 $ids = $citem['COMPOSITEPART']['VALUE'];
                 $ids['LOGIC'] = 'OR';
-                $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+                //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $ids);
+                $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ID' => $ids);
                 $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
                 $k_i = $i;
                 while ($ob = $db_list->GetNextElement()) {
@@ -2195,7 +2206,8 @@ function _get_email_product_list_pdf($my_city = null)
 
                         <table style="width: 100%; padding: 0px 6px; font: 11px Roboto; text-align: left;line-height:5px;">
                             <? //свойства
-                            $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "ID"=>$citemId);
+                            //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "ID"=>$citemId);
+                            $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, "ID"=>$citemId);
                             $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
                             $item_p = $db_list->GetNextElement();
                             $item_properties = $item_p->GetProperties();
@@ -2486,7 +2498,7 @@ function _get_pricelist_pdf($type,$my_city)
     </head>
 
     <body>
-    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.png" class="logo">
+    <img src="<?=$_SERVER["DOCUMENT_ROOT"]?>/img/e-logo.jpg" class="logo">
 
     <div class="header-title">
         <h1>Прайс-лист<br><?=$tit?></h1>
@@ -2547,7 +2559,7 @@ function _get_pricelist_pdf($type,$my_city)
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
             <td class="footer-page">
                 [<?=$n?>]
@@ -2586,7 +2598,7 @@ function _get_pricelist_pdf($type,$my_city)
                     дер. Ивачково, ул. Лесная, вл. 12, стр. 7
                 </td>
                 <td class="footer-site">
-                    <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                    <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
                 </td>
                 <td class="footer-page">
                     [<?=$n?>]
@@ -2937,7 +2949,7 @@ function _get_stat_pdf()
                     if($product = $resProd->GetNextElement()) {
                         $product = array_merge($product->GetFields(), $product->GetProperties());?>
                         <tr class="pacc-nav-bestsells-item">
-                            <td class="pacc-bestsells-lbl"><a href="https://evroplast.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?><?if($isSample) echo ' образец'?></a></td>
+                            <td class="pacc-bestsells-lbl"><a href="https://perfom-decor.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?><?if($isSample) echo ' образец'?></a></td>
                             <td class="pacc-bestsells-val"><?=$v?> шт. (<?=round($v/$prod_qty*100,2)?>%)</td>
                         </tr>
                     <? }
@@ -2966,7 +2978,7 @@ function _get_stat_pdf()
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
         </tr>
     </table>
@@ -3278,7 +3290,7 @@ function _get_stat_dealer_pdf($id)
                     if($product = $resProd->GetNextElement()) {
                         $product = array_merge($product->GetFields(), $product->GetProperties());?>
                         <tr class="pacc-nav-bestsells-item">
-                            <td class="pacc-bestsells-lbl"><a href="https://evroplast.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?></a></td>
+                            <td class="pacc-bestsells-lbl"><a href="https://perfom-decor.ru<?=__get_product_link($product)?>" target="_blank"><?=__get_product_name($product)?></a></td>
                             <td class="pacc-bestsells-val"><?=$v?> шт. (<?=round($v/$prod_qty*100,2)?>%)</td>
                         </tr>
                     <? }
@@ -3307,7 +3319,7 @@ function _get_stat_dealer_pdf($id)
                 дер. Ивачково, ул. Лесная, вл. 12, стр. 7
             </td>
             <td class="footer-site">
-                <a href="https://evroplast.ru/" target="_blank">www.evroplast.ru</a>
+                <a href="https://perfom-decor.ru/" target="_blank">www.perfom-decor.ru</a>
             </td>
         </tr>
     </table>

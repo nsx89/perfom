@@ -2,6 +2,12 @@
 /* --- TIMER Временная заглушка --- */
 
 global $USER;
+
+$new_time = strtotime('2024-04-26 10:00');
+if (!empty($_GET['new']) || (!$USER->IsAdmin() && time() >= $new_time)) {
+	require_once( $_SERVER['DOCUMENT_ROOT'] . '/timer/index2.php'); exit; 
+}
+
 if (!$USER->IsAdmin() && empty($_GET['test'])) {
     require_once( $_SERVER['DOCUMENT_ROOT'] . '/timer/index.php'); exit;
 }

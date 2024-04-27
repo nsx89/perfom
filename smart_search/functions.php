@@ -55,15 +55,18 @@ function createProductCache($count_id,$return = false) {
         $arFilter_element_ss = $currency_infо_ss['filter'];
         if($arFilter_element_ss) $arFilterSS[] = array("LOGIC" => "OR", $arFilter_element_ss, array(">PROPERTY_COMPOSITEPART" => 0));
         
+        /* --- Точный поиск по артикулу --- */
         $FIND_BY_ARTICUL = false;
         $FIND_BY_ARTICUL_VALUE = htmlspecialcharsbx($_REQUEST['FIND_BY_ARTICUL_VALUE']);
         if (!empty($FIND_BY_ARTICUL_VALUE)) {
-            $resSS = CIBlockElement::GetList(Array('NAME'=>'asc','PROPERTY_ARTICUL'=>'asc'), Array('IBLOCK_ID'=>IB_CATALOGUE, 'PROPERTY_ARTICUL' => $FIND_BY_ARTICUL_VALUE), false, array(), array());
+            $ARTS_OFF = 
+            $resSS = CIBlockElement::GetList(Array('NAME'=>'asc','PROPERTY_ARTICUL'=>'asc'), Array('IBLOCK_ID'=>IB_CATALOGUE, 'PROPERTY_ARTICUL' => $FIND_BY_ARTICUL_VALUE, '!TAGS' => 'OFF'), false, array(), array());
             $FIND_BY_ARTICUL = true;
         }
         else {
             $resSS = CIBlockElement::GetList(Array('NAME'=>'asc','PROPERTY_ARTICUL'=>'asc'), $arFilterSS, false, array(), array());
         }
+        /* --- // --- */
 
         //print_r(intval($resSS->SelectedRowsCount()));
         while($obSS = $resSS->GetNextElement()) {

@@ -411,9 +411,9 @@ $('[data-type="save-pdf"]').on('click',function() {
     $.get('/ajax/save_pdf.php?loc='+loc, function (data) {
         window.location.href = data;
     });
-    if (typeof yaCounter22165486 !== 'undefined') {
+    /*if (typeof yaCounter22165486 !== 'undefined') {
         yaCounter22165486.reachGoal('pdf');
-    }
+    }*/
     return false;
 });
 /**
@@ -482,6 +482,7 @@ $('[data-type="form-submit"]').on('click',function(){
         return false;
     }
     var err = 0;
+    $('.js-error-submit').html('').hide();
 
     //монтаж
     if($('[data-type="mounting"]').length != 0 && $('[data-type="mounting"]').hasClass('active')) {
@@ -596,8 +597,12 @@ $('[data-type="form-submit"]').on('click',function(){
                 }
             }
         })
-        if(window.order.payment == '') {
+        //if(window.order.payment == '') {
+        if($('[data-type="payment"].active').length == 0) {
             $('[data-type="payment-wrap"]').addClass('error');
+            setTimeout(function(){
+                $('.js-error-submit').html('выберите способ оплаты').fadeIn(300);
+            }, 100);
             err++;
             $('[data-type="payment-wrap"]').closest('[data-type="cart-point"]').addClass('active');
         }
@@ -626,7 +631,7 @@ $('[data-type="form-submit"]').on('click',function(){
     }
 })
 $('[data-type="form-submit"]').on('click',function(){
-    yaCounter22165486.reachGoal('checkout');
+    //yaCounter22165486.reachGoal('checkout');
 })
 /**
  * очистить корзину

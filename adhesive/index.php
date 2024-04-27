@@ -17,9 +17,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");?>
             <a href="/karnizy/" class="cat-sections-item">
                 Интерьерная лепнина
             </a>
-            <a href="/antablementy/karnizi/" class="cat-sections-item">
+            <? /* <a href="/antablementy/karnizi/" class="cat-sections-item">
                 Фасадная лепнина
-            </a>
+            </a> */ ?>
             <a href="/adhesive/" class="cat-sections-item active">
                 Клей
             </a>

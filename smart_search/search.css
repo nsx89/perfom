@@ -203,6 +203,9 @@ body:not(.touchable) .smart-search-result-short-link:hover {
 .smart-search-res-table .jspPane {
     width: 100% !important;
 }
+.smart-search-short-res .jspHorizontalBar {
+    display: none !important;
+}
 
 .smart-search-res-item {
     display: flex;

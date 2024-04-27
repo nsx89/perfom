@@ -331,14 +331,14 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
         $fields = array('EMAIL'=>$email_manager[$email_number], 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
-        $fields = array('EMAIL'=>'A.Chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
         $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'PAYMENT_MESS'=>$payment_mess);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
-        $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+        //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
         $dealer_email = $email_manager[$email_number];
 
@@ -355,12 +355,12 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
         $from .= $from_plus;
         $fields = array('EMAIL'=>'store@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
-        $fields = array('EMAIL'=>'A.Chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
         $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
-        $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+        //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
         $dealer_email = 'store@decor-evroplast.ru';
     }
@@ -369,7 +369,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
         if($_REQUEST['mounting'] != 'Y') $subj = "Клиент интересовался калькулятором.";
         $fields = array('EMAIL'=>'G.Paskar@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
-        $fields = array('EMAIL'=>'A.Chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
         $fields = array('EMAIL'=>'A.Visotskaya@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
@@ -484,13 +484,13 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 
     $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
     CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
-    $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-    CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+    //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+    //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 	/*
 	// дублирование заказов с комментами
 	if ($_REQUEST['comment']) {
 	
-		$fields = array('EMAIL'=>'A.Chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+		$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
 		CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");	
 		
 		$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
@@ -523,8 +523,8 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 
             $emails_arr = Array(
                 'd.portu.by@yandex.ru',
-                'nadida.hi@yandex.ru',
-                'A.Chilichihin@decor-evroplast.ru',
+                //'nadida.hi@yandex.ru',
+                'a.chilichihin@decor-evroplast.ru',
                 'A.Visotskaya@decor-evroplast.ru',
                 'G.Paskar@decor-evroplast.ru',
                 $dealer_email

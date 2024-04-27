@@ -48,7 +48,7 @@
                         </video>
                     </div>
 
-                    <div class="timer-block-btn">скоро открытие сайта</div>
+                    <div class="timer-block-btn">Вы всё узнаете 2 мая</div>
                     
                 </div>
             </div>

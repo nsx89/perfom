@@ -5,7 +5,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 /*
 универсальный - id 6105
 монтажный - id 6104
-стыковочный - id 6429 (158448)*/
+стыковочный - id 6429 (158448)*/ 
 
 $grue_arr_const = array(
 	'6104'	 	=> array('id'=>'6104','fid'=>'ЧХ002025782','volume'=>290,'consumption'=>0.140),
@@ -64,7 +64,8 @@ foreach ($cart as $citem) {
         continue;
     }
     
-    $arFilter = Array('IBLOCK_ID' => 12, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+    //$arFilter = Array('IBLOCK_ID' => 12, 'ACTIVE' => 'Y', 'ID' => $citem->id);
+    $arFilter = Array('IBLOCK_ID' => 12, 'ID' => $citem->id);
     $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
     $ob = $db_list->GetNextElement();
     if (!$ob) continue;

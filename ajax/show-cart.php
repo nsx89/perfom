@@ -7,7 +7,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 global $iblockid;
 $iblockid = 12;
 
-$cart = json_decode($_COOKIE['basket']);
+$cart = json_decode($_COOKIE['basket']); 
 
 $res = array();
 
@@ -23,7 +23,8 @@ $res = array();
             $tempId = $citem->id;
             $isSample = true;
         }
-        $arFilter = Array('IBLOCK_ID' => $iblockid, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        //$arFilter = Array('IBLOCK_ID' => $iblockid, 'ACTIVE' => 'Y', 'ID' => $citemId);
+        $arFilter = Array('IBLOCK_ID' => $iblockid, 'ID' => $citemId);
         $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
         $ob = $db_list->GetNextElement();
         if (!$ob) continue;

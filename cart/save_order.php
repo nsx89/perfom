@@ -19,7 +19,8 @@ foreach ($cart as $citem) {
         if ($citem['COMPOSITEPART']['VALUE']) {
             $ids = $citem['COMPOSITEPART']['VALUE'];
             $ids['LOGIC'] = 'OR';
-            $arFilter = Array('IBLOCK_ID' => $iblockid, 'ACTIVE' => 'Y', 'ID' => $ids);
+            //$arFilter = Array('IBLOCK_ID' => $iblockid, 'ACTIVE' => 'Y', 'ID' => $ids);
+            $arFilter = Array('IBLOCK_ID' => $iblockid, 'ID' => $ids);
             $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
             $parts = array();
             while ($ob = $db_list->GetNextElement()) {
