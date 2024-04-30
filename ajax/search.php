@@ -5,7 +5,7 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.ph
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog") || !CModule::IncludeModule("search")) {
 exit;
 }
-require($_SERVER["DOCUMENT_ROOT"] . "/include/top-current-location.php");
+require($_SERVER["DOCUMENT_ROOT"] . "/include/top-current-location.php"); 
 global $loc;
 $my_city = $APPLICATION->get_cookie('my_city');
 

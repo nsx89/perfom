@@ -469,6 +469,7 @@ function getSmartSearchShortPreview(arr, by_articul = false) {
         else var item = smartSearchObj[arr[i]];
         
         let cartClass = isInCart(item.id) ? ' active' : '',
+            selloutClass = item.sellout ? ' sellout' : '',
             inavailableClass = !item.availableToSell ? ' inactive' : '',
             canBuy = item.availableToSell ? 'data-type="cart-add"' : '',
             favClass = isFav(item.id) ? ' active' : '';
@@ -480,6 +481,9 @@ function getSmartSearchShortPreview(arr, by_articul = false) {
         res += '<img src="'+item.img+'" alt="'+item.name+'">';
         res += '</div>';
         res += '<div class="smart-search-res-info">';
+        if(item.sellout) {
+            res += '<div class="new-prod sell-out">распродажа</div>';
+        }
         if(item.comingSoon != 'Y') {
             res += '<a class="smart-serch-res-link" href="' + item.link + '"></a>';
         }
@@ -600,13 +604,14 @@ function getSmartSearchFullPreview(arr, by_articul = false) {
         else var item = smartSearchObj[arr[i]];
 
         let curr = $('[data-type="header-cart"]').attr('data-curr'),
+            selloutClass = item.sellout ? ' sellout' : '',
             favclass = favoriteArr.includes(item.id) ? ' active' : '',
             cartClass = isInCart(item.id) ? ' active' : '',
             inavailableClass = !item.availableToSell ? ' inactive' : '',
             canBuy = item.availableToSell ? 'data-type="cart-add"' : '',
             canBuyOneClick = item.availableToSell ? 'data-type="one-click"' : '';
 
-        res += '<div class="prod-prev'+item.class+'" data-type="prod-prev" data-id="'+item.id+'" data-name="'+item.name+'"  data-code="'+item.code+'" data-price="'+item.price+'" data-curr="'+curr+'" data-cat="'+item.catId+'" data-cat-name="'+item.catName+'" data-iscomp="'+item.iscomp+'"'+item.maur+'>';
+        res += '<div class="prod-prev'+item.class+' '+selloutClass+'" data-type="prod-prev" data-id="'+item.id+'" data-name="'+item.name+'"  data-code="'+item.code+'" data-price="'+item.price+'" data-curr="'+curr+'" data-cat="'+item.catId+'" data-cat-name="'+item.catName+'" data-iscomp="'+item.iscomp+'"'+item.maur+'>';
         if(item.comingSoon != 'Y') {
             res += '<a href="'+item.link+'"></a>';
         }
@@ -624,6 +629,9 @@ function getSmartSearchFullPreview(arr, by_articul = false) {
         res += itemName;
         if(item.new) {
             res += '<div class="new-prod">новинка</div>';
+        }
+        if(item.sellout) {
+            res += '<div class="new-prod sell-out">распродажа</div>';
         }
         res += '</div>';
         res += '<div class="prod-prev-img">';

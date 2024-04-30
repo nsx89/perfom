@@ -1759,6 +1759,22 @@ body:not(.touchable) .cat-sort-item i:hover {
     background-color: #fff;
     top: 0;
 }*/
+.cat-items-loading {
+    position: relative;
+}
+.cat-items-loading:before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 180px;
+    width: 32px;
+    height: 32px;
+    margin-left: -12px;
+    margin-top: -15px;
+    background: url(/img/preloader.gif) no-repeat center center;
+    opacity: 0.9;
+    z-index: 1000;
+}
 .prod-prev {
     width: calc(25% - 20px);
     max-width: 330px;
@@ -3057,6 +3073,21 @@ body:not(.touchable) .footer-social a:hover {
     display: block;
     margin-top: 15px;
 }
+.prod-info-price-old {
+    text-decoration: line-through;
+    color: #a9a9a9;
+    font-size: 18px;
+    font-weight: 500;
+}
+.prod-sellout-info {
+    font-size: 18px;
+    font-weight: 500;
+    color: #E41C1C;
+    margin-top: 10px;
+}
+.sellout .prod-info-price {
+    color: #E41C1C;
+}
 .prod-info-btns {
     display: flex;
     justify-content: flex-end;
@@ -3881,6 +3912,21 @@ body:not(.touchable) #top_fix_region .top_fix_button_change:hover {
     border-top-right-radius: 3px;
     border-bottom-right-radius: 3px;
 }
+.new-prod.sell-out {
+    color: #E41C1C;
+    background-color: #E8CBC9;
+    color: #fff;
+    background-color: #E41C1C;
+}
+.smart-search-res-info .new-prod.sell-out {
+    position: static;
+    display: inline-block;
+    font-size: 12px;
+    margin: 0px 0px 7px;
+    line-height: 1em;
+    padding: 3px 12px 4px;
+    letter-spacing: 0.3px;
+}
 .prod-prev-no {
     font-size: 14px;
     color: #fff;
@@ -4102,6 +4148,20 @@ body:not(.touchable) .not-avail-comp-btn-no:hover {
 .slider-prod .sp-thumbnail-section {
     width: 100% !important;
     height: 100% !important;
+}
+.slider-prod .sell-out {
+    z-index: 1;
+    left: auto;
+    right: 0;
+    top: 0;
+    margin-top: 20px;
+    font-size: 18px;
+    padding: 3px 20px 6px;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
 }
 .cut-sec {
     position: relative;

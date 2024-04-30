@@ -169,12 +169,13 @@ if ($last_section['UF_H'] == 1) {
     $signTmp = '';
 }
 
+$sellout_class = $item['SELLOUT']['VALUE'] ? ' sellout' : '';
 $prefix = 'prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#"'; //чтобы исправить ОШИБКУ: префикс product неизвестен валидатору, укажите его явно атрибутом prefix
 
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 ?>
 <div class="content-wrapper product">
-<section class="prod-info-wrap">
+<section class="prod-info-wrap<?=$sellout_class?>">
         <div class="prod-info-prev">
             <div class="prod-preload" data-type="prod-preload">
                 <img src="/img/preloader.gif" alt="Ожидайте">
@@ -223,13 +224,16 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                         <? continue; } */?>
 
                         <div class="sp-slide">
+                            <?if(!empty($item['SELLOUT']['VALUE'])) { ?>
+                                <div class="new-prod sell-out">распродажа</div>
+                            <? } ?>
                             <? if($img_big!='') { ?>
                                 <a href="<?=$img_big?>" data-lightbox="big" class="sp-big" data-title="<?=__get_product_name($item)?>" tabindex="0">Увеличить</a>
                             <? } ?>
                             <? $curr_img = $img_big!='' ? $img_big : $files_by_type[$img_sld]; ?>
                             <img class="sp-image<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($curr_img,713,713)?>" data-val="<?=$img_sld?>" alt="<?=__get_product_name($item)?> - превью <?= ($k + 1) ?>">
 
-                            <img class="sp-thumbnail<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($files_by_type[$img_sld],127,127)?>" alt="<?=__get_product_name($item)?> - фото <?= ($k + 1) ?>">
+                            <img class="sp-thumbnail<?if($img_sld == '100' || $img_sld == '600') echo $signTmp?>" src="<?=get_resized_img($files_by_type[$img_sld],127,127)?>" alt="<?=__get_product_name($item)?> - фото <?= ($k + 1) ?>"> 
                         </div>
 
                         <?if($k == 0 && $item_flex) { ?>
@@ -342,15 +346,27 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                     <span itemprop="description"><?= $APPLICATION->GetProperty("description")?></span>
                 </div>
                 <div class="prod-info-main" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+                    <?if($item['SELLOUT']['VALUE'] == 'Y' && $item['OLD_PRICE']['VALUE'] != '' && $loc['country']['VALUE'] == '3111' ) {//print_r($loc);
+                        $old_price = _makeprice($item['OLD_PRICE']['VALUE']); ?>
+                    <? } ?>
                     <? if($item['COMING_SOON']['VALUE']!='Y') { ?>
                         <?$item_cost = __get_product_cost($item)?>
                         <? if($item_cost) { ?>
-                            <h2 class="prod-info-price"><?=__cost_format($item_cost)?></h2>
-                            <div style="display: none;">
-                                <span itemprop="priceCurrency" content="RUB">RUB</span>
-                                <span itemprop="price" content="<?= $item_cost ?>"><?= $item_cost ?></span>
-                                <link itemprop="availability" href="https://schema.org/InStock">
-                            </div>
+                            <?if(!empty($old_price)) {?>
+                                <div class="prod-price-block">
+                            <? } ?>
+                                <h2 class="prod-info-price"><?=__cost_format($item_cost)?></h2>
+                                    <?if(!empty($old_price)) {?>
+                                        <div class="prod-info-price-old"><?=__cost_format($old_price)?></div>
+                                    <? } ?>
+                                <div style="display: none;">
+                                    <span itemprop="priceCurrency" content="RUB">RUB</span>
+                                    <span itemprop="price" content="<?= $item_cost ?>"><?= $item_cost ?></span>
+                                    <link itemprop="availability" href="https://schema.org/InStock">
+                                </div>
+                            <?if(!empty($old_price)) {?>
+                                </div>
+                            <? } ?>
                         <? } ?>
                     <? } ?>
                     <div class="prod-info-btns">
@@ -420,6 +436,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
                     </div>
                 </div>
+                <?if($item['SELLOUT']['VALUE'] == 'Y') {?>
+                    <div class="prod-sellout-info">доступно для&nbsp;заказа до&nbsp;17.06.2024. <br>количество ограничено!</div>
+                <? } ?>
             </div>
             <? if($last_section['CODE'] != 'klei-90') { // если не клей ?>
             <? /*if($item['HAS_SAMPLE']['VALUE'] == 'Y' && $loc['ID'] == 3109) {
@@ -548,7 +567,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 					<?if($item['ARTICUL']['VALUE'] == '1.64.811' || $item['ARTICUL']['VALUE'] == '1.64.813' || $item['ARTICUL']['VALUE'] == '1.64.801' || $item['ARTICUL']['VALUE'] == '1.64.803') {?>
                          <div class="desc-warning">
                             <i class="icomoon icon-warning"></i> <span>Внимание! Для сборки готового камина необходимо приобрести 3 отдельных элемента камина.</span>
-                        </div>
+                        </div>             
                     <? } ?>
                     <?if(($item['IBLOCK_SECTION_ID'] == 1601) && ($item['NEW_ART_DECO']['VALUE'] == 'Y')) { // декоративная панель NAD?>
                         <div class="desc-warning">
@@ -756,7 +775,7 @@ if (is_array($main_elements) && count($main_elements)) {
     <br>
     <div class="prod-similar-title prod-related-title">Используется с <?= count($main_elements) > 1 ? 'товарами' : 'товаром' ?></div>
     <div class="prod-similar-slider prod-prev-slider" data-type="similar-slider">
-        <?
+        <? 
 
         foreach ($main_elements as $comp_item) {
             echo get_product_preview($comp_item);
@@ -882,3 +901,4 @@ $ya_cont = array(
         gtag('event', 'view_item', <?=json_encode($ga_arr)?>);
     })
 </script>
+

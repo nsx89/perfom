@@ -128,6 +128,8 @@ function createProductCache($count_id,$return = false) {
             $res_param = array_merge($res['res_s'],$res['res_f']);
             //if($is_flex) $res_param = $res['res_f'];
 
+            $sellout = $item['SELLOUT']['VALUE'] == 'Y' ? true : false;
+
             $products[] = Array(
                 "name"              => __get_product_name($item),
                 "id"                => $item['ID'],
@@ -148,6 +150,7 @@ function createProductCache($count_id,$return = false) {
                 "availableDate"     => $available_date,
                 "comingSoon"        => $coming_soon,
                 "flex"              => $is_flex,
+                "sellout"           => $sellout,
                 "params"            => $res_param,
             );
         }

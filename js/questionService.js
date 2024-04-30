@@ -124,7 +124,7 @@ $('[data-type="q-form-select"]').styler(),
                         0 == s &&
                         (a.find(".e-aqs-form-button").hide(),
                         a.find(".e-aqs-form-loader").show(),
-                        "" == a.find('[name="aqs-page"]').val() && a.find('[name="aqs-page"]').val("https://evroplast.ru/"),
+                        "" == a.find('[name="aqs-page"]').val() && a.find('[name="aqs-page"]').val("https://perfom-decor.ru/"),
                         (s = hash_data(a.find('[name="aqs-qst"]').val(), e)),
                         "" != a.find('[name="aqs-file"]').val()
                             ? ((e = a[0]),
@@ -581,7 +581,7 @@ $('[data-type="q-form-select"]').styler(),
                       (e = $('[data-type="ap-title"]').attr("data-id")),
                       (a = $('[data-type="feedb-comm"]')),
                       "spec" == $('[name="aqs-stat"]').val() ? (t = $(".e-qs-user").attr("data-user")) : (t = ""),
-                      "" == $("#e-aqs-input-page").val() && $("#e-aqs-input-page").val("https://evroplast.ru/question_service/answer.php"),
+                      "" == $("#e-aqs-input-page").val() && $("#e-aqs-input-page").val("https://perfom-decor.ru/question_service/answer.php"),
                       "" != (n = $("#apFeedb").find('[name="ap-answ-file"]').val()) && n.replace(/.*\\/, ""),
                       "" != n
                           ? ((d = document.forms.apFeedb),
@@ -881,7 +881,7 @@ $('[data-type="q-form-select"]').styler(),
                     0 == $("#cb_policy").prop("checked") && ($(".cb_policy_label").addClass("e-aqs-form-err"), e++),
                     0 == e &&
                         ((a = hash_data($('[name="cb-tel"]').val(), a)),
-                        "" == $("#cb-page").val() && $("#cb-page").val("https://evroplast.ru/question_service/ask.php"),
+                        "" == $("#cb-page").val() && $("#cb-page").val("https://perfom-decor.ru/question_service/ask.php"),
                         $.ajax({
                             type: "POST",
                             url: "/ajax/question_service.php?type=call_back&new_val=" + a,

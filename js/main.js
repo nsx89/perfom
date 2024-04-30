@@ -541,9 +541,9 @@ function sendAddAnalytics(wrap,type,qty) {
         "items": products
     }
     //console.log(yaArr);
-    let gaEvent = type == 'add' ? 'add_to_cart' : 'remove_from_cart';
-    window.dataLayer.push(yaArr);
-    gtag('event', gaEvent, gaArr);
+    //let gaEvent = type == 'add' ? 'add_to_cart' : 'remove_from_cart';
+    //window.dataLayer.push(yaArr);
+    //gtag('event', gaEvent, gaArr);
 }
 
 function checkMauritaniaSpecial(id,qty) {

@@ -3,15 +3,16 @@
 
 global $USER;
 
-$new_time = strtotime('2024-04-26 10:00');
-if (!empty($_GET['new']) || (!$USER->IsAdmin() && time() >= $new_time)) {
+$start_time = strtotime('2024-04-26 10:00');
+$end_time = strtotime('2024-05-02 09:00');
+if (!empty($_GET['new']) || (!$USER->IsAdmin() && time() >= $start_time && time() < $end_time)) {
 	require_once( $_SERVER['DOCUMENT_ROOT'] . '/timer/index2.php'); exit; 
 }
-
+/*
 if (!$USER->IsAdmin() && empty($_GET['test'])) {
     require_once( $_SERVER['DOCUMENT_ROOT'] . '/timer/index.php'); exit;
 }
-
+*/
 /* --- // --- */
 ?>
 <!DOCTYPE html>

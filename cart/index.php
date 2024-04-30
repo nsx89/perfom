@@ -13,7 +13,7 @@ global $my_city;
 
 
 if (!empty($_GET['msk'])) {
-    $loc['ID'] = 3109;
+    $loc['ID'] = 3109; 
 }
 
 if ($my_city == NULL) $my_city = $APPLICATION->get_cookie('my_city');
@@ -339,12 +339,12 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                         <div class="mount-btns">
 
                                             <a class="mount-btn go-to-mount" href="/cart/mounting/" title="Перейти">Калькулятор стоимости монтажа <i class="icomoon icon-angle-right"></i></a>
-
+                                            
                                             <div class="cart-mount-rbtn" data-type="mounting">
                                                 Получить расчет стоимости монтажа специалистом
                                             </div>
                                         </div>
-
+                                    
                                         <div class="mount-btns-desc">* Гарантия на монтаж 5 лет</div>
 
                                         <?/*</div>
