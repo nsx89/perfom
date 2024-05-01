@@ -181,9 +181,13 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
          data-code="<?=$citem['INNERCODE']['VALUE']?>"
          data-price="<?=_makeprice(CPrice::GetBasePrice($citem['ID']))['PRICE'];?>"
          data-cat-name="<?=$last_section['NAME']?>"
+         data-sellout="<?=$citem['SELLOUT']['VALUE']?>"
          <?if($citem['MOUNT_COST']['VALUE'] != '') { ?>data-m-price="<?=$citem['MOUNT_COST']['VALUE']?>"<? } ?>
         <?if($citem['MAURITANIA_SPECIAL']['VALUE']=='Y') echo ' data-maur-spec="1"'?><?if($data_maur) echo ' data-maur="1"'?><?if($data_maur_4) echo ' data-maur="4"'?> data-qty="<?=$citem['COUNT']?>">
         <div class="cart-item-img">
+            <?if(!empty($citem['SELLOUT']['VALUE'])) { ?>
+                <div class="new-prod sell-out">распродажа</div>
+            <? } ?>
             <?if($isSample) { ?>
                 <div class="sample-bg"></div>
             <? } ?>
@@ -250,6 +254,9 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
     </div>
     <div class="cart-wrapper">
         <div class="cart-items">
+            <div class="sellout-cart-info" data-type="sellout-cart">
+                В Вашей корзине есть товары из&nbsp;«распродажи», их количество ограничено. После&nbsp;оформления заказа с&nbsp;вами свяжется менеджер и&nbsp;уточнит возможность покупки данного количества выбранного&nbsp;товара.
+            </div>
     <?
     $sampleArr = Array();
     foreach ($cart as $citem) {

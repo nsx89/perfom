@@ -4454,6 +4454,19 @@ body:not(.touchable) .not-avail-comp-btn-no:hover {
 body:not(.touchable) .cart-clear-all:hover {
     border-color: #000;
 }
+.sellout-cart-info {
+    text-transform: lowercase;
+    font-size: 18px;
+    font-weight: 500;
+    color: #E41C1C;
+    border: 2px solid #E41C1C;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    margin-bottom: 30px;
+    display: none;
+}
 .cart-item {
     display: flex;
     justify-content: space-between;
@@ -4514,6 +4527,9 @@ body:not(.touchable) .cart-item .icon-delete:hover {
 .cart-item-img img {
     width: 100%;
     max-width: 100%;
+}
+.cart-item-img .sell-out {
+    top: 0;
 }
 .cart-item-info {
     width: calc(100% - 155px);

@@ -297,8 +297,11 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 
       //если номер больше длины массива
       if($email_number > count($email_manager) - 1) $email_number = count($email_manager) - 1;
-
-        $dealer = '<br>Обслуживание заказа производит <b>фирменный магазин Европласт</b>.<br>Справочную информацию Вы можете получить по телефону: <b>'.$email_info[$email_number].'</b><br>E-mail: <b>'. $email_manager[$email_number].'</b><br>';
+        $dealer = '';
+        if($_REQUEST['sellout'] == 'y') {
+            $dealer .= '<br><span style="color:#E41C1C;display:block;max-width:720px;width:100%;">В Вашей корзине есть товары из&nbsp;«распродажи», их количество ограничено. <br>После оформления заказа с&nbsp;вами свяжется менеджер и&nbsp;уточнит возможность покупки данного количества выбранного товара.</span><br>';
+        }
+        $dealer .= '<br>Обслуживание заказа производит <b>фирменный магазин Европласт</b>.<br>Справочную информацию Вы можете получить по телефону: <b>'.$email_info[$email_number].'</b><br>E-mail: <b>'. $email_manager[$email_number].'</b><br>';
         $dealer_contacts = '<b>E-mail: </b>'.$email_manager[$email_number].'<br><b>Телефон: </b>'.$email_info[$email_number];
 
       if($_REQUEST['delpoint'] != '' && $_REQUEST['del'] == 'pickup') {
@@ -422,7 +425,11 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
             $email = $cart_dealer['orderemail']['VALUE']?$cart_dealer['orderemail']['VALUE']:$cart_dealer['email']['VALUE'];
             $dealer_name = $cart_dealer['organization']['VALUE'];
             if(stristr($dealer_name, 'Питерра')) $dealer_name = '"Питерра"';
-            $dealer = '<br>Обслуживание заказа в вашем регионе производит наш официальный дилер <b>'. $dealer_name. '</b>.<br>';
+            $dealer = '';
+            if($_REQUEST['sellout'] == 'y') {
+                $dealer .= '<br><span style="color: #E41C1C;">В Вашей корзине есть товары из&nbsp;«распродажи», их количество ограничено. После оформления заказа с&nbsp;вами свяжется менеджер и&nbsp;уточнит возможность покупки данного количества выбранного товара.</span><br>';
+            }
+            $dealer .= '<br>Обслуживание заказа в вашем регионе производит наш официальный дилер <b>'. $dealer_name. '</b>.<br>';
             if ($cart_dealer['order_phone']['VALUE'] || $cart_dealer['phones']['VALUE']) {
                 $phones = $cart_dealer['order_phone']['VALUE'] != '' ? $cart_dealer['order_phone']['VALUE'] : $cart_dealer['phones']['VALUE'];
                 $phones = explode(';', $phones);
@@ -448,6 +455,9 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
         }
 
         $dealer = '';
+        if($_REQUEST['sellout'] == 'y') {
+            $dealer .= '<br><span style="color: #E41C1C;">В Вашей корзине есть товары из&nbsp;«распродажи», их количество ограничено. После оформления заказа с&nbsp;вами свяжется менеджер и&nbsp;уточнит возможность покупки данного количества выбранного товара.</span><br>';
+        }
         $cart_dealer = $my_dealer['ID'];
         $APPLICATION->set_cookie('cart_dealer', $cart_dealer, false, '/', '.'.$_SERVER['HTTP_HOST']);
         $arFilter = Array('IBLOCK_ID' => 6, 'ACTIVE' => 'Y', 'ID' => $cart_dealer);
@@ -458,7 +468,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
             $email = $cart_dealer['orderemail']['VALUE']?$cart_dealer['orderemail']['VALUE']:$cart_dealer['email']['VALUE'];
             $dealer_name = $cart_dealer['organization']['VALUE'];
             if(stristr($dealer_name, 'Питерра')) $dealer_name = '"Питерра"';
-            $dealer = '<br>Обслуживание заказа в вашем регионе производит наш официальный дилер <b>'. $dealer_name. '</b>.<br>';
+            $dealer .= '<br>Обслуживание заказа в вашем регионе производит наш официальный дилер <b>'. $dealer_name. '</b>.<br>';
             if ($cart_dealer['order_phone']['VALUE'] || $cart_dealer['phones']['VALUE']) {
                 $phones = $cart_dealer['order_phone']['VALUE'] != '' ? $cart_dealer['order_phone']['VALUE'] : $cart_dealer['phones']['VALUE'];
                 $phones = explode(';', $phones);

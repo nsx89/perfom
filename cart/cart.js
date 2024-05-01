@@ -36,6 +36,17 @@ function cartCount(){
     $('[data-type="cart-qty"]').html(qty);
     return false;
 }
+function disableOnlinePayment(){
+    if($('.cart-items').find('[data-sellout="Y"]:visible').length > 0) {
+        $('[data-val="online"]').removeClass('active').hide();
+        $('[data-val="cash"]').addClass('active');
+        $('[data-type="sellout-cart"]').show();
+    } else {
+        $('[data-val="online"]').show();
+        $('[data-type="sellout-cart"]').hide();
+    }
+    return false;
+}
 function validateEmail(email) {
     var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
     return re.test(email);
@@ -612,6 +623,10 @@ $('[data-type="form-submit"]').on('click',function(){
     if($('[data-type="form-submit"]').attr('data-user') == 'save') {
         window.order.user = 'save';
     }
+    //распродажа
+    if($('.cart-items').find('[data-sellout="Y"]:visible').length > 0) {
+        window.order.sellout = 'y';
+    }
 
     if(err != 0) {
         return false;
@@ -835,6 +850,7 @@ $('[data-type="p-submit"]').on('click',function(){
                 'save': window.order.save,
                 'user': window.order.user,
                 'mounting': window.order.mounting,
+                'sellout' : window.order.sellout,
             };
             $.ajax({
                 method: "POST",
@@ -962,6 +978,7 @@ function newCart() {
     cartTotal();
     prodCost();
     checkMountingList();
+    disableOnlinePayment();
 
     $('[data-type="tooltip-icon"]').on('click',function() {
         let val  = $(this).attr('data-val');

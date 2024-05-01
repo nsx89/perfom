@@ -473,7 +473,8 @@ function getSmartSearchShortPreview(arr, by_articul = false) {
             inavailableClass = !item.availableToSell ? ' inactive' : '',
             canBuy = item.availableToSell ? 'data-type="cart-add"' : '',
             favClass = isFav(item.id) ? ' active' : '';
-        res += '<div class="smart-search-res-item" data-type="prod-prev" data-id="'+item.id+'" data-iscomp="'+item.iscomp+'">';
+
+        res += '<div class="smart-search-res-item '+selloutClass+'" data-type="prod-prev" data-id="'+item.id+'" data-iscomp="'+item.iscomp+'">';
         res += '<div class="smart-searh-res-img">';
         if(item.comingSoon != 'Y') {
             res += '<a class="smart-serch-res-link" href="' + item.link + '"></a>';
@@ -488,9 +489,14 @@ function getSmartSearchShortPreview(arr, by_articul = false) {
             res += '<a class="smart-serch-res-link" href="' + item.link + '"></a>';
         }
         res += '<p class="smart-search-res-name">'+item.name+'</p>';
-        if(item.price != '') {
-            res += '<p class="smart-search-res-price">' + costFormat(item.price) + '</p>';
-        }
+            res += '<div class="smart_search-res-prices">';
+            if(item.price != '') {
+                res += '<p class="smart-search-res-price">' + costFormat(item.price) + '</p>';
+            }
+            if(item.old_price != '') {
+                res += '<p class="smart-search-res-old-price">' + costFormat(item.old_price) + '</p>';
+            }
+            res += '</div>';
         res += '</div>';
         res += '<div class="ss-icons-wrap">';
         res += '<i class="smart-search-res-fav icon-favorite'+favClass+'" data-type="favorite" data-user="'+user+'" title="Добавить в избранное"></i>';

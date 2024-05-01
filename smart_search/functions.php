@@ -18,7 +18,7 @@ function createProductCache($count_id,$return = false) {
     $taggedCache = Application::getInstance()->getTaggedCache(); // Служба пометки кеша тегами
 
     $cachePath = 'smart_search'; // папка, в которой лежит кеш
-    $cacheTtl = 60*60*24; // сутки - срок годности кеша (в секундах)
+    //$cacheTtl = 60*60*24; // сутки - срок годности кеша (в секундах)
     $cacheTtl = 2;
     $cacheKey = $count_id.'products'; // имя кеша
 
@@ -129,6 +129,7 @@ function createProductCache($count_id,$return = false) {
             //if($is_flex) $res_param = $res['res_f'];
 
             $sellout = $item['SELLOUT']['VALUE'] == 'Y' ? true : false;
+            $old_price = _makeprice($item['OLD_PRICE']['VALUE']);
 
             $products[] = Array(
                 "name"              => __get_product_name($item),
@@ -150,8 +151,9 @@ function createProductCache($count_id,$return = false) {
                 "availableDate"     => $available_date,
                 "comingSoon"        => $coming_soon,
                 "flex"              => $is_flex,
-                "sellout"           => $sellout,
                 "params"            => $res_param,
+                "sellout"           => $sellout,
+                "old_price"         => $old_price, 
             );
         }
 
