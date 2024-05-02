@@ -438,6 +438,22 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     font-size: 58px;
     margin-bottom: 7px;
 }
+.main-pref-icon {
+    width: 50px;
+    height: 50px;
+}
+.main-pref-icon1 {
+    background: url(/img/icons/icon1.svg) no-repeat center center;
+}
+.main-pref-icon2 {
+    background: url(/img/icons/icon2.svg) no-repeat center center;
+}
+.main-pref-icon3 {
+    background: url(/img/icons/icon3.svg) no-repeat center center;
+}
+.main-pref-icon4 {
+    background: url(/img/icons/icon4.svg) no-repeat center center;
+}
 .main-events-catalogues {
     margin: 100px auto 0;
     max-width: 1920px;

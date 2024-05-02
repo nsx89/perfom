@@ -1,407 +1,3 @@
-<div data-type="gallery-slide" class="main-gallery-slide main-gallery-slide-1 main-gallery-slide-vertical">
-   <div class="main-gallery-item-vertical-row">
-      <div class="main-gallery-item show-materials">
-         <a href="#"></a>
-         <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х590.jpg?v=1" alt="Проект 4"> 
-         <div class="show-materials-item" style="left:86%;top:55%;" 
-            data-type="prod-prev" data-id="165173" 
-            data-name="молдинг 6.51.808" 
-            data-code="ВР099022791" 
-            data-price="440.00" 
-            data-curr="RUB" 
-            data-cat="1544" 
-            data-cat-name="молдинги" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/moldingi/6-51-808/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">440.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="show-materials-item" style="left:64%;top:18%;" 
-            data-type="prod-prev" data-id="165155" 
-            data-name="декоративная панель 6.59.803" 
-            data-code="ВР099022796" 
-            data-price="2860.00" 
-            data-curr="RUB" 
-            data-cat="1601" 
-            data-cat-name="декоративные панели" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/dekorativnii-paneli/6-59-803/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">2 860.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="main-gallery-item show-materials">
-         <a href="#"></a>
-         <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х380.jpg?v=1" alt="Проект 4">
-         <div class="show-materials-item" style="left:57%;top:30%;" 
-            data-type="prod-prev" data-id="165173" 
-            data-name="молдинг 6.51.808" 
-            data-code="ВР099022791" 
-            data-price="440.00" 
-            data-curr="RUB" 
-            data-cat="1544" 
-            data-cat-name="молдинги" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/moldingi/6-51-808/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">440.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="show-materials-item" style="left:30%;top:73%;" 
-            data-type="prod-prev" data-id="165179" 
-            data-name="плинтус 6.53.803" 
-            data-code="ВР099022780" 
-            data-price="1010.00" 
-            data-curr="RUB" 
-            data-cat="1546" 
-            data-cat-name="плинтусы" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/plintusy/6-53-803/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.53.803.20.png" alt="плинтус 6.53.803">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/plintusy/6-53-803/">плинтус 6.53.803</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">1 010.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-         <div class="show-materials-item" style="left:66%;top:7%;" 
-            data-type="prod-prev" data-id="165155" 
-            data-name="декоративная панель 6.59.803" 
-            data-code="ВР099022796" 
-            data-price="2860.00" 
-            data-curr="RUB" 
-            data-cat="1601" 
-            data-cat-name="декоративные панели" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/dekorativnii-paneli/6-59-803/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">2 860.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="main-gallery-item show-materials">
-      <a href="#"></a>
-      <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х990.jpg?v=1" alt="Проект 4">
-      <div class="show-materials-item" style="left:75%;top:6%;" 
-         data-type="prod-prev" data-id="165167" 
-         data-name="молдинг 1.51.805" 
-         data-code="ВР099022737" 
-         data-price="1582.00" 
-         data-curr="RUB" 
-         data-cat="1544" 
-         data-cat-name="молдинги" 
-         data-iscomp="0">
-         <div class="show-materials-point"></div>
-         <div class="show-materials-popup">
-            <div class="show-materials-popup-img">
-               <a href="/moldingi/1-51-805/"></a>
-               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/1.51.805.20.png" alt="молдинг 1.51.805">
-            </div>
-            <div class="show-materials-popup-title">
-               <a href="/moldingi/1-51-805/">молдинг 1.51.805</a>
-            </div>
-            <div class="show-materials-popup-bottom">
-               <div class="show-materials-popup-price">1 582.00 RUB</div>
-               <div class="show-materials-popup-btns">
-                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                     <i class="icon-star"></i>
-                  </div>
-                  <div class="show-materials-popup-add" data-type="cart-add">
-                     <i class="icon-plus"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="show-materials-item" style="left:80%;top:46%;" 
-         data-type="prod-prev" data-id="165173" 
-         data-name="молдинг 6.51.808" 
-         data-code="ВР099022791" 
-         data-price="440.00" 
-         data-curr="RUB" 
-         data-cat="1544" 
-         data-cat-name="молдинги" 
-         data-iscomp="0">
-         <div class="show-materials-point"></div>
-         <div class="show-materials-popup">
-            <div class="show-materials-popup-img">
-               <a href="/moldingi/6-51-808/"></a>
-               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
-            </div>
-            <div class="show-materials-popup-title">
-               <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
-            </div>
-            <div class="show-materials-popup-bottom">
-               <div class="show-materials-popup-price">440.00 RUB</div>
-               <div class="show-materials-popup-btns">
-                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                     <i class="icon-star"></i>
-                  </div>
-                  <div class="show-materials-popup-add" data-type="cart-add">
-                     <i class="icon-plus"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="show-materials-item" style="left:23%;top:72%;" 
-         data-type="prod-prev" data-id="165179" 
-         data-name="плинтус 6.53.803" 
-         data-code="ВР099022780" 
-         data-price="1010.00" 
-         data-curr="RUB" 
-         data-cat="1546" 
-         data-cat-name="плинтусы" 
-         data-iscomp="0">
-         <div class="show-materials-point"></div>
-         <div class="show-materials-popup">
-            <div class="show-materials-popup-img">
-               <a href="/plintusy/6-53-803/"></a>
-               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.53.803.20.png" alt="плинтус 6.53.803">
-            </div>
-            <div class="show-materials-popup-title">
-               <a href="/plintusy/6-53-803/">плинтус 6.53.803</a>
-            </div>
-            <div class="show-materials-popup-bottom">
-               <div class="show-materials-popup-price">1 010.00 RUB</div>
-               <div class="show-materials-popup-btns">
-                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                     <i class="icon-star"></i>
-                  </div>
-                  <div class="show-materials-popup-add" data-type="cart-add">
-                     <i class="icon-plus"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="show-materials-item" style="left:32%;top:34%;" 
-         data-type="prod-prev" data-id="165155" 
-         data-name="декоративная панель 6.59.803" 
-         data-code="ВР099022796" 
-         data-price="2860.00" 
-         data-curr="RUB" 
-         data-cat="1601" 
-         data-cat-name="декоративные панели" 
-         data-iscomp="0">
-         <div class="show-materials-point"></div>
-         <div class="show-materials-popup">
-            <div class="show-materials-popup-img">
-               <a href="/dekorativnii-paneli/6-59-803/"></a>
-               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
-            </div>
-            <div class="show-materials-popup-title">
-               <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
-            </div>
-            <div class="show-materials-popup-bottom">
-               <div class="show-materials-popup-price">2 860.00 RUB</div>
-               <div class="show-materials-popup-btns">
-                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                     <i class="icon-star"></i>
-                  </div>
-                  <div class="show-materials-popup-add" data-type="cart-add">
-                     <i class="icon-plus"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
-<div data-type="gallery-slide" class="main-gallery-slide main-gallery-slide-2 main-gallery-slide-horizontal">
-   <div class="main-gallery-item show-materials">
-      <a href="#"></a>
-      <img src="/img/gallery/Project-02/Evroplast_main_project-02-1_860х990.jpg?v=1" alt="Проект 2">
-      <div class="show-materials-item" style="left:45%;top:17%;" 
-         data-type="prod-prev" data-id="165155" 
-         data-name="декоративная панель 6.59.803" 
-         data-code="ВР099022796" 
-         data-price="2860.00" 
-         data-curr="RUB" 
-         data-cat="1601" 
-         data-cat-name="декоративные панели" 
-         data-iscomp="0">
-         <div class="show-materials-point"></div>
-         <div class="show-materials-popup">
-            <div class="show-materials-popup-img">
-               <a href="/dekorativnii-paneli/6-59-803/"></a>
-               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
-            </div>
-            <div class="show-materials-popup-title">
-               <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
-            </div>
-            <div class="show-materials-popup-bottom">
-               <div class="show-materials-popup-price">2 860.00 RUB</div>
-               <div class="show-materials-popup-btns">
-                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                     <i class="icon-star"></i>
-                  </div>
-                  <div class="show-materials-popup-add" data-type="cart-add">
-                     <i class="icon-plus"></i>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-   <div class="main-gallery-item-horizontal-row">
-      <div class="main-gallery-item show-materials">
-         <a href="#"></a>
-         <img src="/img/gallery/Project-02/Evroplast_main_project-02-1_420х380.jpg?v=1" alt="Проект 2">
-         <div class="show-materials-item" style="left:7%;top:15%;" 
-            data-type="prod-prev" data-id="165154" 
-            data-name="декоративная панель 6.59.802" 
-            data-code="ВР099022795" 
-            data-price="2970.00" 
-            data-curr="RUB" 
-            data-cat="1601" 
-            data-cat-name="декоративные панели" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/dekorativnii-paneli/6-59-802/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.802.20.png" alt="декоративная панель 6.59.802">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/dekorativnii-paneli/6-59-802/">декоративная панель 6.59.802</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">2 970.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-      <div class="main-gallery-item show-materials">
-         <a href="#"></a>
-         <img src="/img/gallery/Project-02/Evroplast_main_project-02-2_420х380.jpg?v=1" alt="Проект 2"> 
-         <div class="show-materials-item" style="left:20%;top:3%;" 
-            data-type="prod-prev" data-id="165154" 
-            data-name="декоративная панель 6.59.802" 
-            data-code="ВР099022795" 
-            data-price="2970.00" 
-            data-curr="RUB" 
-            data-cat="1601" 
-            data-cat-name="декоративные панели" 
-            data-iscomp="0">
-            <div class="show-materials-point"></div>
-            <div class="show-materials-popup">
-               <div class="show-materials-popup-img">
-                  <a href="/dekorativnii-paneli/6-59-802/"></a>
-                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.802.20.png" alt="декоративная панель 6.59.802">
-               </div>
-               <div class="show-materials-popup-title">
-                  <a href="/dekorativnii-paneli/6-59-802/">декоративная панель 6.59.802</a>
-               </div>
-               <div class="show-materials-popup-bottom">
-                  <div class="show-materials-popup-price">2 970.00 RUB</div>
-                  <div class="show-materials-popup-btns">
-                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
-                        <i class="icon-star"></i>
-                     </div>
-                     <div class="show-materials-popup-add" data-type="cart-add">
-                        <i class="icon-plus"></i>
-                     </div>
-                  </div>
-               </div>
-            </div>
-         </div>
-      </div>
-   </div>
-</div>
 <div data-type="gallery-slide" class="main-gallery-slide main-gallery-slide-3 main-gallery-slide-vertical">
    <div class="main-gallery-item-vertical-row">
       <div class="main-gallery-item show-materials">
@@ -659,6 +255,115 @@
                   </div>
                   <div class="show-materials-popup-add" data-type="cart-add">
                      <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div data-type="gallery-slide" class="main-gallery-slide main-gallery-slide-2 main-gallery-slide-horizontal">
+   <div class="main-gallery-item show-materials">
+      <a href="#"></a>
+      <img src="/img/gallery/Project-02/Evroplast_main_project-02-1_860х990.jpg?v=1" alt="Проект 2">
+      <div class="show-materials-item" style="left:45%;top:17%;" 
+         data-type="prod-prev" data-id="165155" 
+         data-name="декоративная панель 6.59.803" 
+         data-code="ВР099022796" 
+         data-price="2860.00" 
+         data-curr="RUB" 
+         data-cat="1601" 
+         data-cat-name="декоративные панели" 
+         data-iscomp="0">
+         <div class="show-materials-point"></div>
+         <div class="show-materials-popup">
+            <div class="show-materials-popup-img">
+               <a href="/dekorativnii-paneli/6-59-803/"></a>
+               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
+            </div>
+            <div class="show-materials-popup-title">
+               <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
+            </div>
+            <div class="show-materials-popup-bottom">
+               <div class="show-materials-popup-price">2 860.00 RUB</div>
+               <div class="show-materials-popup-btns">
+                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                     <i class="icon-star"></i>
+                  </div>
+                  <div class="show-materials-popup-add" data-type="cart-add">
+                     <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="main-gallery-item-horizontal-row">
+      <div class="main-gallery-item show-materials">
+         <a href="#"></a>
+         <img src="/img/gallery/Project-02/Evroplast_main_project-02-1_420х380.jpg?v=1" alt="Проект 2">
+         <div class="show-materials-item" style="left:7%;top:15%;" 
+            data-type="prod-prev" data-id="165154" 
+            data-name="декоративная панель 6.59.802" 
+            data-code="ВР099022795" 
+            data-price="2970.00" 
+            data-curr="RUB" 
+            data-cat="1601" 
+            data-cat-name="декоративные панели" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/dekorativnii-paneli/6-59-802/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.802.20.png" alt="декоративная панель 6.59.802">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/dekorativnii-paneli/6-59-802/">декоративная панель 6.59.802</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">2 970.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-gallery-item show-materials">
+         <a href="#"></a>
+         <img src="/img/gallery/Project-02/Evroplast_main_project-02-2_420х380.jpg?v=1" alt="Проект 2"> 
+         <div class="show-materials-item" style="left:20%;top:3%;" 
+            data-type="prod-prev" data-id="165154" 
+            data-name="декоративная панель 6.59.802" 
+            data-code="ВР099022795" 
+            data-price="2970.00" 
+            data-curr="RUB" 
+            data-cat="1601" 
+            data-cat-name="декоративные панели" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/dekorativnii-paneli/6-59-802/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.802.20.png" alt="декоративная панель 6.59.802">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/dekorativnii-paneli/6-59-802/">декоративная панель 6.59.802</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">2 970.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
                   </div>
                </div>
             </div>
@@ -1305,6 +1010,301 @@
             </div>
             <div class="show-materials-popup-bottom">
                <div class="show-materials-popup-price">1 155.00 RUB</div>
+               <div class="show-materials-popup-btns">
+                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                     <i class="icon-star"></i>
+                  </div>
+                  <div class="show-materials-popup-add" data-type="cart-add">
+                     <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+</div>
+<div data-type="gallery-slide" class="main-gallery-slide main-gallery-slide-1 main-gallery-slide-vertical">
+   <div class="main-gallery-item-vertical-row">
+      <div class="main-gallery-item show-materials">
+         <a href="#"></a>
+         <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х590.jpg?v=1" alt="Проект 4"> 
+         <div class="show-materials-item" style="left:86%;top:55%;" 
+            data-type="prod-prev" data-id="165173" 
+            data-name="молдинг 6.51.808" 
+            data-code="ВР099022791" 
+            data-price="440.00" 
+            data-curr="RUB" 
+            data-cat="1544" 
+            data-cat-name="молдинги" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/moldingi/6-51-808/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">440.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="show-materials-item" style="left:64%;top:18%;" 
+            data-type="prod-prev" data-id="165155" 
+            data-name="декоративная панель 6.59.803" 
+            data-code="ВР099022796" 
+            data-price="2860.00" 
+            data-curr="RUB" 
+            data-cat="1601" 
+            data-cat-name="декоративные панели" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/dekorativnii-paneli/6-59-803/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">2 860.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="main-gallery-item show-materials">
+         <a href="#"></a>
+         <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х380.jpg?v=1" alt="Проект 4">
+         <div class="show-materials-item" style="left:57%;top:30%;" 
+            data-type="prod-prev" data-id="165173" 
+            data-name="молдинг 6.51.808" 
+            data-code="ВР099022791" 
+            data-price="440.00" 
+            data-curr="RUB" 
+            data-cat="1544" 
+            data-cat-name="молдинги" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/moldingi/6-51-808/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">440.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="show-materials-item" style="left:30%;top:73%;" 
+            data-type="prod-prev" data-id="165179" 
+            data-name="плинтус 6.53.803" 
+            data-code="ВР099022780" 
+            data-price="1010.00" 
+            data-curr="RUB" 
+            data-cat="1546" 
+            data-cat-name="плинтусы" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/plintusy/6-53-803/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.53.803.20.png" alt="плинтус 6.53.803">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/plintusy/6-53-803/">плинтус 6.53.803</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">1 010.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="show-materials-item" style="left:66%;top:7%;" 
+            data-type="prod-prev" data-id="165155" 
+            data-name="декоративная панель 6.59.803" 
+            data-code="ВР099022796" 
+            data-price="2860.00" 
+            data-curr="RUB" 
+            data-cat="1601" 
+            data-cat-name="декоративные панели" 
+            data-iscomp="0">
+            <div class="show-materials-point"></div>
+            <div class="show-materials-popup">
+               <div class="show-materials-popup-img">
+                  <a href="/dekorativnii-paneli/6-59-803/"></a>
+                  <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
+               </div>
+               <div class="show-materials-popup-title">
+                  <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
+               </div>
+               <div class="show-materials-popup-bottom">
+                  <div class="show-materials-popup-price">2 860.00 RUB</div>
+                  <div class="show-materials-popup-btns">
+                     <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                        <i class="icon-star"></i>
+                     </div>
+                     <div class="show-materials-popup-add" data-type="cart-add">
+                        <i class="icon-plus"></i>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="main-gallery-item show-materials">
+      <a href="#"></a>
+      <img src="/img/gallery/Project-04/Evroplast_main_project-04-1_420х990.jpg?v=1" alt="Проект 4">
+      <div class="show-materials-item" style="left:75%;top:6%;" 
+         data-type="prod-prev" data-id="165167" 
+         data-name="молдинг 1.51.805" 
+         data-code="ВР099022737" 
+         data-price="1582.00" 
+         data-curr="RUB" 
+         data-cat="1544" 
+         data-cat-name="молдинги" 
+         data-iscomp="0">
+         <div class="show-materials-point"></div>
+         <div class="show-materials-popup">
+            <div class="show-materials-popup-img">
+               <a href="/moldingi/1-51-805/"></a>
+               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/1.51.805.20.png" alt="молдинг 1.51.805">
+            </div>
+            <div class="show-materials-popup-title">
+               <a href="/moldingi/1-51-805/">молдинг 1.51.805</a>
+            </div>
+            <div class="show-materials-popup-bottom">
+               <div class="show-materials-popup-price">1 582.00 RUB</div>
+               <div class="show-materials-popup-btns">
+                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                     <i class="icon-star"></i>
+                  </div>
+                  <div class="show-materials-popup-add" data-type="cart-add">
+                     <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="show-materials-item" style="left:80%;top:46%;" 
+         data-type="prod-prev" data-id="165173" 
+         data-name="молдинг 6.51.808" 
+         data-code="ВР099022791" 
+         data-price="440.00" 
+         data-curr="RUB" 
+         data-cat="1544" 
+         data-cat-name="молдинги" 
+         data-iscomp="0">
+         <div class="show-materials-point"></div>
+         <div class="show-materials-popup">
+            <div class="show-materials-popup-img">
+               <a href="/moldingi/6-51-808/"></a>
+               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.51.808.20.png" alt="молдинг 6.51.808">
+            </div>
+            <div class="show-materials-popup-title">
+               <a href="/moldingi/6-51-808/">молдинг 6.51.808</a>
+            </div>
+            <div class="show-materials-popup-bottom">
+               <div class="show-materials-popup-price">440.00 RUB</div>
+               <div class="show-materials-popup-btns">
+                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                     <i class="icon-star"></i>
+                  </div>
+                  <div class="show-materials-popup-add" data-type="cart-add">
+                     <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="show-materials-item" style="left:23%;top:72%;" 
+         data-type="prod-prev" data-id="165179" 
+         data-name="плинтус 6.53.803" 
+         data-code="ВР099022780" 
+         data-price="1010.00" 
+         data-curr="RUB" 
+         data-cat="1546" 
+         data-cat-name="плинтусы" 
+         data-iscomp="0">
+         <div class="show-materials-point"></div>
+         <div class="show-materials-popup">
+            <div class="show-materials-popup-img">
+               <a href="/plintusy/6-53-803/"></a>
+               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.53.803.20.png" alt="плинтус 6.53.803">
+            </div>
+            <div class="show-materials-popup-title">
+               <a href="/plintusy/6-53-803/">плинтус 6.53.803</a>
+            </div>
+            <div class="show-materials-popup-bottom">
+               <div class="show-materials-popup-price">1 010.00 RUB</div>
+               <div class="show-materials-popup-btns">
+                  <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
+                     <i class="icon-star"></i>
+                  </div>
+                  <div class="show-materials-popup-add" data-type="cart-add">
+                     <i class="icon-plus"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="show-materials-item" style="left:32%;top:34%;" 
+         data-type="prod-prev" data-id="165155" 
+         data-name="декоративная панель 6.59.803" 
+         data-code="ВР099022796" 
+         data-price="2860.00" 
+         data-curr="RUB" 
+         data-cat="1601" 
+         data-cat-name="декоративные панели" 
+         data-iscomp="0">
+         <div class="show-materials-point"></div>
+         <div class="show-materials-popup">
+            <div class="show-materials-popup-img">
+               <a href="/dekorativnii-paneli/6-59-803/"></a>
+               <img src="/upload/resize_cache/cron/catalog/data/images/20/287_287_1/6.59.803.20.png" alt="декоративная панель 6.59.803">
+            </div>
+            <div class="show-materials-popup-title">
+               <a href="/dekorativnii-paneli/6-59-803/">декоративная панель 6.59.803</a>
+            </div>
+            <div class="show-materials-popup-bottom">
+               <div class="show-materials-popup-price">2 860.00 RUB</div>
                <div class="show-materials-popup-btns">
                   <div class="show-materials-popup-favorite" data-type="favorite" data-user="no-user">
                      <i class="icon-star"></i>

@@ -107,6 +107,32 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
         </div>
         <div class="main-pref-slider" data-type="main-pref-slider">
             <div class="main-pref-slide">
+                <i class="main-pref-icon main-pref-icon1"></i>
+                идеальные<br>стыки
+            </div>
+            <div class="main-pref-slide">
+                <i class="main-pref-icon main-pref-icon2"></i>
+                особо прочный<br> и долговечный
+            </div>
+            <div class="main-pref-slide">
+                <i class="main-pref-icon main-pref-icon3"></i>
+                влагостойкость<br>&nbsp;
+            </div>
+            <div class="main-pref-slide">
+                <i class="main-pref-icon main-pref-icon4"></i>
+                простота<br>монтажа
+            </div>
+            <div class="main-pref-slide">
+                <i class="icon-paint"></i>
+                простота<br>покраски
+            </div>
+            <div class="main-pref-slide">
+                <i class="icon-pattern"></i>
+                самый четкий <br>рисунок
+            </div>
+
+            <? /*
+            <div class="main-pref-slide">
                 <i class="icon-brilliant"></i>
                 повышенная <br>прочность
             </div>
@@ -130,6 +156,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                 <i class="icon-pattern"></i>
                 самый четкий <br>рисунок
             </div>
+            */ ?>
         </div>
 
     </div>

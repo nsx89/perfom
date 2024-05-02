@@ -10,10 +10,16 @@ if (empty($my_city)) {
 	$my_city = $city;
 }
 
-if ($city == 3196) {
-	require_once 'cache/main_gallery.php';
-	exit;
+/* --- Кэширование, а то долго работает на этом сервере --- */
+switch($city) {
+	case 3109: //msk
+		require_once 'cache/main_gallery_msk.php'; exit;
+	case 3196: //spb
+		require_once 'cache/main_gallery_spb.php'; exit;
+	default: //all
+		require_once 'cache/main_gallery.php'; exit;
 }
+/* --- // --- */
 
 if (!empty($city)) {
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.php");

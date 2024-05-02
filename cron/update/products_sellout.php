@@ -4,6 +4,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
 
+/*
 $file = file('sellout/sellout.txt');
 foreach ($file AS $item) {
     $arr = explode('=', $item);
@@ -65,14 +66,14 @@ foreach ($file AS $item) {
         CIBlockElement::SetPropertyValueCode($item['ID'], "UZS", $UZS);   
         CIBlockElement::SetPropertyValueCode($item['ID'], "KGS", $KGS);   
 
-        /*CIBlockElement::SetPropertyValueCode($item['ID'], "SELLOUT", 'Y');   
+        CIBlockElement::SetPropertyValueCode($item['ID'], "SELLOUT", 'Y');   
 
         $el = new CIBlockElement;
         $el->Update($item['ID'], Array(
             "TAGS" => '',   
-        ));*/
+        ));
 
-        exit;
+        //exit;
     }
 }
  
