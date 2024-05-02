@@ -10,6 +10,11 @@ if (empty($my_city)) {
 	$my_city = $city;
 }
 
+if ($city == 3196) {
+	require_once 'cache/main_gallery.php';
+	exit;
+}
+
 if (!empty($city)) {
 	require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.php");
 	if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {

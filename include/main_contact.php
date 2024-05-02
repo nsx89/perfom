@@ -72,18 +72,24 @@
                 zoom: zoom,
                 scroll: false,
             });
-            var dPoint = new ymaps.Placemark([lat,lon], {}, {
+            var dPoint = new ymaps.Placemark([lat,lon], {
+                hintContent: "Центральный офис Европласт",
+                //balloonContentHeader: "",
+                balloonContentBody: "<div style='padding: 7px 12px 7px;'>Центральный офис Европласт</div>",
+                //balloonContentFooter: "",
+            }, 
+            {
                 balloonMaxWidth: 300,
                 iconLayout: 'default#image',
                 iconImageSize: [28, 42],
                 iconImageOffset: [-14, -8],
-                iconImageHref: "/img/e-mark.svg?v=1"
+                iconImageHref: "/img/e-mark.svg?v=1",
             });
             myMap.geoObjects.add(dPoint);
             myMap.behaviors.disable('scrollZoom');
-            if(supportsTouch === true) {
+            //if(supportsTouch === true) {
                 //myMap.behaviors.disable('drag');
-            }
+            //}
         }
     </script>
     <div class="main-dealer-map-container<?=$d_class?>" data-type="designer-map" id="map"></div>
