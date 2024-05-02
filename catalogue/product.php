@@ -2,7 +2,7 @@
 /*ini_set('display_errors', 1);
 error_reporting(E_ALL);*/
 
-global $APPLICATION;
+global $APPLICATION; 
 $comparison_ids = json_decode($_COOKIE['compare']); //сравнение
 $favorite_ids = json_decode($_COOKIE['favorite']); //избранное
 $cart = json_decode($_COOKIE['basket']); //корзина
@@ -581,7 +581,8 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                     $art_val = explode('.',trim($item['ARTICUL']['VALUE']));
                     $mat_name = '';
                     if($art_val[0] == 1 || $art_val[0] == 4) $mat_name = 'пенополиуретан';
-                    if($art_val[0] == 6) $mat_name = 'вспененный композиционный полимер высокой плотности <br>на&nbsp;основе полистирола, изготовлено методом экструзии';
+                    //if($art_val[0] == 6) $mat_name = 'вспененный композиционный полимер высокой плотности <br>на&nbsp;основе полистирола, изготовлено методом экструзии';
+                    if($art_val[0] == 6) $mat_name = 'Перфом';
                     if($mat_name != '') {
                     ?>
                         <div class="prod-info-param-material">
