@@ -327,7 +327,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 
         require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 
-        $fields = array('EMAIL'=>$_REQUEST['email'], 'EMAIL_D'=>$email_manager[$email_number], 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$email_manager[$email_number]);
+        $fields = array('EMAIL'=>$_REQUEST['email'], 'EMAIL_D' => $email_manager[$email_number], 'PRODUCT_LIST' => $pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$email_manager[$email_number]);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE_CLIENT", s1, $fields, "N");
         $from .= $from_plus;
 
@@ -340,7 +340,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
         $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'PAYMENT_MESS'=>$payment_mess);
         CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
-        //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
+        //$fields = array('EMAIL'=>'nsx89@mail.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
         //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
 
         $dealer_email = $email_manager[$email_number];

@@ -106,7 +106,7 @@ foreach (array('100', '200', '300', '400', '410', '600') as $img_pre) {
     }
 
 }
-
+ 
 // Доп сцены
 foreach (array('31', '32', '33', '34', '35', '36', '37', '38', '39') as $img_pre) {
     $path = $images_path . "/39/" . $item['ARTICUL']['VALUE'] . '.' . $img_pre . '.png';

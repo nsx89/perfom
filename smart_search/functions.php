@@ -49,7 +49,7 @@ function createProductCache($count_id,$return = false) {
         }
 
         //список товаров
-        $arFilterSS = Array('IBLOCK_ID'=>IB_CATALOGUE, 'ACTIVE'=>'Y', "ACTIVE_DATE" => "Y");
+        $arFilterSS = Array('IBLOCK_ID'=>IB_CATALOGUE, 'ACTIVE'=>'Y', "ACTIVE_DATE" => "Y", '!PROPERTY_SELLOUT' => 'Y');
         //$arFilterSS = Array('IBLOCK_ID'=>IB_CATALOGUE, 'ACTIVE'=>'Y', "ACTIVE_DATE" => "Y", '!SUBSECTION'=> 1614);
         $currency_infо_ss = get_currency_info($count_id);
         $arFilter_element_ss = $currency_infо_ss['filter'];

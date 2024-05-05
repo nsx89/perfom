@@ -1,7 +1,3 @@
-User-agent: *
-Disallow: /
-
-
 Disallow: /karnizy/1-50-177/
 Disallow: /karnizy/1-50-147/
 Disallow: /karnizy/1-50-168/
@@ -206,3 +202,6 @@ Disallow: /rozetki/1-56-002/
 Disallow: /arochnye-obramlenija/4-87-031/
 Disallow: /arochnye-obramlenija/4-87-032/
 Disallow: /arochnye-obramlenija/4-87-033/
+
+Host: https://perfom-decor.ru/
+Sitemap: https://perfom-decor.ru/sitemap.xml

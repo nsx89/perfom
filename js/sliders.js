@@ -261,7 +261,7 @@ function mainPrefSlider() {
             arrows: false,
             infinite: false,
             speed: 300,
-            slidesToShow: 6,
+            slidesToShow: 5,
             slidesToScroll: 1,
             swipeToSlide:true,
             responsive: [
@@ -270,8 +270,8 @@ function mainPrefSlider() {
                     settings: {
                         centerMode: true,
                         centerPadding: '80px',
-                        slidesToShow: 4,
-                        slidesToScroll: 4,
+                        slidesToShow: 3,
+                        slidesToScroll: 1,
                         initialSlide: 2
                     }
                 },

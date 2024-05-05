@@ -304,7 +304,7 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                                 </div>
                                 <div class="del-title-reg">Условия получения</div>
                                 <div class="del-condition-reg">
-                                    условия получения уточнит представитель Перфом в&nbsp;вашем регионе после&nbsp;обработки заказа.
+                                    условия получения уточнит представитель перфом в&nbsp;вашем регионе после&nbsp;обработки заказа.
                                 </div>
                             <? } else {?>
                                 <div class="cart-order-sum">

@@ -4,8 +4,8 @@
 
 /* подпись */
 function P_SIGN($str_P_SIGN) { 
-$SKEY = 'C50E41160302E0F5D6D59F1AA3925C45'; // Тест
-	//$SKEY = '824D435A32B0F695F9E217040A0767B9';
+	//$SKEY = 'C50E41160302E0F5D6D59F1AA3925C45'; // Тест
+$SKEY = '824D435A32B0F695F9E217040A0767B9';
 return strtoupper(hash_hmac('sha256', $str_P_SIGN, pack('H*', $SKEY)));		
 }
 

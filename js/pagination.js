@@ -68,6 +68,7 @@ function ePagination(init=false) {
         req = '/ajax/new_page_gallery.php?page='+newPage+'&'+filter+all;
         top = $('header').outerHeight() + $('[data-type="main-slider"]').outerHeight() ;
     }
+    console.log(req);
     $.get(req, function(data){
         let elems = $.parseJSON(data);
         if(type == 'catalogue') {

@@ -56,7 +56,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             <img src="/img/main-slider/new_art_deco_1.jpg" alt="Новая коллекция NEW ART DECO">
         </div>
 		<div class="main-slide">
-            <div class="main-slide-caption">Новая <br>коллекция <br>NEW ART DECO
+            <div class="main-slide-caption">Изящные <br>решения <br>NEW ART DECO
                 <a href="/collection/new_art_deco/" class="main-blocks-link"><span>смотреть коллекцию</span> <i class="icon-long-arrow"></i></a>
             </div>
             <img src="/img/main-slider/new_art_deco_2.jpg" alt="Новая коллекция NEW ART DECO">
@@ -91,7 +91,11 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             <h2>Перфом</h2>
             <p class="main-pref-annotation">
                 Перфом — это новый материал,<br>разработанный в России
-                специалистами компании Европласт.
+                специалистами компании Европласт.<br>
+                Он появился благодаря многолетним улучшениям композитного материала и технологии производства.
+            </p>
+            <p>
+                Благодаря идеальной форме изделий из перфома получаются безупречные невидимые стыки. Элементы из перфома сочетаются между собой создавая интерьер мечты. Повышенная ударопрочность позволит интерьеру оставаться безупречным. 
             </p>
             <p>
                 Перфом – вспененный композиционный полимер высокой плотности<br>
@@ -119,17 +123,19 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                 влагостойкость<br>&nbsp;
             </div>
             <div class="main-pref-slide">
-                <i class="main-pref-icon main-pref-icon4"></i>
+                <i class="icon-thumb"></i>
                 простота<br>монтажа
             </div>
             <div class="main-pref-slide">
-                <i class="icon-paint"></i>
+                <i class="main-pref-icon main-pref-icon4"></i>
                 простота<br>покраски
             </div>
+            <? /*
             <div class="main-pref-slide">
                 <i class="icon-pattern"></i>
                 самый четкий <br>рисунок
             </div>
+            */ ?>
 
             <? /*
             <div class="main-pref-slide">
@@ -169,11 +175,21 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             <h2 class="main-blocks-title">Сделайте интерьер лучше</h2>
             <a href="/karnizy/" class="main-blocks-link"><span>Перейти к&nbsp;каталогу</span> <i class="icon-long-arrow"></i></a>
         </div>
-        <div class="main-gallery-slider main-gallery-slider-loading" data-type="main-gallery-slider" data-gallery="wrapper" data-city="<?= $my_city ?>">
-		
-			<? /* require_once($_SERVER["DOCUMENT_ROOT"] . "/include/main_gallery.php"); */ ?>
-			
-        </div>
+
+        <? if (!empty($_GET['test_products'])) { ?>
+
+            <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/cache/main_gallery_new_products.php"); ?>
+
+        <? } else { ?>
+
+            <div class="main-gallery-slider main-gallery-slider-loading" data-type="main-gallery-slider" data-gallery="wrapper" data-city="<?= $my_city ?>">
+    
+                <? /* require_once($_SERVER["DOCUMENT_ROOT"] . "/include/main_gallery.php"); */ ?>
+        
+            </div>
+
+        <? } ?>
+
     </div>
 </section>
 
@@ -286,14 +302,14 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                         ?>
                         <? if($item['UNIQUE']['VALUE']!='Y'): ?>
                                 <?
-                                $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/v.jpg?v=1';
+                                $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/v.jpg?v=2';
                                 //$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/'.$item['THUMB']['VALUE'];
                                 //$img_path = get_resized_img($img_path,278,408);
                                 ?>
                                 <img src="<?=$img_path?>" alt="<?=$item['NAME']?>">
                             <? else: ?>
                                 <?
-                                $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/v.jpg?v=1';
+                                $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/v.jpg?v=2';
                                 //$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/'.$item['THUMB']['VALUE'];
                                 //$img_path = get_resized_img($img_path,278,408);
                                 ?>

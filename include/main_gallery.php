@@ -13,13 +13,14 @@ if (empty($my_city)) {
 /* --- Кэширование, а то долго работает на этом сервере --- */
 /*switch($city) {
 	case 3109: //msk
-		require_once 'cache/main_gallery_msk.php'; exit;
+		require_once 'cache/main_gallery_msk.php'; 
 	case 3196: //spb
-		require_once 'cache/main_gallery_spb.php'; exit;
+		require_once 'cache/main_gallery_spb.php'; 
 	default: //all
-		require_once 'cache/main_gallery.php'; exit;
+		require_once 'cache/main_gallery.php';
 }*/
-require_once 'cache/main_gallery_new.php'; exit;
+require_once 'cache/main_gallery_new.php'; 
+return;
 /* --- // --- */
 
 if (!empty($city)) {

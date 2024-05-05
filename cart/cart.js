@@ -91,6 +91,8 @@ function setDeliveryPrice(totalDiscountPrice) {
 /**
  * стоимость заказа
  */
+
+cartTotal();
 function cartTotal() {
     $.getJSON('/ajax/show-cart.php', function (res) {
         //console.log(res);
