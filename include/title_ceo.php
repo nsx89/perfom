@@ -203,6 +203,23 @@ include_once 'seo/new.php';
 
 //echo $url.'-'.$title;
 
+
+if (!empty($_GET['test'])) {
+    $CITY_ID = $APPLICATION->get_cookie('my_city');
+    $arFilter = Array('IBLOCK_ID'=>7, 'ID'=>$CITY_ID);
+    $db_list = CIBlockElement::GetList(Array(), $arFilter);
+    $city_item = $db_list->GetNextElement();
+    if ($city_item) {
+        $city_info = array_merge($city_item->GetFields(), $city_item->GetProperties());
+        $CITY_NAME = $city_info['NAME'];
+        $PROP_NAME = $city_info['name']['VALUE'];
+        if (!empty($PROP_NAME)) $NAME = $PROP_NAME;
+        echo $CITY_NAME;
+        //echo '<pre>';print_r($city_info);echo '</pre>';
+    }
+}
+
+
 if (!empty($title)) $APPLICATION->SetTitle($title);
 if (!empty($description)) $APPLICATION->SetPageProperty("description", $description);
 if (!empty($keywords)) $APPLICATION->SetPageProperty("keywords", $keywords);

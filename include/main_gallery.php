@@ -5,7 +5,7 @@
 
 
 $city = (int)$_GET['city'];
-
+ 
 if (empty($my_city)) {
 	$my_city = $city;
 }

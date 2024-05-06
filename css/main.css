@@ -482,13 +482,23 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     width: calc(75% - 6px);
     margin: 0px auto;
 }
+.main-blocks-title-wrap {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
 .main-blocks-title {
     font-size: 50px;
     font-weight: 500;
     letter-spacing: 0.44px;
     line-height: 80px;
     margin-bottom: 33px;
+    color: #000;
     text-transform: lowercase;
+    display: inline-block;
+}
+.main-blocks-title-wrap a:hover .main-blocks-title {
+    color: #849795;
 }
 .main-events-wrap {
     border: 2px solid #ececec;

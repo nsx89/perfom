@@ -178,7 +178,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
         <? if (!empty($_GET['test_products'])) { ?>
 
-            <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/cache/main_gallery_new_products.php"); ?>
+            <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/cache/main_gallery_new_products.php"); ?> 
 
         <? } else { ?>
 
@@ -197,7 +197,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
     <div class="content-wrapper">
 
         <section class="main-events">
-            <h2 class="main-blocks-title"><?= MEDIA_NAME ?></h2>
+            <div class="main-blocks-title-wrap">
+                <a href="/mag/"><h2 class="main-blocks-title"><?= MEDIA_NAME ?></h2></a>
+            </div>
             <div class="main-events-wrap">
                 <div class="main-events-slider" data-type="main-events-slider">
 				 <? 
@@ -253,7 +255,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
         <section class="main-catalogues">
             <div>
-                <h2 class="main-blocks-title">каталоги</h2>
+                <div class="main-blocks-title-wrap">
+                    <a href="/download/"><h2 class="main-blocks-title">каталоги</h2></a>
+                </div>
                 <a href="/download/" class="main-catalogues-link main-blocks-link"><span>Смотреть все&nbsp;каталоги</span> <i class="icon-long-arrow"></i></a>
             </div>
             <div class="main-catalogue-slider" data-type="main-catalogue-slider">

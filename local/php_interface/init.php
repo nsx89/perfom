@@ -290,9 +290,10 @@ if ($product['COMPOSITEPART']['VALUE']) $iscomp = 1;
 $flx_class = '';
 if($is_flex) $flx_class = ' flex';
 $article_foil = array('6.50.711', '6.50.712', '6.50.713', '6.50.714', '6.50.715', '6.50.716', '6.50.719', '6.51.710', );
+$sellout_class = $product['SELLOUT']['VALUE'] ? ' sellout' : '';
 ob_start(); ?>
 
-<div <?if($is_gallery) echo 'id="item'.$is_gallery.'"';?> class="prod-prev<?=$signTmp?><?=flexTmp($product)?><?=$flx_class?>"
+<div <?if($is_gallery) echo 'id="item'.$is_gallery.'"';?> class="prod-prev<?=$signTmp?><?=flexTmp($product)?><?=$flx_class?><?=$sellout_class?>"
     data-type="prod-prev"
     data-id="<?=$product['ID']?>"
     data-name="<?=__get_product_name($product)?>"
@@ -324,6 +325,9 @@ ob_start(); ?>
                     ?>
                     <div class="new-prod">новинка</div>
                 <? } } ?>
+            <?if($product['SELLOUT']['VALUE'] == 'Y') { ?>
+              <div class="new-prod sell-out">распродажа</div>
+          <? } ?>
         </div>
         <div class="prod-prev-img">
             <?
@@ -369,6 +373,11 @@ ob_start(); ?>
         </div>
     </div>
     <div class="prod-prev-bottom">
+        <?if($product['SELLOUT']['VALUE'] == 'Y' && $product['OLD_PRICE']['VALUE'] != '' && $loc['country']['VALUE'] == '3111') {
+            $old_price = _makeprice($product['OLD_PRICE']['VALUE']);
+        ?>
+            <div class="prod-prev-price prod-prev-price-old"><?=__cost_format($old_price)?></div>
+        <? } ?>
         <? if($cost) { ?>
             <div class="prod-prev-price"><?=__cost_format($cost)?></div>
         <? } ?>
@@ -1721,6 +1730,9 @@ function _get_email_product_list()
                 <td class="c_1" style="border: none; width:116px; height:104px; overflow:hidden; background-color:#4e4e4e;vertical-align:middle;" <?=$signTmp?>>
                     <?if($isSample) {?>
                         <div style="width:100%;min-width:116px;text-align: center;background-color: #a7a7a7;color: #4e4e4e;padding-top:2px;padding-bottom:2px;font-weight:bold;font-size:14px;">образец</div>
+                    <? } ?>
+                    <?if(!empty($citem['SELLOUT']['VALUE'])){ ?>
+                        <div style="width:100%;min-width:116px;text-align: center;background-color: #E41C1C;color: #fff;padding-top:2px;padding-bottom:2px;font-weight:bold;font-size:14px;">распродажа</div>
                     <? } ?>
                     <a href="http://<?=$_SERVER['HTTP_HOST']?><?= __get_product_link($citem) ?>">
                         <img  style="<?=$signStyle?> max-height:104px;"  src="http://<?=$_SERVER['HTTP_HOST']?><?= $citem['FILES_IMAGES'][0] ?>" alt="<?= __get_product_name($citem) ?>"/>

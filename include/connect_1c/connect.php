@@ -41,7 +41,7 @@ function generateUUID() {
 }
 */
 
-$SiteID = '4ec55941-480d-42ea-b410-90398574bbbb'; // тест
+$SiteID = '4ec55941-480d-42ea-b410-45680124abcd'; 
 
 $discount1C = array('' =>'ВР0000001',
 '0'=>'ВР0000001',
@@ -82,7 +82,7 @@ $discount1C = array('' =>'ВР0000001',
 
 // запрос
 function SoapRequest($xml_post_string) {
-$soapUrl = "https://ese.decor-evroplast.ru:4848/Test/ESE.1cws";
+$soapUrl = "https://ese.decor-evroplast.ru:4848/Work/ESE.1cws";
 $soapUser = "ese_user";
 $soapPassword = "yaDWcjx8k%HT!Snd";
 

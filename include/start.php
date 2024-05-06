@@ -250,6 +250,8 @@ $reader = new Reader($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/GeoLite2
 				$my_location = $lat.','.$lon;
         		$my_city = $item_city['ID'];
 				$my_city_fix = true; // Выбор региона при первом заходе
+
+
 			
 		}
 		// echo 'test '.$my_dealer.' | '.$my_location.' | '.$my_city;
