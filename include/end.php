@@ -158,6 +158,6 @@ $(document).ready(function() {
     require($_SERVER["DOCUMENT_ROOT"] . "/reports/questions_stat_monthly.php");
     require($_SERVER["DOCUMENT_ROOT"] . "/order_managment/delayed_orders.php");
 
-    include_once($_SERVER["DOCUMENT_ROOT"].'/cron/urlrewrite/update.php');
+    //include_once($_SERVER["DOCUMENT_ROOT"].'/cron/urlrewrite/update.php');
 //}
 ?>

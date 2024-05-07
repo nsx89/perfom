@@ -1,7 +1,7 @@
 <?
 // доступ из вне
-$vtbUser = "man_site@dekor.demo";
-$vtbPassword = "123123123";
+$vtbUser = "man_site@decor-evroplast.ru";
+$vtbPassword = "iYybU4HeQDDi5G9X";
 $headers = array("Content-Type: application/json;charset=UTF-8", "Authorization: Basic ".base64_encode($vtbUser.":".$vtbPassword));
 
 // Конвертор даты под формат bitrix -> 1c
@@ -32,7 +32,7 @@ return $data_doc;
 function RequestTransactions($ID_Trans) {
 global $headers;
 
-$ch_url = 'https://processing-demo.cardport.net/api/v1/payment/'.$ID_Trans;
+$ch_url = 'https://prc-api-pro.ru.iboxmpos.com/api/v1/payment/'.$ID_Trans;
 		$ch = curl_init();  
 			if(strtolower((substr($ch_url,0,5))=='https')) { // если соединяемся с https
 				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);
@@ -109,7 +109,7 @@ $data['BasicTran']['AuxDataInput']['AuxData']['Tags']['1228'] = $CustomerINN;
 }
 
 $curl_data = json_encode($data);
-$ch_url = 'https://processing-demo.cardport.net/api/v1/payment/submit';
+$ch_url = 'https://prc-api-pro.ru.iboxmpos.com/api/v1/payment/submit';
 		$ch = curl_init();  
 			if(strtolower((substr($ch_url,0,5))=='https')) { // если соединяемся с https
 				curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, 0);

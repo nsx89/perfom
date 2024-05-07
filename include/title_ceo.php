@@ -203,6 +203,7 @@ include_once 'seo/new.php';
 
 //echo $url.'-'.$title;
 
+/* --- SEO FOR SUBDOMAINS --- */
 
 if (!empty($_GET['test'])) {
     $CITY_ID = $APPLICATION->get_cookie('my_city');
@@ -213,11 +214,33 @@ if (!empty($_GET['test'])) {
         $city_info = array_merge($city_item->GetFields(), $city_item->GetProperties());
         $CITY_NAME = $city_info['NAME'];
         $PROP_NAME = $city_info['name']['VALUE'];
-        if (!empty($PROP_NAME)) $NAME = $PROP_NAME;
-        echo $CITY_NAME;
+        if (!empty($PROP_NAME)) $CITY_NAME = $PROP_NAME;
+        // echo $CITY_NAME;
         //echo '<pre>';print_r($city_info);echo '</pre>';
     }
+
+    $subdomen = _get_city_loc($CITY_ID);
+    if (!empty($subdomen) && !empty($CITY_NAME)) {
+        //Если товар
+        if(isset($is_product)) {
+            $is_product_name = $is_product['NAME'].$ceo_prod_articul.$f;
+            $title =  $is_product_name." из полистирола купить в {$CITY_NAME} от Перфом";
+        }
+        //Если категория
+        elseif(isset($last_section)) {
+            $title = $last_section['NAME']." купить в {$CITY_NAME} от Перфом";
+        }
+        else {
+            switch ($url) {
+                //case '/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
+                case '/contact/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
+                //case '/wheretobuy/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
+            }
+        }
+    }
 }
+
+/* --- // --- */
 
 
 if (!empty($title)) $APPLICATION->SetTitle($title);

@@ -3910,6 +3910,12 @@ body:not(.touchable) .prod-info-type-option:hover {
     margin-right: 10px;
     width: 130px;
 }
+.top_fix_button_ok_new {
+    color: #fff;
+    background-color: #849795;
+    margin-right: 10px;
+    width: 130px;
+}
 .top_fix_button_change {
     background-color: #fff;
     color: #000;
@@ -3921,6 +3927,13 @@ body:not(.touchable) .prod-info-type-option:hover {
 body:not(.touchable) #top_fix_region .top_fix_button_ok:hover {
     background-color: #fff;
     color: #849795;
+}
+body:not(.touchable) #top_fix_region .top_fix_button_ok_new:hover {
+    background-color: #fff;
+    color: #849795;
+}
+body:not(.touchable) #top_fix_region .top_fix_button_ok_new:hover a{
+    color: #849795 !important;
 }
 body:not(.touchable) #top_fix_region .top_fix_button_change:hover {
     background-color: #849795;

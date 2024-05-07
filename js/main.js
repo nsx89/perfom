@@ -147,9 +147,15 @@ $('document').ready(function() {
      */
     $('#dropdown-down').on('click','[data-type="reg-list"] [data-type="choose-reg"]',function() {
         var regionId = $(this).attr('data-value');
+        var href = $(this).attr('href');
         $.post('/ajax/changeregion.php', {regionId: regionId}, function () {
-            window.location.reload();
-        })
+            if (href != '') {
+                window.location.href = href;
+            }
+            else {
+                window.location.reload();
+            }
+        });
         return false;
     })
     if(typeof regScroll === 'undefined') {

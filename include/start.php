@@ -132,11 +132,11 @@ global $my_city_fix;
 	$baltic_region = array(); // Estonia, Latvia, Lithuania -> 'EE','LV','LT'
 
 
-require_once ($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/vendor/autoload.php");
-use GeoIp2\Database\Reader;
-$reader = new Reader($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/GeoLite2-City.mmdb");
+		require_once ($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/vendor/autoload.php");
+		use GeoIp2\Database\Reader;
+		$reader = new Reader($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/GeoLite2-City.mmdb");
 
-//require_once($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/geoip_evroplast.inc"); // убрать
+		//require_once($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/geoip_evroplast.inc"); // убрать
 
 		$remote_ip = GetIP();
 		$remote_ip = explode(',',$remote_ip);
@@ -219,6 +219,16 @@ $reader = new Reader($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/GeoLite2
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
+		} elseif (!empty($_GET['sub_city'])) {
+
+			$my_location = $APPLICATION->get_cookie('my_location');
+			$my_city = $APPLICATION->get_cookie('my_city');
+			
+        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.$_SERVER['HTTP_HOST']);
+			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.$_SERVER['HTTP_HOST']);
+
+			my_city_fixed();
+
 		} elseif ($APPLICATION->get_cookie('my_city') && $APPLICATION->get_cookie('my_city') > 0 ) { //&& $USER->IsAuthorized()) {
 			$my_location = $APPLICATION->get_cookie('my_location');
 			$my_city = $APPLICATION->get_cookie('my_city');
@@ -244,14 +254,12 @@ $reader = new Reader($_SERVER["DOCUMENT_ROOT"] . "/include/GeoIP/GeoIP2/GeoLite2
 			}
 			ksort($items_city);
 			$item_city = current($items_city); // Ближайший город
-        	$APPLICATION->set_cookie('my_city', $item_city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+			$APPLICATION->set_cookie('my_city', $item_city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
 			$APPLICATION->set_cookie('my_location', $lat.','.$lon,0, '/', '.'.$_SERVER['HTTP_HOST']);
 		
-				$my_location = $lat.','.$lon;
-        		$my_city = $item_city['ID'];
-				$my_city_fix = true; // Выбор региона при первом заходе
-
-
+			$my_location = $lat.','.$lon;
+    		$my_city = $item_city['ID'];
+			$my_city_fix = true; // Выбор региона при первом заходе
 			
 		}
 		// echo 'test '.$my_dealer.' | '.$my_location.' | '.$my_city;

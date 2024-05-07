@@ -52,8 +52,14 @@ $c = 0;
                                 </div>
                                 <div class="e-reg-list-column e-reg-list-column-pad">
                             <? } ?>
-                            <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
-                            <?
+
+                            <?$subdomen = _get_city_loc($city['id']);
+                            if(!empty($_GET['test']) && !empty($subdomen)){?>
+                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                            <?}else{?>
+                                <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
+
+                            <?}
                             $c++;
                         } ?>
                         </div>
@@ -65,9 +71,13 @@ $c = 0;
                     <div class="e-reg-list-column column-diff-country">
                         <? } ?>
                         <div class="e-choose-country-name"><?= $arr['country']['name'] ?></div>
-                        <? foreach ($arr['city'] as $city) { ?>
-                            <a class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
-                        <? } ?>
+                        <? foreach ($arr['city'] as $city) { 
+                            $subdomen = _get_city_loc($city['id']);
+                            if(!empty($_GET['test']) && !empty($subdomen)){?>
+                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                            <?}else{?>
+                                <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
+                        <? }} ?>
                         <br>
                         <? }
                         }?>
@@ -100,9 +110,14 @@ $c = 0;
                                 <div class="reg-list-city-column">
                                     <? foreach($arr['city'] as $city) {
                                     if( $city['id'] == 3109 && $my_city != 3109 && !$USER->IsAuthorized()
-                                        || $city['id'] == 3109 && $my_city != 3109 && $USER->IsAuthorized() && in_array('5',$user_groups) ) continue;?>
-                                    <a class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
-                                    <? } ?>
+                                        || $city['id'] == 3109 && $my_city != 3109 && $USER->IsAuthorized() && in_array('5',$user_groups) ) continue;
+
+                                    $subdomen = _get_city_loc($city['id']);
+                                    if(!empty($_GET['test']) && !empty($subdomen)){?>
+                                        <a style="color: black;" href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                                    <?}else{?>
+                                        <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
+                                    <? }} ?>
                                 </div>
                             </div>
                         </div>

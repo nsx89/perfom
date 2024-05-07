@@ -1,10 +1,10 @@
 <?
 
-$TERMINAL='79036777'; // Тест
+$TERMINAL='39002555';
 
 /* подпись */
 function P_SIGN($str_P_SIGN) { 
-$SKEY = 'C50E41160302E0F5D6D59F1AA3925C45'; // Тест
+$SKEY = '824D435A32B0F695F9E217040A0767B9';
 return strtoupper(hash_hmac('sha256', $str_P_SIGN, pack('H*', $SKEY)));		
 }
 
@@ -21,24 +21,24 @@ $ORDER=$order_number; // 0220210811000030000238 уникальный число�
 $EMAIL=$email;
 
 $TRTYPE='1'; // всегда 1
-$MERCH_NAME='TEST_MERCH'; // Тест
+$MERCH_NAME='EVROPLAST';
 
 $DESC=$description;  // Описание, которое уйдет в платежную систему. Если оплата заказа на сайте, то «Оплата по заявке», если оплата платежной ссылки из 1с, то «Оплата заказа». 
 																		//Соответственно номер и дата заказа сайта или номер и дата заказа из платежной ссылки																	
-$MERCHANT='790367686219999'; // Тест
+$MERCHANT='000523139002555';
 
 $TIMESTAMP=date("YmdHis"); // дата время формирования запроса в формате ГГГГММДДччммсс – время московское
 $QR_TTL='10'; // время жизни ссылки в минутах
 $NONCE=$ID_Trans; // UUID оплаты без «-», тот что потом будет UUID
 $BACKREF='';// всегда пустой
 
-$NOTIFY_URL='https://psb.decor-evroplast.ru/sbp/Test/getdata.php?DeviceIdSBP='.$DeviceID; // Тест
+$NOTIFY_URL='https://psb.decor-evroplast.ru/sbp/Work/getdata.php?DeviceIdSBP='.$DeviceID;
 
-$SBP_ID='LA0000006305'; // Тест
+$SBP_ID='LA0000283154';
 
-$SBP_ACCOUNT_NUMBER='40702810600010450001'; // Тест
+$SBP_ACCOUNT_NUMBER='40702810900000271398';
 
-$SBP_MERCHANT='MA0000018081'; // Тест
+$SBP_MERCHANT='MA0000242367';
 
 $REGIME='desktop'; // если desktop, то кроме ссылки возвращает еще и картинку с QR-кодом, mobile – только ссылка
 $SBP_QR_IMG_WIDTH='300'; // ширина в пикселях картинки с QR-кодом, максимум 300
@@ -51,7 +51,7 @@ $P_SIGN = P_SIGN($str_P_SIGN);
 
 
 
-$sbp_url = 'https://test.3ds.payment.ru/cgi-bin/SBP/reg_qr'; // Тест линк
+$sbp_url = 'https://3ds.payment.ru/cgi-bin/SBP/reg_qr';
 $sbp_data = 'AMOUNT='.$AMOUNT
 		.'&CURRENCY='.$CURRENCY
 		.'&ORDER='.$ORDER
@@ -155,7 +155,7 @@ $NSPK_JSON_DATA = json_encode(array('qrcIds' => array($QR_ID)));
 $str_P_SIGN = strlen($RND_NUMBER).$RND_NUMBER.strlen($TERMINAL).$TERMINAL;
 $P_SIGN = P_SIGN($str_P_SIGN);
 
-$sbp_url = 'https://test.3ds.payment.ru/cgi-bin/SBP/get_qr_status'; // Тест линк
+$sbp_url = 'https://3ds.payment.ru/cgi-bin/SBP/get_qr_status';
 $sbp_data = 'TERMINAL='.$TERMINAL
 		.'&RND_NUMBER='.$RND_NUMBER
 		.'&P_SIGN='.$P_SIGN

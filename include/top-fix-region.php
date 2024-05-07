@@ -6,7 +6,7 @@ $getReg = $_GET['region'];
 
 $my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
 
-if (($my_city_fix) || ($getReg == 'select') || empty($my_city_fixed)) {
+if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GET['sub_city'])) {
 
     $arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID' => $my_city);
     $db_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arFilter);
@@ -18,6 +18,10 @@ if (($my_city_fix) || ($getReg == 'select') || empty($my_city_fixed)) {
     }
     $loc = array_merge($loc->GetFields(), $loc->GetProperties());
 
+    $subdomen = _get_city_loc($my_city);
+    if (!empty($_GET['test'])) {
+        //echo '123<p style="position: relative; z-index: 100000000;">'.$subdomen.'my_city_fix='.$my_city_fix.'my_city_fixed='.$my_city_fixed.'</p>';
+    }
     ?>
 
     <!--noindex-->
@@ -26,9 +30,13 @@ if (($my_city_fix) || ($getReg == 'select') || empty($my_city_fixed)) {
             Ваш&nbsp;регион <span class="top_fix_title_city"><?=trim($loc['NAME'])?></span>?
         </div>
         <div class="top_fix_buttons">
-            <button class="top_fix_button_ok">Правильно</button>
-            <button class="top_fix_button_change">Выбрать город из&nbsp;списка</button>
+            <?if (!empty($_GET['test'])) {?>
+                <button class="top_fix_button_ok_new"><a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>&test=1" style="color: white;">Правильно</a></button>
+            <?}else{?>
+                <button class="top_fix_button_ok">Правильно</button>
+            <?}?>
 
+            <button class="top_fix_button_change">Выбрать город из&nbsp;списка</button>
         </div>
 		
         <script type="text/javascript">
