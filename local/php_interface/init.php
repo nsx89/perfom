@@ -31,6 +31,10 @@ define("BASKET_EXPIRES", 30); // время жизни куков корзины
 
 define("IB_CATALOGUE",12); // каталог
 
+/* --- Основной Домен --- */
+
+define("HTTP_HOST", 'perfom-decor.ru');
+
 /* --- MEDIA --- */
 
 define("MEDIA_NAME", 'Медиацентр'); // Медиа название
@@ -76,7 +80,7 @@ function my_city_fixed() {
 
     $time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
 
-    $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.$_SERVER['HTTP_HOST']);
+    $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.HTTP_HOST);
 }
 
 /* --- // --- */
