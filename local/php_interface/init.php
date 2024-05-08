@@ -3344,3 +3344,16 @@ function _get_stat_dealer_pdf($id)
 
     return $html;
 }
+
+
+$city_loc_id = array(
+                '3196'  => 'spb.perfom-decor.ru',
+                '3331'  => 'lipetsk.perfom-decor.ru',
+                
+                );
+
+function _get_city_loc($id){
+    global $city_loc_id;
+    $result = isset($city_loc_id[$id]) ? $city_loc_id[$id] : null;
+    return $result;
+}
