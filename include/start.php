@@ -165,9 +165,9 @@ global $my_city_fix;
 			$city = $db_city_list->GetNextElement();
 			if ($city) {
     				$city = array_merge($city->GetFields(), $city->GetProperties());
-				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.HTTP_HOST);
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
@@ -177,9 +177,9 @@ global $my_city_fix;
 			$city = $db_city_list->GetNextElement();
 			if ($city) {
     				$city = array_merge($city->GetFields(), $city->GetProperties());
-				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.HTTP_HOST);
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
@@ -189,9 +189,9 @@ global $my_city_fix;
 			$city = $db_city_list->GetNextElement();
 			if ($city) {
     				$city = array_merge($city->GetFields(), $city->GetProperties());
-				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.HTTP_HOST);
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
@@ -201,9 +201,9 @@ global $my_city_fix;
 			$city = $db_city_list->GetNextElement();
 			if ($city) {
     				$city = array_merge($city->GetFields(), $city->GetProperties());
-				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.HTTP_HOST);
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
@@ -213,9 +213,9 @@ global $my_city_fix;
 			$city = $db_city_list->GetNextElement();
 			if ($city) {
     				$city = array_merge($city->GetFields(), $city->GetProperties());
-				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
+				$APPLICATION->set_cookie('my_location', $city['map']['VALUE'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('my_city', $city['ID'],0, '/', '.'.HTTP_HOST);
+				$APPLICATION->set_cookie('ip_city', $city['ID'],0, '/', '.'.HTTP_HOST);
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
@@ -224,17 +224,39 @@ global $my_city_fix;
 			$my_location = $APPLICATION->get_cookie('my_location');
 			$my_city = $APPLICATION->get_cookie('my_city');
 			
-        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.$_SERVER['HTTP_HOST']);
-			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.$_SERVER['HTTP_HOST']);
+        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
+			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
 
 			my_city_fixed();
 
 		} elseif ($APPLICATION->get_cookie('my_city') && $APPLICATION->get_cookie('my_city') > 0 ) { //&& $USER->IsAuthorized()) {
 			$my_location = $APPLICATION->get_cookie('my_location');
 			$my_city = $APPLICATION->get_cookie('my_city');
+			$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
+
+			$subdomen = _get_city_loc($my_city);
+			$domen = HTTP_HOST;
+			if (!empty($my_city_fixed) && !empty($_GET['test'])) {
+
+				if (!empty($subdomen) && $_SERVER['HTTP_HOST'] <> $subdomen) {
+					$subdomen_url = 'https://'.$subdomen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					Header('Location: '.$subdomen_url); exit;
+				}
+				elseif (!empty($subdomen) && $_SERVER['HTTP_HOST'] == $subdomen) {
+					//echo 'SUBDOMAIN======'.$_SERVER['HTTP_HOST'].'-'.$subdomen.'-city='.$my_city;
+				}
+				elseif ($_SERVER['HTTP_HOST'] <> $domen) {
+					$domen_url = 'https://'.$domen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					Header('Location: '.$domen_url); exit;
+				}
+			}
+
+			/*if (!empty($_GET['test'])) {
+				echo $my_city;
+			}*/
 			
-        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.$_SERVER['HTTP_HOST']);
-			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.$_SERVER['HTTP_HOST']);
+        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
+			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
 		} else {
 			
 			$lat = $gi_value_city->latitude;
@@ -254,8 +276,8 @@ global $my_city_fix;
 			}
 			ksort($items_city);
 			$item_city = current($items_city); // Ближайший город
-			$APPLICATION->set_cookie('my_city', $item_city['ID'],0, '/', '.'.$_SERVER['HTTP_HOST']);
-			$APPLICATION->set_cookie('my_location', $lat.','.$lon,0, '/', '.'.$_SERVER['HTTP_HOST']);
+			$APPLICATION->set_cookie('my_city', $item_city['ID'],0, '/', '.'.HTTP_HOST);
+			$APPLICATION->set_cookie('my_location', $lat.','.$lon,0, '/', '.'.HTTP_HOST);
 		
 			$my_location = $lat.','.$lon;
     		$my_city = $item_city['ID'];
