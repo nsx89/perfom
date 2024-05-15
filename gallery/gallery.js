@@ -68,7 +68,44 @@ $(document).ready(function() {
             $('[data-type="share"]').removeClass('active');
         }
     });
-}) //document.ready
+
+    $('body').on('click', '.js-gallery-open', function(){
+        $('.js-gallery-open').each(function(){
+
+            var id = $(this).attr('data-src');
+            var element = $(id);
+
+            var item = $(this).closest('.gallery-img');
+            var html = item.html();
+            element.html(html);
+            $('.gallery-img-resize', element).remove();
+
+            /*var parent = $(this).closest('.gallery-img-resize');
+            var obj_num = $(this).attr('data-obj_num');
+            var img_num = $(this).attr('data-img_num');
+            var obj_img = $('span', parent).html().trim();
+            var obj_dir = $(this).attr('data-obj_dir');
+            var flex = $(this).attr('data-flex');
+            $.ajax({
+                url: '/gallery/ajax.php',
+                type: 'POST',
+                data: {
+                    'obj_num': obj_num
+                    , 'img_num': img_num
+                    , 'obj_img': obj_img
+                    , 'obj_dir': obj_dir
+                    , 'flex': flex
+                },
+                success: function(html) {
+                    element.html(html);
+                },
+                error: function(html) {
+                    console.log(html);
+                }
+            });*/
+        });
+    });
+})
 
 
 
