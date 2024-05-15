@@ -31,6 +31,10 @@ define("BASKET_EXPIRES", 30); // время жизни куков корзины
 
 define("IB_CATALOGUE",12); // каталог
 
+/* --- Основной Домен --- */
+
+define("HTTP_HOST", 'perfom-decor.ru');
+
 /* --- MEDIA --- */
 
 define("MEDIA_NAME", 'Медиацентр'); // Медиа название
@@ -76,7 +80,7 @@ function my_city_fixed() {
 
     $time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
 
-    $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.$_SERVER['HTTP_HOST']);
+    $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.HTTP_HOST);
 }
 
 /* --- // --- */
@@ -3343,4 +3347,188 @@ function _get_stat_dealer_pdf($id)
     $html = ob_get_clean();
 
     return $html;
+}
+
+
+$city_loc_id = array(
+                '3196'  => 'spb.perfom-decor.ru',
+                '3331'  => 'lipetsk.perfom-decor.ru',
+                '3152'  => 'krasnoyarsk.perfom-decor.ru',
+    '3114'  => 'barnaul.perfom-decor.ru',
+    '6191'  => 'blagoveschensk.perfom-decor.ru',
+    '3340'  => 'arkhangelsk.perfom-decor.ru',
+    '102940'  => 'severodvinsk.perfom-decor.ru',
+    '135824'  => 'perfom-decor.ru',
+
+    '3333'  => 'astrakhan.perfom-decor.ru',
+    '3116'  => 'belgorod.perfom-decor.ru',
+    '3374'  => 'staryyoskol.perfom-decor.ru',
+    '3118'  => 'bryansk.perfom-decor.ru',
+    '3123'  => 'volgograd.perfom-decor.ru',
+    '3422'  => 'perfom-decor.ru',
+    '76007'  => 'perfom-decor.ru',
+
+    '3304'  => 'vologda.perfom-decor.ru',
+    '3443'  => 'perfom-decor.ru',
+    '3125'  => 'voronezh.perfom-decor.ru',
+    '3235'  => 'chita.perfom-decor.ru',
+    '3131'  => 'ivanovo.perfom-decor.ru',
+    '6567'  => 'kineshma.perfom-decor.ru',
+    '3135'  => 'irkutsk.perfom-decor.ru',
+
+    '3258'  => 'perfom-decor.ru',
+    '3138'  => 'kaliningrad.perfom-decor.ru',
+    '3143'  => 'kaluga.perfom-decor.ru',
+    '24220'  => 'petropavlovskkamchatskii.perfom-decor.ru',
+    '47496'  => 'perfom-decor.ru',
+    '6801'  => 'perfom-decor.ru',
+    '3145'  => 'kemerovo.perfom-decor.ru',
+    '6798'  => 'perfom-decor.ru',
+    '66545'  => 'perfom-decor.ru',
+    '3696'  => 'perfom-decor.ru',
+    '6800'  => 'perfom-decor.ru',
+    '6799'  => 'perfom-decor.ru',
+
+    '3302'  => 'kirov.perfom-decor.ru',
+    '3316'  => 'kostroma.perfom-decor.ru',
+    '6150'  => 'perfom-decor.ru',
+    '3683'  => 'perfom-decor.ru',
+    '6157'  => 'perfom-decor.ru',
+    '3685'  => 'perfom-decor.ru',
+    '6679'  => 'perfom-decor.ru',
+    '47495'  => 'perfom-decor.ru',
+    '3149'  => 'krasnodar.perfom-decor.ru',
+    '6159'  => 'perfom-decor.ru',
+    '6124'  => 'perfom-decor.ru',
+    '3202'  => 'perfom-decor.ru',
+    '6759'  => 'perfom-decor.ru',
+
+    '3481'  => 'kurgan.perfom-decor.ru',
+    '3154'  => 'kursk.perfom-decor.ru',
+    '3263'  => 'perfom-decor.ru',
+
+    '6245'  => 'perfom-decor.ru',
+
+    '3707'  => 'murmansk.perfom-decor.ru',
+    '3163'  => 'nizhniynovgorod.perfom-decor.ru',
+    '3299'  => 'velikiynovgorod.perfom-decor.ru',
+    '3170'  => 'novosibirsk.perfom-decor.ru',
+    '3172'  => 'omsk.perfom-decor.ru',
+    '3178'  => 'orenburg.perfom-decor.ru',
+    '3547'  => 'perfom-decor.ru',
+    '3176'  => 'orel.perfom-decor.ru',
+    '3180'  => 'penza.perfom-decor.ru',
+    '3182'  => 'perm.perfom-decor.ru',
+    '6833'  => 'perfom-decor.ru',
+    '6789'  => 'vladivostok.perfom-decor.ru',
+
+
+    '52538'  => 'velikieluki.perfom-decor.ru',
+    '3318'  => 'pskov.perfom-decor.ru',
+    '6561'  => 'perfom-decor.ru',
+    '134642'  => 'perfom-decor.ru',
+    '6572'  => 'perfom-decor.ru',
+    '6533'  => 'perfom-decor.ru',
+    '134647'  => 'perfom-decor.ru',
+    '3207'  => 'perfom-decor.ru',
+    '59639'  => 'perfom-decor.ru',
+    '3223'  => 'ufa.perfom-decor.ru',
+    '3275'  => 'ulanude.perfom-decor.ru',
+
+    '6263'  => 'perfom-decor.ru',
+    '6265'  => 'perfom-decor.ru',
+    '3431'  => 'elista.perfom-decor.ru',
+    '3756'  => 'petrozavodsk.perfom-decor.ru',
+    '3830'  => 'syktyvkar.perfom-decor.ru',
+    '149799'  => 'perfom-decor.ru',
+    '46432'  => 'sevastopol.perfom-decor.ru',
+    '6142'  => 'simferopol.perfom-decor.ru',
+
+
+    '3772'  => 'perfom-decor.ru',
+    '6137'  => 'saransk.perfom-decor.ru',
+    '3239'  => 'yakutsk.perfom-decor.ru',
+    '3723'  => 'perfom-decor.ru',
+    '6529'  => 'perfom-decor.ru',
+    '3260'  => 'kazan.perfom-decor.ru',
+
+    '64754'  => 'perfom-decor.ru',
+    '3329'  => 'naberezhnyechelny.perfom-decor.ru',
+    '6531'  => 'perfom-decor.ru',
+
+
+
+    '3133'  => 'izhevsk.perfom-decor.ru',
+    '3255'  => 'abakan.perfom-decor.ru',
+    '3127'  => 'groznyy.perfom-decor.ru',
+    '6119'  => 'gudermes.perfom-decor.ru',
+    '3187'  => 'rostovnadonu.perfom-decor.ru',
+    '3189'  => 'ryazan.perfom-decor.ru',
+    '3192'  => 'samara.perfom-decor.ru',
+
+    '3213'  => 'tolyatti.perfom-decor.ru',
+    '130682'  => 'perfom-decor.ru',
+    '3194'  => 'saratov.perfom-decor.ru',
+    '6132'  => 'yuzhno-sakhalinsk.perfom-decor.ru',
+    '3129'  => 'ekaterinburg.perfom-decor.ru',
+    '65002'  => 'perfom-decor.ru',
+    '3462'  => 'perfom-decor.ru',
+    '64994'  => 'perfom-decor.ru',
+    '65000'  => 'perfom-decor.ru',
+    '3522'  => 'perfom-decor.ru',
+    '64996'  => 'perfom-decor.ru',
+    '3556'  => 'perfom-decor.ru',
+    '65004'  => 'perfom-decor.ru',
+    '64992'  => 'perfom-decor.ru',
+
+
+    '6681'  => 'perfom-decor.ru',
+    '3338'  => 'smolensk.perfom-decor.ru',
+    '137549'  => 'perfom-decor.ru',
+    '137552'  => 'perfom-decor.ru',
+    '137553'  => 'perfom-decor.ru',
+    '137554'  => 'perfom-decor.ru',
+    '137556'  => 'perfom-decor.ru',
+    '3733'  => 'pyatigorsk.perfom-decor.ru',
+    '3204'  => 'stavropol.perfom-decor.ru',
+
+
+    '3211'  => 'tambov.perfom-decor.ru',
+    '3729'  => 'tver.perfom-decor.ru',
+    '3215'  => 'tomsk.perfom-decor.ru',
+    '3217'  => 'tula.perfom-decor.ru',
+    '3209'  => 'surgut.perfom-decor.ru',
+    '3220'  => 'tyumen.perfom-decor.ru',
+    '3456'  => 'perfom-decor.ru',
+    '3168'  => 'nizhnevartovsk.perfom-decor.ru',
+    '6299'  => 'perfom-decor.ru',
+    '130517'  => 'noyabrsk.perfom-decor.ru',
+    '3616'  => 'perfom-decor.ru',
+
+
+
+    '3326'  => 'ulyanovsk.perfom-decor.ru',
+    '3228'  => 'khabarovsk.perfom-decor.ru',
+    '3147'  => 'perfom-decor.ru',
+    '6305'  => 'perfom-decor.ru',
+    '3644'  => 'perfom-decor.ru',
+    '3161'  => 'magnitogorsk.perfom-decor.ru',
+    '3233'  => 'chelyabinsk.perfom-decor.ru',
+    '3231'  => 'cheboksary.perfom-decor.ru',
+    '94982'  => 'perfom-decor.ru',
+    '53164'  => 'perfom-decor.ru',
+    '6535'  => 'ribinsk.perfom-decor.ru',
+    '3237'  => 'yaroslavl.perfom-decor.ru',
+
+    '3321'  => 'vladimir.perfom-decor.ru',
+    '3121'  => 'perfom-decor.ru',
+    '36881'  => 'perfom-decor.ru',
+
+
+                );
+
+function _get_city_loc($id){
+    global $city_loc_id;
+    $result = isset($city_loc_id[$id]) ? $city_loc_id[$id] : null;
+    return $result;
 }

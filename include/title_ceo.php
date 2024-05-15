@@ -213,6 +213,7 @@ if (!empty($_GET['test'])) {
     if ($city_item) {
         $city_info = array_merge($city_item->GetFields(), $city_item->GetProperties());
         $CITY_NAME = $city_info['NAME'];
+        $CITY_NAME_2=$city_info['NAME'];
         $PROP_NAME = $city_info['name']['VALUE'];
         if (!empty($PROP_NAME)) $CITY_NAME = $PROP_NAME;
         // echo $CITY_NAME;
@@ -220,21 +221,31 @@ if (!empty($_GET['test'])) {
     }
 
     $subdomen = _get_city_loc($CITY_ID);
+
+    $encoding = 'UTF8';
     if (!empty($subdomen) && !empty($CITY_NAME)) {
         //Если товар
         if(isset($is_product)) {
-            $is_product_name = $is_product['NAME'].$ceo_prod_articul.$f;
+            $is_product_name = mb_strtoupper(mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 0, 1, $encoding), $encoding) .
+                mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 1, mb_strlen($is_product['NAME'].$ceo_prod_articul.$f, $encoding), $encoding);
             $title =  $is_product_name." из полистирола купить в {$CITY_NAME} от Перфом";
+            $description =$is_product_name." из пенополистирола купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
+            $keywords=$is_product_name.", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, фото, характеристики, 3d модель, инструкция, перфом";
         }
         //Если категория
         elseif(isset($last_section)) {
-            $title = $last_section['NAME']." купить в {$CITY_NAME} от Перфом";
+            $title = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить в {$CITY_NAME} от Перфом";
+            $description = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
+            $keywords =  mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding).", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом";
         }
         else {
             switch ($url) {
-                //case '/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
-                case '/contact/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
-                //case '/wheretobuy/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = ''; $keywords = ''; break;
+                case '/': $title = 'Официальный сайт Перфом - производство лепнины и архитектурного декора'; $description = 'Купить лепнину Перфом в интернет-магазине, а также в розничных точках по всей территории России, СНГ и стран Балтии.'; $keywords = "карнизы, молдинги, плинтусы, архитравы, угловые элементы, розетки, пилястры, колонны, полуколонны, обрамление арок, обрамление дверей, сандрики, ниши, кессоны, купола, кронштейны, орнаменты, перфом, {$CITY_NAME_2}"; break;
+                case '/contact/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = 'Контакты компании «Перфом» в ' .$CITY_NAME.': адрес, телефон, время работы, филиалы, e-mail'; $keywords = 'контакты, контактная информация, адрес, телефон, время работы, филиалы, e mail, электронная почта, главный офис, перфом, ' .$CITY_NAME_2; break;
+                case '/wheretobuy/': $title = 'Где купить продукцию компании «Перфом» в '.$CITY_NAME; $description = 'Адреса, где можно купить продукцию компании «Перфом» в '.$CITY_NAME; $keywords = "где купить продукцию перфом в {$CITY_NAME}, где купить товар перфом в {$CITY_NAME}"; break;
             }
         }
     }

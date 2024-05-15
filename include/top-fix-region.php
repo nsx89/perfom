@@ -19,9 +19,6 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
     $loc = array_merge($loc->GetFields(), $loc->GetProperties());
 
     $subdomen = _get_city_loc($my_city);
-    if (!empty($_GET['test'])) {
-        //echo '123<p style="position: relative; z-index: 100000000;">'.$subdomen.'my_city_fix='.$my_city_fix.'my_city_fixed='.$my_city_fixed.'</p>';
-    }
     ?>
 
     <!--noindex-->

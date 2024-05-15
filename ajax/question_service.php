@@ -712,7 +712,7 @@ if ( $type == "putoff" ) {
     if(!$USER->IsAuthorized() || $USER->IsAuthorized() && !$USER->IsAuthorized()) {
         die();
     }
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 	$send_date = date('d.m.Y H:i:s');
 	$stat = "Вопрос отложен";
 
@@ -729,7 +729,7 @@ if ( $type == "puton" ) {
     if(!$USER->IsAuthorized() || $USER->IsAuthorized() && !$USER->IsAuthorized()) {
         die();
     }
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 	$send_date = date('d.m.Y H:i:s');
 	$stat = "Вопрос прочитан";
 
@@ -749,7 +749,7 @@ if( $type == "answ") {
         die();
     }
 
-	$qst_id = $_GET['id'];
+	$qst_id = (int)$_GET['id'];
 
 	// проверка на спам
     $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$qst_id,'ACTIVE'=>'Y'));
@@ -909,7 +909,8 @@ if ( $type=="comm" ) {
     }
 
 // проверка на спам
-$inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
+$id = (int)$_GET['id'];
+$inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
 if (intval($inbase->SelectedRowsCount()) == 0) {
     //print 'err!';
     die();
@@ -1082,7 +1083,7 @@ if (intval($inbase->SelectedRowsCount()) == 0) {
 $user_score = "";
 $user_comm = "";
 
-$id = $_GET['id'];
+$id = (int)$_GET['id'];
 
 $res = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
 
@@ -1314,7 +1315,7 @@ if ( $type == "del" ) {
         die();
     }
 
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 
 	if(CIBlock::GetPermission(37)>='W') {
 		$DB->StartTransaction();
@@ -1338,13 +1339,14 @@ if ( $type == "check" ) {
     }
 
     // проверка на спам
-    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
+    $id = (int)$_GET['id'];
+    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
     if (intval($inbase->SelectedRowsCount()) == 0) {
         //print 'err!';
         die();
     }
 
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 
 	$date = date('d.m.Y H:i:s');
 
@@ -1555,7 +1557,7 @@ if ( $type=="edit_answ" ) {
         die();
     }
 
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 
 	if($_POST['edit-text']) $text = $_POST['edit-text'];
 	$text = str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$text);
@@ -1596,7 +1598,7 @@ if ( $type=="edit_add" ) {
         die();
     }
 
-	$id = $_GET['id'];
+	$id = (int)$_GET['id'];
 	$id_add = $_GET['id_add'];
 
 	if($_POST['edit-text-add']) $text = $_POST['edit-text-add'];
@@ -1722,7 +1724,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 // ДИЛЕР ПИШЕТ ОТЧЕТ
 if ( $type == "report" ) {
 
-    $id = $_GET['id'];
+    $id = (int)$_GET['id'];
     $dealer_id = isset($_GET['d']) ? $_GET['d'] : '';
 
     $report = $_POST['dealer-report'];
@@ -1800,13 +1802,14 @@ if ( $type == "report" ) {
 
 
     // проверка на спам
-    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
+    $id = (int)$_GET['id'];
+    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
     if (intval($inbase->SelectedRowsCount()) == 0) {
         //print 'err!';
         die();
     }
 
-    $id = $_GET['id'];
+    $id = (int)$_GET['id'];
 
     $report = $_POST['dealer-report'];
     $report = str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$report);
