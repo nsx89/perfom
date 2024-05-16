@@ -24,7 +24,7 @@ $images_web_path_new = "/cron_responsive/catalog/data/images";
 
 require_once($_SERVER["DOCUMENT_ROOT"] . "/gallery/img_size.php");
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
-$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST'];
+$url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST']; 
 
 ?>
 <section class="news-item">
@@ -198,18 +198,22 @@ $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP
 </div>
 </div>
 </div>
-<div class="gallery-products-wrapper">
-    <div class="content-wrapper">
-        <div class="gallery-products-title">Используемые материалы</div>
-        <div class="gallery-products-slider col-prod-tab active" data-type="gallery-prod">
-            <?ksort($prod_arr)?>
-            <? foreach($prod_arr as $k=>$product) {
-                echo get_product_preview($product, $k);
-            } ?>
-        </div>
+<? if (!empty($prod_arr)) { ?>
+    <div class="gallery-products-wrapper">
+        <div class="content-wrapper">
+            <div class="gallery-products-title">Используемые материалы</div>
+            <div class="gallery-products-slider col-prod-tab active" data-type="gallery-prod">
+                <?ksort($prod_arr)?>
+                <? foreach($prod_arr as $k=>$product) {
+                    echo get_product_preview($product, $k);
+                } ?>
+            </div>
 
+        </div>
     </div>
-</div>
+<? } else { ?>
+    <br><br>
+<? } ?>
 </section>
 
 

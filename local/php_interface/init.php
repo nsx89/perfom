@@ -651,7 +651,10 @@ function __get_product_link($item,$test = false) {
         exit;
     }
     $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $item['IBLOCK_SECTION_ID']);
-    $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
+    
+    //$db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
+    $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array());
+    
     $section = $db_list->GetNext();
     //обратное дерево
     $current = $section;
@@ -660,7 +663,10 @@ function __get_product_link($item,$test = false) {
     $sections = array($current['CODE']);
     while ($current && $current['IBLOCK_SECTION_ID']) {
         $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ID' => $current['IBLOCK_SECTION_ID']);
-        $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
+        
+        //$db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
+        $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array());
+        
         $current = $db_list->GetNext();
         if ($current) {
             if($current['CODE'] == 'interernyj-dekor' || $current['CODE'] == 'fasadnyj-dekor') continue;
@@ -691,6 +697,33 @@ function ___get_product_sections($item, $name = false) {
         $current = $db_list->GetNext();
         if ($current) {
             if($current['CODE'] == 'interernyj-dekor' || $current['CODE'] == 'fasadnyj-dekor') continue;
+            $res[] = $current['CODE'];
+            $res_name[] = $current['NAME'];
+        }
+    }
+    if($name) {
+        return $res_name;
+    } else {
+        return $res;
+    }
+}
+function ___get_product_sections_all($item, $name = false) {
+    if (!is_array($item)) {
+        return "";
+    }
+    if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
+        exit;
+    }
+    //обратное дерево
+    $current = array('IBLOCK_SECTION_ID'=>$item['IBLOCK_SECTION_ID']);
+    $res = array();
+    $res_name = array();
+    while ($current && $current['IBLOCK_SECTION_ID']) {
+        $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ID' => $current['IBLOCK_SECTION_ID']);
+        $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array('IBLOCK_SECTION_ID', 'CODE', 'NAME'));
+        $current = $db_list->GetNext();
+        if ($current) {
+            //if($current['CODE'] == 'interernyj-dekor' || $current['CODE'] == 'fasadnyj-dekor') continue;
             $res[] = $current['CODE'];
             $res_name[] = $current['NAME'];
         }

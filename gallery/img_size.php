@@ -5,7 +5,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
 
-function imgSize($obj_num,$img_num,$obj_img,$obj_dir,$flex=null) {
+function imgSize($obj_num,$img_num,$obj_img,$obj_dir,$flex=null) { 
     if (isset($flex)) $flex;
     else $flex = "N";
 

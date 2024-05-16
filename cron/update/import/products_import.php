@@ -5,9 +5,10 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 }
 
 
+
 exit;
 
-/*
+
 
 $el = new CIBlockElement;
 
@@ -100,7 +101,7 @@ echo $product_id;
 
 
 /* --- PRICE --- */
-$PRICE = 2010;
+$PRICE = 2914;
 
 if (!empty($PRICE)) {
     $arFields = Array(
