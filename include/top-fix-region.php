@@ -22,7 +22,7 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
     ?>
 
     <!--noindex-->
-    <div id="top_fix_region">
+    <div id="top_fix_region" data-my_city_fix="<?= $my_city_fix ?>" data-my_city_fixed="<?= $my_city_fixed ?>" data-sub_city="<?= $_GET['sub_city'] ?>">
         <div class="top_fix_title">
             Ваш&nbsp;регион <span class="top_fix_title_city"><?=trim($loc['NAME'])?></span>?
         </div>

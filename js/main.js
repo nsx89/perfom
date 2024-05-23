@@ -131,6 +131,11 @@ $('document').ready(function() {
         regScroll.reinitialise();
         $('body').addClass('disabled');
     })
+
+    if ($('.js-geo-open-auto').length) {
+        $('.js-geo-open-auto').trigger('click');
+    }
+
     $('header').on('click','[data-type="geo-close"]',function() {
         $(this).css('z-index','0');
         $(this).attr("data-type","geo-open");

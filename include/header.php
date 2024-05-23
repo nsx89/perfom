@@ -64,9 +64,9 @@ $curr = getCurrency($loc['ID']);
                 </a>
                 <?  
                 //$USER->IsAdmin() && !in_array(5,$user_group_arr) &&
-                if (!empty($_GET['test'])) {  ?>
-                <a title="Выбрать регион" class="header-geo">
-                    <i class="icon-geo" data-type="geo-open"></i>
+                if (!empty($_GET['change_city'])) {  ?>
+                <a title="Выбрать регион" class="header-geo" style="display: none;">
+                    <i class="icon-geo js-geo-open-auto" data-type="geo-open"></i>
                 </a>
                 <? } ?>
                 <div class="menu-btn" data-type="menu-btn">

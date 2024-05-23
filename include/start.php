@@ -220,9 +220,12 @@ global $my_city_fix;
 				$my_location = $city['map']['VALUE'];
 			}
 		} elseif (!empty($_GET['sub_city'])) {
-
-			$my_location = $APPLICATION->get_cookie('my_location');
-			$my_city = $APPLICATION->get_cookie('my_city');
+//
+//			$my_location = $APPLICATION->get_cookie('my_location');
+//			$my_city = $APPLICATION->get_cookie('my_city');
+//
+//			if (empty($my_city))
+                $my_city = (int)$_GET['sub_city'];
 			
         	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
 			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
@@ -285,5 +288,11 @@ global $my_city_fix;
 			
 		}
 		// echo 'test '.$my_dealer.' | '.$my_location.' | '.$my_city;
+
+
+		/*if (!empty($_GET['test2'])) {
+			echo '<pre>';print_r($_COOKIE);echo '</pre>';
+			echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
+		}*/
 
 ?>
