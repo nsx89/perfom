@@ -1,0 +1,3034 @@
+<?xml version="1.0" encoding="windows-1251"?>
+<!DOCTYPE yml_catalog SYSTEM "shops.dtd">
+<yml_catalog date="2024-04-17 14:55">
+<shop>
+<name>ЕВРОПЛАСТ</name>
+<company>ООО "Декор"</company>
+<url>https://evroplast.ru</url>
+<platform>1C-Bitrix</platform>
+<currencies>
+<currency id="RUR" rate="1" />
+</currencies>
+<categories>
+<category id="189">Интерьерный декор</category>
+<category id="1600" parentId="189">гибкие аналоги</category>
+<category id="1542" parentId="189">карнизы</category>
+<category id="1544" parentId="189">молдинги</category>
+<category id="1546" parentId="189">плинтусы</category>
+<category id="1550" parentId="189">розетки</category>
+<category id="1560" parentId="189">архитравы</category>
+<category id="1555" parentId="189">обрамление дверей</category>
+<category id="1588" parentId="189">сандрики</category>
+<category id="1561" parentId="189">ниши</category>
+<category id="1552" parentId="189">кессоны и купола</category>
+<category id="1548" parentId="189">угловые элементы</category>
+<category id="1549" parentId="189">кронштейны</category>
+<category id="1551" parentId="189">орнаменты</category>
+<category id="1545" parentId="189">гибкие молдинги</category>
+<category id="1543" parentId="189">гибкие карнизы</category>
+<category id="1553" parentId="189">составные элементы</category>
+</categories>
+<offers>
+<offer id="4774" available="true">
+<url>https://evroplast.ru/karnizy/1-50-114/</url>
+<price>827.00</price>
+<oldprice>1378.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.114.100.png</picture>
+<name>карниз 1.50.114</name>
+<description></description>
+</offer>
+<offer id="4778" available="true">
+<url>https://evroplast.ru/karnizy/1-50-118/</url>
+<price>1871.00</price>
+<oldprice>3117.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.118.100.png</picture>
+<name>карниз 1.50.118</name>
+<description></description>
+</offer>
+<offer id="4789" available="true">
+<url>https://evroplast.ru/karnizy/1-50-107/</url>
+<price>1723.00</price>
+<oldprice>2871.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.107.100.png</picture>
+<name>карниз 1.50.107</name>
+<description></description>
+</offer>
+<offer id="4790" available="true">
+<url>https://evroplast.ru/karnizy/1-50-109/</url>
+<price>1871.00</price>
+<oldprice>3117.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.109.100.png</picture>
+<name>карниз 1.50.109</name>
+<description></description>
+</offer>
+<offer id="4807" available="true">
+<url>https://evroplast.ru/karnizy/1-50-135/</url>
+<price>1562.00</price>
+<oldprice>2602.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.135.100.png</picture>
+<name>карниз 1.50.135</name>
+<description></description>
+</offer>
+<offer id="4808" available="true">
+<url>https://evroplast.ru/karnizy/1-50-136/</url>
+<price>1751.00</price>
+<oldprice>2917.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.136.100.png</picture>
+<name>карниз 1.50.136</name>
+<description></description>
+</offer>
+<offer id="4823" available="true">
+<url>https://evroplast.ru/karnizy/1-50-151/</url>
+<price>2474.00</price>
+<oldprice>4123.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.151.100.png</picture>
+<name>карниз 1.50.151</name>
+<description></description>
+</offer>
+<offer id="4824" available="true">
+<url>https://evroplast.ru/karnizy/1-50-152/</url>
+<price>2474.00</price>
+<oldprice>4123.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.152.100.png</picture>
+<name>карниз 1.50.152</name>
+<description></description>
+</offer>
+<offer id="4825" available="true">
+<url>https://evroplast.ru/karnizy/1-50-153/</url>
+<price>2474.00</price>
+<oldprice>4123.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.153.100.png</picture>
+<name>карниз 1.50.153</name>
+<description></description>
+</offer>
+<offer id="4837" available="true">
+<url>https://evroplast.ru/karnizy/1-50-166/</url>
+<price>1709.00</price>
+<oldprice>2847.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.166.100.png</picture>
+<name>карниз 1.50.166</name>
+<description></description>
+</offer>
+<offer id="4847" available="true">
+<url>https://evroplast.ru/karnizy/1-50-176/</url>
+<price>1562.00</price>
+<oldprice>2602.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.176.100.png</picture>
+<name>карниз 1.50.176</name>
+<description></description>
+</offer>
+<offer id="4850" available="true">
+<url>https://evroplast.ru/karnizy/1-50-181/</url>
+<price>901.00</price>
+<oldprice>1501.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.181.100.png</picture>
+<name>карниз 1.50.181</name>
+<description></description>
+</offer>
+<offer id="4851" available="true">
+<url>https://evroplast.ru/karnizy/1-50-182/</url>
+<price>888.00</price>
+<oldprice>1479.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.182.100.png</picture>
+<name>карниз 1.50.182</name>
+<description></description>
+</offer>
+<offer id="4853" available="true">
+<url>https://evroplast.ru/karnizy/1-50-184/</url>
+<price>963.00</price>
+<oldprice>1605.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.184.100.png</picture>
+<name>карниз 1.50.184</name>
+<description></description>
+</offer>
+<offer id="4854" available="true">
+<url>https://evroplast.ru/karnizy/1-50-185/</url>
+<price>1686.00</price>
+<oldprice>2809.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.185.100.png</picture>
+<name>карниз 1.50.185</name>
+<description></description>
+</offer>
+<offer id="4855" available="true">
+<url>https://evroplast.ru/karnizy/1-50-186/</url>
+<price>963.00</price>
+<oldprice>1605.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.186.100.png</picture>
+<name>карниз 1.50.186</name>
+<description></description>
+</offer>
+<offer id="4856" available="true">
+<url>https://evroplast.ru/karnizy/1-50-187/</url>
+<price>855.00</price>
+<oldprice>1425.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.187.100.png</picture>
+<name>карниз 1.50.187</name>
+<description></description>
+</offer>
+<offer id="4857" available="true">
+<url>https://evroplast.ru/karnizy/1-50-188/</url>
+<price>855.00</price>
+<oldprice>1425.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.188.100.png</picture>
+<name>карниз 1.50.188</name>
+<description></description>
+</offer>
+<offer id="4858" available="true">
+<url>https://evroplast.ru/karnizy/1-50-190/</url>
+<price>642.00</price>
+<oldprice>1069.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.190.100.png</picture>
+<name>карниз 1.50.190</name>
+<description></description>
+</offer>
+<offer id="4859" available="true">
+<url>https://evroplast.ru/karnizy/1-50-191/</url>
+<price>630.00</price>
+<oldprice>1049.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.191.100.png</picture>
+<name>карниз 1.50.191</name>
+<description></description>
+</offer>
+<offer id="4861" available="true">
+<url>https://evroplast.ru/karnizy/1-50-193/</url>
+<price>899.00</price>
+<oldprice>1498.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.193.100.png</picture>
+<name>карниз 1.50.193</name>
+<description></description>
+</offer>
+<offer id="4863" available="true">
+<url>https://evroplast.ru/karnizy/1-50-195/</url>
+<price>901.00</price>
+<oldprice>1501.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.195.100.png</picture>
+<name>карниз 1.50.195</name>
+<description></description>
+</offer>
+<offer id="4865" available="true">
+<url>https://evroplast.ru/karnizy/1-50-197/</url>
+<price>963.00</price>
+<oldprice>1605.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.197.100.png</picture>
+<name>карниз 1.50.197</name>
+<description></description>
+</offer>
+<offer id="4867" available="true">
+<url>https://evroplast.ru/karnizy/1-50-200/</url>
+<price>855.00</price>
+<oldprice>1425.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.200.100.png</picture>
+<name>карниз 1.50.200</name>
+<description></description>
+</offer>
+<offer id="4870" available="true">
+<url>https://evroplast.ru/karnizy/1-50-203/</url>
+<price>1694.00</price>
+<oldprice>2823.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.203.100.png</picture>
+<name>карниз 1.50.203</name>
+<description></description>
+</offer>
+<offer id="4871" available="true">
+<url>https://evroplast.ru/karnizy/1-50-204/</url>
+<price>827.00</price>
+<oldprice>1378.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.204.100.png</picture>
+<name>карниз 1.50.204</name>
+<description></description>
+</offer>
+<offer id="4874" available="true">
+<url>https://evroplast.ru/karnizy/1-50-210/</url>
+<price>2084.00</price>
+<oldprice>3472.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.210.100.png</picture>
+<name>карниз 1.50.210</name>
+<description></description>
+</offer>
+<offer id="4876" available="true">
+<url>https://evroplast.ru/karnizy/1-50-212/</url>
+<price>2135.00</price>
+<oldprice>3558.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.212.100.png</picture>
+<name>карниз 1.50.212</name>
+<description></description>
+</offer>
+<offer id="4880" available="true">
+<url>https://evroplast.ru/karnizy/1-50-250/</url>
+<price>1562.00</price>
+<oldprice>2602.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.250.100.png</picture>
+<name>карниз 1.50.250</name>
+<description></description>
+</offer>
+<offer id="4883" available="true">
+<url>https://evroplast.ru/karnizy/1-50-253/</url>
+<price>901.00</price>
+<oldprice>1501.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.253.100.png</picture>
+<name>карниз 1.50.253</name>
+<description></description>
+</offer>
+<offer id="4885" available="true">
+<url>https://evroplast.ru/karnizy/1-50-255/</url>
+<price>1530.00</price>
+<oldprice>2550.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.255.100.png</picture>
+<name>карниз 1.50.255</name>
+<description></description>
+</offer>
+<offer id="4889" available="true">
+<url>https://evroplast.ru/karnizy/1-50-259/</url>
+<price>827.00</price>
+<oldprice>1378.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.259.100.png</picture>
+<name>карниз 1.50.259</name>
+<description></description>
+</offer>
+<offer id="4890" available="true">
+<url>https://evroplast.ru/karnizy/1-50-260/</url>
+<price>2134.00</price>
+<oldprice>3556.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.260.100.png</picture>
+<name>карниз 1.50.260</name>
+<description></description>
+</offer>
+<offer id="4893" available="true">
+<url>https://evroplast.ru/karnizy/1-50-264/</url>
+<price>2175.00</price>
+<oldprice>3625.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.264.100.png</picture>
+<name>карниз 1.50.264</name>
+<description></description>
+</offer>
+<offer id="4894" available="true">
+<url>https://evroplast.ru/karnizy/1-50-265/</url>
+<price>919.00</price>
+<oldprice>1531.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.265.100.png</picture>
+<name>карниз 1.50.265</name>
+<description></description>
+</offer>
+<offer id="4896" available="true">
+<url>https://evroplast.ru/karnizy/1-50-267/</url>
+<price>1782.00</price>
+<oldprice>2970.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.267.100.png</picture>
+<name>карниз 1.50.267</name>
+<description></description>
+</offer>
+<offer id="4897" available="true">
+<url>https://evroplast.ru/karnizy/1-50-268/</url>
+<price>1833.00</price>
+<oldprice>3055.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.268.100.png</picture>
+<name>карниз 1.50.268</name>
+<description></description>
+</offer>
+<offer id="4899" available="true">
+<url>https://evroplast.ru/karnizy/1-50-270/</url>
+<price>2079.00</price>
+<oldprice>3464.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.270.100.png</picture>
+<name>карниз 1.50.270</name>
+<description></description>
+</offer>
+<offer id="5861" available="true">
+<url>https://evroplast.ru/karnizy/1-50-205/</url>
+<price>919.00</price>
+<oldprice>1531.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.205.100.png</picture>
+<name>карниз 1.50.205</name>
+<description></description>
+</offer>
+<offer id="6176" available="true">
+<url>https://evroplast.ru/karnizy/1-50-207/</url>
+<price>915.00</price>
+<oldprice>1524.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.207.100.png</picture>
+<name>карниз 1.50.207</name>
+<description></description>
+</offer>
+<offer id="6362" available="true">
+<url>https://evroplast.ru/karnizy/1-50-279/</url>
+<price>1782.00</price>
+<oldprice>2970.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.279.100.png</picture>
+<name>карниз 1.50.279</name>
+<description></description>
+</offer>
+<offer id="6365" available="true">
+<url>https://evroplast.ru/karnizy/1-50-278/</url>
+<price>963.00</price>
+<oldprice>1605.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.278.100.png</picture>
+<name>карниз 1.50.278</name>
+<description></description>
+</offer>
+<offer id="6438" available="true">
+<url>https://evroplast.ru/karnizy/1-50-280/</url>
+<price>2375.00</price>
+<oldprice>3957.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.280.100.png</picture>
+<name>карниз 1.50.280</name>
+<description></description>
+</offer>
+<offer id="6498" available="true">
+<url>https://evroplast.ru/karnizy/1-50-284/</url>
+<price>853.00</price>
+<oldprice>1421.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.284.100.png</picture>
+<name>карниз 1.50.284</name>
+<description></description>
+</offer>
+<offer id="6500" available="true">
+<url>https://evroplast.ru/karnizy/1-50-283/</url>
+<price>823.00</price>
+<oldprice>1371.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.283.100.png</picture>
+<name>карниз 1.50.283</name>
+<description></description>
+</offer>
+<offer id="6553" available="true">
+<url>https://evroplast.ru/karnizy/1-50-285/</url>
+<price>1856.00</price>
+<oldprice>3093.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.285.100.png</picture>
+<name>карниз 1.50.285</name>
+<description></description>
+</offer>
+<offer id="6554" available="true">
+<url>https://evroplast.ru/karnizy/1-50-286/</url>
+<price>916.00</price>
+<oldprice>1526.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.286.100.png</picture>
+<name>карниз 1.50.286</name>
+<description></description>
+</offer>
+<offer id="6555" available="true">
+<url>https://evroplast.ru/karnizy/1-50-282/</url>
+<price>823.00</price>
+<oldprice>1371.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.282.100.png</picture>
+<name>карниз 1.50.282</name>
+<description></description>
+</offer>
+<offer id="6587" available="true">
+<url>https://evroplast.ru/karnizy/1-50-277/</url>
+<price>1832.00</price>
+<oldprice>3052.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.277.100.png</picture>
+<name>карниз 1.50.277</name>
+<description></description>
+</offer>
+<offer id="6749" available="true">
+<url>https://evroplast.ru/karnizy/1-50-290/</url>
+<price>853.00</price>
+<oldprice>1421.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.290.100.png</picture>
+<name>карниз 1.50.290</name>
+<description></description>
+</offer>
+<offer id="6768" available="true">
+<url>https://evroplast.ru/karnizy/1-50-289/</url>
+<price>807.00</price>
+<oldprice>1344.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.289.100.png</picture>
+<name>карниз 1.50.289</name>
+<description></description>
+</offer>
+<offer id="6771" available="true">
+<url>https://evroplast.ru/karnizy/1-50-206/</url>
+<price>657.00</price>
+<oldprice>1094.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.206.100.png</picture>
+<name>карниз 1.50.206</name>
+<description></description>
+</offer>
+<offer id="6821" available="true">
+<url>https://evroplast.ru/karnizy/1-50-272/</url>
+<price>657.00</price>
+<oldprice>1095.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.272.100.png</picture>
+<name>карниз 1.50.272</name>
+<description></description>
+</offer>
+<offer id="6827" available="true">
+<url>https://evroplast.ru/karnizy/1-50-292/</url>
+<price>610.00</price>
+<oldprice>1016.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.292.100.png</picture>
+<name>карниз 1.50.292</name>
+<description></description>
+</offer>
+<offer id="21618" available="true">
+<url>https://evroplast.ru/karnizy/1-50-299/</url>
+<price>631.00</price>
+<oldprice>1051.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.299.100.png</picture>
+<name>карниз 1.50.299</name>
+<description></description>
+</offer>
+<offer id="21619" available="true">
+<url>https://evroplast.ru/karnizy/1-50-297/</url>
+<price>591.00</price>
+<oldprice>984.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.50.297.100.png</picture>
+<name>карниз 1.50.297</name>
+<description></description>
+</offer>
+<offer id="76560" available="true">
+<url>https://evroplast.ru/karnizy/6-50-701/</url>
+<price>223.00</price>
+<oldprice>371.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.701.100.png</picture>
+<name>  6.50.701</name>
+<description></description>
+</offer>
+<offer id="76561" available="true">
+<url>https://evroplast.ru/karnizy/6-50-702/</url>
+<price>462.00</price>
+<oldprice>770.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.702.100.png</picture>
+<name>  6.50.702</name>
+<description></description>
+</offer>
+<offer id="76562" available="true">
+<url>https://evroplast.ru/karnizy/6-50-703/</url>
+<price>375.00</price>
+<oldprice>624.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.703.100.png</picture>
+<name>  6.50.703</name>
+<description></description>
+</offer>
+<offer id="76563" available="true">
+<url>https://evroplast.ru/karnizy/6-50-704/</url>
+<price>639.00</price>
+<oldprice>1064.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.704.100.png</picture>
+<name>  6.50.704</name>
+<description></description>
+</offer>
+<offer id="76564" available="true">
+<url>https://evroplast.ru/karnizy/6-50-705/</url>
+<price>518.00</price>
+<oldprice>862.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.705.100.png</picture>
+<name>  6.50.705</name>
+<description></description>
+</offer>
+<offer id="76565" available="true">
+<url>https://evroplast.ru/karnizy/6-50-706/</url>
+<price>959.00</price>
+<oldprice>1597.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.706.100.png</picture>
+<name>  6.50.706</name>
+<description></description>
+</offer>
+<offer id="76566" available="true">
+<url>https://evroplast.ru/karnizy/6-50-708/</url>
+<price>399.00</price>
+<oldprice>665.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.708.100.png</picture>
+<name>  6.50.708</name>
+<description></description>
+</offer>
+<offer id="76567" available="true">
+<url>https://evroplast.ru/karnizy/6-50-709/</url>
+<price>878.00</price>
+<oldprice>1463.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.709.100.png</picture>
+<name>  6.50.709</name>
+<description></description>
+</offer>
+<offer id="78430" available="true">
+<url>https://evroplast.ru/karnizy/6-53-702-1/</url>
+<price>399.00</price>
+<oldprice>665.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.702.100.png</picture>
+<name>  6.53.702</name>
+<description></description>
+</offer>
+<offer id="78431" available="true">
+<url>https://evroplast.ru/karnizy/6-53-703-1/</url>
+<price>639.00</price>
+<oldprice>1064.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.703.100.png</picture>
+<name>  6.53.703</name>
+<description></description>
+</offer>
+<offer id="78432" available="true">
+<url>https://evroplast.ru/karnizy/6-53-704-1/</url>
+<price>716.00</price>
+<oldprice>1192.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.704.100.png</picture>
+<name>  6.53.704</name>
+<description></description>
+</offer>
+<offer id="79707" available="true">
+<url>https://evroplast.ru/karnizy/6-50-719/</url>
+<price>878.00</price>
+<oldprice>1463.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1542</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.50.719.100.png</picture>
+<name>  6.50.719</name>
+<description></description>
+</offer>
+<offer id="4902" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-114-f/</url>
+<price>1653.00</price>
+<oldprice>2754.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.114.600.png</picture>
+<name>карниз 1.50.114 гибкий</name>
+<description></description>
+</offer>
+<offer id="4906" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-118-f/</url>
+<price>3740.00</price>
+<oldprice>6232.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.118.600.png</picture>
+<name>карниз 1.50.118 гибкий</name>
+<description></description>
+</offer>
+<offer id="4917" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-107-f/</url>
+<price>3444.00</price>
+<oldprice>5740.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.107.600.png</picture>
+<name>карниз 1.50.107 гибкий</name>
+<description></description>
+</offer>
+<offer id="4918" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-109-f/</url>
+<price>3740.00</price>
+<oldprice>6232.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.109.600.png</picture>
+<name>карниз 1.50.109 гибкий</name>
+<description></description>
+</offer>
+<offer id="4935" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-135-f/</url>
+<price>3122.00</price>
+<oldprice>5202.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.135.600.png</picture>
+<name>карниз 1.50.135 гибкий</name>
+<description></description>
+</offer>
+<offer id="4936" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-136-f/</url>
+<price>3500.00</price>
+<oldprice>5832.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.136.600.png</picture>
+<name>карниз 1.50.136 гибкий</name>
+<description></description>
+</offer>
+<offer id="4951" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-151-f/</url>
+<price>4947.00</price>
+<oldprice>8245.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.151.600.png</picture>
+<name>карниз 1.50.151 гибкий</name>
+<description></description>
+</offer>
+<offer id="4952" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-152-f/</url>
+<price>4947.00</price>
+<oldprice>8245.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.152.600.png</picture>
+<name>карниз 1.50.152 гибкий</name>
+<description></description>
+</offer>
+<offer id="4953" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-153-f/</url>
+<price>4947.00</price>
+<oldprice>8245.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.153.600.png</picture>
+<name>карниз 1.50.153 гибкий</name>
+<description></description>
+</offer>
+<offer id="4965" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-166-f/</url>
+<price>3416.00</price>
+<oldprice>5692.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.166.600.png</picture>
+<name>карниз 1.50.166 гибкий</name>
+<description></description>
+</offer>
+<offer id="4974" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-176-f/</url>
+<price>3122.00</price>
+<oldprice>5202.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.176.600.png</picture>
+<name>карниз 1.50.176 гибкий</name>
+<description></description>
+</offer>
+<offer id="4977" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-181-f/</url>
+<price>1801.00</price>
+<oldprice>3001.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.181.600.png</picture>
+<name>карниз 1.50.181 гибкий</name>
+<description></description>
+</offer>
+<offer id="4978" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-182-f/</url>
+<price>1773.00</price>
+<oldprice>2955.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.182.600.png</picture>
+<name>карниз 1.50.182 гибкий</name>
+<description></description>
+</offer>
+<offer id="4980" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-184-f/</url>
+<price>1925.00</price>
+<oldprice>3208.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.184.600.png</picture>
+<name>карниз 1.50.184 гибкий</name>
+<description></description>
+</offer>
+<offer id="4981" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-185-f/</url>
+<price>3371.00</price>
+<oldprice>5617.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.185.600.png</picture>
+<name>карниз 1.50.185 гибкий</name>
+<description></description>
+</offer>
+<offer id="4982" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-186-f/</url>
+<price>1925.00</price>
+<oldprice>3208.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.186.600.png</picture>
+<name>карниз 1.50.186 гибкий</name>
+<description></description>
+</offer>
+<offer id="4983" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-187-f/</url>
+<price>1709.00</price>
+<oldprice>2848.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.187.600.png</picture>
+<name>карниз 1.50.187 гибкий</name>
+<description></description>
+</offer>
+<offer id="4984" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-188-f/</url>
+<price>1709.00</price>
+<oldprice>2848.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.188.600.png</picture>
+<name>карниз 1.50.188 гибкий</name>
+<description></description>
+</offer>
+<offer id="4985" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-190-f/</url>
+<price>1283.00</price>
+<oldprice>2137.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.190.600.png</picture>
+<name>карниз 1.50.190 гибкий</name>
+<description></description>
+</offer>
+<offer id="4986" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-191-f/</url>
+<price>1257.00</price>
+<oldprice>2095.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.191.600.png</picture>
+<name>карниз 1.50.191 гибкий</name>
+<description></description>
+</offer>
+<offer id="4988" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-193-f/</url>
+<price>1796.00</price>
+<oldprice>2992.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.193.600.png</picture>
+<name>карниз 1.50.193 гибкий</name>
+<description></description>
+</offer>
+<offer id="4990" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-195-f/</url>
+<price>1801.00</price>
+<oldprice>3001.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.195.600.png</picture>
+<name>карниз 1.50.195 гибкий</name>
+<description></description>
+</offer>
+<offer id="4991" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-197-f/</url>
+<price>1925.00</price>
+<oldprice>3208.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.197.600.png</picture>
+<name>карниз 1.50.197 гибкий</name>
+<description></description>
+</offer>
+<offer id="4992" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-200-f/</url>
+<price>1709.00</price>
+<oldprice>2848.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.200.600.png</picture>
+<name>карниз 1.50.200 гибкий</name>
+<description></description>
+</offer>
+<offer id="4994" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-203-f/</url>
+<price>3388.00</price>
+<oldprice>5646.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.203.600.png</picture>
+<name>карниз 1.50.203 гибкий</name>
+<description></description>
+</offer>
+<offer id="5000" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-250-f/</url>
+<price>3122.00</price>
+<oldprice>5202.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.250.600.png</picture>
+<name>карниз 1.50.250 гибкий</name>
+<description></description>
+</offer>
+<offer id="5003" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-253-f/</url>
+<price>1801.00</price>
+<oldprice>3001.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.253.600.png</picture>
+<name>карниз 1.50.253 гибкий</name>
+<description></description>
+</offer>
+<offer id="5005" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-255-f/</url>
+<price>3059.00</price>
+<oldprice>5098.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.255.600.png</picture>
+<name>карниз 1.50.255 гибкий</name>
+<description></description>
+</offer>
+<offer id="5009" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-259-f/</url>
+<price>1653.00</price>
+<oldprice>2754.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.259.600.png</picture>
+<name>карниз 1.50.259 гибкий</name>
+<description></description>
+</offer>
+<offer id="5010" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-260-f/</url>
+<price>4266.00</price>
+<oldprice>7109.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.260.600.png</picture>
+<name>карниз 1.50.260 гибкий</name>
+<description></description>
+</offer>
+<offer id="5013" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-264-f/</url>
+<price>4349.00</price>
+<oldprice>7248.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.264.600.png</picture>
+<name>карниз 1.50.264 гибкий</name>
+<description></description>
+</offer>
+<offer id="5014" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-265-f/</url>
+<price>1836.00</price>
+<oldprice>3060.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.265.600.png</picture>
+<name>карниз 1.50.265 гибкий</name>
+<description></description>
+</offer>
+<offer id="5016" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-267-f/</url>
+<price>3563.00</price>
+<oldprice>5937.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.267.600.png</picture>
+<name>карниз 1.50.267 гибкий</name>
+<description></description>
+</offer>
+<offer id="5017" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-268-f/</url>
+<price>3665.00</price>
+<oldprice>6108.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.268.600.png</picture>
+<name>карниз 1.50.268 гибкий</name>
+<description></description>
+</offer>
+<offer id="5019" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-270-f/</url>
+<price>4157.00</price>
+<oldprice>6928.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.270.600.png</picture>
+<name>карниз 1.50.270 гибкий</name>
+<description></description>
+</offer>
+<offer id="5865" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-205-f/</url>
+<price>1836.00</price>
+<oldprice>3060.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.205.600.png</picture>
+<name>карниз 1.50.205 гибкий</name>
+<description></description>
+</offer>
+<offer id="6195" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-204-f/</url>
+<price>1653.00</price>
+<oldprice>2754.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.204.600.png</picture>
+<name>карниз 1.50.204 гибкий</name>
+<description></description>
+</offer>
+<offer id="6366" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-278-f/</url>
+<price>1925.00</price>
+<oldprice>3208.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.278.600.png</picture>
+<name>карниз 1.50.278 гибкий</name>
+<description></description>
+</offer>
+<offer id="6381" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-207-f/</url>
+<price>1828.00</price>
+<oldprice>3046.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.207.600.png</picture>
+<name>карниз 1.50.207 гибкий</name>
+<description></description>
+</offer>
+<offer id="6499" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-284-f/</url>
+<price>1704.00</price>
+<oldprice>2840.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.284.600.png</picture>
+<name>карниз 1.50.284 гибкий</name>
+<description></description>
+</offer>
+<offer id="6564" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-286-f/</url>
+<price>1832.00</price>
+<oldprice>3052.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.286.600.png</picture>
+<name>карниз 1.50.286 гибкий</name>
+<description></description>
+</offer>
+<offer id="6582" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-280-f/</url>
+<price>4747.00</price>
+<oldprice>7911.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.280.600.png</picture>
+<name>карниз 1.50.280 гибкий</name>
+<description></description>
+</offer>
+<offer id="6663" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-282-f/</url>
+<price>1644.00</price>
+<oldprice>2739.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.282.600.png</picture>
+<name>карниз 1.50.282 гибкий</name>
+<description></description>
+</offer>
+<offer id="6670" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-277-f/</url>
+<price>3662.00</price>
+<oldprice>6102.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.277.600.png</picture>
+<name>карниз 1.50.277 гибкий</name>
+<description></description>
+</offer>
+<offer id="6770" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-283-f/</url>
+<price>1644.00</price>
+<oldprice>2739.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.283.600.png</picture>
+<name>карниз 1.50.283 гибкий</name>
+<description></description>
+</offer>
+<offer id="6785" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-279-f/</url>
+<price>3563.00</price>
+<oldprice>5937.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.279.600.png</picture>
+<name>карниз 1.50.279 гибкий</name>
+<description></description>
+</offer>
+<offer id="6807" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-290-f/</url>
+<price>1704.00</price>
+<oldprice>2840.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.290.600.png</picture>
+<name>карниз 1.50.290 гибкий</name>
+<description></description>
+</offer>
+<offer id="6808" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-289-f/</url>
+<price>1611.00</price>
+<oldprice>2684.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.289.600.png</picture>
+<name>карниз 1.50.289 гибкий</name>
+<description></description>
+</offer>
+<offer id="6809" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-206-f/</url>
+<price>1312.00</price>
+<oldprice>2186.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.206.600.png</picture>
+<name>карниз 1.50.206 гибкий</name>
+<description></description>
+</offer>
+<offer id="6824" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-272-f/</url>
+<price>1314.00</price>
+<oldprice>2189.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.272.600.png</picture>
+<name>карниз 1.50.272 гибкий</name>
+<description></description>
+</offer>
+<offer id="6828" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-292-f/</url>
+<price>1218.00</price>
+<oldprice>2030.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.292.600.png</picture>
+<name>карниз 1.50.292 гибкий</name>
+<description></description>
+</offer>
+<offer id="28243" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-299-f/</url>
+<price>1260.00</price>
+<oldprice>2099.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/60/1.50.299.60.png</picture>
+<name>карниз 1.50.299 гибкий</name>
+<description></description>
+</offer>
+<offer id="28244" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-297-f/</url>
+<price>1181.00</price>
+<oldprice>1967.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.297.600.png</picture>
+<name>карниз 1.50.297 гибкий</name>
+<description></description>
+</offer>
+<offer id="84138" available="true">
+<url>https://evroplast.ru/gibkie-karnizy/1-50-285-f/</url>
+<price>3711.00</price>
+<oldprice>6184.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1543</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.50.285.600.png</picture>
+<name>карниз 1.50.285 гибкий</name>
+<description></description>
+</offer>
+<offer id="5020" available="true">
+<url>https://evroplast.ru/moldingi/1-51-311/</url>
+<price>1194.00</price>
+<oldprice>1989.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.311.100.png</picture>
+<name>молдинг 1.51.311</name>
+<description></description>
+</offer>
+<offer id="5032" available="true">
+<url>https://evroplast.ru/moldingi/1-51-324/</url>
+<price>564.00</price>
+<oldprice>939.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.324.100.png</picture>
+<name>молдинг 1.51.324</name>
+<description></description>
+</offer>
+<offer id="5033" available="true">
+<url>https://evroplast.ru/moldingi/1-51-352/</url>
+<price>696.00</price>
+<oldprice>1159.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.352.100.png</picture>
+<name>молдинг 1.51.352</name>
+<description></description>
+</offer>
+<offer id="5034" available="true">
+<url>https://evroplast.ru/moldingi/1-51-325/</url>
+<price>1235.00</price>
+<oldprice>2057.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.325.100.png</picture>
+<name>молдинг 1.51.325</name>
+<description></description>
+</offer>
+<offer id="5036" available="true">
+<url>https://evroplast.ru/moldingi/1-51-332/</url>
+<price>722.00</price>
+<oldprice>1202.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.332.100.png</picture>
+<name>молдинг 1.51.332</name>
+<description></description>
+</offer>
+<offer id="5037" available="true">
+<url>https://evroplast.ru/moldingi/1-51-350/</url>
+<price>1244.00</price>
+<oldprice>2073.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.350.100.png</picture>
+<name>молдинг 1.51.350</name>
+<description></description>
+</offer>
+<offer id="5038" available="true">
+<url>https://evroplast.ru/moldingi/1-51-326/</url>
+<price>716.00</price>
+<oldprice>1193.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.326.100.png</picture>
+<name>молдинг 1.51.326</name>
+<description></description>
+</offer>
+<offer id="5040" available="true">
+<url>https://evroplast.ru/moldingi/1-51-309/</url>
+<price>765.00</price>
+<oldprice>1275.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.309.100.png</picture>
+<name>молдинг 1.51.309</name>
+<description></description>
+</offer>
+<offer id="5042" available="true">
+<url>https://evroplast.ru/moldingi/1-51-313/</url>
+<price>726.00</price>
+<oldprice>1209.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.313.100.png</picture>
+<name>молдинг 1.51.313</name>
+<description></description>
+</offer>
+<offer id="5046" available="true">
+<url>https://evroplast.ru/moldingi/1-51-318/</url>
+<price>777.00</price>
+<oldprice>1295.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.318.100.png</picture>
+<name>молдинг 1.51.318</name>
+<description></description>
+</offer>
+<offer id="5047" available="true">
+<url>https://evroplast.ru/moldingi/1-51-319/</url>
+<price>1256.00</price>
+<oldprice>2092.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.319.100.png</picture>
+<name>молдинг 1.51.319</name>
+<description></description>
+</offer>
+<offer id="5048" available="true">
+<url>https://evroplast.ru/moldingi/1-51-320/</url>
+<price>1194.00</price>
+<oldprice>1989.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.320.100.png</picture>
+<name>молдинг 1.51.320</name>
+<description></description>
+</offer>
+<offer id="5050" available="true">
+<url>https://evroplast.ru/moldingi/1-51-328/</url>
+<price>716.00</price>
+<oldprice>1193.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.328.100.png</picture>
+<name>молдинг 1.51.328</name>
+<description></description>
+</offer>
+<offer id="5051" available="true">
+<url>https://evroplast.ru/moldingi/1-51-330/</url>
+<price>755.00</price>
+<oldprice>1257.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.330.100.png</picture>
+<name>молдинг 1.51.330</name>
+<description></description>
+</offer>
+<offer id="5053" available="true">
+<url>https://evroplast.ru/moldingi/1-51-340/</url>
+<price>708.00</price>
+<oldprice>1179.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.340.100.png</picture>
+<name>молдинг 1.51.340</name>
+<description></description>
+</offer>
+<offer id="5054" available="true">
+<url>https://evroplast.ru/moldingi/1-51-341/</url>
+<price>779.00</price>
+<oldprice>1297.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.341.100.png</picture>
+<name>молдинг 1.51.341</name>
+<description></description>
+</offer>
+<offer id="5058" available="true">
+<url>https://evroplast.ru/moldingi/1-51-351/</url>
+<price>735.00</price>
+<oldprice>1225.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.351.100.png</picture>
+<name>молдинг 1.51.351</name>
+<description></description>
+</offer>
+<offer id="5059" available="true">
+<url>https://evroplast.ru/moldingi/1-51-380/</url>
+<price>1649.00</price>
+<oldprice>2747.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.380.100.png</picture>
+<name>молдинг 1.51.380</name>
+<description></description>
+</offer>
+<offer id="5062" available="true">
+<url>https://evroplast.ru/moldingi/1-51-339/</url>
+<price>735.00</price>
+<oldprice>1225.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.339.100.png</picture>
+<name>молдинг 1.51.339</name>
+<description></description>
+</offer>
+<offer id="5063" available="true">
+<url>https://evroplast.ru/moldingi/1-51-331/</url>
+<price>765.00</price>
+<oldprice>1275.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.331.100.png</picture>
+<name>молдинг 1.51.331</name>
+<description></description>
+</offer>
+<offer id="5064" available="true">
+<url>https://evroplast.ru/moldingi/1-51-336/</url>
+<price>722.00</price>
+<oldprice>1202.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.336.100.png</picture>
+<name>молдинг 1.51.336</name>
+<description></description>
+</offer>
+<offer id="5065" available="true">
+<url>https://evroplast.ru/moldingi/1-51-334/</url>
+<price>696.00</price>
+<oldprice>1160.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.334.100.png</picture>
+<name>молдинг 1.51.334</name>
+<description></description>
+</offer>
+<offer id="5066" available="true">
+<url>https://evroplast.ru/moldingi/1-51-335/</url>
+<price>767.00</price>
+<oldprice>1278.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.335.100.png</picture>
+<name>молдинг 1.51.335</name>
+<description></description>
+</offer>
+<offer id="5069" available="true">
+<url>https://evroplast.ru/moldingi/1-51-349/</url>
+<price>1194.00</price>
+<oldprice>1989.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.349.100.png</picture>
+<name>молдинг 1.51.349</name>
+<description></description>
+</offer>
+<offer id="5070" available="true">
+<url>https://evroplast.ru/moldingi/1-51-329/</url>
+<price>596.00</price>
+<oldprice>992.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.329.100.png</picture>
+<name>молдинг 1.51.329</name>
+<description></description>
+</offer>
+<offer id="5868" available="true">
+<url>https://evroplast.ru/moldingi/1-51-358/</url>
+<price>1102.00</price>
+<oldprice>1836.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.358.100.png</picture>
+<name>молдинг 1.51.358</name>
+<description></description>
+</offer>
+<offer id="5869" available="true">
+<url>https://evroplast.ru/moldingi/1-51-361/</url>
+<price>767.00</price>
+<oldprice>1278.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.361.100.png</picture>
+<name>молдинг 1.51.361</name>
+<description></description>
+</offer>
+<offer id="6206" available="true">
+<url>https://evroplast.ru/moldingi/1-51-359/</url>
+<price>710.00</price>
+<oldprice>1183.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.359.100.png</picture>
+<name>молдинг 1.51.359</name>
+<description></description>
+</offer>
+<offer id="6439" available="true">
+<url>https://evroplast.ru/moldingi/1-51-368/</url>
+<price>1351.00</price>
+<oldprice>2251.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.368.100.png</picture>
+<name>молдинг 1.51.368</name>
+<description></description>
+</offer>
+<offer id="6584" available="true">
+<url>https://evroplast.ru/moldingi/1-51-373/</url>
+<price>1137.00</price>
+<oldprice>1894.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.373.100.png</picture>
+<name>молдинг 1.51.373</name>
+<description></description>
+</offer>
+<offer id="6665" available="true">
+<url>https://evroplast.ru/moldingi/1-51-364/</url>
+<price>1034.00</price>
+<oldprice>1723.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.364.100.png</picture>
+<name>молдинг 1.51.364</name>
+<description></description>
+</offer>
+<offer id="6707" available="true">
+<url>https://evroplast.ru/moldingi/1-51-369/</url>
+<price>963.00</price>
+<oldprice>1605.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.369.100.png</picture>
+<name>молдинг 1.51.369</name>
+<description></description>
+</offer>
+<offer id="6708" available="true">
+<url>https://evroplast.ru/moldingi/1-51-376/</url>
+<price>751.00</price>
+<oldprice>1251.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.376.100.png</picture>
+<name>молдинг 1.51.376</name>
+<description></description>
+</offer>
+<offer id="6818" available="true">
+<url>https://evroplast.ru/moldingi/1-51-382/</url>
+<price>1233.00</price>
+<oldprice>2055.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.382.100.png</picture>
+<name>молдинг 1.51.382</name>
+<description></description>
+</offer>
+<offer id="6826" available="true">
+<url>https://evroplast.ru/moldingi/1-51-371/</url>
+<price>980.00</price>
+<oldprice>1632.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.371.100.png</picture>
+<name>молдинг 1.51.371</name>
+<description></description>
+</offer>
+<offer id="12104" available="true">
+<url>https://evroplast.ru/moldingi/1-51-372/</url>
+<price>591.00</price>
+<oldprice>984.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.372.100.png</picture>
+<name>молдинг 1.51.372</name>
+<description></description>
+</offer>
+<offer id="14600" available="true">
+<url>https://evroplast.ru/moldingi/1-51-365/</url>
+<price>868.00</price>
+<oldprice>1446.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.365.100.png</picture>
+<name>молдинг 1.51.365</name>
+<description></description>
+</offer>
+<offer id="47211" available="true">
+<url>https://evroplast.ru/moldingi/1-51-601/</url>
+<price>1467.00</price>
+<oldprice>2445.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.51.601.10.png</picture>
+<name>молдинг 1.51.601</name>
+<description></description>
+</offer>
+<offer id="47212" available="true">
+<url>https://evroplast.ru/moldingi/1-51-602/</url>
+<price>3009.00</price>
+<oldprice>5014.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.51.602.10.png</picture>
+<name>молдинг 1.51.602</name>
+<description></description>
+</offer>
+<offer id="47213" available="true">
+<url>https://evroplast.ru/moldingi/1-51-603/</url>
+<price>4296.00</price>
+<oldprice>7160.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.51.603.10.png</picture>
+<name>молдинг 1.51.603</name>
+<description></description>
+</offer>
+<offer id="47214" available="true">
+<url>https://evroplast.ru/moldingi/1-51-604/</url>
+<price>4082.00</price>
+<oldprice>6803.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.51.604.10.png</picture>
+<name>молдинг 1.51.604</name>
+<description></description>
+</offer>
+<offer id="65559" available="true">
+<url>https://evroplast.ru/moldingi/1-51-387/</url>
+<price>1155.00</price>
+<oldprice>1925.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.387.100.png</picture>
+<name>молдинг 1.51.387</name>
+<description></description>
+</offer>
+<offer id="76570" available="true">
+<url>https://evroplast.ru/moldingi/6-51-704/</url>
+<price>506.00</price>
+<oldprice>842.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.51.704.100.png</picture>
+<name>  6.51.704</name>
+<description></description>
+</offer>
+<offer id="76571" available="true">
+<url>https://evroplast.ru/moldingi/6-51-705/</url>
+<price>341.00</price>
+<oldprice>568.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.51.705.100.png</picture>
+<name>  6.51.705</name>
+<description></description>
+</offer>
+<offer id="76572" available="true">
+<url>https://evroplast.ru/moldingi/6-51-706/</url>
+<price>472.00</price>
+<oldprice>786.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.51.706.100.png</picture>
+<name>  6.51.706</name>
+<description></description>
+</offer>
+<offer id="76573" available="true">
+<url>https://evroplast.ru/moldingi/6-51-707/</url>
+<price>506.00</price>
+<oldprice>842.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.51.707.100.png</picture>
+<name>  6.51.707</name>
+<description></description>
+</offer>
+<offer id="76574" available="true">
+<url>https://evroplast.ru/moldingi/6-51-708/</url>
+<price>639.00</price>
+<oldprice>1064.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.51.708.100.png</picture>
+<name>  6.51.708</name>
+<description></description>
+</offer>
+<offer id="84701" available="true">
+<url>https://evroplast.ru/moldingi/1-51-366/</url>
+<price>827.00</price>
+<oldprice>1378.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1544</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.51.366.100.png</picture>
+<name>молдинг 1.51.366</name>
+<description></description>
+</offer>
+<offer id="5074" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-311-f/</url>
+<price>2387.00</price>
+<oldprice>3978.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.311.600.png</picture>
+<name>молдинг 1.51.311 гибкий</name>
+<description></description>
+</offer>
+<offer id="5086" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-324-f/</url>
+<price>1125.00</price>
+<oldprice>1875.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.324.600.png</picture>
+<name>молдинг 1.51.324 гибкий</name>
+<description></description>
+</offer>
+<offer id="5087" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-352-f/</url>
+<price>1389.00</price>
+<oldprice>2315.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.352.600.png</picture>
+<name>молдинг 1.51.352 гибкий</name>
+<description></description>
+</offer>
+<offer id="5088" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-325-f/</url>
+<price>2469.00</price>
+<oldprice>4114.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.325.600.png</picture>
+<name>молдинг 1.51.325 гибкий</name>
+<description></description>
+</offer>
+<offer id="5090" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-332-f/</url>
+<price>1441.00</price>
+<oldprice>2401.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.332.600.png</picture>
+<name>молдинг 1.51.332 гибкий</name>
+<description></description>
+</offer>
+<offer id="5091" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-350-f/</url>
+<price>2487.00</price>
+<oldprice>4145.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.350.600.png</picture>
+<name>молдинг 1.51.350 гибкий</name>
+<description></description>
+</offer>
+<offer id="5092" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-326-f/</url>
+<price>1431.00</price>
+<oldprice>2384.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.326.600.png</picture>
+<name>молдинг 1.51.326 гибкий</name>
+<description></description>
+</offer>
+<offer id="5094" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-309-f/</url>
+<price>1529.00</price>
+<oldprice>2547.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.309.600.png</picture>
+<name>молдинг 1.51.309 гибкий</name>
+<description></description>
+</offer>
+<offer id="5096" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-313-f/</url>
+<price>1451.00</price>
+<oldprice>2417.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.313.600.png</picture>
+<name>молдинг 1.51.313 гибкий</name>
+<description></description>
+</offer>
+<offer id="5100" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-318-f/</url>
+<price>1554.00</price>
+<oldprice>2589.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.318.600.png</picture>
+<name>молдинг 1.51.318 гибкий</name>
+<description></description>
+</offer>
+<offer id="5101" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-319-f/</url>
+<price>2510.00</price>
+<oldprice>4182.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.319.600.png</picture>
+<name>молдинг 1.51.319 гибкий</name>
+<description></description>
+</offer>
+<offer id="5102" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-320-f/</url>
+<price>2387.00</price>
+<oldprice>3978.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.320.600.png</picture>
+<name>молдинг 1.51.320 гибкий</name>
+<description></description>
+</offer>
+<offer id="5104" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-328-f/</url>
+<price>1431.00</price>
+<oldprice>2384.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.328.600.png</picture>
+<name>молдинг 1.51.328 гибкий</name>
+<description></description>
+</offer>
+<offer id="5105" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-330-f/</url>
+<price>1508.00</price>
+<oldprice>2512.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.330.600.png</picture>
+<name>молдинг 1.51.330 гибкий</name>
+<description></description>
+</offer>
+<offer id="5107" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-340-f/</url>
+<price>1415.00</price>
+<oldprice>2357.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.340.600.png</picture>
+<name>молдинг 1.51.340 гибкий</name>
+<description></description>
+</offer>
+<offer id="5108" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-341-f/</url>
+<price>1556.00</price>
+<oldprice>2593.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.341.600.png</picture>
+<name>молдинг 1.51.341 гибкий</name>
+<description></description>
+</offer>
+<offer id="5112" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-351-f/</url>
+<price>1469.00</price>
+<oldprice>2448.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.351.600.png</picture>
+<name>молдинг 1.51.351 гибкий</name>
+<description></description>
+</offer>
+<offer id="5113" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-380-f/</url>
+<price>3296.00</price>
+<oldprice>5493.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.380.600.png</picture>
+<name>молдинг 1.51.380 гибкий</name>
+<description></description>
+</offer>
+<offer id="5116" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-339-f/</url>
+<price>1469.00</price>
+<oldprice>2448.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.339.600.png</picture>
+<name>молдинг 1.51.339 гибкий</name>
+<description></description>
+</offer>
+<offer id="5117" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-331-f/</url>
+<price>1529.00</price>
+<oldprice>2547.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.331.600.png</picture>
+<name>молдинг 1.51.331 гибкий</name>
+<description></description>
+</offer>
+<offer id="5118" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-336-f/</url>
+<price>1441.00</price>
+<oldprice>2401.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.336.600.png</picture>
+<name>молдинг 1.51.336 гибкий</name>
+<description></description>
+</offer>
+<offer id="5119" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-334-f/</url>
+<price>1391.00</price>
+<oldprice>2317.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.334.600.png</picture>
+<name>молдинг 1.51.334 гибкий</name>
+<description></description>
+</offer>
+<offer id="5120" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-335-f/</url>
+<price>1533.00</price>
+<oldprice>2554.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.335.600.png</picture>
+<name>молдинг 1.51.335 гибкий</name>
+<description></description>
+</offer>
+<offer id="5123" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-349-f/</url>
+<price>2387.00</price>
+<oldprice>3978.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.349.600.png</picture>
+<name>молдинг 1.51.349 гибкий</name>
+<description></description>
+</offer>
+<offer id="5124" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-329-f/</url>
+<price>1188.00</price>
+<oldprice>1980.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.329.600.png</picture>
+<name>молдинг 1.51.329 гибкий</name>
+<description></description>
+</offer>
+<offer id="5873" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-358-f/</url>
+<price>2204.00</price>
+<oldprice>3672.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.358.600.png</picture>
+<name>молдинг 1.51.358 гибкий</name>
+<description></description>
+</offer>
+<offer id="5874" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-361-f/</url>
+<price>1533.00</price>
+<oldprice>2554.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.361.600.png</picture>
+<name>молдинг 1.51.361 гибкий</name>
+<description></description>
+</offer>
+<offer id="6208" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-359-f/</url>
+<price>1419.00</price>
+<oldprice>2364.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.359.600.png</picture>
+<name>молдинг 1.51.359 гибкий</name>
+<description></description>
+</offer>
+<offer id="6664" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-368-f/</url>
+<price>2702.00</price>
+<oldprice>4502.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.368.600.png</picture>
+<name>молдинг 1.51.368 гибкий</name>
+<description></description>
+</offer>
+<offer id="6671" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-373-f/</url>
+<price>2272.00</price>
+<oldprice>3786.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.373.600.png</picture>
+<name>молдинг 1.51.373 гибкий</name>
+<description></description>
+</offer>
+<offer id="6811" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-376-f/</url>
+<price>1501.00</price>
+<oldprice>2501.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.376.600.png</picture>
+<name>молдинг 1.51.376 гибкий</name>
+<description></description>
+</offer>
+<offer id="8332" available="true">
+<url>https://evroplast.ru/gibkie-moldingi/1-51-382-f/</url>
+<price>2466.00</price>
+<oldprice>4110.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1545</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/600/1.51.382.600.png</picture>
+<name>молдинг 1.51.382 гибкий</name>
+<description></description>
+</offer>
+<offer id="76577" available="true">
+<url>https://evroplast.ru/plintusy/6-53-702/</url>
+<price>399.00</price>
+<oldprice>665.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1546</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.702.100.png</picture>
+<name>  6.53.702</name>
+<description></description>
+</offer>
+<offer id="76578" available="true">
+<url>https://evroplast.ru/plintusy/6-53-703/</url>
+<price>639.00</price>
+<oldprice>1064.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1546</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.703.100.png</picture>
+<name>  6.53.703</name>
+<description></description>
+</offer>
+<offer id="76579" available="true">
+<url>https://evroplast.ru/plintusy/6-53-704/</url>
+<price>716.00</price>
+<oldprice>1192.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1546</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/6.53.704.100.png</picture>
+<name>  6.53.704</name>
+<description></description>
+</offer>
+<offer id="5144" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-326/</url>
+<price>629.00</price>
+<oldprice>1048.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.326.100.png</picture>
+<name>угловой элемент 1.52.326</name>
+<description></description>
+</offer>
+<offer id="5154" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-328/</url>
+<price>557.00</price>
+<oldprice>927.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.328.100.png</picture>
+<name>угловой элемент 1.52.328</name>
+<description></description>
+</offer>
+<offer id="5160" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-300/</url>
+<price>557.00</price>
+<oldprice>927.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.300.100.png</picture>
+<name>угловой элемент 1.52.300</name>
+<description></description>
+</offer>
+<offer id="5161" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-303/</url>
+<price>557.00</price>
+<oldprice>927.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.303.100.png</picture>
+<name>угловой элемент 1.52.303</name>
+<description></description>
+</offer>
+<offer id="5164" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-313/</url>
+<price>1151.00</price>
+<oldprice>1918.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.313.100.png</picture>
+<name>угловой элемент 1.52.313</name>
+<description></description>
+</offer>
+<offer id="5166" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-318/</url>
+<price>570.00</price>
+<oldprice>950.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.318.100.png</picture>
+<name>угловой элемент 1.52.318</name>
+<description></description>
+</offer>
+<offer id="5982" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-361/</url>
+<price>610.00</price>
+<oldprice>1016.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.361.100.png</picture>
+<name>угловой элемент 1.52.361</name>
+<description></description>
+</offer>
+<offer id="6710" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-352/</url>
+<price>599.00</price>
+<oldprice>997.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.352.100.png</picture>
+<name>угловой элемент 1.52.352</name>
+<description></description>
+</offer>
+<offer id="6756" available="true">
+<url>https://evroplast.ru/uglovye-jelementy/1-52-376/</url>
+<price>585.00</price>
+<oldprice>974.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1548</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.52.376.100.png</picture>
+<name>угловой элемент 1.52.376</name>
+<description></description>
+</offer>
+<offer id="5167" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-001/</url>
+<price>1553.00</price>
+<oldprice>2588.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.001.10.png</picture>
+<name>кронштейн 1.19.001</name>
+<description></description>
+</offer>
+<offer id="6182" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-007/</url>
+<price>1135.00</price>
+<oldprice>1891.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.007.10.png</picture>
+<name>кронштейн 1.19.007</name>
+<description></description>
+</offer>
+<offer id="6684" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-011/</url>
+<price>1161.00</price>
+<oldprice>1935.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.011.10.png</picture>
+<name>кронштейн 1.19.011</name>
+<description></description>
+</offer>
+<offer id="6711" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-009/</url>
+<price>1135.00</price>
+<oldprice>1891.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.009.10.png</picture>
+<name>кронштейн 1.19.009</name>
+<description></description>
+</offer>
+<offer id="6763" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-012/</url>
+<price>1135.00</price>
+<oldprice>1891.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.012.10.png</picture>
+<name>кронштейн 1.19.012</name>
+<description></description>
+</offer>
+<offer id="6772" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-014/</url>
+<price>1188.00</price>
+<oldprice>1979.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.014.10.png</picture>
+<name>кронштейн 1.19.014</name>
+<description></description>
+</offer>
+<offer id="6817" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-018/</url>
+<price>1549.00</price>
+<oldprice>2581.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.018.10.png</picture>
+<name>кронштейн 1.19.018</name>
+<description></description>
+</offer>
+<offer id="8981" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-015/</url>
+<price>1110.00</price>
+<oldprice>1850.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.015.10.png</picture>
+<name>кронштейн 1.19.015</name>
+<description></description>
+</offer>
+<offer id="17562" available="true">
+<url>https://evroplast.ru/kronshtejny/1-19-016/</url>
+<price>1188.00</price>
+<oldprice>1979.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1549</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.19.016.10.png</picture>
+<name>кронштейн 1.19.016</name>
+<description></description>
+</offer>
+<offer id="5174" available="true">
+<url>https://evroplast.ru/rozetki/1-56-017/</url>
+<price>1639.00</price>
+<oldprice>2731.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.017.100.png</picture>
+<name>розетка 1.56.017</name>
+<description></description>
+</offer>
+<offer id="5184" available="true">
+<url>https://evroplast.ru/rozetki/1-56-019/</url>
+<price>1693.00</price>
+<oldprice>2821.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.019.100.png</picture>
+<name>розетка 1.56.019</name>
+<description></description>
+</offer>
+<offer id="5188" available="true">
+<url>https://evroplast.ru/rozetki/1-56-024/</url>
+<price>1639.00</price>
+<oldprice>2731.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.024.100.png</picture>
+<name>розетка 1.56.024</name>
+<description></description>
+</offer>
+<offer id="5192" available="true">
+<url>https://evroplast.ru/rozetki/1-56-028/</url>
+<price>3028.00</price>
+<oldprice>5046.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.028.100.png</picture>
+<name>розетка 1.56.028</name>
+<description></description>
+</offer>
+<offer id="5205" available="true">
+<url>https://evroplast.ru/rozetki/1-56-033/</url>
+<price>1586.00</price>
+<oldprice>2643.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.033.100.png</picture>
+<name>розетка 1.56.033</name>
+<description></description>
+</offer>
+<offer id="5206" available="true">
+<url>https://evroplast.ru/rozetki/1-56-038/</url>
+<price>978.00</price>
+<oldprice>1630.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.038.100.png</picture>
+<name>розетка 1.56.038</name>
+<description></description>
+</offer>
+<offer id="5207" available="true">
+<url>https://evroplast.ru/rozetki/1-56-012/</url>
+<price>1693.00</price>
+<oldprice>2821.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.012.100.png</picture>
+<name>розетка 1.56.012</name>
+<description></description>
+</offer>
+<offer id="5211" available="true">
+<url>https://evroplast.ru/rozetki/1-56-042/</url>
+<price>540.00</price>
+<oldprice>899.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.042.100.png</picture>
+<name>розетка 1.56.042</name>
+<description></description>
+</offer>
+<offer id="6588" available="true">
+<url>https://evroplast.ru/rozetki/1-56-008/</url>
+<price>1497.00</price>
+<oldprice>2495.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.008.100.png</picture>
+<name>розетка 1.56.008</name>
+<description></description>
+</offer>
+<offer id="6709" available="true">
+<url>https://evroplast.ru/rozetki/1-56-045/</url>
+<price>2878.00</price>
+<oldprice>4796.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.045.100.png</picture>
+<name>розетка 1.56.045</name>
+<description></description>
+</offer>
+<offer id="6742" available="true">
+<url>https://evroplast.ru/rozetki/1-56-048/</url>
+<price>955.00</price>
+<oldprice>1591.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.048.100.png</picture>
+<name>розетка 1.56.048</name>
+<description></description>
+</offer>
+<offer id="6764" available="true">
+<url>https://evroplast.ru/rozetki/1-56-046/</url>
+<price>3377.00</price>
+<oldprice>5627.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.046.100.png</picture>
+<name>розетка 1.56.046</name>
+<description></description>
+</offer>
+<offer id="6836" available="true">
+<url>https://evroplast.ru/rozetki/1-56-052/</url>
+<price>864.00</price>
+<oldprice>1439.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.052.100.png</picture>
+<name>розетка 1.56.052</name>
+<description></description>
+</offer>
+<offer id="17563" available="true">
+<url>https://evroplast.ru/rozetki/1-56-053/</url>
+<price>1523.00</price>
+<oldprice>2537.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.053.100.png</picture>
+<name>розетка 1.56.053</name>
+<description></description>
+</offer>
+<offer id="21623" available="true">
+<url>https://evroplast.ru/rozetki/1-56-055/</url>
+<price>3365.00</price>
+<oldprice>5607.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.055.100.png</picture>
+<name>розетка 1.56.055</name>
+<description></description>
+</offer>
+<offer id="31409" available="true">
+<url>https://evroplast.ru/rozetki/1-56-057/</url>
+<price>2022.00</price>
+<oldprice>3369.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.057.100.png</picture>
+<name>розетка 1.56.057</name>
+<description></description>
+</offer>
+<offer id="37766" available="true">
+<url>https://evroplast.ru/rozetki/1-56-056/</url>
+<price>1419.00</price>
+<oldprice>2364.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.56.056.10.png</picture>
+<name>розетка 1.56.056</name>
+<description></description>
+</offer>
+<offer id="76581" available="true">
+<url>https://evroplast.ru/rozetki/1-56-701/</url>
+<price>2169.00</price>
+<oldprice>3614.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.701.100.png</picture>
+<name>розетка 1.56.701</name>
+<description></description>
+</offer>
+<offer id="76583" available="true">
+<url>https://evroplast.ru/rozetki/1-56-703/</url>
+<price>531.00</price>
+<oldprice>884.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.703.100.png</picture>
+<name>розетка 1.56.703</name>
+<description></description>
+</offer>
+<offer id="76584" available="true">
+<url>https://evroplast.ru/rozetki/1-56-705/</url>
+<price>1360.00</price>
+<oldprice>2266.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.705.100.png</picture>
+<name>розетка 1.56.705</name>
+<description></description>
+</offer>
+<offer id="76586" available="true">
+<url>https://evroplast.ru/rozetki/1-56-707/</url>
+<price>1337.00</price>
+<oldprice>2227.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.707.100.png</picture>
+<name>розетка 1.56.707</name>
+<description></description>
+</offer>
+<offer id="76587" available="true">
+<url>https://evroplast.ru/rozetki/1-56-708/</url>
+<price>1636.00</price>
+<oldprice>2726.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.708.100.png</picture>
+<name>розетка 1.56.708</name>
+<description></description>
+</offer>
+<offer id="76588" available="true">
+<url>https://evroplast.ru/rozetki/1-56-709/</url>
+<price>959.00</price>
+<oldprice>1597.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.709.100.png</picture>
+<name>розетка 1.56.709</name>
+<description></description>
+</offer>
+<offer id="76589" available="true">
+<url>https://evroplast.ru/rozetki/1-56-710/</url>
+<price>2115.00</price>
+<oldprice>3525.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1550</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.56.710.100.png</picture>
+<name>розетка 1.56.710</name>
+<description></description>
+</offer>
+<offer id="5212" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-114/</url>
+<price>671.00</price>
+<oldprice>1118.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.114.100.png</picture>
+<name>орнамент 1.60.114</name>
+<description></description>
+</offer>
+<offer id="5213" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-014/</url>
+<price>671.00</price>
+<oldprice>1118.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.014.100.png</picture>
+<name>орнамент 1.60.014</name>
+<description></description>
+</offer>
+<offer id="5218" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-012/</url>
+<price>726.00</price>
+<oldprice>1210.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.012.100.png</picture>
+<name>орнамент 1.60.012</name>
+<description></description>
+</offer>
+<offer id="5221" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-002/</url>
+<price>293.00</price>
+<oldprice>488.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.002.100.png</picture>
+<name>орнамент 1.60.002</name>
+<description></description>
+</offer>
+<offer id="5228" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-018/</url>
+<price>303.00</price>
+<oldprice>505.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.018.100.png</picture>
+<name>орнамент 1.60.018</name>
+<description></description>
+</offer>
+<offer id="5233" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-001/</url>
+<price>267.00</price>
+<oldprice>444.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.001.100.png</picture>
+<name>орнамент 1.60.001</name>
+<description></description>
+</offer>
+<offer id="6538" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-026/</url>
+<price>321.00</price>
+<oldprice>534.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.026.100.png</picture>
+<name>орнамент 1.60.026</name>
+<description></description>
+</offer>
+<offer id="6539" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-029/</url>
+<price>961.00</price>
+<oldprice>1601.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.029.100.png</picture>
+<name>орнамент 1.60.029</name>
+<description></description>
+</offer>
+<offer id="6585" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-033/</url>
+<price>821.00</price>
+<oldprice>1367.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.033.100.png</picture>
+<name>орнамент 1.60.033</name>
+<description></description>
+</offer>
+<offer id="6738" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-039/</url>
+<price>967.00</price>
+<oldprice>1611.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.039.100.png</picture>
+<name>орнамент 1.60.039</name>
+<description></description>
+</offer>
+<offer id="6739" available="true">
+<url>https://evroplast.ru/ornamenty/1-60-040/</url>
+<price>1034.00</price>
+<oldprice>1723.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1551</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.60.040.100.png</picture>
+<name>орнамент 1.60.040</name>
+<description></description>
+</offer>
+<offer id="5238" available="true">
+<url>https://evroplast.ru/kessony-i-kupola/1-58-001/</url>
+<price>10261.00</price>
+<oldprice>17101.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1552</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.58.001.10.png</picture>
+<name>купол 1.58.001</name>
+<description></description>
+</offer>
+<offer id="5239" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-11-001/</url>
+<price>8948.00</price>
+<oldprice>14913.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.11.001.10.png</picture>
+<name>капитель 1.11.001</name>
+<description></description>
+</offer>
+<offer id="5245" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-11-006/</url>
+<price>6671.00</price>
+<oldprice>11118.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.11.006.10.png</picture>
+<name>капитель 1.11.006</name>
+<description></description>
+</offer>
+<offer id="5252" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-15-006/</url>
+<price>2980.00</price>
+<oldprice>4966.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.15.006.10.png</picture>
+<name>капитель 1.15.006</name>
+<description></description>
+</offer>
+<offer id="5254" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-15-001/</url>
+<price>3788.00</price>
+<oldprice>6312.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.15.001.10.png</picture>
+<name>капитель 1.15.001</name>
+<description></description>
+</offer>
+<offer id="5266" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-12-030/</url>
+<price>16653.00</price>
+<oldprice>27755.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.12.030.10.png</picture>
+<name>ствол 1.12.030</name>
+<description></description>
+</offer>
+<offer id="5272" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-12-070/</url>
+<price>7031.00</price>
+<oldprice>11718.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.12.070.10.png</picture>
+<name>ствол 1.12.070</name>
+<description></description>
+</offer>
+<offer id="5273" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-12-071/</url>
+<price>9496.00</price>
+<oldprice>15826.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.12.071.10.png</picture>
+<name>ствол 1.12.071</name>
+<description></description>
+</offer>
+<offer id="5276" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-16-030/</url>
+<price>7640.00</price>
+<oldprice>12732.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.16.030.10.png</picture>
+<name>ствол 1.16.030</name>
+<description></description>
+</offer>
+<offer id="5277" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-16-070/</url>
+<price>3517.00</price>
+<oldprice>5861.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.16.070.10.png</picture>
+<name>ствол 1.16.070</name>
+<description></description>
+</offer>
+<offer id="5280" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-16-071/</url>
+<price>4749.00</price>
+<oldprice>7915.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.16.071.10.png</picture>
+<name>ствол 1.16.071</name>
+<description></description>
+</offer>
+<offer id="5297" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-13-300/</url>
+<price>12042.00</price>
+<oldprice>20069.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.13.300.10.png</picture>
+<name>база 1.13.300</name>
+<description></description>
+</offer>
+<offer id="5298" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-13-400/</url>
+<price>5336.00</price>
+<oldprice>8892.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.13.400.10.png</picture>
+<name>база 1.13.400</name>
+<description></description>
+</offer>
+<offer id="5299" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-13-800/</url>
+<price>3197.00</price>
+<oldprice>5327.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.13.800.10.png</picture>
+<name>база 1.13.800</name>
+<description></description>
+</offer>
+<offer id="5305" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-17-300/</url>
+<price>5509.00</price>
+<oldprice>9181.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.17.300.10.png</picture>
+<name>база 1.17.300</name>
+<description></description>
+</offer>
+<offer id="5306" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-17-400/</url>
+<price>2412.00</price>
+<oldprice>4020.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.17.400.10.png</picture>
+<name>база 1.17.400</name>
+<description></description>
+</offer>
+<offer id="5308" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-17-800/</url>
+<price>1599.00</price>
+<oldprice>2665.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.17.800.10.png</picture>
+<name>база 1.17.800</name>
+<description></description>
+</offer>
+<offer id="5319" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-14-002/</url>
+<price>6573.00</price>
+<oldprice>10955.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.14.002.10.png</picture>
+<name>пьедестал 1.14.002</name>
+<description></description>
+</offer>
+<offer id="5322" available="true">
+<url>https://evroplast.ru/sostavnye-elementy/1-18-002/</url>
+<price>3117.00</price>
+<oldprice>5194.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1553</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.18.002.10.png</picture>
+<name>пьедестал 1.18.002</name>
+<description></description>
+</offer>
+<offer id="5330" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-020/</url>
+<price>632.00</price>
+<oldprice>1052.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.54.020.10.png</picture>
+<name>база 1.54.020</name>
+<description></description>
+</offer>
+<offer id="5331" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-009/</url>
+<price>276.00</price>
+<oldprice>459.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.009.100.png</picture>
+<name>боковой элемент 1.54.009</name>
+<description></description>
+</offer>
+<offer id="5332" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-019/</url>
+<price>276.00</price>
+<oldprice>459.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.019.100.png</picture>
+<name>боковой элемент 1.54.019</name>
+<description></description>
+</offer>
+<offer id="5337" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-008/</url>
+<price>283.00</price>
+<oldprice>471.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.008.100.png</picture>
+<name>элемент 1.54.008</name>
+<description></description>
+</offer>
+<offer id="5338" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-006/</url>
+<price>347.00</price>
+<oldprice>577.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.006.100.png</picture>
+<name>элемент 1.54.006</name>
+<description></description>
+</offer>
+<offer id="5339" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-005/</url>
+<price>334.00</price>
+<oldprice>556.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.005.100.png</picture>
+<name>элемент 1.54.005</name>
+<description></description>
+</offer>
+<offer id="5340" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-007/</url>
+<price>274.00</price>
+<oldprice>456.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.007.100.png</picture>
+<name>элемент 1.54.007</name>
+<description></description>
+</offer>
+<offer id="5341" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-012/</url>
+<price>690.00</price>
+<oldprice>1150.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.012.100.png</picture>
+<name>элемент 1.54.012</name>
+<description></description>
+</offer>
+<offer id="5342" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-011/</url>
+<price>681.00</price>
+<oldprice>1135.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.011.100.png</picture>
+<name>элемент 1.54.011</name>
+<description></description>
+</offer>
+<offer id="21022" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-015/</url>
+<price>1786.00</price>
+<oldprice>2976.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.015.100.png</picture>
+<name>наличник 1.54.015</name>
+<description></description>
+</offer>
+<offer id="22331" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-016/</url>
+<price>1815.00</price>
+<oldprice>3025.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.016.100.png</picture>
+<name>наличник 1.54.016</name>
+<description></description>
+</offer>
+<offer id="65565" available="true">
+<url>https://evroplast.ru/obramlenie-dverej/1-54-018/</url>
+<price>752.00</price>
+<oldprice>1252.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1555</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.54.018.100.png</picture>
+<name>элемент 1.54.018</name>
+<description></description>
+</offer>
+<offer id="5876" available="true">
+<url>https://evroplast.ru/arkhitravy/1-26-001/</url>
+<price>1932.00</price>
+<oldprice>3220.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1560</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.26.001.100.png</picture>
+<name>архитрав 1.26.001</name>
+<description></description>
+</offer>
+<offer id="5877" available="true">
+<url>https://evroplast.ru/arkhitravy/1-26-002/</url>
+<price>1932.00</price>
+<oldprice>3220.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1560</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.26.002.100.png</picture>
+<name>архитрав 1.26.002</name>
+<description></description>
+</offer>
+<offer id="5878" available="true">
+<url>https://evroplast.ru/arkhitravy/1-26-003/</url>
+<price>1979.00</price>
+<oldprice>3297.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1560</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/100/1.26.003.100.png</picture>
+<name>архитрав 1.26.003</name>
+<description></description>
+</offer>
+<offer id="5881" available="true">
+<url>https://evroplast.ru/nishi/1-61-101/</url>
+<price>3863.00</price>
+<oldprice>6437.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1561</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.61.101.10.png</picture>
+<name>ниша 1.61.101</name>
+<description></description>
+</offer>
+<offer id="5882" available="true">
+<url>https://evroplast.ru/nishi/1-61-102/</url>
+<price>5918.00</price>
+<oldprice>9862.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1561</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.61.102.10.png</picture>
+<name>ниша 1.61.102</name>
+<description></description>
+</offer>
+<offer id="5883" available="true">
+<url>https://evroplast.ru/nishi/1-61-110/</url>
+<price>3576.00</price>
+<oldprice>5959.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1561</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.61.110.10.png</picture>
+<name>ниша с полкой 1.61.110</name>
+<description></description>
+</offer>
+<offer id="5884" available="true">
+<url>https://evroplast.ru/nishi/1-61-120/</url>
+<price>7302.00</price>
+<oldprice>12169.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1561</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.61.120.10.png</picture>
+<name>ниша с полкой 1.61.120</name>
+<description></description>
+</offer>
+<offer id="21023" available="true">
+<url>https://evroplast.ru/sandriki/1-63-003/</url>
+<price>1999.00</price>
+<oldprice>3331.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1588</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/10/1.63.003.10.png</picture>
+<name>сандрик 1.63.003</name>
+<description></description>
+</offer>
+<offer id="6674" available="true">
+<url>https://evroplast.ru/gibkie-analogi/1-26-001-f/</url>
+<price>3864.00</price>
+<oldprice>6439.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1600</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/60/1.26.001.60.png</picture>
+<name>архитрав 1.26.001 гибкий</name>
+<description></description>
+</offer>
+<offer id="6675" available="true">
+<url>https://evroplast.ru/gibkie-analogi/1-26-002-f/</url>
+<price>3864.00</price>
+<oldprice>6439.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1600</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/60/1.26.002.60.png</picture>
+<name>архитрав 1.26.002 гибкий</name>
+<description></description>
+</offer>
+<offer id="6676" available="true">
+<url>https://evroplast.ru/gibkie-analogi/1-26-003-f/</url>
+<price>3957.00</price>
+<oldprice>6594.00</oldprice>
+<currencyId>RUR</currencyId>
+<categoryId>1600</categoryId>
+<picture>https://evroplast.ru/cron/catalog/data/images/60/1.26.003.60.png</picture>
+<name>архитрав 1.26.003 гибкий</name>
+<description></description>
+</offer>
+</offers>
+</shop>
+</yml_catalog>
