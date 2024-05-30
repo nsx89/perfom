@@ -81,6 +81,7 @@ function my_city_fixed() {
     $time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
 
     $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.HTTP_HOST);
+    $_SESSION['my_city_fixed'] = 1;
 }
 
 /* --- // --- */
@@ -1448,7 +1449,7 @@ function build_drop_categories($sections,$collapse = false) {
     }*/
     $l1 = array_merge($ob->GetFields(), $ob->GetProperties());
 
-    $l2_ids = ['1542', '1544', '1546', '1550', '1601', '1622', '1552', '1548'];
+    $l2_ids = ['1542', '1544', '1546', '1550', '1601', '1622', '1552', '1548', '1623', '1624'];
 
     $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "2", '=SECTION_ID' => $l1['ID'], '=UF_HIDECATALOG' => '0', 'ID' => $l2_ids);
     $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));

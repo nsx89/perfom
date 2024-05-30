@@ -144,6 +144,10 @@ global $my_city_fix;
 
 		if ($remote_ip == '37.63.9.154') $remote_ip = "93.89.190.134"; // Локальное перенаправление разработчика
 
+		if (!empty($_GET['by'])) {
+			$remote_ip = '104.28.247.49';
+		}
+
         //TODO: закрыть $remote_ip на продакшн
         //$remote_ip = "93.89.190.134";
 		$record = $reader->dbReader->get($remote_ip);
@@ -159,7 +163,55 @@ global $my_city_fix;
 		if (!$gi_value) $gi_value = 'RU';
 		if (!$gi_value_city) {$gi_value_city->latitude = 55.754334; $gi_value_city->longitude = 37.6263844326;}
 
-		if (($gi_value == 'BY') && (!$USER->IsAuthorized())) {
+		if (!empty($_GET['sub_city'])) {
+//
+//			$my_location = $APPLICATION->get_cookie('my_location');
+//			$my_city = $APPLICATION->get_cookie('my_city');
+//
+//			if (empty($my_city))
+            $my_city = (int)$_GET['sub_city'];
+			
+        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
+			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
+
+			my_city_fixed();
+		}
+		else if ($APPLICATION->get_cookie('my_city') && $APPLICATION->get_cookie('my_city') > 0 ) { //&& $USER->IsAuthorized()) {
+			$my_location = $APPLICATION->get_cookie('my_location');
+			$my_city = $APPLICATION->get_cookie('my_city');
+			$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
+
+			$subdomen = _get_city_loc($my_city);
+
+			/*if (!empty($_GET['test'])) {
+				echo 'my_city_fixed='.$my_city_fixed;
+				echo 'my_city='.$my_city;
+			}*/
+
+			$domen = HTTP_HOST;
+			if (!empty($my_city_fixed) && !empty($_GET['test'])) {
+
+				if (!empty($subdomen) && $_SERVER['HTTP_HOST'] <> $subdomen) {
+					$subdomen_url = 'https://'.$subdomen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					Header('Location: '.$subdomen_url); exit;
+				}
+				elseif (!empty($subdomen) && $_SERVER['HTTP_HOST'] == $subdomen) {
+					//echo 'SUBDOMAIN======'.$_SERVER['HTTP_HOST'].'-'.$subdomen.'-city='.$my_city;
+				}
+				elseif ($_SERVER['HTTP_HOST'] <> $domen) {
+					$domen_url = 'https://'.$domen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					Header('Location: '.$domen_url); exit;
+				}
+			}
+
+			/*if (!empty($_GET['test'])) {
+				echo $my_city;
+			}*/
+			
+        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
+			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
+		}
+		else if (($gi_value == 'BY') && (!$USER->IsAuthorized())) {
 			$arCityFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'minsk');
 			$db_city_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arCityFilter);
 			$city = $db_city_list->GetNextElement();
@@ -171,6 +223,11 @@ global $my_city_fix;
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
+
+			if (!empty($_GET['by'])) {
+				//echo $city['ID'];
+			}
+
 		} elseif (($gi_value == 'LT') && (!$USER->IsAuthorized())) { // Литва
 			$arCityFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'vilnus');
 			$db_city_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arCityFilter);
@@ -219,47 +276,6 @@ global $my_city_fix;
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
-		} elseif (!empty($_GET['sub_city'])) {
-//
-//			$my_location = $APPLICATION->get_cookie('my_location');
-//			$my_city = $APPLICATION->get_cookie('my_city');
-//
-//			if (empty($my_city))
-                $my_city = (int)$_GET['sub_city'];
-			
-        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
-			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
-
-			my_city_fixed();
-
-		} elseif ($APPLICATION->get_cookie('my_city') && $APPLICATION->get_cookie('my_city') > 0 ) { //&& $USER->IsAuthorized()) {
-			$my_location = $APPLICATION->get_cookie('my_location');
-			$my_city = $APPLICATION->get_cookie('my_city');
-			$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
-
-			$subdomen = _get_city_loc($my_city);
-			$domen = HTTP_HOST;
-			if (!empty($my_city_fixed) && !empty($_GET['test'])) {
-
-				if (!empty($subdomen) && $_SERVER['HTTP_HOST'] <> $subdomen) {
-					$subdomen_url = 'https://'.$subdomen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
-					Header('Location: '.$subdomen_url); exit;
-				}
-				elseif (!empty($subdomen) && $_SERVER['HTTP_HOST'] == $subdomen) {
-					//echo 'SUBDOMAIN======'.$_SERVER['HTTP_HOST'].'-'.$subdomen.'-city='.$my_city;
-				}
-				elseif ($_SERVER['HTTP_HOST'] <> $domen) {
-					$domen_url = 'https://'.$domen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
-					Header('Location: '.$domen_url); exit;
-				}
-			}
-
-			/*if (!empty($_GET['test'])) {
-				echo $my_city;
-			}*/
-			
-        	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
-			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
 		} else {
 			
 			$lat = $gi_value_city->latitude;
@@ -290,9 +306,10 @@ global $my_city_fix;
 		// echo 'test '.$my_dealer.' | '.$my_location.' | '.$my_city;
 
 
-		/*if (!empty($_GET['test2'])) {
-			echo '<pre>';print_r($_COOKIE);echo '</pre>';
-			echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
-		}*/
+		if (!empty($_GET['test2'])) {
+			//echo '<pre>';print_r($_SESSION);echo '</pre>';
+			//echo '<pre>';print_r($_COOKIE);echo '</pre>';
+			//echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
+		}
 
 ?>

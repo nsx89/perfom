@@ -21,6 +21,25 @@ $i++;
 }
 //print_r($res_geo);
 $c = 0;
+
+/* --- Показывать ли в списке Москву --- */
+$moscow_hide = false;
+if ($my_city != 3109 && !$USER->IsAuthorized() || $city['id'] == 3109 && $my_city != 3109 && $USER->IsAuthorized() && in_array('5',$user_groups)) {
+    $moscow_hide = true;
+} 
+if (!empty($_GET['change_city'])) {
+    $moscow_hide = false;
+}
+/* --- // --- */
+
+/* --- TEST --- */
+
+$TEST = false;
+if (!empty($_GET['test'])) $TEST = true;
+if (!empty($_GET['change_city'])) $TEST = true;
+
+/* --- // --- */
+
 ?>
 <!--noindex-->
 <div id="dropdown-down">
@@ -41,8 +60,9 @@ $c = 0;
                         <div class="e-reg-list-column">
                         <div class="e-choose-country-name"><?=$arr['country']['name']?></div>
                         <?foreach($arr['city'] as $city) {
-                            if( $city['id'] == 3109 && $my_city != 3109 && !$USER->IsAuthorized()
-                                || $city['id'] == 3109 && $my_city != 3109 && $USER->IsAuthorized() && in_array('5',$user_groups) ) continue;
+
+                            if($city['id'] == 3109 && $moscow_hide) continue;
+                            
                             if($c == 33) {?>
                                 </div>
                                 <div class="e-reg-list-column e-reg-list-column-pad">
@@ -54,7 +74,7 @@ $c = 0;
                             <? } ?>
 
                             <?$subdomen = _get_city_loc($city['id']);
-                            if(!empty($_GET['test']) && !empty($subdomen)){?>
+                            if($TEST && !empty($subdomen)){?>
                                 <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                             <?}else{?>
                                 <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
@@ -73,7 +93,7 @@ $c = 0;
                         <div class="e-choose-country-name"><?= $arr['country']['name'] ?></div>
                         <? foreach ($arr['city'] as $city) { 
                             $subdomen = _get_city_loc($city['id']);
-                            if(!empty($_GET['test']) && !empty($subdomen)){?>
+                            if($TEST && !empty($subdomen)){?>
                                 <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                             <?}else{?>
                                 <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
@@ -109,11 +129,11 @@ $c = 0;
                             <div class="reg-list-city" data-type="reg-city">
                                 <div class="reg-list-city-column">
                                     <? foreach($arr['city'] as $city) {
-                                    if( $city['id'] == 3109 && $my_city != 3109 && !$USER->IsAuthorized()
-                                        || $city['id'] == 3109 && $my_city != 3109 && $USER->IsAuthorized() && in_array('5',$user_groups) ) continue;
+
+                                    if($city['id'] == 3109 && $moscow_hide) continue;
 
                                     $subdomen = _get_city_loc($city['id']);
-                                    if(!empty($_GET['test']) && !empty($subdomen)){?>
+                                    if($TEST && !empty($subdomen)){?>
                                         <a style="color: black;" href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                                     <?}else{?>
                                         <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>

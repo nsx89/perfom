@@ -19,6 +19,7 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
     $loc = array_merge($loc->GetFields(), $loc->GetProperties());
 
     $subdomen = _get_city_loc($my_city);
+    if (empty($subdomen)) $subdomen = HTTP_HOST;
     ?>
 
     <!--noindex-->

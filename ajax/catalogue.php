@@ -22,7 +22,7 @@ $sec_desc = '';
 if(count($section_id) == 1) {
     //раздел
     $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'ID'=>$section_id, 'ACTIVE'=>'Y');
-    $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array('UF_*'));
+    $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array());
     while($section_item = $db_list->GetNext()) {
         if($section_item['~DESCRIPTION']) {
             $sec_desc = $section_item['~DESCRIPTION'];
