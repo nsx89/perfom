@@ -130,17 +130,13 @@ $('document').ready(function() {
         $('[data-type="reg-list"]').slideDown();
         regScroll.reinitialise();
         $('body').addClass('disabled');
-    })
-
-    if ($('.js-geo-open-auto').length) {
-        $('.js-geo-open-auto').trigger('click');
-    }
+    });
 
     $('header').on('click','[data-type="geo-close"]',function() {
         $(this).css('z-index','0');
         $(this).attr("data-type","geo-open");
         $(this).addClass('icon-geo');
-        $(this).removeClass('icon-close');
+        $(this).removeClass('icon-close').hide();
         $('[data-type="reg-list"]').slideUp();
         $('[data-type="curr-reg"]').html();
         $('body').removeClass('disabled');
@@ -159,7 +155,8 @@ $('document').ready(function() {
                 window.location.href = href;
             }
             else {
-                window.location.reload();
+                window.location.href = window.location.pathname;
+                //window.location.reload();
             }
         });
         return false;
@@ -169,6 +166,10 @@ $('document').ready(function() {
             showArrows: false,
             maintainPosition: false
         }).data('jsp');
+    }
+    if ($('.js-geo-open-auto').length) {
+        $('.js-geo-open-auto').trigger('click');
+        $('.header-geo').show();
     }
     $(window).bind('resize', function(){
         regScroll.reinitialise();

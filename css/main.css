@@ -566,6 +566,7 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
 .main-events-slide article>h2 {
     font-size: 18px;
     font-weight: 500;
+    min-height: 42px;
 }
 .main-events-catalogues-link {
     display: flex;
@@ -7403,6 +7404,9 @@ h2.e-pol-title {
 .head-office-item-val {
     font-weight: 500;
 }
+.head-office-item-val-address {
+    max-width: 80%;
+}
 .head-office-item-val.attent {
     color: #ED5C5C;
     font-size: 14px;
@@ -12164,4 +12168,8 @@ body:not(.touchable) .prod-collect-btn:hover {
     z-index: 200000;
 }
 
+/* --- Gallery ajax --- */
+.gallery-img-resize>span {
+    display: none;
+}
 /* --- // --- */

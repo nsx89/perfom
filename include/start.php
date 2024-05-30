@@ -177,9 +177,20 @@ global $my_city_fix;
 			my_city_fixed();
 		}
 		else if ($APPLICATION->get_cookie('my_city') && $APPLICATION->get_cookie('my_city') > 0 ) { //&& $USER->IsAuthorized()) {
-			$my_location = $APPLICATION->get_cookie('my_location');
+			//$my_location = $APPLICATION->get_cookie('my_location');
+			
 			$my_city = $APPLICATION->get_cookie('my_city');
-			$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
+
+			//$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
+			$my_city_fixed = $_SESSION['my_city_fixed'];
+
+			/* --- Смена города если нажато открыть в новой вкладке --- */
+			$my_city_change = (int)$_GET['my_city_change'];
+			if (!empty($my_city_change)) {
+				$my_city_new = my_city_change($my_city_change);
+				if (!empty($my_city_new)) $my_city = $my_city_new;
+			}
+			/* --- // --- */
 
 			$subdomen = _get_city_loc($my_city);
 
@@ -209,7 +220,8 @@ global $my_city_fix;
 			}*/
 			
         	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
-			$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
+
+			//$APPLICATION->set_cookie('my_location', $my_location,0, '/', '.'.HTTP_HOST);
 		}
 		else if (($gi_value == 'BY') && (!$USER->IsAuthorized())) {
 			$arCityFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'minsk');

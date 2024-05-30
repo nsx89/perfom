@@ -75,7 +75,7 @@ if (!empty($_GET['change_city'])) $TEST = true;
 
                             <?$subdomen = _get_city_loc($city['id']);
                             if($TEST && !empty($subdomen)){?>
-                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?my_city_change=<?= $city['id'] ?>&test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                             <?}else{?>
                                 <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
 
@@ -94,7 +94,7 @@ if (!empty($_GET['change_city'])) $TEST = true;
                         <? foreach ($arr['city'] as $city) { 
                             $subdomen = _get_city_loc($city['id']);
                             if($TEST && !empty($subdomen)){?>
-                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                                <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?my_city_change=<?= $city['id'] ?>&test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                             <?}else{?>
                                 <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
                         <? }} ?>
@@ -134,7 +134,7 @@ if (!empty($_GET['change_city'])) $TEST = true;
 
                                     $subdomen = _get_city_loc($city['id']);
                                     if($TEST && !empty($subdomen)){?>
-                                        <a style="color: black;" href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
+                                        <a style="color: black;" href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?my_city_change=<?= $city['id'] ?>&test=1" class="e-choose-reg-name" data-value="<?= $city['id'] ?>" data-type="choose-reg"><?= $city['name'] ?></a>
                                     <?}else{?>
                                         <a class="e-choose-reg-name" data-value="<?=$city['id']?>" data-type="choose-reg"><?=$city['name']?></a>
                                     <? }} ?>

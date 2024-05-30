@@ -78,10 +78,37 @@ function main_phone_number() {
 function my_city_fixed() {
     global $APPLICATION;
 
-    $time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
-
-    $APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.HTTP_HOST);
+    //$time = time() + 60 * 60 * 2; //время жизни куки в секундах (2 часа)
+    //$APPLICATION->set_cookie('my_city_fixed', 1, $time, '/', '.'.HTTP_HOST);
+    
     $_SESSION['my_city_fixed'] = 1;
+}
+
+/* --- // --- */
+
+
+/* --- Смена города --- */
+
+function my_city_change($id) {
+    global $APPLICATION;
+    global $DB;
+
+    if (empty($id)) return;
+
+    $arCityFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID'=>$id);
+    $db_city_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arCityFilter);
+    $city = $db_city_list->GetNextElement();
+    if (!$city) {
+        return;
+    }
+    $city = array_merge($city->GetFields(), $city->GetProperties());
+
+    $APPLICATION->set_cookie('my_location', $city['map']['VALUE'], 0, '/', '.'.HTTP_HOST);
+    $APPLICATION->set_cookie('my_city', $city['ID'], 0, '/', '.'.HTTP_HOST);
+
+    my_city_fixed();
+
+    return $city['ID'];
 }
 
 /* --- // --- */
