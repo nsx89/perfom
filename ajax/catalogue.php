@@ -80,6 +80,11 @@ if($item_count == 0) { ?>
         По результатам фильтрации ничего не&nbsp;найдено либо группа товаров не&nbsp;обслуживается в&nbsp;вашем&nbsp;регионе.        
     </div>
 <? }
+
+?>
+<div style="display: none;"><? print_r($SORTING); ?></div>
+<?
+
 $html = ob_get_clean();
 
 if(!$type) {

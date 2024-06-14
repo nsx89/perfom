@@ -29,8 +29,10 @@ $loc = array_merge($loc->GetFields(), $loc->GetProperties());
 
 <div class="content-wrapper">
     <?if($_REQUEST['nmbr']) { ?>
-        <div class="cont-success">
-            <div class="succ-header">Дорогой покупатель, <br>спасибо за ваш заказ!</div>
+        <div class="cont-success cont-success-order-off">
+            
+            <div class="succ-header">Дорогой покупатель, <br>спасибо за ваш заказ!</div> 
+
             <?if($order['PAYMENT']['VALUE'] == 'online' && $order['PAYMENT_STATUS']['VALUE'] != 'оплачено') { ?>
                 <div class="succ-desc">Вы можете оплатить ваш заказ по&nbsp;ссылке: </div>
                 <a href="/cart/pay.php?id=<?=$order['UUID']['VALUE']?>" class="succ-cat succ-payment">Перейти к&nbsp;оплате</a>
@@ -40,6 +42,7 @@ $loc = array_merge($loc->GetFields(), $loc->GetProperties());
                     отправлена на указанный Вами адрес электронной почты.</div>
                 <div class="succ-desc">Ожидайте звонка нашей службы доставки.</div>
             <? } ?>
+            <div class="succ-desc">Наш менеджер свяжется с вами<br> в ближайшее время!</div>
             <div class="succ-nmbr">Заказ № <?=$nmbr?></div>
             <? if($order['CHOOSEN_REG']['VALUE'] != 3109) { ?>
                 <div class="succ-support">По всем вопросам вы можете обратиться<br>

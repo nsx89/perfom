@@ -52,6 +52,7 @@ $item_dealer = array(
 'phones' => str_phone($dealer['phones']['VALUE']),
 'email' => $dealer['email']['VALUE'],
 'url' => $dealer['href']['VALUE'],
+'url2' => $dealer['href2']['VALUE'],
 'addr' => $dealer['address']['VALUE'],
 'mall' => $dealer['trading_center']['VALUE'],
 'mark' => $dealer['orientation']['VALUE'],

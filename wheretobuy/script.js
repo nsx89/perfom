@@ -44,10 +44,32 @@ var mainOffice = {
     },
     2: {
         'id':        '02',
+        'org':       'ООО "Декор"',
+        'point':     '',
+        'city':      '',
+        'addr':      '142350, Россия, Московская область, городской округ Чехов, д.&nbsp;Ивачково, ул.&nbsp;Лесная, владение&nbsp;12, строение&nbsp;7',
+        'mall':      '',
+        'mark':      '',
+        'lat':       '55.228931',
+        'lon':       '37.480471',
+        'zoom':      '5',
+        'phones':    '+7 495 789-62-70',
+        'email':     '',
+        'url':       '',
+        'saturday':  '',
+        'sunday':    '',
+        'weekdays':  '',
+        'weekend':   '',
+        'without':   '',
+    },
+    /*
+    2: {
+        'id':        '02',
         'org':       '',
         'point':     '',
         'city':      '',
         'addr':      'Московская&nbsp;область, Ленинский&nbsp;район, с/п&nbsp;Булатниковское, с.&nbsp;Булатниково, ул.&nbsp;Центральная, дом&nbsp;1В, стр.&nbsp;10',
+        'addr':      '142350, Россия, Московская область, городской округ Чехов, д.&nbsp;Ивачково, ул.&nbsp;Лесная, владение&nbsp;12, строение&nbsp;7',
         'mall':      '',
         'mark':      '',
         'lat':       '55.56821656917941',
@@ -62,6 +84,7 @@ var mainOffice = {
         'weekend':   '',
         'without':   '',
     },
+    */
     3: {
         'id':        '00',
         'org':       'ООО "Декор"',
@@ -157,14 +180,17 @@ $(document).ready(function() {
         if($('#map').length > 0) {
             initMap();
             setTimeout(function(){
+                var coords = $('#map').attr('data-coords') || '';
                 if(location.hash == '#head') { // головной офис
                     let active = $('.head-office-list').find('.active'),
                         val = active.attr('data-val'),
                         id = active.attr('data-id');
                         getHeadOfficePoint(id,val);
-                } else if(location.hash == '#outlets') { // точки продаж
+                } 
+                else if(location.hash == '#outlets') { // точки продаж
                     getDealers(dealersList);
-                } else { // представитель в регионе, если не москва
+                } 
+                else { // представитель в регионе, если не москва
                     if($('[href="#region"]').length > 0) {
                         if (typeof mainDealer !== 'undefined') {
                             getDealers(mainDealer);
@@ -174,12 +200,24 @@ $(document).ready(function() {
                             val = active.attr('data-val'),
                             id = active.attr('data-id');
                         getHeadOfficePoint(id,val);*/
+
                         if(document.location.pathname == '/contact/') {
-                            let active = $('.head-office-list').find('.active'),
-                                val = active.attr('data-val'),
-                                id = active.attr('data-id');
-                            getHeadOfficePoint(id,val);
-                        } else {
+                            if (coords == '') {
+                                let active = $('.head-office-list').find('.active'),
+                                    val = active.attr('data-val'),
+                                    id = active.attr('data-id');
+                                getHeadOfficePoint(id,val);
+                            }
+                            else {
+                                if (typeof mainDealer !== 'undefined') {
+                                    getDealers(mainDealer);
+                                }
+                                else {
+                                    getDealers(dealersList);
+                                }
+                            }
+                        } 
+                        else {
                             getDealers(dealersList);
                         }
 
@@ -196,7 +234,7 @@ $(document).ready(function() {
         $('[data-type="list"]').hide();
 
         if(val == '#head') { // головной офис
-            let active = $('.head-office-list').find('.active'),
+            let active = $('.head-office-main'),
                 val = active.attr('data-val'),
                 id = active.attr('data-id');
             setTimeout(function(){
@@ -221,8 +259,15 @@ $(document).ready(function() {
     })
     // головной офис - переключатели
     $('[data-type="h-off-tab"]').on('click',function() {
+        let main = $('.head-office-main'),
+        main_val = main.attr('data-val'),
+        main_id = main.attr('data-id');
+
         let val = $(this).attr('data-val'),
-            id = $(this).attr('data-id');
+           id = $(this).attr('data-id');
+
+        //console.log(val);
+
         $('[data-type="h-off-tab"]').each(function() {
             if($(this).attr('data-val') == val) {
                 $(this).addClass('active');
@@ -237,9 +282,28 @@ $(document).ready(function() {
                 $(this).removeClass('active');
             }
         })
-        // создаем метку, если адрес меняется
-        getHeadOfficePoint(id,val);
 
+        var coords = $('#map').attr('data-coords') || '';
+        if (coords != '') {
+            switch(val) {
+              case 'h-off-11': case 'h-off-5': case 'h-off-6': case 'h-off-7':
+                setTimeout(function(){
+                    if (typeof mainDealer !== 'undefined') {
+                        getDealers(mainDealer);
+                    }
+                    else {
+                        getDealers(dealersList);
+                    }
+                }, 100);
+              default:
+                // создаем метку, если адрес меняется
+                getHeadOfficePoint(main_id, main_val);
+            }
+        }
+        else {
+            // создаем метку, если адрес меняется
+            getHeadOfficePoint(main_id, main_val);
+        }
     })
     //табы точек продаж
    $('[data-type="outlet-tab"]').on('click',function(){
@@ -263,8 +327,16 @@ $(document).ready(function() {
 
 //инициируем карту
 function initMap() {
+    var lat = 55.764094;
+    var lng = 37.617617;
+    var coords = $('#map').attr('data-coords') || '';
+    if (coords != '') {
+        var arr = coords.split(',');
+        lat = $.trim(arr[0]);
+        lng = $.trim(arr[1]);
+    }
     myMap = new ymaps.Map('map', {
-        center: [55.764094, 37.617617],
+        center: [lat, lng],
         zoom: 12,
     }, {
         maxZoom: 16,
@@ -286,7 +358,7 @@ function initMap() {
             return {
                 iconLayout: 'default#image',
                 iconImageSize: [28, 42],
-                iconImageOffset: [-14, -8],
+                iconImageOffset: [-14, -42],
                 iconImageHref: imageHref
             }
         },
@@ -475,6 +547,7 @@ function constructPointItem(item) {
         dd += '<div class="point-email">';
         dd += '<div class="point-phone-width">сайт </div>';
         dd += '<div class="point-phone-value"><a href="http://'+item.url+'" target="_blank" class="point-url">' + item.url + '</a></div>';
+        if(item.url2 != '') dd += '<div class="point-phone-value"><a href="http://'+item.url2+'" target="_blank" class="point-url">' + item.url2 + '</a></div>';
         dd += '</div>';
     }
 
@@ -575,18 +648,26 @@ function numberFormat(str) {
 
 //головной офис - добавить метку на карте
 function getHeadOfficePoint(id,val) {
-    let off = mainOffice[id],
-        email = mainOfficeEmails[val];
-    let contact = {
+
+    //var coords = $('#map').attr('data-coords') || '';
+    //if (coords != '') return;
+
+    var off = mainOffice[id] || '';
+    var email = mainOfficeEmails[val] || '';
+    var lat = off.lat || '';
+    var lon = off.lon || '';
+    var zoom = off.zoom || '';
+
+    var contact = {
         'err':      {
             'qty':  0,
             'mess': '',
         },
         'dealers':    {
             'position': {
-                'lat':  off.lat,
-                'lon':  off.lon,
-                'zoom': off.zoom,
+                'lat':  lat,
+                'lon':  lon,
+                'zoom': zoom,
             },
             'items':    [],
         },

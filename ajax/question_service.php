@@ -195,7 +195,7 @@ foreach($spec as $name) {
 }
 
 // дублирование
-$fields = array('EMAIL'=>'nadida.hi@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+$fields = array('EMAIL'=>'nsxtest@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
 CEvent::SendImmediate($templ, s1, $fields, "N");
 $fields = array('EMAIL'=>'d.portu.by@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
 //CEvent::SendImmediate($templ, s1, $fields, "N");
@@ -420,7 +420,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 
   	$fields = array('EMAIL'=>$mail, 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
+   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
       	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
    //сотрудникам
@@ -454,7 +454,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
    	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
    	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
-   	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+   	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
    	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
     }
     else {
@@ -482,7 +482,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
       	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
       	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
-      	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+      	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
       	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
       	$templ = "E_QST_SERV";
@@ -863,7 +863,7 @@ if( $type == "answ") {
 
 		   $fields = array('EMAIL'=>$mail, 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
 		      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-		   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
+		   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
 		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
 		   //модератору
@@ -893,7 +893,7 @@ if( $type == "answ") {
 		   $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
 		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
-		   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+		   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
 		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
 	}//endif
@@ -1300,7 +1300,7 @@ else {
 	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
 	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
 	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
 	}
@@ -1540,7 +1540,7 @@ CIBlockElement::SetPropertyValuesEX($id,37,array("SEND_DEALER"=>$dealer_mail,"SE
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
    $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
    $data = "Вопрос переадресован дилеру на e-mail: <span>".$dealer_mail."</span>";
@@ -1711,7 +1711,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
       //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
    $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
       CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
 
@@ -1870,7 +1870,7 @@ if ( $type == "report" ) {
     $spec_last .= '<p style="font-size:16px;margin:0;color:#000;">Для детального просмотра <a href="'.$spec_link.'" target="_blank" style="color:#849795;">перейдите по ссылке</a>.</p>';
 
     $spec_mail = $spec_first.$from.$letter_text.$spec_last;
-    $hidden_email = 'nadida.hi@yandex.ru';
+    $hidden_email = 'nsxtest@yandex.ru';
 
     //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru,L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
     $fields = array('EMAIL'=>'L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
@@ -1988,7 +1988,7 @@ if ( $type == "need_comm" ) {
    if($dealer_email != '') {
         //формируем письмо
         $spec_link = $base_url."/question_service/answer.php?ext_id=".$ext_id.'&d='.$dealer_id.'&stat=dealer';
-        $spec_subj = "На сайте evroplast.ru запрошен комментарий к вопросу №".$number;
+        $spec_subj = "На сайте ".$_SERVER['SERVER_NAME']." запрошен комментарий к вопросу №".$number;
 
         $spec_first = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#000;">Уважаемые партнёры, в&nbsp;службу технической поддержки сайта <a href="https://perfom-decor.ru/"  target="_blank"style="color: #000;">perfom-decor.ru</a> поступил запрос на&nbsp;продукцию Европласт в&nbsp;вашем регионе.</p>';
 
@@ -1999,7 +1999,7 @@ if ( $type == "need_comm" ) {
 
         //$send_emails = $dealer_email.', o.gmirya@decor-evroplast.ru, L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru';
         $send_emails = $dealer_email.', L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru';
-        $hidden_emails = 'd.portu.by@yandex.ru, nadida.hi@yandex.ru';
+        $hidden_emails = 'd.portu.by@yandex.ru, nsxtest@yandex.ru';
         $fields = array('EMAIL'=>$send_emails, 'HIDDEN_EMAIL'=>$hidden_emails, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
         CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
 
