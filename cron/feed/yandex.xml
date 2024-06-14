@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<yml_catalog date="2024-06-14 19:55">
+    <shop>
+        <name>&#x41F;&#x435;&#x440;&#x444;&#x43E;&#x43C;</name>
+        <company>&#x41E;&#x41E;&#x41E; "&#x414;&#x435;&#x43A;&#x43E;&#x440;"</company>
+        <url>https://perfom-decor.ru/</url>
+        <currencies>
+            <currency id="RUR" rate="1"/>
+        </currencies></shop>
+</yml_catalog>
