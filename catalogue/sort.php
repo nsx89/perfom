@@ -118,8 +118,6 @@ function getSort($section_id,$get_sort_params = false) {
 
         /* --- СОРТИРОВКА НОВАЯ ДЛЯ 6. --- */
 
-        $SORT_FIRST = array('PROPERTY_SORT_FIRST'=>'DESC');
-        $SORT_SECOND = array('PROPERTY_SORT'=>'DESC');
         $CATEGORY_ID = (int)$section_id;
         switch ($CATEGORY_ID) {
             case '1542': 
@@ -139,8 +137,11 @@ function getSort($section_id,$get_sort_params = false) {
                 break;
         }
 
+        $SORT_FIRST = array('PROPERTY_SORT_FIRST'=>'DESC');
+        $SORT_SECOND = array('PROPERTY_SORT'=>'DESC');
+
         if ($is_popular) {
-            $SORTING = array_merge($SORT_FIRST, $SORT_SECOND, $SORT_CATEGORY, $wtf);
+            $SORTING = array_merge($SORT_FIRST, $SORT_CATEGORY, $SORT_SECOND, $wtf);
         }
         else {
             $SORTING = array_merge($SORT_FIRST, $wtf, $SORT_SECOND, $SORT_CATEGORY);

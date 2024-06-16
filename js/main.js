@@ -553,9 +553,9 @@ function sendAddAnalytics(wrap,type,qty) {
         "currency" : currencyCode,
         "items": products
     }
-    //console.log(yaArr);
+    console.log(yaArr);
+    window.dataLayer.push(yaArr);
     //let gaEvent = type == 'add' ? 'add_to_cart' : 'remove_from_cart';
-    //window.dataLayer.push(yaArr);
     //gtag('event', gaEvent, gaArr);
 }
 

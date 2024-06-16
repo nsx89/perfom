@@ -261,7 +261,7 @@ function mainPrefSlider() {
             arrows: false,
             infinite: false,
             speed: 300,
-            slidesToShow: 5,
+            slidesToShow: 6,
             slidesToScroll: 1,
             swipeToSlide:true,
             responsive: [
@@ -270,7 +270,7 @@ function mainPrefSlider() {
                     settings: {
                         centerMode: true,
                         centerPadding: '80px',
-                        slidesToShow: 3,
+                        slidesToShow: 4,
                         slidesToScroll: 1,
                         initialSlide: 2
                     }
@@ -807,21 +807,21 @@ function mainRecommSlider() {
                 arrows: false,
                 infinite: false,
                 speed: 300,
-                slidesToShow: 6,
-                slidesToScroll: 6,
-                swipeToSlide:true,
+                slidesToShow: 4,
+                slidesToScroll: 4,
+                swipeToSlide: true,
                 centerMode: true,
                 centerPadding: '90px',
-                initialSlide: 3,
+                initialSlide: 2,
                 responsive: [
                     {
                         breakpoint: 1181,
                         settings: {
                             centerMode: true,
                             centerPadding: '80px',
-                            slidesToShow: 4,
-                            slidesToScroll: 4,
-                            initialSlide: 2
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            initialSlide: 1
                         }
                     },
                     {
@@ -829,8 +829,8 @@ function mainRecommSlider() {
                         settings: {
                             centerMode: true,
                             centerPadding: '80px',
-                            slidesToShow: 3,
-                            slidesToScroll: 3,
+                            slidesToShow: 2,
+                            slidesToScroll: 2,
                             initialSlide: 1
                         }
                     },
