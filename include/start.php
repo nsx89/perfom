@@ -200,17 +200,17 @@ global $my_city_fix;
 			}*/
 
 			$domen = HTTP_HOST;
-			if (!empty($my_city_fixed) && !empty($_GET['test'])) {
+			if (!empty($my_city_fixed)) {
 
 				if (!empty($subdomen) && $_SERVER['HTTP_HOST'] <> $subdomen) {
-					$subdomen_url = 'https://'.$subdomen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					$subdomen_url = 'https://'.$subdomen.strtok($_SERVER['REQUEST_URI'], '?');
 					Header('Location: '.$subdomen_url); exit;
 				}
 				elseif (!empty($subdomen) && $_SERVER['HTTP_HOST'] == $subdomen) {
 					//echo 'SUBDOMAIN======'.$_SERVER['HTTP_HOST'].'-'.$subdomen.'-city='.$my_city;
 				}
 				elseif ($_SERVER['HTTP_HOST'] <> $domen) {
-					$domen_url = 'https://'.$domen.strtok($_SERVER['REQUEST_URI'], '?').'?test=1';
+					$domen_url = 'https://'.$domen.strtok($_SERVER['REQUEST_URI'], '?');
 					Header('Location: '.$domen_url); exit;
 				}
 			}

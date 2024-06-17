@@ -29,11 +29,11 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
             Ваш&nbsp;регион <span class="top_fix_title_city"><?=trim($loc['NAME'])?></span>?
         </div>
         <div class="top_fix_buttons">
-            <?if (!empty($_GET['test'])) {?>
-                <button class="top_fix_button_ok_new"><a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>&test=1" style="color: white;">Правильно</a></button>
-            <?}else{?>
+            <? if (1 == 1) { ?>
+                <button class="top_fix_button_ok_new"><a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>" style="color: white;">Правильно</a></button>
+            <? } else { ?>
                 <button class="top_fix_button_ok">Правильно</button>
-            <?}?>
+            <? } ?>
 
             <button class="top_fix_button_change">Выбрать город из&nbsp;списка</button>
         </div>
@@ -57,7 +57,7 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
                 $('#top_fix_region .top_fix_button_change').click(function () {
                     $('#top_fix_region').fadeOut();
                     if($('[data-type="geo-open"]').length > 0) {
-                        $('[data-type="geo-open"]').css('z-index','10');                        ;
+                        $('[data-type="geo-open"]').css('z-index','10');
                         $('[data-type="geo-open"]').removeClass('icon-geo');
                         $('[data-type="geo-open"]').addClass('icon-close');
                         $('[data-type="geo-open"]').attr("data-type","geo-close")

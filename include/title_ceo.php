@@ -205,7 +205,7 @@ include_once 'seo/new.php';
 
 /* --- SEO FOR SUBDOMAINS --- */
 
-if (!empty($_GET['test'])) {
+if (1 == 1) {
     $CITY_ID = $APPLICATION->get_cookie('my_city');
     $arFilter = Array('IBLOCK_ID'=>7, 'ID'=>$CITY_ID);
     $db_list = CIBlockElement::GetList(Array(), $arFilter);

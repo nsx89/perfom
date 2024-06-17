@@ -129,6 +129,7 @@ $(document).ready(function() {
 </noscript>
 */ ?>
 
+
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript" >
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
@@ -141,11 +142,15 @@ $(document).ready(function() {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
-        webvisor:true
+        webvisor:true,
+        ecommerce:"dataLayer"
    });
+
+   window.dataLayer = window.dataLayer || [];
 </script>
 <noscript><div><img src="https://mc.yandex.ru/watch/97077858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
+
 
 </body>
 </html>
