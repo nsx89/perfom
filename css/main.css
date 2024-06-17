@@ -334,6 +334,10 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     text-transform: lowercase;
     color: #000;
 }
+.has-txt .main-slide-caption.white h1 {
+    font-size: 60px;
+    font-weight: 500;
+}
 .main-slide-caption.white {
     color: #fff;
 }
@@ -378,11 +382,14 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     margin-left: 50%;
     text-transform: lowercase;
 }
-.main-pref-txt h2 {
+.main-pref-txt h2, .main-pref-txt h1 {
     font-size: 40px;
     font-weight: 500;
     color: #849795;
     margin-bottom: 20px;
+}
+.hidden {
+    display: none;
 }
 .main-pref-txt p {
     font-size: 20px;
@@ -396,6 +403,12 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
 }
 .main-pref-txt p:last-child {
     margin-bottom: 0;
+}
+.main-pref-txt a {
+    color: #000;
+}
+.main-pref-txt a:hover {
+    color: #849795;
 }
 .main-pref-slider {
     margin: 80px auto 0;
@@ -456,6 +469,9 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
 }
 .main-pref-icon4 {
     background: url(/img/icons/icon4.svg) no-repeat center center;
+}
+.main-pref-icon5 {
+    background: url(/img/icons/icon5.svg) no-repeat center center;
 }
 .main-events-catalogues {
     margin: 100px auto 0;
@@ -3917,6 +3933,14 @@ body:not(.touchable) .prod-info-type-option:hover {
     margin-right: 10px;
     width: 130px;
 }
+.top_fix_button_ok a {
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .top_fix_button_change {
     background-color: #fff;
     color: #000;
@@ -4462,10 +4486,13 @@ body:not(.touchable) .not-avail-comp-btn-no:hover {
     width: 520px;
     margin-bottom: 50px;
 }
-.cart-title-name {
+.cart-title-name, .cart-title-name h1 {
     font-size: 26px;
     font-weight: 500;
     text-transform: lowercase;
+}
+.cart-title-name h1 { 
+    display: inline-block;
 }
 .cart-title-name span {
     color: #A9A9A9;
@@ -5696,6 +5723,9 @@ body:not(.touchable) .personal-reset:hover {
     text-transform: lowercase;
     position: relative;
     z-index: 1;
+}
+.cont-success-order {
+    max-width: 430px;
 }
 .cont-success:before {
     content: '';

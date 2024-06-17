@@ -614,6 +614,9 @@
         padding-right: 70px;
         font-size: 40px;
     }
+    .has-txt .main-slide-caption.white h1 {
+        font-size: 40px;
+    }
     .header-timetable {
         font-size: 14px;
     }
@@ -1662,7 +1665,7 @@
     .cart-title {
         margin-top: 15px;
     }
-    .cart-title-name {
+    .cart-title-name, .cart-title-name h1 {
         font-size: 22px;
     }
     .cart-clear-all {
@@ -1770,7 +1773,7 @@
         font-size: 16px;
     }
     .succ-header {
-        font-size: 22px;
+        font-size: 21.4px;
         margin-bottom: 15px;
     }
     .succ-payment {
@@ -4302,7 +4305,7 @@
     .cart-save {
         padding: 0;
     }
-    .cart-title-name {
+    .cart-title-name, .cart-title-name h1 {
         font-size: 20px;
     }
     .prod-price span.prod-total {
@@ -5267,6 +5270,9 @@
         left: 20px;
         padding-right: 20px;
         top: 23px;
+    }
+    .has-txt .main-slide-caption.white h1 {
+        font-size: 30px;
     }
     .main-pref {
         padding-top: 15px;
@@ -6751,6 +6757,9 @@
         margin-right: 0;
     }
     .main-slide-caption {
+        font-size: 24px;
+    }
+    .has-txt .main-slide-caption.white h1 {
         font-size: 24px;
     }
     .prod-collect-btn {

@@ -30,7 +30,9 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
         </div>
         <div class="top_fix_buttons">
             <? if (1 == 1) { ?>
-                <button class="top_fix_button_ok_new"><a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>" style="color: white;">Правильно</a></button>
+                <button class="top_fix_button_ok top_fix_button_ok_new" data-subdomain="<?= $subdomen ?>" data-host="<?= $_SERVER['HTTP_HOST'] ?>">
+                    <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>" style="color: white;">Правильно</a>
+                </button>
             <? } else { ?>
                 <button class="top_fix_button_ok">Правильно</button>
             <? } ?>
@@ -43,15 +45,18 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
             $(function () {
                 $('#top_fix_region .top_fix_button_ok').click(function () {
                     $('#top_fix_region').fadeOut();
-                    $.ajax({
-                        type: "POST",
-                        url: "/ajax/fixedregion.php",
-                        data: {},
-                        success: function(resp){
-                            console.log(resp);
-                        }
-                    });
-                    return false;
+
+                    <? if ($subdomen == $_SERVER['HTTP_HOST']) { ?>
+                        $.ajax({
+                            type: "POST",
+                            url: "/ajax/fixedregion.php",
+                            data: {},
+                            success: function(resp){
+                                console.log(resp);
+                            }
+                        });
+                        return false;                
+                    <? } ?>
                 });
 
                 $('#top_fix_region .top_fix_button_change').click(function () {
