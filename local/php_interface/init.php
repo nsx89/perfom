@@ -1444,6 +1444,11 @@ function get_glue_arr($for_menu = false) {
     }
 }
 
+function build_drop_categories_ids() {
+    $ids = ['1542', '1544', '1546', '1550', '1601', '1622', '1552', '1548', '1623', '1624'];
+    return $ids;
+}
+
 function build_drop_categories($sections,$collapse = false) {
 
     if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
@@ -1476,7 +1481,7 @@ function build_drop_categories($sections,$collapse = false) {
     }*/
     $l1 = array_merge($ob->GetFields(), $ob->GetProperties());
 
-    $l2_ids = ['1542', '1544', '1546', '1550', '1601', '1622', '1552', '1548', '1623', '1624'];
+    $l2_ids = build_drop_categories_ids(); //id категорий для показа
 
     $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "2", '=SECTION_ID' => $l1['ID'], '=UF_HIDECATALOG' => '0', 'ID' => $l2_ids);
     $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));

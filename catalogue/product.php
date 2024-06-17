@@ -899,7 +899,7 @@ $ya_cont = array(
 <script>
     $(document).ready(function() {
         window.dataLayer.push(<?=json_encode($ya_cont)?>);
-        gtag('event', 'view_item', <?=json_encode($ga_arr)?>);
+        //gtag('event', 'view_item', <?=json_encode($ga_arr)?>);
     })
 </script>
 

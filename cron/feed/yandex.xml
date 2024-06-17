@@ -1,0 +1,3598 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<yml_catalog date="2024-06-16 01:11">
+    <shop>
+        <name>Перфом</name>
+        <company>ООО "Декор"</company>
+        <url>https://perfom-decor.ru/</url>
+        <currencies>
+            <currency id="RUR" rate="1"/>
+        </currencies><categories><category id="189">Интерьерный декор</category><category id="1542" parentId="189">карнизы</category><category id="1544" parentId="189">молдинги</category><category id="1546" parentId="189">плинтусы</category><category id="1550" parentId="189">розетки</category><category id="1601" parentId="189">декоративные панели</category><category id="1622" parentId="189">обрамление проёма</category><category id="1552" parentId="189">кессоны и купола</category><category id="1548" parentId="189">угловые элементы</category><category id="1623" parentId="189">подоконные элементы</category><category id="1624" parentId="189">наличники</category><category id="1587">клей</category></categories> <offers><offer id="104199" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-108/</url>
+                <price>1287.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.108.100.png</picture>
+                <name>карниз 6.50.108</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">118</param>
+<param name="Высота" unit="мм">115</param>
+ 
+            </offer>
+<offer id="74279" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-248/</url>
+                <price>1153.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.248.100.png</picture>
+                <name>карниз 6.50.248</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">97</param>
+<param name="Высота" unit="мм">92</param>
+ 
+            </offer>
+<offer id="74266" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-113/</url>
+                <price>807.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.113.100.png</picture>
+                <name>карниз 6.50.113</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">80</param>
+<param name="Высота" unit="мм">85</param>
+ 
+            </offer>
+<offer id="74261" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-101/</url>
+                <price>758.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.101.100.png</picture>
+                <name>карниз 6.50.101</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">69</param>
+<param name="Высота" unit="мм">68</param>
+ 
+            </offer>
+<offer id="74269" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-154/</url>
+                <price>207.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.154.100.png</picture>
+                <name>карниз 6.50.154</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">23</param>
+<param name="Высота" unit="мм">24</param>
+ 
+            </offer>
+<offer id="74272" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-160/</url>
+                <price>724.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.160.100.png</picture>
+                <name>карниз 6.50.160</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">71</param>
+<param name="Высота" unit="мм">51</param>
+ 
+            </offer>
+<offer id="74275" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-172/</url>
+                <price>440.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.172.100.png</picture>
+                <name>карниз 6.50.172</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">48</param>
+<param name="Высота" unit="мм">48</param>
+ 
+            </offer>
+<offer id="74271" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-157/</url>
+                <price>312.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.157.100.png</picture>
+                <name>карниз 6.50.157</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">32</param>
+<param name="Высота" unit="мм">33</param>
+ 
+            </offer>
+<offer id="74264" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-103/</url>
+                <price>597.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.103.100.png</picture>
+                <name>карниз 6.50.103</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">49</param>
+<param name="Высота" unit="мм">52</param>
+ 
+            </offer>
+<offer id="74265" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-105/</url>
+                <price>610.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.105.100.png</picture>
+                <name>карниз 6.50.105</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">62</param>
+<param name="Высота" unit="мм">60</param>
+ 
+            </offer>
+<offer id="74273" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-165/</url>
+                <price>918.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.165.100.png</picture>
+                <name>карниз 6.50.165</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">81</param>
+<param name="Высота" unit="мм">82</param>
+ 
+            </offer>
+<offer id="74274" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-171/</url>
+                <price>488.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.171.100.png</picture>
+                <name>карниз 6.50.171</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">30</param>
+<param name="Высота" unit="мм">45</param>
+ 
+            </offer>
+<offer id="74276" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-174/</url>
+                <price>597.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.174.100.png</picture>
+                <name>карниз 6.50.174</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">35</param>
+<param name="Высота" unit="мм">62</param>
+ 
+            </offer>
+<offer id="173410" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-240/</url>
+                <price>363.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.240.100.png</picture>
+                <name>карниз 6.50.240</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">31</param>
+<param name="Высота" unit="мм">31</param>
+ 
+            </offer>
+<offer id="74280" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-297/</url>
+                <price>233.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.297.100.png</picture>
+                <name>карниз 6.50.297</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">20</param>
+<param name="Высота" unit="мм">20</param>
+ 
+            </offer>
+<offer id="173416" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-246/</url>
+                <price>1382.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.246.100.png</picture>
+                <name>карниз 6.50.246</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">66</param>
+<param name="Высота" unit="мм">130</param>
+ 
+            </offer>
+<offer id="74268" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-130/</url>
+                <price>387.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.130.100.png</picture>
+                <name>карниз 6.50.130</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">30</param>
+<param name="Высота" unit="мм">32</param>
+ 
+            </offer>
+<offer id="74281" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-298/</url>
+                <price>372.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.298.100.png</picture>
+                <name>карниз 6.50.298</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">13</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="74282" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-299/</url>
+                <price>456.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.299.100.png</picture>
+                <name>карниз 6.50.299</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">38</param>
+<param name="Высота" unit="мм">45</param>
+ 
+            </offer>
+<offer id="173414" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-244/</url>
+                <price>1356.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.244.100.png</picture>
+                <name>карниз 6.50.244</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">89</param>
+<param name="Высота" unit="мм">110</param>
+ 
+            </offer>
+<offer id="173417" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-247/</url>
+                <price>1005.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.247.100.png</picture>
+                <name>карниз 6.50.247</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">43</param>
+<param name="Высота" unit="мм">91</param>
+ 
+            </offer>
+<offer id="173412" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-242/</url>
+                <price>2640.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.242.100.png</picture>
+                <name>карниз 6.50.242</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">100</param>
+<param name="Высота" unit="мм">200</param>
+ 
+            </offer>
+<offer id="173408" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-238/</url>
+                <price>363.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.238.100.png</picture>
+                <name>карниз 6.50.238</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">30</param>
+<param name="Высота" unit="мм">30</param>
+ 
+            </offer>
+<offer id="173409" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-239/</url>
+                <price>363.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.239.100.png</picture>
+                <name>карниз 6.50.239</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">28</param>
+<param name="Высота" unit="мм">28</param>
+ 
+            </offer>
+<offer id="74270" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-155/</url>
+                <price>275.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.155.100.png</picture>
+                <name>карниз 6.50.155</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">16</param>
+<param name="Высота" unit="мм">25</param>
+ 
+            </offer>
+<offer id="74277" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-229/</url>
+                <price>1367.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.229.100.png</picture>
+                <name>карниз 6.50.229</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">48</param>
+<param name="Высота" unit="мм">121</param>
+ 
+            </offer>
+<offer id="74267" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-115/</url>
+                <price>565.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.115.100.png</picture>
+                <name>карниз 6.50.115</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">46</param>
+<param name="Высота" unit="мм">49</param>
+ 
+            </offer>
+<offer id="165162" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-801/</url>
+                <price>2282.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.801.100.png</picture>
+                <name>карниз 6.50.801</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">130</param>
+<param name="Высота" unit="мм">134</param>
+ 
+            </offer>
+<offer id="173413" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-243/</url>
+                <price>2385.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.243.100.png</picture>
+                <name>карниз 6.50.243</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">147</param>
+<param name="Высота" unit="мм">167</param>
+ 
+            </offer>
+<offer id="173415" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-245/</url>
+                <price>1522.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.245.100.png</picture>
+                <name>карниз 6.50.245</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">110</param>
+<param name="Высота" unit="мм">116</param>
+ 
+            </offer>
+<offer id="74278" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-230/</url>
+                <price>1463.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.230.100.png</picture>
+                <name>карниз 6.50.230</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">83</param>
+<param name="Высота" unit="мм">83</param>
+ 
+            </offer>
+<offer id="165164" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-803/</url>
+                <price>3117.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.803.100.png</picture>
+                <name>карниз 6.50.803</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">220</param>
+<param name="Высота" unit="мм">25</param>
+ 
+            </offer>
+<offer id="173411" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-241/</url>
+                <price>1719.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.241.100.png</picture>
+                <name>карниз 6.50.241</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">45</param>
+<param name="Высота" unit="мм">110</param>
+ 
+            </offer>
+<offer id="165163" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-802/</url>
+                <price>3025.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.802.100.png</picture>
+                <name>карниз 6.50.802</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">120</param>
+<param name="Высота" unit="мм">159</param>
+ 
+            </offer>
+<offer id="240683" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-804/</url>
+                <price>2031.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.804.100.png</picture>
+                <name>карниз 6.50.804</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">86</param>
+<param name="Высота" unit="мм">140</param>
+ 
+            </offer>
+<offer id="74287" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-322/</url>
+                <price>214.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.322.100.png</picture>
+                <name>молдинг 6.51.322</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">25</param>
+ 
+            </offer>
+<offer id="74262" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-301/</url>
+                <price>392.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.301.100.png</picture>
+                <name>молдинг 6.51.301</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">42</param>
+ 
+            </offer>
+<offer id="74291" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-363/</url>
+                <price>502.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.363.100.png</picture>
+                <name>молдинг 6.51.363</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">70</param>
+ 
+            </offer>
+<offer id="74297" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-103/</url>
+                <price>744.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.103.100.png</picture>
+                <name>плинтус 6.53.103</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">110</param>
+ 
+            </offer>
+<offer id="74304" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-112/</url>
+                <price>550.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.112.100.png</picture>
+                <name>плинтус 6.53.112</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">80</param>
+ 
+            </offer>
+<offer id="74302" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-108/</url>
+                <price>878.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.108.100.png</picture>
+                <name>плинтус 6.53.108</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">120</param>
+ 
+            </offer>
+<offer id="74293" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-385/</url>
+                <price>795.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.385.100.png</picture>
+                <name>молдинг 6.51.385</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">102</param>
+ 
+            </offer>
+<offer id="74286" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-321/</url>
+                <price>248.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.321.100.png</picture>
+                <name>молдинг 6.51.321</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">20</param>
+ 
+            </offer>
+<offer id="74295" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-400/</url>
+                <price>392.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.400.100.png</picture>
+                <name>молдинг 6.51.400</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">44</param>
+ 
+            </offer>
+<offer id="74290" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-362/</url>
+                <price>417.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.362.100.png</picture>
+                <name>молдинг 6.51.362</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">46</param>
+ 
+            </offer>
+<offer id="74285" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-308/</url>
+                <price>379.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.308.100.png</picture>
+                <name>молдинг 6.51.308</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">41</param>
+ 
+            </offer>
+<offer id="74300" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-106/</url>
+                <price>587.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.106.100.png</picture>
+                <name>плинтус 6.53.106</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">70</param>
+ 
+            </offer>
+<offer id="74288" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-323/</url>
+                <price>306.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.323.100.png</picture>
+                <name>молдинг 6.51.323</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">32</param>
+ 
+            </offer>
+<offer id="74283" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-302/</url>
+                <price>687.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.302.100.png</picture>
+                <name>молдинг 6.51.302</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">61</param>
+ 
+            </offer>
+<offer id="165179" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-803/</url>
+                <price>1010.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.803.100.png</picture>
+                <name>плинтус 6.53.803</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">100</param>
+ 
+            </offer>
+<offer id="74263" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-101/</url>
+                <price>912.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.101.100.png</picture>
+                <name>плинтус 6.53.101</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">110</param>
+ 
+            </offer>
+<offer id="159097" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-110/</url>
+                <price>1104.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.110.100.png</picture>
+                <name>плинтус 6.53.110</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">138</param>
+ 
+            </offer>
+<offer id="74303" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-109/</url>
+                <price>777.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.109.100.png</picture>
+                <name>плинтус 6.53.109</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">97</param>
+ 
+            </offer>
+<offer id="173425" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-116/</url>
+                <price>951.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.116.100.png</picture>
+                <name>плинтус 6.53.116</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">100</param>
+ 
+            </offer>
+<offer id="74284" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-307/</url>
+                <price>896.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.307.100.png</picture>
+                <name>молдинг 6.51.307</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">96</param>
+ 
+            </offer>
+<offer id="74296" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-102/</url>
+                <price>1064.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.102.100.png</picture>
+                <name>плинтус 6.53.102</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">150</param>
+ 
+            </offer>
+<offer id="165174" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-809/</url>
+                <price>275.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.809.100.png</picture>
+                <name>молдинг 6.51.809</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">15</param>
+ 
+            </offer>
+<offer id="74294" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-386/</url>
+                <price>355.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.386.100.png</picture>
+                <name>молдинг 6.51.386</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">35</param>
+ 
+            </offer>
+<offer id="165180" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-804/</url>
+                <price>1203.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.804.100.png</picture>
+                <name>плинтус 6.53.804</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">150</param>
+ 
+            </offer>
+<offer id="74298" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-104/</url>
+                <price>917.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.104.100.png</picture>
+                <name>плинтус 6.53.104</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">120</param>
+ 
+            </offer>
+<offer id="173418" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-389/</url>
+                <price>381.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.389.100.png</picture>
+                <name>молдинг 6.51.389</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">34</param>
+ 
+            </offer>
+<offer id="74292" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-384/</url>
+                <price>421.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.384.100.png</picture>
+                <name>молдинг 6.51.384</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">47</param>
+ 
+            </offer>
+<offer id="74301" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-107/</url>
+                <price>734.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.107.100.png</picture>
+                <name>плинтус 6.53.107</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">79</param>
+ 
+            </offer>
+<offer id="173424" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-115/</url>
+                <price>706.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.115.100.png</picture>
+                <name>плинтус 6.53.115</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">70</param>
+ 
+            </offer>
+<offer id="165176" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-815/</url>
+                <price>440.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.815.100.png</picture>
+                <name>молдинг 6.51.815</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="74289" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-345/</url>
+                <price>896.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.345.100.png</picture>
+                <name>молдинг 6.51.345</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">94</param>
+ 
+            </offer>
+<offer id="165175" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-810/</url>
+                <price>550.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.810.100.png</picture>
+                <name>молдинг 6.51.810</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">21</param>
+ 
+            </offer>
+<offer id="173422" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-113/</url>
+                <price>1253.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.113.100.png</picture>
+                <name>плинтус 6.53.113</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">130</param>
+ 
+            </offer>
+<offer id="167040" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-802-280/</url>
+                <price>4158.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.802-280.100.png</picture>
+                <name>декоративная панель 6.59.802-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="173423" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-114/</url>
+                <price>1138.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.114.100.png</picture>
+                <name>плинтус 6.53.114</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">150</param>
+ 
+            </offer>
+<offer id="76568" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-702/</url>
+                <price>429.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.702.100.png</picture>
+                <name>  6.51.702</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="167041" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-803-280/</url>
+                <price>4004.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.803-280.100.png</picture>
+                <name>декоративная панель 6.59.803-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="173427" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-118/</url>
+                <price>2255.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.118.100.png</picture>
+                <name>плинтус 6.53.118</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">200</param>
+ 
+            </offer>
+<offer id="165177" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-801/</url>
+                <price>604.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.801.100.png</picture>
+                <name>плинтус 6.53.801</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">60</param>
+ 
+            </offer>
+<offer id="76580" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-705/</url>
+                <price>898.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.705.100.png</picture>
+                <name>  6.53.705</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">90</param>
+ 
+            </offer>
+<offer id="78433" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-53-705-1/</url>
+                <price>898.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.705.100.png</picture>
+                <name>  6.53.705</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">18</param>
+<param name="Высота" unit="мм">90</param>
+ 
+            </offer>
+<offer id="165181" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-805/</url>
+                <price>2397.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.805.100.png</picture>
+                <name>плинтус 6.53.805</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">200</param>
+ 
+            </offer>
+<offer id="74299" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-105/</url>
+                <price>1155.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.105.100.png</picture>
+                <name>плинтус 6.53.105</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">161</param>
+ 
+            </offer>
+<offer id="165155" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-803/</url>
+                <price>2860.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.803.100.png</picture>
+                <name>декоративная панель 6.59.803</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="173420" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-391/</url>
+                <price>456.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.391.100.png</picture>
+                <name>молдинг 6.51.391</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">41</param>
+ 
+            </offer>
+<offer id="165173" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-808/</url>
+                <price>440.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.808.100.png</picture>
+                <name>молдинг 6.51.808</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">30</param>
+ 
+            </offer>
+<offer id="165154" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-802/</url>
+                <price>2970.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.802.100.png</picture>
+                <name>декоративная панель 6.59.802</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="76576" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-701/</url>
+                <price>1122.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.701.100.png</picture>
+                <name>  6.53.701</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">90</param>
+ 
+            </offer>
+<offer id="78429" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-53-701-1/</url>
+                <price>1122.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.701.100.png</picture>
+                <name>  6.53.701</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">31</param>
+<param name="Высота" unit="мм">90</param>
+ 
+            </offer>
+<offer id="167039" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-801-280/</url>
+                <price>4158.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.801-280.100.png</picture>
+                <name>декоративная панель 6.59.801-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="165172" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-802/</url>
+                <price>1210.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.802.100.png</picture>
+                <name>молдинг 6.51.802</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">60</param>
+ 
+            </offer>
+<offer id="170176" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-806-280/</url>
+                <price>4004.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.806-280.100.png</picture>
+                <name>декоративная панель 6.59.806-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="170215" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-804-280/</url>
+                <price>4004.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.804-280.100.png</picture>
+                <name>декоративная панель 6.59.804-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="76569" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-703/</url>
+                <price>592.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.703.100.png</picture>
+                <name>  6.51.703</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">60</param>
+ 
+            </offer>
+<offer id="76575" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-710/</url>
+                <price>763.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.710.100.png</picture>
+                <name>  6.51.710</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">56</param>
+ 
+            </offer>
+<offer id="78427" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-51-710-1/</url>
+                <price>763.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.710.100.png</picture>
+                <name>  6.51.710</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">32</param>
+<param name="Высота" unit="мм">56</param>
+ 
+            </offer>
+<offer id="165178" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-802/</url>
+                <price>2496.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.802.100.png</picture>
+                <name>плинтус 6.53.802</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">160</param>
+ 
+            </offer>
+<offer id="173426" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-117/</url>
+                <price>1738.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.117.100.png</picture>
+                <name>плинтус 6.53.117</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">185</param>
+ 
+            </offer>
+<offer id="170175" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-806/</url>
+                <price>2860.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.806.100.png</picture>
+                <name>декоративная панель 6.59.806</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="165153" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-801/</url>
+                <price>2970.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.801.100.png</picture>
+                <name>декоративная панель 6.59.801</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="173421" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-392/</url>
+                <price>1404.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.392.100.png</picture>
+                <name>молдинг 6.51.392</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">89</param>
+ 
+            </offer>
+<offer id="165171" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-801/</url>
+                <price>598.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.801.100.png</picture>
+                <name>молдинг 6.51.801</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">59</param>
+ 
+            </offer>
+<offer id="170214" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-804/</url>
+                <price>2860.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.804.100.png</picture>
+                <name>декоративная панель 6.59.804</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="173419" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-390/</url>
+                <price>1404.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.390.100.png</picture>
+                <name>молдинг 6.51.390</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">92</param>
+ 
+            </offer>
+<offer id="240675" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-813/</url>
+                <price>481.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.813.100.png</picture>
+                <name>молдинг 6.51.813</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">50</param>
+ 
+            </offer>
+<offer id="240672" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-812/</url>
+                <price>481.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.812.100.png</picture>
+                <name>молдинг 6.51.812</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">50</param>
+ 
+            </offer>
+<offer id="240687" available="true">
+                <url>https://perfom-decor.ru/plintusy/6-53-806/</url>
+                <price>1397.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.53.806.100.png</picture>
+                <name>плинтус 6.53.806</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">150</param>
+ 
+            </offer>
+<offer id="240679" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-814/</url>
+                <price>416.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.814.100.png</picture>
+                <name>молдинг 6.51.814</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">25</param>
+ 
+            </offer>
+<offer id="240680" available="true">
+                <url>https://perfom-decor.ru/moldingi/6-51-816/</url>
+                <price>582.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.51.816.100.png</picture>
+                <name>молдинг 6.51.816</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="78407" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-711/</url>
+                <price>278.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.711.100.png</picture>
+                <name>  6.50.711</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">35</param>
+<param name="Высота" unit="мм">35</param>
+ 
+            </offer>
+<offer id="78408" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-712/</url>
+                <price>636.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.712.100.png</picture>
+                <name>  6.50.712</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">43</param>
+<param name="Высота" unit="мм">79</param>
+ 
+            </offer>
+<offer id="78409" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-713/</url>
+                <price>419.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.713.100.png</picture>
+                <name>  6.50.713</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">50</param>
+<param name="Высота" unit="мм">50</param>
+ 
+            </offer>
+<offer id="78410" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-714/</url>
+                <price>715.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.714.100.png</picture>
+                <name>  6.50.714</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">63</param>
+<param name="Высота" unit="мм">103</param>
+ 
+            </offer>
+<offer id="78411" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-715/</url>
+                <price>578.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.715.100.png</picture>
+                <name>  6.50.715</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">64</param>
+<param name="Высота" unit="мм">64</param>
+ 
+            </offer>
+<offer id="78412" available="true">
+                <url>https://perfom-decor.ru/karnizy/6-50-716/</url>
+                <price>1073.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.50.716.100.png</picture>
+                <name>  6.50.716</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">76</param>
+<param name="Высота" unit="мм">129</param>
+ 
+            </offer>
+<offer id="4777" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-117/</url>
+                <price>2462.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.117.100.png</picture>
+                <name>карниз 1.50.117</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">104</param>
+<param name="Высота" unit="мм">154</param>
+ 
+            </offer>
+<offer id="4781" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-121/</url>
+                <price>1501.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.121.100.png</picture>
+                <name>карниз 1.50.121</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">50</param>
+<param name="Высота" unit="мм">101</param>
+ 
+            </offer>
+<offer id="4786" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-104/</url>
+                <price>2732.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.104.100.png</picture>
+                <name>карниз 1.50.104</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">73</param>
+<param name="Высота" unit="мм">116</param>
+ 
+            </offer>
+<offer id="4792" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-111/</url>
+                <price>2888.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.111.100.png</picture>
+                <name>карниз 1.50.111</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">118</param>
+<param name="Высота" unit="мм">112</param>
+ 
+            </offer>
+<offer id="4799" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-127/</url>
+                <price>1455.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.127.100.png</picture>
+                <name>карниз 1.50.127</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">46</param>
+<param name="Высота" unit="мм">89</param>
+ 
+            </offer>
+<offer id="4803" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-131/</url>
+                <price>2306.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.131.100.png</picture>
+                <name>карниз 1.50.131</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">136</param>
+<param name="Высота" unit="мм">63</param>
+ 
+            </offer>
+<offer id="4804" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-132/</url>
+                <price>2772.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.132.100.png</picture>
+                <name>карниз 1.50.132</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">117</param>
+<param name="Высота" unit="мм">218</param>
+ 
+            </offer>
+<offer id="4805" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-133/</url>
+                <price>2016.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.133.100.png</picture>
+                <name>карниз 1.50.133</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">115</param>
+<param name="Высота" unit="мм">120</param>
+ 
+            </offer>
+<offer id="4819" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-147/</url>
+                <price>3199.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.147.100.png</picture>
+                <name>карниз 1.50.147</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">125</param>
+<param name="Высота" unit="мм">173</param>
+ 
+            </offer>
+<offer id="4838" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-167/</url>
+                <price>2888.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.167.100.png</picture>
+                <name>карниз 1.50.167</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">120</param>
+<param name="Высота" unit="мм">119</param>
+ 
+            </offer>
+<offer id="4839" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-168/</url>
+                <price>2888.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.168.100.png</picture>
+                <name>карниз 1.50.168</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">120</param>
+<param name="Высота" unit="мм">119</param>
+ 
+            </offer>
+<offer id="4844" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-173/</url>
+                <price>1054.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.173.100.png</picture>
+                <name>карниз 1.50.173</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">40</param>
+<param name="Высота" unit="мм">55</param>
+ 
+            </offer>
+<offer id="4846" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-175/</url>
+                <price>2871.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.175.100.png</picture>
+                <name>карниз 1.50.175</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">117</param>
+<param name="Высота" unit="мм">135</param>
+ 
+            </offer>
+<offer id="4848" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-177/</url>
+                <price>1567.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.177.100.png</picture>
+                <name>карниз 1.50.177</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">56</param>
+<param name="Высота" unit="мм">119</param>
+ 
+            </offer>
+<offer id="4849" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-180/</url>
+                <price>2665.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.180.100.png</picture>
+                <name>карниз 1.50.180</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">91</param>
+<param name="Высота" unit="мм">121</param>
+ 
+            </offer>
+<offer id="4864" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-196/</url>
+                <price>1454.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.196.100.png</picture>
+                <name>карниз 1.50.196</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">53</param>
+<param name="Высота" unit="мм">70</param>
+ 
+            </offer>
+<offer id="4882" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-252/</url>
+                <price>3036.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.252.100.png</picture>
+                <name>карниз 1.50.252</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">120</param>
+<param name="Высота" unit="мм">119</param>
+ 
+            </offer>
+<offer id="4884" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-254/</url>
+                <price>2269.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.254.100.png</picture>
+                <name>карниз 1.50.254</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">93</param>
+<param name="Высота" unit="мм">130</param>
+ 
+            </offer>
+<offer id="4895" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-266/</url>
+                <price>1378.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.266.100.png</picture>
+                <name>карниз 1.50.266</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">75</param>
+<param name="Высота" unit="мм">21</param>
+ 
+            </offer>
+<offer id="4898" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-269/</url>
+                <price>3220.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.269.100.png</picture>
+                <name>карниз 1.50.269</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">220</param>
+<param name="Высота" unit="мм">47</param>
+ 
+            </offer>
+<offer id="4900" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-271/</url>
+                <price>4436.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.271.100.png</picture>
+                <name>карниз 1.50.271</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">165</param>
+<param name="Высота" unit="мм">226</param>
+ 
+            </offer>
+<offer id="5022" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-327/</url>
+                <price>1648.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.327.100.png</picture>
+                <name>молдинг 1.51.327</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">80</param>
+ 
+            </offer>
+<offer id="5024" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-305/</url>
+                <price>995.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.305.100.png</picture>
+                <name>молдинг 1.51.305</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">28</param>
+ 
+            </offer>
+<offer id="5035" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-312/</url>
+                <price>1139.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.312.100.png</picture>
+                <name>молдинг 1.51.312</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="5041" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-310/</url>
+                <price>1933.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.310.100.png</picture>
+                <name>молдинг 1.51.310</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">96</param>
+ 
+            </offer>
+<offer id="5055" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-342/</url>
+                <price>1250.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.342.100.png</picture>
+                <name>молдинг 1.51.342</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">75</param>
+ 
+            </offer>
+<offer id="5056" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-343/</url>
+                <price>1225.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.343.100.png</picture>
+                <name>молдинг 1.51.343</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">75</param>
+ 
+            </offer>
+<offer id="5057" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-344/</url>
+                <price>1250.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.344.100.png</picture>
+                <name>молдинг 1.51.344</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">91</param>
+ 
+            </offer>
+<offer id="5060" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-401/</url>
+                <price>941.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.401.100.png</picture>
+                <name>молдинг 1.51.401</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">23</param>
+ 
+            </offer>
+<offer id="5071" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-347/</url>
+                <price>1898.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.347.100.png</picture>
+                <name>молдинг 1.51.347</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">91</param>
+ 
+            </offer>
+<offer id="5145" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-301/</url>
+                <price>897.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.301.100.png</picture>
+                <name>угловой элемент 1.52.301</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5146" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-302/</url>
+                <price>919.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.302.100.png</picture>
+                <name>угловой элемент 1.52.302</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5147" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-290/</url>
+                <price>973.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.290.100.png</picture>
+                <name>угловой элемент 1.52.290</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5148" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-293/</url>
+                <price>973.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.293.100.png</picture>
+                <name>угловой элемент 1.52.293</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5155" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-400/</url>
+                <price>977.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.400.100.png</picture>
+                <name>угловой элемент 1.52.400</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5156" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-289/</url>
+                <price>899.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.289.100.png</picture>
+                <name>угловой элемент 1.52.289</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5163" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-312/</url>
+                <price>897.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.312.100.png</picture>
+                <name>угловой элемент 1.52.312</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5175" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-001/</url>
+                <price>3716.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.001.100.png</picture>
+                <name>розетка 1.56.001</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5176" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-002/</url>
+                <price>2643.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.002.100.png</picture>
+                <name>розетка 1.56.002</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5177" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-004/</url>
+                <price>2155.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.004.100.png</picture>
+                <name>розетка 1.56.004</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5178" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-007/</url>
+                <price>2235.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.007.100.png</picture>
+                <name>розетка 1.56.007</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5179" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-013/</url>
+                <price>1414.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.013.100.png</picture>
+                <name>розетка 1.56.013</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5180" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-014/</url>
+                <price>1538.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.014.100.png</picture>
+                <name>розетка 1.56.014</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5181" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-015/</url>
+                <price>2904.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.015.100.png</picture>
+                <name>розетка 1.56.015</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5182" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-016/</url>
+                <price>2643.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.016.100.png</picture>
+                <name>розетка 1.56.016</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5183" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-018/</url>
+                <price>5166.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.018.100.png</picture>
+                <name>розетка 1.56.018</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5185" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-020/</url>
+                <price>2760.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.020.100.png</picture>
+                <name>розетка 1.56.020</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5186" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-022/</url>
+                <price>2643.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.022.100.png</picture>
+                <name>розетка 1.56.022</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5187" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-023/</url>
+                <price>3622.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.023.100.png</picture>
+                <name>розетка 1.56.023</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5189" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-025/</url>
+                <price>6803.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.025.100.png</picture>
+                <name>розетка 1.56.025</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5190" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-005/</url>
+                <price>3617.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.005.100.png</picture>
+                <name>розетка 1.56.005</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5191" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-010/</url>
+                <price>899.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.010.100.png</picture>
+                <name>розетка 1.56.010</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5193" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-029/</url>
+                <price>3716.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.029.100.png</picture>
+                <name>розетка 1.56.029</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5194" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-030/</url>
+                <price>1583.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.030.100.png</picture>
+                <name>розетка 1.56.030</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5195" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-003/</url>
+                <price>2821.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.003.100.png</picture>
+                <name>розетка 1.56.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5196" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-031/</url>
+                <price>3622.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.031.100.png</picture>
+                <name>розетка 1.56.031</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5197" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-021/</url>
+                <price>2904.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.021.100.png</picture>
+                <name>розетка 1.56.021</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5198" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-026/</url>
+                <price>4924.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.026.100.png</picture>
+                <name>розетка 1.56.026</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5199" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-006/</url>
+                <price>1506.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.006.100.png</picture>
+                <name>розетка 1.56.006</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5200" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-009/</url>
+                <price>1315.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.009.100.png</picture>
+                <name>розетка 1.56.009</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5201" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-032/</url>
+                <price>1568.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.032.100.png</picture>
+                <name>розетка 1.56.032</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5202" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-011/</url>
+                <price>888.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.011.100.png</picture>
+                <name>розетка 1.56.011</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5203" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-037/</url>
+                <price>1539.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.037.100.png</picture>
+                <name>розетка 1.56.037</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5204" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-034/</url>
+                <price>2732.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.034.100.png</picture>
+                <name>розетка 1.56.034</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5208" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-027/</url>
+                <price>1501.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.027.100.png</picture>
+                <name>розетка 1.56.027</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5209" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-039/</url>
+                <price>3766.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.039.100.png</picture>
+                <name>розетка 1.56.039</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5210" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-035/</url>
+                <price>2731.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.035.100.png</picture>
+                <name>розетка 1.56.035</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5234" available="true">
+                <url>https://perfom-decor.ru/kessony-i-kupola/1-57-002/</url>
+                <price>3396.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1552</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.57.002.10.png</picture>
+                <name>кессон 1.57.002</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5235" available="true">
+                <url>https://perfom-decor.ru/kessony-i-kupola/1-57-003/</url>
+                <price>3574.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1552</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.57.003.10.png</picture>
+                <name>кессон 1.57.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5236" available="true">
+                <url>https://perfom-decor.ru/kessony-i-kupola/1-57-001/</url>
+                <price>3129.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1552</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.57.001.10.png</picture>
+                <name>кессон 1.57.001</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5237" available="true">
+                <url>https://perfom-decor.ru/kessony-i-kupola/1-57-004/</url>
+                <price>4638.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1552</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.57.004.10.png</picture>
+                <name>кессон 1.57.004</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5324" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-010/</url>
+                <price>1161.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.010.100.png</picture>
+                <name>база 1.54.010</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5325" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-55-003/</url>
+                <price>470.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.55.003.10.png</picture>
+                <name>обрамление арок 1.55.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5326" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-55-004/</url>
+                <price>488.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.55.004.10.png</picture>
+                <name>обрамление арок 1.55.004</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5327" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-55-001/</url>
+                <price>1330.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.55.001.10.png</picture>
+                <name>обрамление арок 1.55.001</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5328" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-55-005/</url>
+                <price>487.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.55.005.10.png</picture>
+                <name>замковый камень 1.55.005</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5329" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-55-002/</url>
+                <price>1330.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/1.55.002.10.png</picture>
+                <name>обрамление арок 1.55.002</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5335" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-003/</url>
+                <price>1674.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.003.100.png</picture>
+                <name>наличник 1.54.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">1262</param>
+ 
+            </offer>
+<offer id="5336" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-004/</url>
+                <price>2803.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.004.100.png</picture>
+                <name>наличник 1.54.004</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5867" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-357/</url>
+                <price>1183.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.357.100.png</picture>
+                <name>молдинг 1.51.357</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">48</param>
+ 
+            </offer>
+<offer id="5879" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-036/</url>
+                <price>5863.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.036.100.png</picture>
+                <name>розетка 1.56.036</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5945" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-001/</url>
+                <price>4865.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.001.100.png</picture>
+                <name>наличник 4.84.001</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5946" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-002/</url>
+                <price>4197.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.002.100.png</picture>
+                <name>наличник 4.84.002</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2300</param>
+ 
+            </offer>
+<offer id="5947" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-003/</url>
+                <price>3237.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.003.100.png</picture>
+                <name>наличник 4.84.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2300</param>
+ 
+            </offer>
+<offer id="5948" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-051/</url>
+                <price>5058.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/4.84.051.10.png</picture>
+                <name>наличник 4.84.051</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2300</param>
+ 
+            </offer>
+<offer id="5949" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-052/</url>
+                <price>4006.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/4.84.052.10.png</picture>
+                <name>наличник 4.84.052</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5950" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-053/</url>
+                <price>3057.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/4.84.053.10.png</picture>
+                <name>наличник 4.84.053</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5951" available="true">
+                <url>https://perfom-decor.ru/arochnye-obramlenija/4-87-031/</url>
+                <price>4475.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1575</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.87.031.100.png</picture>
+                <name>арочное обрамление 4.87.031</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5952" available="true">
+                <url>https://perfom-decor.ru/arochnye-obramlenija/4-87-032/</url>
+                <price>3601.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1575</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/4.87.032.10.png</picture>
+                <name>арочное обрамление 4.87.032</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5953" available="true">
+                <url>https://perfom-decor.ru/arochnye-obramlenija/4-87-033/</url>
+                <price>2336.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1575</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/4.87.033.10.png</picture>
+                <name>арочное обрамление 4.87.033</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="5957" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-001/</url>
+                <price>5836.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.001.100.png</picture>
+                <name>подоконный элемент 4.82.001</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5958" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-002/</url>
+                <price>3891.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.002.100.png</picture>
+                <name>подоконный элемент 4.82.002</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5959" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-003/</url>
+                <price>3891.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.003.100.png</picture>
+                <name>подоконный элемент 4.82.003</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5960" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-101/</url>
+                <price>2823.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.101.100.png</picture>
+                <name>подоконный элемент 4.82.101</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5961" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-201/</url>
+                <price>2921.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.201.100.png</picture>
+                <name>подоконный элемент 4.82.201</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5962" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-202/</url>
+                <price>2921.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.202.100.png</picture>
+                <name>подоконный элемент 4.82.202</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5963" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-301/</url>
+                <price>2921.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.301.100.png</picture>
+                <name>подоконный элемент 4.82.301</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="5964" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-302/</url>
+                <price>2921.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.302.100.png</picture>
+                <name>подоконный элемент 4.82.302</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="6104" available="true">
+                <url>https://perfom-decor.ru/klei-90/E01-M-290/</url>
+                <price>498.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E01.M.290.100.png</picture>
+                <name>E01.M.290 / Клей Европласт Монтажный 290 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="6105" available="true">
+                <url>https://perfom-decor.ru/klei-90/E04-U-290/</url>
+                <price>998.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E04.U.290.100.png</picture>
+                <name>E04.U.290 / Клей Европласт универсальный 290 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="6106" available="true">
+                <url>https://perfom-decor.ru/klei-90/k-es80/</url>
+                <price>363.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/10/330_330_1/k-es80.10.png</picture>
+                <name>Клей Европласт стыковочный 80 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="6107" available="true">
+                <url>https://perfom-decor.ru/klei-90/E02-S-290/</url>
+                <price>1399.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E02.S.290.100.png</picture>
+                <name>E02.S.290 / Клей Европласт стыковочный SMP 290 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="6173" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-161/</url>
+                <price>1531.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.161.100.png</picture>
+                <name>карниз 1.50.161</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">91</param>
+<param name="Высота" unit="мм">81</param>
+ 
+            </offer>
+<offer id="6180" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-040/</url>
+                <price>4924.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.040.100.png</picture>
+                <name>розетка 1.56.040</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6181" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-041/</url>
+                <price>3421.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.041.100.png</picture>
+                <name>розетка 1.56.041</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6201" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-005/</url>
+                <price>2039.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.005.100.png</picture>
+                <name>наличник 4.84.005</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="6211" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-004/</url>
+                <price>2651.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.004.100.png</picture>
+                <name>наличник 4.84.004</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="6212" available="true">
+                <url>https://perfom-decor.ru/nalichniki/4-84-006/</url>
+                <price>4076.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1624</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.84.006.100.png</picture>
+                <name>наличник 4.84.006</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="6355" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-322/</url>
+                <price>850.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.322.100.png</picture>
+                <name>угловой элемент 1.52.322</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6363" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-276/</url>
+                <price>1524.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.276.100.png</picture>
+                <name>карниз 1.50.276</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">100</param>
+<param name="Высота" unit="мм">60</param>
+ 
+            </offer>
+<offer id="6367" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-044/</url>
+                <price>3228.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.044.100.png</picture>
+                <name>розетка 1.56.044</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6429" available="true">
+                <url>https://perfom-decor.ru/klei-90/E03-S-60/</url>
+                <price>520.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E03.S.60.100.png</picture>
+                <name>E03.S.60 / Клей Европласт стыковочный SMP 60 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="6430" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-030/</url>
+                <price>1098.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.030.100.png</picture>
+                <name>база 1.54.030</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6434" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-285/</url>
+                <price>883.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.285.100.png</picture>
+                <name>угловой элемент 1.52.285</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6541" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-374/</url>
+                <price>1830.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.374.100.png</picture>
+                <name>молдинг 1.51.374</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">101</param>
+ 
+            </offer>
+<offer id="6658" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-031/</url>
+                <price>537.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.031.100.png</picture>
+                <name>торцевой элемент 4.82.031</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6672" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-050/</url>
+                <price>2032.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.050.100.png</picture>
+                <name>розетка 1.56.050</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6683" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-047/</url>
+                <price>2032.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.047.100.png</picture>
+                <name>розетка 1.56.047</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6740" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-014/</url>
+                <price>3069.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.014.100.png</picture>
+                <name>наличник 1.54.014</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">1504</param>
+ 
+            </offer>
+<offer id="6741" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-043/</url>
+                <price>1591.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.043.100.png</picture>
+                <name>розетка 1.56.043</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6743" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-049/</url>
+                <price>1535.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.049.100.png</picture>
+                <name>розетка 1.56.049</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="6773" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-295/</url>
+                <price>1029.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.295.100.png</picture>
+                <name>карниз 1.50.295</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">30</param>
+<param name="Высота" unit="мм">30</param>
+ 
+            </offer>
+<offer id="6819" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-377/</url>
+                <price>1031.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.377.100.png</picture>
+                <name>молдинг 1.51.377</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">52</param>
+ 
+            </offer>
+<offer id="6820" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-379/</url>
+                <price>1016.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.379.100.png</picture>
+                <name>молдинг 1.51.379</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">30</param>
+ 
+            </offer>
+<offer id="6835" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-378/</url>
+                <price>974.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.378.100.png</picture>
+                <name>молдинг 1.51.378</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">22</param>
+ 
+            </offer>
+<offer id="21021" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-385/</url>
+                <price>1828.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.385.100.png</picture>
+                <name>молдинг 1.51.385</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">103</param>
+ 
+            </offer>
+<offer id="27652" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-054/</url>
+                <price>5327.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.054.100.png</picture>
+                <name>розетка 1.56.054</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="29860" available="true">
+                <url>https://perfom-decor.ru/plintusy/1-53-111/</url>
+                <price>1500.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1546</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.53.111.100.png</picture>
+                <name>плинтус 1.53.111</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">65</param>
+ 
+            </offer>
+<offer id="31363" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-216/</url>
+                <price>1421.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.216.100.png</picture>
+                <name>карниз 1.50.216</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Ширина" unit="мм">67</param>
+<param name="Высота" unit="мм">75</param>
+ 
+            </offer>
+<offer id="43862" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-032/</url>
+                <price>445.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.032.100.png</picture>
+                <name>торцевой элемент 4.82.032</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43863" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-131/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.131.100.png</picture>
+                <name>торцевой элемент 4.82.131</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43864" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-231/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.231.100.png</picture>
+                <name>торцевой элемент 4.82.231</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43865" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-232/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.232.100.png</picture>
+                <name>торцевой элемент 4.82.232</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43866" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-332/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.332.100.png</picture>
+                <name>торцевой элемент 4.82.332</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43867" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-331/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.331.100.png</picture>
+                <name>торцевой элемент 4.82.331</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="43868" available="true">
+                <url>https://perfom-decor.ru/podokonnye-elementy/4-82-033/</url>
+                <price>431.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1623</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/4.82.033.100.png</picture>
+                <name>торцевой элемент 4.82.033</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="65561" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-040/</url>
+                <price>1242.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.040.100.png</picture>
+                <name>база 1.54.040</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="65563" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-050/</url>
+                <price>1215.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.050.100.png</picture>
+                <name>база 1.54.050</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="93666" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-060/</url>
+                <price>1215.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.060.100.png</picture>
+                <name>база 1.54.060</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="93667" available="true">
+                <url>https://perfom-decor.ru/obramlenie-proema/1-54-070/</url>
+                <price>1215.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1622</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.54.070.100.png</picture>
+                <name>база 1.54.070</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="150861" available="true">
+                <url>https://perfom-decor.ru/klei-90/EB05-M-290/</url>
+                <price>1299.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/EB05.M.290.100.png</picture>
+                <name>Клей монтажный Европласт 290 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="150862" available="true">
+                <url>https://perfom-decor.ru/klei-90/EB06-S-80/</url>
+                <price>770.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/EB06.S.80.100.png</picture>
+                <name>Клей стыковочный Европласт 80 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="158448" available="true">
+                <url>https://perfom-decor.ru/klei-90/E13-S-60/</url>
+                <price>520.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E13.S.60.100.png</picture>
+                <name>E13.S.60 / Клей Европласт стыковочный PU 60 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="158449" available="true">
+                <url>https://perfom-decor.ru/klei-90/E12-S-290b/</url>
+                <price>1399.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E12.S.290.100.png</picture>
+                <name>E12.S.290 / Клей Европласт стыковочный PU 290 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="160323" available="true">
+                <url>https://perfom-decor.ru/klei-90/E13-S-60_old/</url>
+                <price>520.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1587</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/E13old.S.60.100.png</picture>
+                <name>E13.S.60 / Клей Европласт стыковочный PU 60 мл.</name>
+                <description/>
+                 
+            </offer>
+<offer id="165150" available="true">
+                <url>https://perfom-decor.ru/kronshtejny/1-19-801/</url>
+                <price>2051.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1549</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.19.801.100.png</picture>
+                <name>кронштейн 1.19.801</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165156" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-801/</url>
+                <price>928.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.801.100.png</picture>
+                <name>декоративный элемент 1.62.801</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165157" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-802/</url>
+                <price>933.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.802.100.png</picture>
+                <name>декоративный элемент 1.62.802</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165158" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-803/</url>
+                <price>938.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.803.100.png</picture>
+                <name>декоративный элемент 1.62.803</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165159" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-804/</url>
+                <price>951.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.804.100.png</picture>
+                <name>декоративный элемент 1.62.804</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165160" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-805/</url>
+                <price>926.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.805.100.png</picture>
+                <name>декоративный элемент левый 1.62.805</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165161" available="true">
+                <url>https://perfom-decor.ru/dekorativnye-elementy/1-62-806/</url>
+                <price>926.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1621</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.62.806.100.png</picture>
+                <name>декоративный элемент правый 1.62.806</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165165" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-803/</url>
+                <price>1510.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.803.100.png</picture>
+                <name>молдинг 1.51.803</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">26</param>
+ 
+            </offer>
+<offer id="165166" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-804/</url>
+                <price>1613.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.804.100.png</picture>
+                <name>молдинг 1.51.804</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">70</param>
+ 
+            </offer>
+<offer id="165167" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-805/</url>
+                <price>1582.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.805.100.png</picture>
+                <name>молдинг 1.51.805</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">50</param>
+ 
+            </offer>
+<offer id="165168" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-806/</url>
+                <price>1582.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.806.100.png</picture>
+                <name>молдинг 1.51.806</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">49</param>
+ 
+            </offer>
+<offer id="165169" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-807/</url>
+                <price>2053.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.807.100.png</picture>
+                <name>молдинг 1.51.807</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">1980</param>
+<param name="Высота" unit="мм">100</param>
+ 
+            </offer>
+<offer id="165170" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-811/</url>
+                <price>1461.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.811.100.png</picture>
+                <name>молдинг 1.51.811</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">40</param>
+ 
+            </offer>
+<offer id="165182" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-801/</url>
+                <price>1705.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.801.100.png</picture>
+                <name>розетка 1.56.801</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165183" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-802/</url>
+                <price>5060.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.802.100.png</picture>
+                <name>розетка 1.56.802</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165184" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-803/</url>
+                <price>3300.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.803.100.png</picture>
+                <name>розетка 1.56.803</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165185" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-804/</url>
+                <price>6050.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.804.100.png</picture>
+                <name>розетка 1.56.804</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165186" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-805/</url>
+                <price>1705.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.805.100.png</picture>
+                <name>розетка 1.56.805</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165187" available="true">
+                <url>https://perfom-decor.ru/rozetki/1-56-806/</url>
+                <price>5005.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1550</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.56.806.100.png</picture>
+                <name>розетка 1.56.806</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165188" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-810/</url>
+                <price>962.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.810.100.png</picture>
+                <name>угловой элемент 1.52.810</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165189" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-812/</url>
+                <price>962.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.812.100.png</picture>
+                <name>угловой элемент 1.52.812</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165190" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-815/</url>
+                <price>974.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.815.100.png</picture>
+                <name>угловой элемент 1.52.815</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165191" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-816/</url>
+                <price>988.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.816.100.png</picture>
+                <name>угловой элемент 1.52.816</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165200" available="true">
+                <url>https://perfom-decor.ru/elementy-kamina/1-64-801/</url>
+                <price>28599.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1589</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.64.801.100.png</picture>
+                <name>элемент камина 1.64.801</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">1600</param>
+ 
+            </offer>
+<offer id="165201" available="true">
+                <url>https://perfom-decor.ru/elementy-kamina/1-64-803/</url>
+                <price>21999.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1589</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.64.803.100.png</picture>
+                <name>элемент камина 1.64.803</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">1200</param>
+ 
+            </offer>
+<offer id="165900" available="true">
+                <url>https://perfom-decor.ru/kaminy/1-64-811/</url>
+                <price>0.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1590</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.64.811.100.png</picture>
+                <name>декоративнный камин</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="165905" available="true">
+                <url>https://perfom-decor.ru/kaminy/1-64-813/</url>
+                <price>0.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1590</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.64.813.100.png</picture>
+                <name>декоративнный камин</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="173949" available="true">
+                <url>https://perfom-decor.ru/uglovye-jelementy/1-52-817/</url>
+                <price>1000.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1548</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.52.817.100.png</picture>
+                <name>угловой элемент 1.52.817</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+ 
+            </offer>
+<offer id="240667" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-817/</url>
+                <price>1668.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.817.100.png</picture>
+                <name>молдинг 1.51.817</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2000</param>
+<param name="Высота" unit="мм">56</param>
+ 
+            </offer>
+<offer id="247728" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-805/</url>
+                <price>2860.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.805.100.png</picture>
+                <name>декоративная панель 6.59.805</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2000</param>
+ 
+            </offer>
+<offer id="247736" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/6-59-805-280/</url>
+                <price>4004.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/6.59.805-280.100.png</picture>
+                <name>панель декоративная 6.59.805-280</name>
+                <description/>
+                <param name="Материал">перфом</param>
+<param name="Длина детали" unit="мм">2800</param>
+ 
+            </offer>
+<offer id="247831" available="true">
+                <url>https://perfom-decor.ru/karnizy/1-50-805/</url>
+                <price>4180.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1542</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.50.805.100.png</picture>
+                <name>карниз 1.50.805</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2007</param>
+<param name="Ширина" unit="мм">75</param>
+<param name="Высота" unit="мм">200</param>
+ 
+            </offer>
+<offer id="247835" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-818/</url>
+                <price>1885.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.818.100.png</picture>
+                <name>молдинг 1.51.818</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2007</param>
+<param name="Высота" unit="мм">80</param>
+ 
+            </offer>
+<offer id="247837" available="true">
+                <url>https://perfom-decor.ru/moldingi/1-51-819/</url>
+                <price>2183.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1544</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.51.819.100.png</picture>
+                <name>молдинг 1.51.819</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">2007</param>
+<param name="Высота" unit="мм">100</param>
+ 
+            </offer>
+<offer id="247839" available="true">
+                <url>https://perfom-decor.ru/dekorativnii-paneli/1-59-820/</url>
+                <price>2914.00</price>
+                <currencyId>RUB</currencyId>
+                <categoryId>1601</categoryId>
+                <picture>https://perfom-decor.ru/upload/resize_cache/cron/catalog/data/images/100/330_330_1/1.59.820.100.png</picture>
+                <name>панель декоративная 1.59.820</name>
+                <description/>
+                <param name="Материал">пенополиуретан</param>
+<param name="Длина детали" unit="мм">500</param>
+ 
+            </offer>
+ </offers>
+</shop>
+</yml_catalog>

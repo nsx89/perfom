@@ -10,11 +10,11 @@
         $item = array_merge($ob->GetFields(),$ob->GetProperties());
         $country = $item['PROPERTY_COUNTRY_VALUE'];
 		$discountregion = $item['PROPERTY_DISCOUNTREGION_VALUE'];
-		
+
 		$res_dis = CIBlockElement::GetList(Array(), Array("IBLOCK_ID"=>8, "ACTIVE"=>"Y", "ID"=>$discountregion), false, Array(), Array("PROPERTY_discount"));
 		while($ob_dis = $res_dis->GetNextElement()) {
 		$item_dis = array_merge($ob_dis->GetFields(),$ob->GetProperties());
-		$discount = $item_dis['PROPERTY_DISCOUNT_VALUE'];	
+		$discount = $item_dis['PROPERTY_DISCOUNT_VALUE'];
 		}
     }
 
@@ -156,7 +156,7 @@ $(document).ready(function() {
 </html>
 
 <?/*TODO: открыть*/?>
-<? 
+<?
 //if (empty($_GET['test'])) {
     require($_SERVER["DOCUMENT_ROOT"] . "/question_service/achtung_counter.php");
     require($_SERVER["DOCUMENT_ROOT"] . "/question_service/need_comment.php");
