@@ -163,7 +163,10 @@ global $my_city_fix;
 		if (!$gi_value) $gi_value = 'RU';
 		if (!$gi_value_city) {$gi_value_city->latitude = 55.754334; $gi_value_city->longitude = 37.6263844326;}
 
-		if (!empty($_GET['sub_city'])) {
+		if (!empty($_GET['subdomain'])) {
+			
+		}
+		else if (!empty($_GET['sub_city'])) {
 //
 //			$my_location = $APPLICATION->get_cookie('my_location');
 //			$my_city = $APPLICATION->get_cookie('my_city');

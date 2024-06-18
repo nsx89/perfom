@@ -130,15 +130,81 @@ $(document).ready(function() {
 */ ?>
 
 
+<? 
+$yandexId = '97077858';
+
+$subdomen = _get_city_loc($my_city);
+if (empty($subdomen)) $subdomen = HTTP_HOST;
+
+if ($subdomen <> 'perfom-decor.ru') {
+    switch ($my_city) {
+        case '3196': $yandexId = '97603898'; break;
+        case '3331': $yandexId = '97603906'; break;
+        case '3152': $yandexId = '97603858'; break;
+
+        case '3114': $yandexId = '97602887'; break;
+        case '6191': $yandexId = '97603014'; break;
+        case '3340': $yandexId = '97603302'; break;
+
+        case '102940': $yandexId = '97603326'; break;
+        case '3333': $yandexId = '97603374'; break;
+        case '3116': $yandexId = '97603400'; break;
+
+        case '3374': $yandexId = '97603428'; break;
+        case '3118': $yandexId = '97603455'; break;
+        case '3123': $yandexId = '97603533'; break;
+
+        case '3304': $yandexId = '97603553'; break;
+        case '3125': $yandexId = '97603578'; break;
+        case '3235': $yandexId = '97603604'; break;
+
+        case '3131': $yandexId = '97603617'; break;
+        case '6567': $yandexId = '97603635'; break;
+        case '3135': $yandexId = '97603664'; break;
+
+        case '3138': $yandexId = '97603682'; break;
+        case '3143': $yandexId = '97603701'; break;
+        case '24220': $yandexId = '97603769'; break;
+        case '3145': $yandexId = '97603789'; break;
+
+        case '3302': $yandexId = '97603813'; break;
+        case '3316': $yandexId = '97603837'; break;
+        case '3149': $yandexId = '97603850'; break;
+
+        case '3481': $yandexId = '97603867'; break;
+        case '3154': $yandexId = '97603875'; break;
+
+        case '3707': $yandexId = '97603915'; break;
+        case '3163': $yandexId = '97603924'; break;
+        case '3299': $yandexId = '97603934'; break;
+
+        case '3170': $yandexId = '97603944'; break;
+        case '3172': $yandexId = '97603951'; break;
+        case '3178': $yandexId = '97603960'; break;
+
+        case '3176': $yandexId = '97603971'; break;
+        case '3180': $yandexId = '97604000'; break;
+        case '3182': $yandexId = '97604013'; break;
+        case '6789': $yandexId = '97604025'; break;
+
+        case '52538': $yandexId = '97604037'; break;
+        case '3318': $yandexId = '97604042'; break;
+        case '3223': $yandexId = '97604044'; break;
+        case '3275': $yandexId = '97604048'; break;
+    }
+}
+?>
+
 <!-- Yandex.Metrika counter -->
-<script type="text/javascript" >
+<script type="text/javascript">
+   
    (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
    m[i].l=1*new Date();
    for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
    k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
    (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
 
-   ym(97077858, "init", {
+   ym(<?= $yandexId ?>, "init", {
         clickmap:true,
         trackLinks:true,
         accurateTrackBounce:true,
@@ -148,7 +214,7 @@ $(document).ready(function() {
 
    window.dataLayer = window.dataLayer || [];
 </script>
-<noscript><div><img src="https://mc.yandex.ru/watch/97077858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<noscript><div><img src="https://mc.yandex.ru/watch/<?= $yandexId ?>" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
 
