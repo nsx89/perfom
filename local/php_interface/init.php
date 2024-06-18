@@ -1503,7 +1503,7 @@ function build_drop_categories($sections,$collapse = false) {
                         <ul class="cat-collapse-wrap" data-type="cat-collapse-wrap" style="<?= !empty($all) ? 'display: block;' : '' ?>">
                     <? } ?>
                     <li <?=(in_array($l2['CODE'],$last_sections))? ' class="active"':''?> <?if($collapse && $n <= 5) echo ' data-type="first-cat"'?>>
-                        <a href="/<?=$l2['CODE']?>" data-id="<?=$l2['ID']?>">
+                        <a href="/<?=$l2['CODE']?>/" data-id="<?=$l2['ID']?>">
                             <?=$l2['NAME']?>
                         </a>
                     </li>
