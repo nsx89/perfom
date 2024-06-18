@@ -1,0 +1,46 @@
+ID:76545 = Артикул: 1.50.710 = active =N = TAGS =
+ID:76546 = Артикул: 1.51.701 = active =N = TAGS =
+ID:78428 = Артикул: 1.51.711 = active =N = TAGS =
+ID:76547 = Артикул: 1.51.711 = active =N = TAGS =
+ID:76581 = Артикул: 1.56.701 = active =N = TAGS = OFF
+ID:76582 = Артикул: 1.56.702 = active =N = TAGS =
+ID:76583 = Артикул: 1.56.703 = active =N = TAGS = OFF
+ID:76584 = Артикул: 1.56.705 = active =N = TAGS = OFF
+ID:76586 = Артикул: 1.56.707 = active =N = TAGS = OFF
+ID:76587 = Артикул: 1.56.708 = active =N = TAGS = OFF
+ID:76588 = Артикул: 1.56.709 = active =N = TAGS = OFF
+ID:76589 = Артикул: 1.56.710 = active =N = TAGS = OFF
+ID:76560 = Артикул: 6.50.701 = active =Y = TAGS = OFF
+ID:76561 = Артикул: 6.50.702 = active =Y = TAGS = OFF
+ID:76562 = Артикул: 6.50.703 = active =Y = TAGS = OFF
+ID:76563 = Артикул: 6.50.704 = active =Y = TAGS = OFF
+ID:76564 = Артикул: 6.50.705 = active =Y = TAGS = OFF
+ID:76565 = Артикул: 6.50.706 = active =Y = TAGS = OFF
+ID:76566 = Артикул: 6.50.708 = active =Y = TAGS = OFF
+ID:76567 = Артикул: 6.50.709 = active =Y = TAGS = OFF
+ID:78407 = Артикул: 6.50.711 = active =Y = TAGS = Y
+ID:78408 = Артикул: 6.50.712 = active =Y = TAGS = Y
+ID:78409 = Артикул: 6.50.713 = active =Y = TAGS = Y
+ID:78410 = Артикул: 6.50.714 = active =Y = TAGS = Y
+ID:78411 = Артикул: 6.50.715 = active =Y = TAGS = Y
+ID:78412 = Артикул: 6.50.716 = active =Y = TAGS = Y
+ID:79707 = Артикул: 6.50.719 = active =Y = TAGS = OFF
+ID:76568 = Артикул: 6.51.702 = active =Y = TAGS = Y
+ID:76569 = Артикул: 6.51.703 = active =Y = TAGS = Y
+ID:76570 = Артикул: 6.51.704 = active =Y = TAGS = OFF
+ID:76571 = Артикул: 6.51.705 = active =Y = TAGS = OFF
+ID:76572 = Артикул: 6.51.706 = active =Y = TAGS = OFF
+ID:76573 = Артикул: 6.51.707 = active =Y = TAGS = OFF
+ID:76574 = Артикул: 6.51.708 = active =Y = TAGS = OFF
+ID:76575 = Артикул: 6.51.710 = active =Y = TAGS = Y
+ID:78427 = Артикул: 6.51.710 = active =Y = TAGS = Y
+ID:76576 = Артикул: 6.53.701 = active =Y = TAGS = Y
+ID:78429 = Артикул: 6.53.701 = active =Y = TAGS = Y
+ID:76577 = Артикул: 6.53.702 = active =Y = TAGS = OFF
+ID:78430 = Артикул: 6.53.702 = active =Y = TAGS = OFF
+ID:76578 = Артикул: 6.53.703 = active =Y = TAGS = OFF
+ID:78431 = Артикул: 6.53.703 = active =Y = TAGS = OFF
+ID:78432 = Артикул: 6.53.704 = active =Y = TAGS = OFF
+ID:76579 = Артикул: 6.53.704 = active =Y = TAGS = OFF
+ID:76580 = Артикул: 6.53.705 = active =Y = TAGS = Y
+ID:78433 = Артикул: 6.53.705 = active =Y = TAGS = Y
