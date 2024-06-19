@@ -217,10 +217,6 @@ global $my_city_fix;
 					Header('Location: '.$domen_url); exit;
 				}
 			}
-
-			/*if (!empty($_GET['test'])) {
-				echo $my_city;
-			}*/
 			
         	$APPLICATION->set_cookie('my_city', $my_city,0, '/', '.'.HTTP_HOST);
 
@@ -318,7 +314,16 @@ global $my_city_fix;
 			$my_city_fix = true; // Выбор региона при первом заходе
 			
 		}
-		// echo 'test '.$my_dealer.' | '.$my_location.' | '.$my_city;
+
+		/* --- У поддоменов теперь нет окна выбора города (доп. проверка если на поддомене то всегда город поддомена автоматом) --- */
+		if ($_SERVER['HTTP_HOST'] <> HTTP_HOST) {
+   			$city_by_subdomen = _get_city_by_subdomen();
+   			if (!empty($city_by_subdomen) && $city_by_subdomen <> $my_city) {
+   				$my_city = $city_by_subdomen;
+   				my_city_change($city_by_subdomen, false);
+   			}
+   		}
+   		/* --- // --- */
 
 
 		if (!empty($_GET['test2'])) {
@@ -326,5 +331,7 @@ global $my_city_fix;
 			//echo '<pre>';print_r($_COOKIE);echo '</pre>';
 			//echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
 		}
+
+
 
 ?>

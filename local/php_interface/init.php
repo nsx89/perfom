@@ -89,7 +89,7 @@ function my_city_fixed() {
 
 /* --- Смена города --- */
 
-function my_city_change($id) {
+function my_city_change($id, $fixed = true) {
     global $APPLICATION;
     global $DB;
 
@@ -106,7 +106,7 @@ function my_city_change($id) {
     $APPLICATION->set_cookie('my_location', $city['map']['VALUE'], 0, '/', '.'.HTTP_HOST);
     $APPLICATION->set_cookie('my_city', $city['ID'], 0, '/', '.'.HTTP_HOST);
 
-    my_city_fixed();
+    if ($fixed) my_city_fixed();
 
     return $city['ID'];
 }
@@ -3597,4 +3597,11 @@ function _get_city_loc($id){
     global $city_loc_id;
     $result = isset($city_loc_id[$id]) ? $city_loc_id[$id] : null;
     return $result;
+}
+
+function _get_city_by_subdomen(){
+    global $city_loc_id;
+    $host = $_SERVER['HTTP_HOST'];
+    $city_id = array_search($host, $city_loc_id);
+    return $city_id;
 }

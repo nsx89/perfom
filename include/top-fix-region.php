@@ -7,7 +7,12 @@ $getReg = $_GET['region'];
 //$my_city_fixed = $APPLICATION->get_cookie('my_city_fixed');
 $my_city_fixed = $_SESSION['my_city_fixed'];
 
-if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GET['sub_city'])) {
+$show_window = true;
+if ($_SERVER['HTTP_HOST'] <> HTTP_HOST) {
+    $show_window = false;
+}
+
+if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GET['sub_city']) && $show_window) {
 
     $arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID' => $my_city);
     $db_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arFilter);

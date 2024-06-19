@@ -141,56 +141,83 @@ if ($subdomen <> 'perfom-decor.ru') {
         case '3196': $yandexId = '97603898'; break;
         case '3331': $yandexId = '97603906'; break;
         case '3152': $yandexId = '97603858'; break;
-
         case '3114': $yandexId = '97602887'; break;
         case '6191': $yandexId = '97603014'; break;
         case '3340': $yandexId = '97603302'; break;
-
         case '102940': $yandexId = '97603326'; break;
         case '3333': $yandexId = '97603374'; break;
         case '3116': $yandexId = '97603400'; break;
-
         case '3374': $yandexId = '97603428'; break;
         case '3118': $yandexId = '97603455'; break;
         case '3123': $yandexId = '97603533'; break;
-
         case '3304': $yandexId = '97603553'; break;
         case '3125': $yandexId = '97603578'; break;
         case '3235': $yandexId = '97603604'; break;
-
         case '3131': $yandexId = '97603617'; break;
         case '6567': $yandexId = '97603635'; break;
         case '3135': $yandexId = '97603664'; break;
-
         case '3138': $yandexId = '97603682'; break;
         case '3143': $yandexId = '97603701'; break;
         case '24220': $yandexId = '97603769'; break;
         case '3145': $yandexId = '97603789'; break;
-
         case '3302': $yandexId = '97603813'; break;
         case '3316': $yandexId = '97603837'; break;
         case '3149': $yandexId = '97603850'; break;
-
         case '3481': $yandexId = '97603867'; break;
         case '3154': $yandexId = '97603875'; break;
-
         case '3707': $yandexId = '97603915'; break;
         case '3163': $yandexId = '97603924'; break;
         case '3299': $yandexId = '97603934'; break;
-
         case '3170': $yandexId = '97603944'; break;
         case '3172': $yandexId = '97603951'; break;
         case '3178': $yandexId = '97603960'; break;
-
         case '3176': $yandexId = '97603971'; break;
         case '3180': $yandexId = '97604000'; break;
         case '3182': $yandexId = '97604013'; break;
         case '6789': $yandexId = '97604025'; break;
-
         case '52538': $yandexId = '97604037'; break;
         case '3318': $yandexId = '97604042'; break;
         case '3223': $yandexId = '97604044'; break;
         case '3275': $yandexId = '97604048'; break;
+        case '3431': $yandexId = '97604062'; break;
+        case '3756': $yandexId = '97604069'; break;
+        case '3830': $yandexId = '97604087'; break;
+        case '46432': $yandexId = '97604096'; break;
+        case '6142': $yandexId = '97604102'; break;
+        case '6137': $yandexId = '97604111'; break;
+        case '3239': $yandexId = '97604121'; break;
+        case '3260': $yandexId = '97604127'; break;
+        case '3329': $yandexId = '97604136'; break;
+        case '3133': $yandexId = '97604142'; break;
+        case '3255': $yandexId = '97604151'; break;
+        case '3127': $yandexId = '97604158'; break;
+        case '6119': $yandexId = '97604166'; break;
+        case '3187': $yandexId = '97604174'; break;
+        case '3189': $yandexId = '97604190'; break;
+        case '3192': $yandexId = '97604200'; break;
+        case '3213': $yandexId = '97604205'; break;
+        case '3194': $yandexId = '97604213'; break;
+        case '6132': $yandexId = '97604225'; break;
+        case '3129': $yandexId = '97604231'; break;
+        case '3338': $yandexId = '97604242'; break;
+        case '3733': $yandexId = '97604250'; break;
+        case '3204': $yandexId = '97604267'; break;
+        case '3211': $yandexId = '97604274'; break;
+        case '3729': $yandexId = '97604278'; break;
+        case '3215': $yandexId = '97604289'; break;
+        case '3217': $yandexId = '97604294'; break;
+        case '3209': $yandexId = '97604304'; break;
+        case '3220': $yandexId = '97604323'; break;
+        case '3168': $yandexId = '97604338'; break;
+        case '130517': $yandexId = '97604348'; break;
+        case '3326': $yandexId = '97604355'; break;
+        case '3228': $yandexId = '97604364'; break;
+        case '3161': $yandexId = '97604369'; break;
+        case '3233': $yandexId = '97604380'; break;
+        case '3231': $yandexId = '97604389'; break;
+        case '6535': $yandexId = '97604397'; break;
+        case '3237': $yandexId = '97604404'; break;
+        case '3321': $yandexId = '97603510'; break;
     }
 }
 ?>

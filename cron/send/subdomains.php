@@ -4,6 +4,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
 
+
 exit;
 
 
@@ -32,7 +33,7 @@ foreach($subdomains AS $key => $subdomain) {
 
 	$EMAILS = array();
 
-	$DEALER_ID = '';
+	$DEALER_ID = $DEALER_NAME = '';
 
 	$LOC_NAME = '';
 	$arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID' => $key);
@@ -56,6 +57,7 @@ foreach($subdomains AS $key => $subdomain) {
 			$email = $el['orderemail']['VALUE'] ? $el['orderemail']['VALUE'] : $el['email']['VALUE'];
 			if (!in_array($email, $EMAILS)) {
 				$DEALER_ID = $el['ID'];
+				$DEALER_NAME = $el['NAME'];
 				$EMAILS[] = $email;
 			}
         }
@@ -191,7 +193,7 @@ foreach($subdomains AS $key => $subdomain) {
 
 	//echo $CLIENT; exit;
 
-	$fields = array('EMAIL'=>$EMAIL, 'PRODUCT_LIST'=>$PRODUCT_LIST, 'NUM_Z' => $SUBJECT, 'DEALER_INFO'=> $DEALER_INFO, 'CLIENT'=>$CLIENT, 'DEALER_CONTACTS'=>'');
+	//$fields = array('EMAIL'=>$EMAIL, 'PRODUCT_LIST'=>$PRODUCT_LIST, 'NUM_Z' => $SUBJECT, 'DEALER_INFO'=> $DEALER_INFO, 'CLIENT'=>$CLIENT, 'DEALER_CONTACTS'=>'');
     //$SEND = CEvent::SendImmediate("EUROPLAST_ORDER_SALE_COPY", s1, $fields, "N");
 
 	
@@ -200,11 +202,12 @@ foreach($subdomains AS $key => $subdomain) {
 		<td>'.$subdomain.'</td>
 		<td>'.$EMAIL.'</td>
 		<td>'.$SEND.'</td>
+		<td>'.$DEALER_NAME.'</td>
 	</tr>';
 
 	$EMAILS_SEND[] = $email;
 
-	exit;
+	//exit;
 
 	
 }
