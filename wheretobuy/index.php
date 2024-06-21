@@ -8,6 +8,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 <div class="content-wrapper contact">
     <div class="cat-top not-fixed">
         <div class="cat-sections cat-sections-catalogue">
+            <h1 class="hidden">Где купить продукцию</h1>
             <?if($my_city != 3109) { ?>
             <a href="#region" class="cat-sections-item" data-type="main-tab">
                 Представитель в&nbsp;регионе

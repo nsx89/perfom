@@ -547,7 +547,9 @@ function constructPointItem(item) {
         dd += '<div class="point-email">';
         dd += '<div class="point-phone-width">сайт </div>';
         dd += '<div class="point-phone-value"><a href="http://'+item.url+'" target="_blank" class="point-url">' + item.url + '</a></div>';
-        if(item.url2 != '') dd += '<div class="point-phone-value"><a href="http://'+item.url2+'" target="_blank" class="point-url">' + item.url2 + '</a></div>';
+        if(item.url2 != '' && typeof item.url2 !== 'undefined') {
+            dd += '<div class="point-phone-value"><a href="http://'+item.url2+'" target="_blank" class="point-url">' + item.url2 + '</a></div>';
+        }
         dd += '</div>';
     }
 

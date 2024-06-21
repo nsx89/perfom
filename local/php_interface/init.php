@@ -114,6 +114,58 @@ function my_city_change($id, $fixed = true) {
 /* --- // --- */
 
 
+/* --- Информация о дилере по городу (аналогично email в заказах) --- */
+
+function get_dealer_info($city_id, $by_sort = false) {
+    $LOC_DEALERS_LIST = $LOC_EMAIL_NUMBER = '';
+
+    $LOC_NAME = '';
+    $arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID' => $city_id);
+    $db_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arFilter);
+    if ($db_list) {
+        $el = $db_list->GetNextElement();
+        if ($el) {
+            $el = array_merge($el->GetFields(), $el->GetProperties());
+            $LOC_NAME = $el['NAME'];
+            $LOC_DEALERS_LIST = $el['dealers_list']['VALUE'];
+            $LOC_EMAIL_NUMBER = $el['email_number']['VALUE'];
+        }
+    }
+
+    if (!empty($LOC_DEALERS_LIST) && !$by_sort) {
+        if ($LOC_EMAIL_NUMBER == 0) { // старт первого дилера при начале
+            $LOC_EMAIL_NUMBER = 1;
+        }
+        $LOC_DEALER = $LOC_DEALERS_LIST[$LOC_EMAIL_NUMBER-1];
+        $arFilter = Array('IBLOCK_ID' => 6, 'ACTIVE' => 'Y', 'ID' => $LOC_DEALER);
+    }
+    else // 1 дилер в регионе по приоритету сортировки 
+    { 
+        $arFilter = Array('IBLOCK_ID' => 6, 'ACTIVE' => 'Y', 'PROPERTY_city' => $city_id);
+    }
+        
+    $DEALER_INFO = array();
+
+    $db_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arFilter);
+    if ($db_list) {
+        $el = $db_list->GetNextElement();
+        if ($el) {
+            $el = array_merge($el->GetFields(), $el->GetProperties());
+
+            //порядок текущего дилера при наличии ротации
+            $DEALER_EMAIL = $el['orderemail']['VALUE'] ? $el['orderemail']['VALUE'] : $el['email']['VALUE'];
+            $DEALER_INFO = $el;
+            $DEALER_INFO['DEALER_EMAIL'] = $DEALER_EMAIL;
+            $DEALER_INFO['LOC_NAME'] = $LOC_NAME;
+        }
+    }
+
+    return $DEALER_INFO;
+}
+
+/* --- // --- */
+
+
 function OnAfterUserRegisterHandler(&$arFields)
 {
     if (intval($arFields["ID"])>0)
