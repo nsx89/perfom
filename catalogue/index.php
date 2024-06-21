@@ -233,7 +233,9 @@ if (!$is_product) { // каталог
         </div>
         <div class="cat-products">
 
-
+            <? if (!empty($last_section['NAME']) && in_array($last_section['ID'], ['1622', '1589', '1590', '1624', '1548', '1575', '1549', '1552', '1623', '1550'])) { ?>
+                <h1 class="hidden"><?= mb_ucfirst($last_section['NAME']) ?></h1>
+            <? } ?>
 
             <div class="cat-sort">
                 <div class="cat-sort-title" data-type="e-sort" data-main-param="1">Сортировать по</div>

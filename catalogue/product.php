@@ -82,6 +82,13 @@ $back_catalogue_path .= '/';
 if($item['IBLOCK_SECTION_ID'] == 1587 && !in_array($item['ID'],$glue_arr) && ($item['ID'] != 6429) && ($item['ID'] != 160323)) { // Последняя проверка дать возможность зайти на страницу Е03 и старый Е13
     //LocalRedirect('/404.php'); exit;
 }
+
+/* --- Позиции OFF и Распродажа Скрыть --- */
+if ($item['TAGS'] == 'OFF') {
+    require_once $_SERVER["DOCUMENT_ROOT"].'/404.php'; exit;
+}
+/* --- // --- */
+
 $web_path = web_path($item);
 $img_path = get_resized_img($web_path,713,713);
 if($img_path == '' || !$img_path) $img_path = $web_path;
