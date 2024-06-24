@@ -4,7 +4,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
 
-exit;
+//exit;
 
 $subdomains = [];
 foreach ($city_loc_id AS $key => $item) {
@@ -17,6 +17,21 @@ echo '<pre>';
 print_r($subdomains);
 echo '</pre>';
 */
+
+$ARR = array(
+	'respectanna201612@mail.ru',
+	'sale@stroy-remo.ru',
+	'lepnina44@gmail.com',
+	'AKoroleva@57.leso-torg.ru',	
+	'rozet.sait@yandex.ru',
+	'decor200777@mail.ru',
+	'kaporskaya@smit.stbur.ru',
+	'lepidecor@yandex.ru',
+	'salon1-krd@decorinfo.ru',
+	'aragondeco@mail.ru',
+	'lepnina76@gmail.com',
+);
+
 
 $EMAILS_SEND = array();
 
