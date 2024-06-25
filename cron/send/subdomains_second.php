@@ -35,7 +35,7 @@ echo '</pre>';
 	'lepnina76@gmail.com',
 );*/
 
-$ARR = array('evroplast.cheboksary@gmail.com');
+//$ARR = array('salon-ptg@decorinfo.ru');
 
 
 $EMAILS_SEND = array();
@@ -86,7 +86,7 @@ foreach($subdomains AS $key => $subdomain) {
     }
 
     $EMAIL = $EMAILS[0];
-    //$EMAIL = 'nsx89@mail.ru'; 
+    $EMAIL = 'nsx89@mail.ru'; 
     
     if (empty($EMAIL)) continue;
 
@@ -115,7 +115,7 @@ foreach($subdomains AS $key => $subdomain) {
     }
 
     //if (!empty($DATE)) continue;
-    if ($subdomain <> 'cheboksary.perfom-decor.ru') continue;
+    if ($subdomain <> 'kurgan.perfom-decor.ru') continue;
 
 	$EMAILS_SEND[] = $email;
 
@@ -246,6 +246,7 @@ foreach($subdomains AS $key => $subdomain) {
 		<td>'.$MINUTES.'</td>
 		<td>'.$DEALER.'</td>
 		<td>'.$SEND.'</td>
+		<td>'.$SUBJECT.'</td>
 	</tr>';
 	
 }
@@ -260,6 +261,5 @@ table td, table th {
 	padding: 3px 5px;
 }
 </style>';
-
 
 ?>
