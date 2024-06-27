@@ -576,7 +576,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                             <i class="icomoon icon-warning"></i> <span>Внимание! Для сборки готового камина необходимо приобрести 3 отдельных элемента камина.</span>
                         </div>             
                     <? } ?>
-                    <?if(($item['IBLOCK_SECTION_ID'] == 1601) && ($item['NEW_ART_DECO']['VALUE'] == 'Y')) { // декоративная панель NAD?>
+                    <?if(($item['IBLOCK_SECTION_ID'] == 1601) && ($item['NEW_ART_DECO']['VALUE'] == 'Y')
+                        && ($item['ARTICUL']['VALUE'] != '6.59.805') && ($item['ARTICUL']['VALUE'] != '6.59.805-280')
+                        && ($item['ARTICUL']['VALUE'] != '1.59.820')) { // декоративная панель NAD?>
                         <div class="desc-warning">
                             <span class="decor-panel-warn"><i class="icon-very-long-arr-top"></i></span>
                             <span class="decor-panel-warn"><i class="icon-very-long-arr-top"></i></span>
