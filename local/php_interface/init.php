@@ -825,67 +825,17 @@ function ___get_product_url($item) {
 function _applay_discount($price, $money) {
     $discount = 0;
     return array('price'=>round($price, 2), 'discount'=>$discount);
-    if ($money >= 3000 && $money < 10000) {
-        $discount = 3;
-    }
-    if ($money >= 10000 && $money < 15000) {
-        $discount = 5;
-    }
-    if ($money >= 15000 && $money < 40000) {
-        $discount = 7;
-    }
-    if ($money >= 40000 && $money < 75000) {
-        $discount = 10;
-    }
-    if ($money >= 75000 && $money < 110000) {
-        $discount = 13;
-    }
-    if ($money >= 110000 && $money < 150000) {
-        $discount = 15;
-    }
-    if ($money >= 150000 && $money < 200000) {
-        $discount = 18;
-    }
-    if ($money >= 200000) {
-        $discount = 20;
-    }
-    $price = $price - ($price/100)*$discount;
-    return array('price'=>round($price, 2), 'discount'=>$discount);
 }
 function __discount($money) {
-	
 	global $APPLICATION;
 	$city = $APPLICATION->get_cookie('my_city');
-	if ($city != '3109') return; // Временно проверка по Москве
-    $discount = 0;
-    if ($money >= 3000 && $money < 10000) {
-        $discount = 3;
-    }
-    if ($money >= 10000 && $money < 15000) {
-        $discount = 5;
-    }
-    if ($money >= 15000 && $money < 40000) {
-        $discount = 7;
-    }
-    if ($money >= 40000 && $money < 75000) {
-        $discount = 10;
-    }
-    if ($money >= 75000 && $money < 110000) {
-        $discount = 13;
-    }
-    if ($money >= 110000 && $money < 150000) {
-        $discount = 15;
-    }
-    if ($money >= 150000 && $money < 200000) {
-        $discount = 18;
-    }
-    if ($money >= 200000) {
-        $discount = 20;
-    }
-	// все сложнее, на каждую позицию скидка
+	
+    $discount = __discount_by_city($money);
+    if (empty($discount)) return;
 
-$cart = json_decode($_COOKIE['basket']);
-$total = 0;
+	//все сложнее, на каждую позицию скидка
+    $cart = json_decode($_COOKIE['basket']);
+    $total = 0;
 	foreach ($cart as $citem) {
         if(strpos($citem->id,'s') !== false) continue;
         //$arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $citem->id);
@@ -928,37 +878,125 @@ $total = 0;
     $discount_price = $money - $total;
     return array('total'=>$total, 'discount'=>$discount, 'discount_price' =>$discount_price);
 }
+function __discount_in_city($city) {
+    $ids = array('3109', '3127', '3178', '3163', '3237', '3220', '3180', '3235', '3187', '3223', '3302', '3131', '3338', '3231', '3143', 
+        '3118', '3196', '3756', '3176', '3192', '3138', '3318', '3149', '3129', '3215', '6137', '3336', '3340', '3228');
+    if (in_array($city, $ids)) return true;
+    return false;
+}
+/* --- Система скидок по городам --- */
+function __discount_by_city($money) {
+    global $APPLICATION;
+    $city = $APPLICATION->get_cookie('my_city');
+
+    $discount = 0;
+    switch ($city) {
+        case '3109': case '3127': case '3178': case '3163': case '3237': case '3220': case '3180': case '3235': case '3187': case '3223': 
+        case '3302': case '3131': case '3338': case '3231': case '3143': case '3118': case '3196': case '3756':
+            //как в Москве
+            if ($money >= 3000 && $money < 10000) $discount = 3;
+            if ($money >= 10000 && $money < 15000) $discount = 5;
+            if ($money >= 15000 && $money < 40000) $discount = 7;
+            if ($money >= 40000 && $money < 75000) $discount = 10;
+            if ($money >= 75000 && $money < 110000) $discount = 13;
+            if ($money >= 110000 && $money < 150000) $discount = 15;
+            if ($money >= 150000 && $money < 200000) $discount = 18;
+            if ($money >= 200000) $discount = 20;
+            break;
+        case '3176': //Орел
+            if ($money >= 15000 && $money < 20000) $discount = 3;
+            if ($money >= 20000 && $money < 25000) $discount = 4;
+            if ($money >= 25000 && $money < 50000) $discount = 5;
+            if ($money >= 50000 && $money < 100000) $discount = 7;
+            if ($money >= 100000) $discount = 10;
+            break;
+        case '3192': //Самара
+            if ($money >= 30000 && $money < 50000) $discount = 3;
+            if ($money >= 50000 && $money < 70000) $discount = 5;
+            if ($money >= 70000 && $money < 100000) $discount = 7;
+            if ($money >= 100000 && $money < 150000) $discount = 10;
+            if ($money >= 150000 && $money < 200000) $discount = 15;
+            if ($money >= 200000) $discount = 20;
+            break;
+        case '3138': //Калининград
+            if ($money >= 30000 && $money < 50000) $discount = 3;
+            if ($money >= 50000 && $money < 100000) $discount = 5;
+            if ($money >= 100000 && $money < 150000) $discount = 7;
+            if ($money >= 150000) $discount = 10;
+            break;
+        case '3318': //Псков
+            if ($money >= 15000 && $money < 30000) $discount = 3;
+            if ($money >= 30000 && $money < 70000) $discount = 5;
+            if ($money >= 70000 && $money < 100000) $discount = 7;
+            if ($money >= 100000) $discount = 12;
+            break;
+        case '3149': //Краснодар
+            if ($money >= 30000 && $money < 40000) $discount = 3;
+            if ($money >= 40000 && $money < 50000) $discount = 4;
+            if ($money >= 50000 && $money < 60000) $discount = 5;
+            if ($money >= 60000 && $money < 70000) $discount = 6;
+            if ($money >= 70000 && $money < 80000) $discount = 7;
+            if ($money >= 80000 && $money < 90000) $discount = 8;
+            if ($money >= 90000 && $money < 100000) $discount = 9;
+            if ($money >= 100000 && $money < 200000) $discount = 10;
+            if ($money >= 200000 && $money < 300000) $discount = 12;
+            if ($money >= 300000 && $money < 400000) $discount = 13;
+            if ($money >= 400000 && $money < 500000) $discount = 14;
+            if ($money >= 500000) $discount = 15;
+            break;
+        case '3129': //Екатеринбург
+            if ($money >= 50000 && $money < 70000) $discount = 2;
+            if ($money >= 70000 && $money < 100000) $discount = 3;
+            if ($money >= 100000 && $money < 150000) $discount = 5;
+            if ($money >= 150000 && $money < 200000) $discount = 7;
+            if ($money >= 200000) $discount = 10;
+            break;
+        case '3215': //Томск
+            if ($money >= 25000 && $money < 50000) $discount = 5;
+            if ($money >= 50000 && $money < 80000) $discount = 7;
+            if ($money >= 80000 && $money < 120000) $discount = 10;
+            if ($money >= 120000) $discount = 15;
+            break;
+        case '6137': //Саранск
+            if ($money >= 5000 && $money < 15000) $discount = 3;
+            if ($money >= 15000 && $money < 50000) $discount = 5;
+            if ($money >= 50000 && $money < 100000) $discount = 10;
+            if ($money >= 100000) $discount = 15;
+            break;
+        case '3336': //Сухум
+            if ($money >= 50000 && $money < 70000) $discount = 3;
+            if ($money >= 70000 && $money < 100000) $discount = 5;
+            if ($money >= 100000 && $money < 110000) $discount = 7;
+            if ($money >= 110000) $discount = 10;
+            break;
+        case '3340': //Архангельск
+            if ($money >= 30000 && $money < 40000) $discount = 3;
+            if ($money >= 40000 && $money < 50000) $discount = 4;
+            if ($money >= 50000 && $money < 60000) $discount = 5;
+            if ($money >= 60000 && $money < 70000) $discount = 6;
+            if ($money >= 70000 && $money < 80000) $discount = 7;
+            if ($money >= 80000 && $money < 90000) $discount = 8;
+            if ($money >= 90000 && $money < 100000) $discount = 9;
+            if ($money >= 100000) $discount = 10;
+            break;
+        case '3228': //Хабаровск
+            if ($money >= 50000 && $money < 100000) $discount = 5;
+            if ($money >= 100000) $discount = 10;
+            break;
+        default:
+            return;
+    }
+    return $discount;
+}
+/* --- // --- */
 function __discount_mob($money, $prod = false) {
     global $APPLICATION;
     $city = $APPLICATION->get_cookie('my_city');
-    if ($city != '3109') return; // Временно проверка по Москве
-    $discount = 0;
-    if ($money >= 3000 && $money < 10000) {
-        $discount = 3;
-    }
-    if ($money >= 10000 && $money < 15000) {
-        $discount = 5;
-    }
-    if ($money >= 15000 && $money < 40000) {
-        $discount = 7;
-    }
-    if ($money >= 40000 && $money < 75000) {
-        $discount = 10;
-    }
-    if ($money >= 75000 && $money < 110000) {
-        $discount = 13;
-    }
-    if ($money >= 110000 && $money < 150000) {
-        $discount = 15;
-    }
-    if ($money >= 150000 && $money < 200000) {
-        $discount = 18;
-    }
-    if ($money >= 200000) {
-        $discount = 20;
-    }
-    // все сложнее, на каждую позицию скидка
 
+    $discount = __discount_by_city($money);
+    if (empty($discount)) return;
+    
+    //все сложнее, на каждую позицию скидка
     $cart = json_decode($_COOKIE['basket']);
     if($prod) $cart = $prod;
     $total = 0;
@@ -3584,7 +3622,8 @@ $city_loc_id = array(
     '3189'  => 'ryazan.perfom-decor.ru',
     '3192'  => 'samara.perfom-decor.ru',
 
-    '3213'  => 'tolyatti.perfom-decor.ru',
+    //'3213'  => 'tolyatti.perfom-decor.ru',
+    '3213'  => 'tlt.perfom-decor.ru',
     '130682'  => 'perfom-decor.ru',
     '3194'  => 'saratov.perfom-decor.ru',
     '6132'  => 'yuzhno-sakhalinsk.perfom-decor.ru',
