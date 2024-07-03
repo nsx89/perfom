@@ -78,7 +78,7 @@
         $request['data'] .='<p class="e-final-text">Ваш заказ не&nbsp;был сформирован. <br>Пожалуйста, добавьте товары в&nbsp;корзину <br>заново и&nbsp;повторите заказ.</p>';
         $request['data'] .= '<p class="e-final-text">Или обратитесь в&nbsp;нашу <br><a data-type="q-popup-open">службу поддержки</a>.</p>';
         $request['err'] = 1;
-        setcookie("basket", null,0,'/','.'.$_SERVER['HTTP_HOST']);
+        setcookie("basket", null,0,'/','.'.HTTP_HOST);
         echo json_encode($request);
         die();
     }
@@ -137,7 +137,10 @@
 
     $pr_list = _get_email_product_list();
     $number_r = __number_order_sale(true);
-    $number_l = "Перфом Ваш заказ № ".$number_r." - ".$loc['NAME'];
+
+    //$number_l = "Перфом Ваш заказ № ".$number_r." - ".$loc['NAME'];
+    $number_l = "Перфом Ваш заказ № ".$number_r." с сайта ".$_SERVER['HTTP_HOST']." - ".$loc['NAME'];
+    
     $number_tr = $number_r." - ".$loc['NAME'];
     //$fields = array('EMAIL'=>$_REQUEST['email'], 'PRODUCT_LIST'=>$pr_list, 'DEALER_INFO'=>'Информация по дилеру');
     $from = "";

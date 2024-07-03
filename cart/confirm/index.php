@@ -27,7 +27,7 @@ if (!empty($subdomain) && !empty($dealer)) {
     }
     $DEALER_NAME .= ' id:'.$dealer;
 
-    $date_send = strtotime('18.06.2024 15:00');
+    $date_send = strtotime('18.06.2024 15:45');
     $date_now = time();
     $minutes = round(($date_now - $date_send) / 60); //период в минутах
 

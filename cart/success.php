@@ -4,7 +4,7 @@ error_reporting(E_ALL);
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.php");
 if (!CModule::IncludeModule('iblock')) exit;
 $APPLICATION->SetTitle("Заказ подтвержден");
-$APPLICATION->SetPageProperty("description", "Европласт - производство полиуретановых изделий, лидер на российском рынке");
+$APPLICATION->SetPageProperty("description", "Перфом - производство полиуретановых изделий, лидер на российском рынке");
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
@@ -31,7 +31,7 @@ $loc = array_merge($loc->GetFields(), $loc->GetProperties());
     <?if($_REQUEST['nmbr']) { ?>
         <div class="cont-success cont-success-order-off">
             
-            <div class="succ-header">Дорогой покупатель, <br>спасибо за ваш заказ!</div> 
+            <div class="succ-header">Уважаемый покупатель, <br>спасибо за ваш заказ!</div> 
 
             <?if($order['PAYMENT']['VALUE'] == 'online' && $order['PAYMENT_STATUS']['VALUE'] != 'оплачено') { ?>
                 <div class="succ-desc">Вы можете оплатить ваш заказ по&nbsp;ссылке: </div>
@@ -102,15 +102,15 @@ $ya_cont = array(
 <script>
 $(document).ready(function() {
     window.dataLayer.push(<?=json_encode($ya_cont)?>);
-    gtag('event', 'purchase', <?=json_encode($ga_arr)?>);
+    //gtag('event', 'purchase', <?=json_encode($ga_arr)?>);
 })
 </script>
 <?
-$http_host_temp = explode(":",$_SERVER['HTTP_HOST']);
+$http_host_temp = explode(":",HTTP_HOST);
 $_SERVER['HTTP_HOST'] = $http_host_temp[0];
-setcookie("basket",null,-1,'/', $_SERVER['HTTP_HOST']);
-setcookie("mount",null,-1,'/', $_SERVER['HTTP_HOST']);
-setcookie("calc", null,-1,'/',$_SERVER['HTTP_HOST']);
+setcookie("basket",null,-1,'/', HTTP_HOST);
+setcookie("mount",null,-1,'/', HTTP_HOST);
+setcookie("calc", null,-1,'/',HTTP_HOST);
 } ?>
 <script>
     $(document).ready(function() {

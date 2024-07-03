@@ -142,9 +142,9 @@ $mount = json_decode($_COOKIE['mount']);
     </section>
 </div>
 <?
-setcookie("calc", 'y',time()+60*60*24*BASKET_EXPIRES,'/',$_SERVER['HTTP_HOST']);
+setcookie("calc", 'y',time()+60*60*24*BASKET_EXPIRES,'/','.'.HTTP_HOST);
 ?>
-<script src="/cart/mounting/mounting.js?<?=$random?>" type="text/javascript" charset="utf-8"></script>
+<script src="/cart/mounting/mounting.js?<?=$random?>" type="text/javascript"></script>
 
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/include/footer.php");

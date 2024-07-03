@@ -38,7 +38,7 @@ if($my_city == '3109') {
     }
     if(count($new_cart)!=count($cart)) {
         $new_cart = json_encode($new_cart);
-        setcookie("basket", $new_cart,time()+60*60*24*BASKET_EXPIRES,'/','.'.$_SERVER['HTTP_HOST']);
+        setcookie("basket", $new_cart,time()+60*60*24*BASKET_EXPIRES,'/','.'.HTTP_HOST);
         LocalRedirect('index.php');
     }
 } else {
@@ -51,7 +51,7 @@ if($my_city == '3109') {
     }
     if(count($new_cart)!=count($cart)) {
         $new_cart = json_encode($new_cart);
-        setcookie("basket", $new_cart,time()+60*60*24*BASKET_EXPIRES,'/','.'.$_SERVER['HTTP_HOST']);
+        setcookie("basket", $new_cart,time()+60*60*24*BASKET_EXPIRES,'/','.'.HTTP_HOST);
         LocalRedirect('index.php');
     }
 }
@@ -60,7 +60,7 @@ $money = $cart['sum'];
 $cart = $cart['items'];
 
 if(isset($_COOKIE['mount'])) {
-    setcookie("calc", null,-1,'/',$_SERVER['HTTP_HOST']);
+    setcookie("calc", null,-1,'/','.'.HTTP_HOST);
 }
 
 
@@ -95,7 +95,7 @@ if(count($new_cart)!=count($cart)) {
         if(in_array($bitem->id,$new_cart_id)) $new_basket[] = $bitem;
     }
     $new_basket = json_encode($new_basket);
-    setcookie("basket", $new_basket,time()+60*60*24*BASKET_EXPIRES,'/','.'.$_SERVER['HTTP_HOST']);
+    setcookie("basket", $new_basket,time()+60*60*24*BASKET_EXPIRES,'/','.'.HTTP_HOST);
     LocalRedirect('index.php');
 }
 
@@ -143,10 +143,10 @@ foreach($adh_arr as $k=>$adh) {
 if($_COOKIE['mount']) $mount = $_COOKIE['mount'];
 $mount_list = getMountList($mount);
 if(count($cart) <= 0 || $mount_list['total'] == 0) {
-    setcookie("mount",null,-1,'/', $_SERVER['HTTP_HOST']);
+    setcookie("mount",null,-1,'/','.'.HTTP_HOST);
 }
 if(isset($_COOKIE['mount']) && $mount_list['total'] > 0 || count($cart) <= 0) {
-    setcookie("calc", null,-1,'/',$_SERVER['HTTP_HOST']);
+    setcookie("calc", null,-1,'/','.'.HTTP_HOST);
 }
 
 function getCartPrev($citem, $isSample = false, $isAdh = false) {
@@ -249,7 +249,7 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
 
 <div class="content-wrapper cart">
     <div class="cart-title">
-        <div class="cart-title-name">Корзина <span data-type="cart-qty"><?=$cart_qty?></span></div>
+        <div class="cart-title-name"><h1>Корзина</h1> <span data-type="cart-qty"><?=$cart_qty?></span></div>
         <div class="cart-clear-all" data-type="clear-all">Очистить корзину</div>
     </div>
     <div class="cart-wrapper">
@@ -296,10 +296,36 @@ function getCartPrev($citem, $isSample = false, $isAdh = false) {
                             <? if($loc['ID'] != 3109) { ?>
                                 <div class="cart-order-sum">
                                     <div class="cart-order-title">ваш заказ</div>
-                                    <div class="cart-order-total-reg">
-                                        <span class="cart-order-name no-sale">Итого:</span>
-                                        <span data-type="total" data-without-del="0">0 RUB</span>
-                                    </div>
+
+                                    <? if (__discount_in_city($loc['ID'])) { ?>
+
+                                        <div class="cart-order-price no-hide">
+                                            <span class="cart-order-name">Всего товаров на сумму:</span>
+                                            <span class="cart-order-val" data-type="sum">0 RUB</span>
+                                        </div>
+                                        <div class="cart-order-price">
+                                            <span class="cart-order-name">Ваша скидка - %</span>
+                                            <span class="cart-order-val" data-type="discount">0%</span>
+                                        </div>
+                                        <div class="cart-order-price">
+                                            <span class="cart-order-name">Сумма скидки:</span>
+                                            <span class="cart-order-val" data-type="discount-sum">0 RUB</span>
+                                        </div>
+                                        <div class="cart-order-price no-hide cart-order-total">
+                                            <span class="cart-order-name with-sale">Итого, с учетом скидки:</span>
+                                            <span class="cart-order-name no-sale">Итого:</span>
+                                            <span class="cart-order-val" data-type="total" data-without-del="0">0 RUB</span>
+                                        </div>
+
+                                    <? } else { ?>
+
+                                        <div class="cart-order-total-reg">
+                                            <span class="cart-order-name no-sale">Итого:</span>
+                                            <span data-type="total" data-without-del="0">0 RUB</span>
+                                        </div>
+                                        
+                                    <? } ?>
+
                                     <div class="go-to-check-out-btn" data-type="go-to-check-out">Перейти к оформлению</div>
                                 </div>
                                 <div class="del-title-reg">Условия получения</div>
