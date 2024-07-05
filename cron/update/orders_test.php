@@ -7,7 +7,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 
 
 
-exit;
+//exit;
 
 
 
@@ -16,7 +16,7 @@ global $my_dealer;
 global $my_city;
 $my_city = $APPLICATION->get_cookie('my_city');
 
-$my_city = 3109;
+//$my_city = 3109;
 
 $phone = NULL;
 
@@ -346,7 +346,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	    $dealer_email = $email;
 	}
 
-	echo $dealer_email;
+	print_r($dealer);
 
 	//require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 

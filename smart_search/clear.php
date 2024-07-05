@@ -11,7 +11,7 @@ set_time_limit(15000);
 
 CIBlock::clearIblockTagCache(12);
 
-$list = file_get_contents('https://perfom-decor.ru/smart_search/ajax.php?type=get_list');
+$list = file_get_contents('https://'.$_SERVER['SERVER_NAME'].'/smart_search/ajax.php?type=get_list');
 echo $list;
 
 /*

@@ -986,7 +986,7 @@ function __discount_by_city($money) {
         default:
             return;
     }
-    return $discount;
+    return $discount; 
 }
 /* --- // --- */
 function __discount_mob($money, $prod = false) {
