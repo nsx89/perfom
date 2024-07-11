@@ -7,7 +7,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 
 
 
-//exit;
+exit;
 
 
 
@@ -15,7 +15,6 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 global $my_dealer;
 global $my_city;
 $my_city = $APPLICATION->get_cookie('my_city');
-
 //$my_city = 3109;
 
 $phone = NULL;
@@ -267,6 +266,8 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	// порядок текущего дилера при наличии ротации
 	$email_number = $loc['email_number']['VALUE'];
 
+    //print_r($loc['dealers_list']['VALUE']);
+
 	if ($loc['dealers_list']['VALUE']) {
 	    if ($email_number == 0) { // старт первого дилера при начале
 	        $email_number = 1;
@@ -306,7 +307,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	    }
 	    // Ротация
 	    if (($email_number += 1) > count($loc['dealers_list']['VALUE'])) $email_number = 1;
-	    //CIBlockElement::SetPropertyValueCode($loc['ID'], 'email_number', $email_number);
+	    CIBlockElement::SetPropertyValueCode($loc['ID'], 'email_number', $email_number);
 	} 
 	else { // 1 дилер в регионе по приоритету сортировки
 	    if ($email_number != 0) {

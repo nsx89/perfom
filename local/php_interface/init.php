@@ -879,8 +879,8 @@ function __discount($money) {
     return array('total'=>$total, 'discount'=>$discount, 'discount_price' =>$discount_price);
 }
 function __discount_in_city($city) {
-    $ids = array('3109', '3127', '3178', '3163', '3237', '3220', '3180', '3235', '3187', '3223', '3302', '3131', '3338', '3231', '3143', 
-        '3118', '3196', '3756', '3176', '3192', '3138', '3318', '3149', '3129', '3215', '6137', '3336', '3340', '3228');
+    $ids = array('3109', '3127', '3178', '3163', '3237', '3220', '3180', '3235', '3302', '3131', '3338', '3231', '3143', '3118', '3196', '3756', 
+        '3176', '3192', '3138', '3318', '3149', '3129', '3215', '6137', '3336', '3340', '3228', '3260', '3211', '3326', '3154', '3116');
     if (in_array($city, $ids)) return true;
     return false;
 }
@@ -891,8 +891,9 @@ function __discount_by_city($money) {
 
     $discount = 0;
     switch ($city) {
-        case '3109': case '3127': case '3178': case '3163': case '3237': case '3220': case '3180': case '3235': case '3187': case '3223': 
-        case '3302': case '3131': case '3338': case '3231': case '3143': case '3118': case '3196': case '3756':
+        case '3109': case '3127': case '3178': case '3237': case '3220': case '3180': case '3235': case '3302': 
+        case '3131': case '3338': case '3231': case '3143': case '3118': case '3196': case '3756': case '3211':
+        case '3211': case '3116':
             //как в Москве
             if ($money >= 3000 && $money < 10000) $discount = 3;
             if ($money >= 10000 && $money < 15000) $discount = 5;
@@ -982,6 +983,21 @@ function __discount_by_city($money) {
         case '3228': //Хабаровск
             if ($money >= 50000 && $money < 100000) $discount = 5;
             if ($money >= 100000) $discount = 10;
+            break;
+        case '3260': case '3326': //Казань + Ульяновск
+            if ($money >= 5000 && $money < 30000) $discount = 3;
+            if ($money >= 30000 && $money < 45000) $discount = 5;
+            if ($money >= 45000 && $money < 75000) $discount = 7;
+            if ($money >= 75000 && $money < 100000) $discount = 10;
+            if ($money >= 100000 && $money < 110000) $discount = 13;
+            if ($money >= 110000 && $money < 150000) $discount = 15;
+            if ($money >= 150000 && $money < 200000) $discount = 18;
+            if ($money >= 200000) $discount = 20;
+            break;
+        case '3163': //Нижний Новгород
+            if ($money >= 20000 && $money < 50000) $discount = 3;
+            if ($money >= 50000 && $money < 100000) $discount = 5;
+            if ($money >= 100000) $discount = 7;
             break;
         default:
             return;

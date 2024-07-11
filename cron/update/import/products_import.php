@@ -101,7 +101,7 @@ echo $product_id;
 
 
 /* --- PRICE --- */
-$PRICE = 2914;
+$PRICE = 6412;
 
 if (!empty($PRICE)) {
     $arFields = Array(
