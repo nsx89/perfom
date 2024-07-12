@@ -451,6 +451,13 @@
                     $dealer_contacts .= '<br><b>E-mail: </b>'. $email;
                     $fields = array('EMAIL'=>$email, 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
                     CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+
+                    /* --- Для СПБ скрытая копия с 11.07.2024 --- */
+                    if ($my_city == 3196) {
+                        $fields = array('EMAIL'=>'piterra2012@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
+                        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+                    }
+                    /* --- // --- */
                 }
                 $dealer_email = $email;
             }

@@ -1,0 +1,3 @@
+<?
+CModule::includeModule('media');
+?>

@@ -68,6 +68,31 @@ if (!function_exists('mb_ucfirst') && extension_loaded('mbstring'))
     }
 }
 
+if (!function_exists('processing')) {
+    function processing($value){
+        global $DB;
+        $value = trim($value);
+        $value = preg_replace("/[\r\n]{3,}/i","\r\n\r\n", $value);
+        $value = stripslashes($value);
+        $value = strip_tags($value);
+        $value = htmlspecialchars($value);
+        $value = $DB->ForSql($value);
+        return $value;
+    }
+}
+
+if (!function_exists('processing_base')) {
+    function processing_base($value){
+        global $DB;
+        $value = trim($value);
+        $value = stripslashes($value);
+        $value = strip_tags($value);
+        $value = htmlspecialchars($value);
+        //$value = $DB->ForSql($value);
+        return $value;
+    }
+}
+
 function main_phone_number() {
     return '+7 495 315 30 40';
 }
