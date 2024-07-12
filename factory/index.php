@@ -5,6 +5,18 @@ $APPLICATION->SetTitle("Производство");
 $APPLICATION->SetPageProperty("description", "Европласт - производство полиуретановых изделий, лидер на российском рынке");
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 ?>
+
+<?
+/* --- Media News --- */
+require_once($_SERVER['DOCUMENT_ROOT'].'/bitrix/modules/media/classes/media_pages.php');
+global $DB;
+use Media\Media;
+?>
+<script type="text/javascript" src="/js/dots.js?<?= time() ?>"></script>
+<?
+/* --- // --- */
+?>
+
 <div class="main-slider-wrap">
     <!--noindex--><div class="main-slider-preloader"><img src="/img/preloader.gif" alt="Подождите..."></div><!--/noindex-->
     <div class="main-slider" data-type="main-slider">
@@ -30,7 +42,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 <section class="main-pref factory-pref">
     <div class="content-wrapper">
         <div class="main-pref-txt">
-            <h2>производство</h2>
+            <h1>производство</h1>
             <p class="main-pref-annotation">
                 Компания "Декор" является одним <br>
                 из крупнейших производителей лепнины <br>
@@ -79,17 +91,44 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
     </div>
 </section>
 
-<? /*
 <section class="main-news main-section">
 <div class="content-wrapper">
     <h2 class="main-blocks-title"><?= MEDIA_NAME ?></h2>
-        <a href="/mag/#all" class="main-blocks-link"><span>Перейти в <?= MEDIA_NAME ?></span> <i class="icon-long-arrow"></i></a>
+        <a href="<?= MEDIA_FOLDER ?>/" class="main-blocks-link"><span><? /* Смотреть все&nbsp;новости*/ ?>Перейти в <?= MEDIA_NAME ?></span> <i class="icon-long-arrow"></i></a>
         <div class="main-news-slider" data-type="main-news-slider">
-			 <? 
-				$res = CIBlock::GetList(Array('sort'=>'asc'),Array('TYPE'=>'news','ACTIVE'=>'Y',"ACTIVE_DATE"=>"Y"), true);
+
+            <?
+            $total_count = 0; //общее количество всех статей
+            $n = 2; 
+            $n_slider = 1;
+            $items = Media::list('date DESC,', '', 6);
+            foreach ($items AS $item) {
+                $item_link = Media::siteLink($item);
+                $img_path = Media::sitePreviewPictureLink($item);
+                ?>
+                <div class="main-news-slide main-news-slide-<?=$n_slider?>">
+                    <article>
+                        <a href="<?= $item_link ?>"></a>
+                        
+                        <div class="main-news-slide-img-back" style="background: url(<?= $img_path ?>) no-repeat center center; background-size: cover;">
+                            <img src="<?= MEDIA_FOLDER ?>/upload/v.png" alt="<?= $item['name'] ?>">
+                        </div>
+                        
+                        <h3 class="main-news-slide-h3"><?= htmlspecialchars_decode($item['name']) ?></h3>
+                        <span class="main-news-slide-date"><?= Media::siteDateFull($item) ?></span>
+                    </article>
+                </div>  
+                <?   
+                if ($n_slider++>3) $n_slider=1;
+            } ?>
+
+             <? 
+             /*
+                //$res = CIBlock::GetList(Array('sort'=>'asc'),Array('TYPE'=>'news','ACTIVE'=>'Y',"ACTIVE_DATE"=>"Y"), true);
+                
                 $total_count = 0; //общее количество всех статей
                 $n = 2; 
-				$n_slider = 1;
+                $n_slider = 1;
                 $iblock_id = get_news_iblocks(); 
                 
                 $arOrder = Array('PROPERTY_CITY'=>'asc,nulls','PROPERTY_DATE'=>'desc');
@@ -98,49 +137,50 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                 $arNavStartParams = Array("nPageSize"=>6);
                 $arSelect = Array();
                 $ar_res = CIBlockElement::GetList($arOrder,$arFilter,false,$arNavStartParams,$arSelect);
-				
+                
                 while($ob = $ar_res->GetNextElement()): 
-					$item = array_merge($ob->GetFields(), $ob->GetProperties()); 
-					?>
-				<div class="main-news-slide main-news-slide-<?=$n_slider?>">
-					<article>
-						 <?
-							if($item['NODETAIL']['VALUE']=='N') {
-								if($item['LINK']['VALUE']!='') {
-									echo '<a href="'.$item['LINK']['VALUE'].'"></a>';
-								}
-								else {
-									echo '<a href="'.$item['DETAIL_PAGE_URL'].'"></a>';
-								}
-							}
-						?>
-						<? if($item['UNIQUE']['VALUE']=='N'): ?>
+                    $item = array_merge($ob->GetFields(), $ob->GetProperties()); 
+                    ?>
+                <div class="main-news-slide main-news-slide-<?=$n_slider?>">
+                    <article>
+                         <?
+                            if($item['NODETAIL']['VALUE']=='N') {
+                                if($item['LINK']['VALUE']!='') {
+                                    echo '<a href="'.$item['LINK']['VALUE'].'"></a>';
+                                }
+                                else {
+                                    echo '<a href="'.$item['DETAIL_PAGE_URL'].'"></a>';
+                                }
+                            }
+                        ?>
+                        <? if($item['UNIQUE']['VALUE']=='N'): ?>
                                 <?
                                 $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/v.jpg';
-								//$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/'.$item['THUMB']['VALUE'];
+                                //$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/'.$item['THUMB']['VALUE'];
                                 //$img_path = get_resized_img($img_path,278,408);
                                 ?>
                                 <img class="img-load" src="/img/1.png" data-src="<?=$img_path?>" alt="<?=$item['NAME']?>">
                             <? else: ?>
                                 <?
                                 $img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/v.jpg';
-								//$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/'.$item['THUMB']['VALUE'];
+                                //$img_path = '/mag/'.$item['IBLOCK_CODE'].'/'.$item['FOLDER']['VALUE'].'/images/'.$item['THUMB']['VALUE'];
                                 //$img_path = get_resized_img($img_path,278,408);
                                 ?>
                                 <img class="img-load" src="/img/1.png" data-src="<?=$img_path?>" alt="<?=$item['NAME']?>">
                          <? endif; ?>
-						
-						<h3><?=htmlspecialchars_decode($item['NAME'])?></h3>
-						<span><?=$item['DATE']['VALUE']?></span>
-					</article>
-				</div>	
-			<? 
-					if ($n_slider++>3) $n_slider=1;
-				endwhile; ?>
-		</div>
+                        
+                        <h3><?=htmlspecialchars_decode($item['NAME'])?></h3>
+                        <span><?=$item['DATE']['VALUE']?></span>
+                    </article>
+                </div>  
+            <? 
+                    if ($n_slider++>3) $n_slider=1;
+                endwhile; 
+            */
+            ?>
+        </div>
 </div>
 </section>
-*/ ?>
 
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/include/footer.php");

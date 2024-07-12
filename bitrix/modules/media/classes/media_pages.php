@@ -342,8 +342,8 @@ class Media
 		$category = processing($_GET['category']);
 
 		$title = 'Media';
-		$keywords = 'Европласт - Media';
-		$description = 'Европласт - Media';
+		$keywords = 'Перфом - Media';
+		$description = 'Перфом - Media';
 
 		$item = self::info($detail);
 		if (!empty($item['id'])) {

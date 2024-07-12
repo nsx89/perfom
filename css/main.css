@@ -173,6 +173,7 @@ body:not(.touchable) .top-header-right a:hover .header-icon-qty {
     color: #000;
     margin-left: 41px;
     white-space: nowrap;
+    text-transform: lowercase;
 }
 body:not(.touchable) .top-menu a:hover {
     color: #666;
@@ -583,6 +584,23 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     font-size: 18px;
     font-weight: 500;
     min-height: 42px;
+}
+.main-events-slide article>span {
+    position: static;
+}
+.main-events-slide-name {
+    max-height: 52px;
+    overflow: hidden;
+}
+.main-news-slide-img-back {
+    width: 100%;
+    height: 100%;
+}
+.main-news-slide>article .main-news-slide-date {
+    color: #f2f2f2;
+}
+.main-news-slide-h3 {
+    text-shadow: 0 0 8px #828282;
 }
 .main-events-catalogues-link {
     display: flex;
@@ -3900,7 +3918,7 @@ body:not(.touchable) .prod-info-type-option:hover {
 .top_fix_title_city {
     color: #849795;
 }
-#top_fix_region button {
+#top_fix_region button, #top_fix_region .top_fix_button_ok {
     height: 38px;
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
@@ -3920,6 +3938,9 @@ body:not(.touchable) .prod-info-type-option:hover {
     transition: .2s;
     cursor: pointer;
     padding: 0;
+}
+#top_fix_region button:hover {
+    color: #fff;
 }
 .top_fix_button_ok {
     color: #fff;
@@ -6578,7 +6599,7 @@ body:not(.touchable) .main-gallery.professional .main-blocks-link:hover span {
     background-image: url('../img/factory/factory-bg.png');
     /*background-repeat: no-repeat;*/
 }
-.factory-pref h2 {
+.factory-pref h2, .factory-pref h1 {
     color: #788370;
     text-shadow: 1px 1px 1px #cbcbcb;
 }
@@ -9318,7 +9339,7 @@ body:not(.touchable) .new-main-new:hover .img-wrap:after {
     justify-content: flex-start;
     flex-wrap: wrap;
 }
-.last-news-items h1 {
+.last-news-items h1, .last-news-items .last-news-items-head {
     width: 100%;
     font-size: 26px;
     font-weight: 500;
@@ -12103,6 +12124,12 @@ body:not(.touchable) .dur-bnfts-btn:hover {
 body:not(.touchable) .prod-collect-btn:hover {
     background-color: #fff;
     color: #849795;
+}
+.main-events-slide-img {
+    width: 100%;
+    content: '';
+    background-size: cover;
+    background-position: left bottom;
 }
 
 /* --- Logo Perfom --- */
