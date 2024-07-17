@@ -107,7 +107,12 @@ $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP
         while($point = $ar_res->GetNextElement()) {
             $point = array_merge($point->GetFields(), $point->GetProperties());
 
-            $arFilter = Array('IBLOCK_ID' => $iblockid, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE'], "PROPERTY_FLEX"=>$point['FLEX']['VALUE']);
+            //$arFilter = Array('IBLOCK_ID' => $iblockid, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE'], "PROPERTY_FLEX"=>$point['FLEX']['VALUE']);
+            
+            //$arFilter = Array('IBLOCK_ID' => $iblockid, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE']);
+            
+            $arFilter = Array('IBLOCK_ID' => $iblockid, "!TAGS" => "OFF", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE']);
+            
             $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
             if ($ob = $db_list->GetNextElement()) {
                 $ob = array_merge($ob->GetFields(), $ob->GetProperties());
@@ -116,6 +121,7 @@ $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP
             }
 
             if($img != $point['IMG_NUMBER']['VALUE']) {
+
                 if($img != '') { ?>
                         <div class="gallery-img-resize">
                             <a data-fancybox="gallery" data-src="#img<?=$n-1?>" class="fancybox-btn js-gallery-open" data-touch="false" 

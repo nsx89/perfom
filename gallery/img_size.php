@@ -67,11 +67,16 @@ function get_objects_gallery($items = array()) {
     );
 
     foreach($items as $key => $item) {
-        $arProps[] = array("TAGS" => "Y", "=PROPERTY_ARTICUL" => $key,"PROPERTY_FLEX" => $item['FLEX']);
+        //$arProps[] = array("TAGS" => "Y", "=PROPERTY_ARTICUL" => $key,"PROPERTY_FLEX" => $item['FLEX']);
+        $arProps[] = array("=PROPERTY_ARTICUL" => $key);
     }
 
     //$arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y", $arProps);
-    $arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", $arProps);
+    
+    //$arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", $arProps);
+
+    $arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "!TAGS" => "OFF", $arProps);
+    
     //$arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, $arProps);
     $db_list = CIBlockElement::GetList(array(), $arFilterItems, false);
 
