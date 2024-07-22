@@ -136,8 +136,8 @@
         padding-bottom: 15px;
     }
     .header-logo {
-        font-size: 38px;
-        height: 38px;
+        font-size: 41.5px;
+        height: 40px;
     }
     .header-qst-btn {
         height: 38px;
@@ -599,8 +599,8 @@
         padding-top: 110px;
     }
     .header-logo {
-        font-size: 37px;
-        height: 35px;
+        font-size: 38px;
+        height: 39px;
     }
     .top-menu {
         padding-bottom: 10px;
@@ -5198,7 +5198,7 @@
 }
 @media screen and (max-width: 600px) {
     .header-logo {
-        font-size: 30px;
+        font-size: 31px;
         height: 30px;
         margin-bottom: 8px;
         margin-top: -11px
