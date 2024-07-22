@@ -35,9 +35,9 @@ if (($my_city_fix || $getReg == 'select' || empty($my_city_fixed)) && empty($_GE
         </div>
         <div class="top_fix_buttons">
             <? if (1 == 1) { ?>
-                <button class="top_fix_button_ok top_fix_button_ok_new" data-subdomain="<?= $subdomen ?>" data-host="<?= $_SERVER['HTTP_HOST'] ?>">
+                <div class="top_fix_button_ok top_fix_button_ok_new" data-subdomain="<?= $subdomen ?>" data-host="<?= $_SERVER['HTTP_HOST'] ?>">
                     <a href="https://<?=$subdomen.strtok($_SERVER['REQUEST_URI'], '?')?>?sub_city=<?=$my_city?>" style="color: white;">Правильно</a>
-                </button>
+                </div>
             <? } else { ?>
                 <button class="top_fix_button_ok">Правильно</button>
             <? } ?>

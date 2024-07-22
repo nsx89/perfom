@@ -1,0 +1,8 @@
+.wrapper {
+	overflow: visible;
+}
+@media screen and (max-width: 1180px) {
+	.content-wrapper {
+	    padding: 0 15px;
+	}
+}

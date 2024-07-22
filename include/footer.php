@@ -39,7 +39,7 @@
                     <ul>
                         <li><a href="/designer/" <? if(strpos($active, 'designer')) echo'class="active"'?>>Дизайнерам</a></li>
                         <li><a href="/professional/" <? if(strpos($active, 'professional')&&!strpos($tmp, 'question_service')) echo'class="active"'?>>Строителям</a></li>
-                        <? /* <li><a href="/mag/#all" <? if(strpos($active, 'mag')||strpos($active, 'news')) echo 'class="active"'?>>Блог</a></li> */ ?>
+                        <li><a href="<?= MEDIA_FOLDER ?>/" <? if(strpos($active, 'mag')||strpos($active, 'news')||strpos($active, 'media')) echo 'class="active"'?>><?= MEDIA_NAME ?></a></li>
                         <li><a href="/install/" <? if(strpos($active, 'install')) echo 'class="active"'?>>Монтаж</a></li>
                         <li><a href="/gallery/" <? if(strpos($active, 'gallery')) echo 'class="active"'?>>Проекты</a></li>
 

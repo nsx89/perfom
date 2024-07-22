@@ -7,7 +7,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 
 
 
-exit;
+//exit;
 
 
 
@@ -16,7 +16,8 @@ global $my_dealer;
 global $my_city;
 $my_city = $APPLICATION->get_cookie('my_city');
 
-$my_city = 3109;
+echo $my_city.'<br>';
+//$my_city = 3109;
 
 $phone = NULL;
 
@@ -267,6 +268,8 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	// порядок текущего дилера при наличии ротации
 	$email_number = $loc['email_number']['VALUE'];
 
+    //print_r($loc['dealers_list']['VALUE']);
+
 	if ($loc['dealers_list']['VALUE']) {
 	    if ($email_number == 0) { // старт первого дилера при начале
 	        $email_number = 1;
@@ -301,6 +304,14 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	            $dealer_contacts .= '<br><b>E-mail: </b>'. $email;
 	            $fields = array('EMAIL'=>$email, 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
 	            //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+
+                /* --- Для СПБ скрытая копия с 11.07.2024 --- */
+                if ($my_city == 3196) {
+                    $fields = array('EMAIL'=>'piterra2012@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
+                    //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+                    echo 'piterra2012@yandex.ru'.'<br>';
+                }
+                /* --- // --- */
 	        }
 	        $dealer_email = $email;
 	    }
@@ -346,7 +357,7 @@ if (($loc['CODE'] == 'moskva') || ($loc['CODE'] == 'moskovskaya-oblast') || $req
 	    $dealer_email = $email;
 	}
 
-	echo $dealer_email;
+	print_r($dealer);
 
 	//require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 

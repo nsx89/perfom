@@ -4,7 +4,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
 
-/*
+exit; 
 
 $ARTICUL  = file($_SERVER["DOCUMENT_ROOT"].'/cron/update/off/off.txt');
 foreach ($ARTICUL as $line_num => $articul) {
@@ -22,12 +22,10 @@ foreach ($ARTICUL as $line_num => $articul) {
 
 		   	echo 'ID:'.$item['ID'].'  =   Артикул: '.$prop['ARTICUL']['VALUE'].' = active ='.$item['ACTIVE'].' = TAGS = '.$item['TAGS'].'<br>';
 
-		   	//CIBlockElement::SetPropertyValueCode($item['ID'], "SORT", $i);
-		   	
-		   	$el = new CIBlockElement;
+		   	/*$el = new CIBlockElement;
 			$el->Update($item['ID'], Array(
 				"TAGS" => 'OFF',   
-			));
+			));*/
 		}
 	}
 	else {

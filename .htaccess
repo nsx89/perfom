@@ -78,6 +78,11 @@ Deny from all
 </FilesMatch>
 
 
+#php_flag register_globals off
+#php_value max_execution_time 1000
+#php_value memory_limit 512M
+
+
 #Deny from all
 #Allow from 91.234.152.117
 #Allow from 185.97.201.241
