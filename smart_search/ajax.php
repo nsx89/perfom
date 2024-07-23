@@ -6,9 +6,10 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/smart_search/functions.php");
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog") || !CModule::IncludeModule("search")) {
     exit;
 }
+global $APPLICATION;
 if($type == 'get_list') {
     $my_city = $APPLICATION->get_cookie('my_city');
-    
+
     //взято из top-current-location.php
     if (!isset($my_city) || !$my_city) { // Вот так не должно быть
         $arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'moskva');
@@ -24,12 +25,10 @@ if($type == 'get_list') {
             $arFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'moskva');
             $db_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arFilter);
             $loc = $db_list->GetNextElement();
-            $my_city_fix = true; // Дать перевыбрать регион или зависнет на Москве
         }
         $loc = array_merge($loc->GetFields(), $loc->GetProperties());
     }
-
-    $products = createProductCache($loc['country']['VALUE'],true);
+    $products = createProductCache($my_city, true);
 
     print json_encode($products);
 }
@@ -37,7 +36,7 @@ if($type == 'get_list') {
 /* --- Точный поиск по артикулу --- */
 if ($type == 'get_list_by_articul') {
 
-    $products = createProductList($loc['country']['VALUE'],true, false);
+    $products = createProductList(0 ,true, false);
 
     print json_encode($products);
 }

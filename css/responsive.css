@@ -2552,6 +2552,10 @@
         height: 35px;
         margin-top: -9px;
     }
+    .header-logo-img{
+        width: 225px;
+        margin-top: -50px;
+    }
     .top-header-central {
         display: none;
     }
@@ -5203,6 +5207,13 @@
         margin-bottom: 8px;
         margin-top: -11px
     }
+    .header-logo-img{
+        margin-left: 0;
+    }
+    .footer-logo-img{
+        width: 240px;
+    }
+
     .content {
         padding-top: 93px;
     }

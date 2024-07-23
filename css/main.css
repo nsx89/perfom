@@ -314,6 +314,18 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     align-items: center;
     z-index: 9;
 }
+.header-logo-img{
+    position: relative;
+    z-index: -1;
+    width: 268px;
+    margin-top: -53px;
+    margin-left: -60px;
+}
+.footer-logo-img{
+    width: 268px;
+    margin-top: -53px;
+    margin-left: -60px;
+}
 .main-slider .slick-slide img {
     width: 100%;
     height: auto;
@@ -12147,7 +12159,7 @@ body:not(.touchable) .prod-collect-btn:hover {
     display: none;
 }
 .header-logo {
-    margin-top: -20px;
+    margin-top: -25px;
 }
 
 .icon-footer-logo {

@@ -58,6 +58,7 @@ function createProductCache($count_id,$return = false) {
 
 function createProductList($count_id, $return = false) {
     global $DB;
+    global $APPLICATION;
 
     $glue_arr = get_glue_arr(false,$count_id);
     $products = Array();
@@ -150,7 +151,11 @@ function createProductList($count_id, $return = false) {
         //if($is_flex) $res_param = $res['res_f'];
 
         $sellout = $item['SELLOUT']['VALUE'] == 'Y' ? true : false;
-        $old_price = _makeprice($item['OLD_PRICE']['VALUE']);
+
+        $old_price = '';
+        if (!empty($item['OLD_PRICE']['VALUE'])) {
+            $old_price = _makeprice($item['OLD_PRICE']['VALUE']);
+        }
 
         $products[] = Array(
             "name"              => __get_product_name($item),
