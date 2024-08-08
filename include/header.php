@@ -29,7 +29,14 @@ $curr = getCurrency($loc['ID']);
 <header>
     <div class="content-wrapper">
         <div class="top-header">
-            <a href="/" class="header-logo"><span class="icon-logo-medium">перфом</span></a>
+            <a href="/" class="header-logo">
+
+                    <img class="header-logo-img" src="/img/logo23.png" >
+
+
+<!--                <span class="icon-logo-medium">перфом</span>-->
+
+            </a>
             <div class="top-header-central">
                 <? if($phone) { ?>
                     <a href="tel:<?=$link_phone?>" class="header-phone"><?=$phone?></a>
