@@ -170,7 +170,7 @@ $id_item = $id_item[count($id_item)-1];
                 $item = array_merge($product_item->GetFields(), $product_item->GetProperties());    
             
                 $title = $item['NAME'];
-                $description = 'Перфом - производство полиуретановых изделий, лидер на российском рынке';
+                $description = 'Перфом - производство полистироловых изделий, лидер на российском рынке';
             }
 }
 
@@ -189,7 +189,7 @@ $id_item = $id_item[count($id_item)-1];
                 
                 //$title = $item['NEWS_TAGS']['VALUE'][0].': '.$item['NAME'];
                 $title = $item['NAME'];
-                $description = 'Перфом - производство полиуретановых изделий, лидер на российском рынке';
+                $description = 'Перфом - производство полистироловых изделий, лидер на российском рынке';
             }
 }
 
@@ -200,8 +200,6 @@ include_once 'seo/new.php';
 
 /* --- // --- */
 
-
-//echo $url.'-'.$title;
 
 /* --- SEO FOR SUBDOMAINS --- */
 
