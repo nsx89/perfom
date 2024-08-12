@@ -3,10 +3,26 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.ph
 if (!CModule::IncludeModule('iblock')) exit;
 $APPLICATION->SetTitle("Коллекции");
 $APPLICATION->SetPageProperty("description", "Европласт - производство полиуретановых изделий, лидер на российском рынке");
+
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
+
+$breadcrumbs_arr = Array(
+    Array(
+        'name' => 'коллекции',
+        'link' => '/collection/',
+        'title' => 'коллекции',
+    ),
+);
 ?>
+
+<div class="content-wrapper">
+    <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
+</div>
+
 <section class="all-collections">
     <div class="content-wrapper">
+
+        <h1 class="hidden">Коллекции</h1>
 
         <div class="collection-item">
             <a href="/collection/new_art_deco/" class="cover-link"></a>

@@ -318,7 +318,7 @@ body:not(.touchable) .top-menu .header-catalogue:hover {
     position: relative;
     z-index: -1;
     width: 268px;
-    margin-top: -53px;
+    margin-top: -43px;
     margin-left: -60px;
 }
 .footer-logo-img{
@@ -2889,6 +2889,7 @@ body:not(.touchable) .footer-social a:hover {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+    margin-top: 15px;
 }
 .prod-info-prev {
     width: 854px;
@@ -6641,7 +6642,7 @@ body:not(.touchable) .main-gallery.professional .main-blocks-link:hover span {
     display: flex;
     justify-content: flex-start;
     flex-wrap: wrap;
-    padding-top: 20px;
+    padding-top: 10px;
     padding-bottom: 60px;
     width: calc(100% + 20px);
     margin-left: -10px;
@@ -6771,7 +6772,7 @@ body:not(.touchable) .collection-item:hover {
     z-index: 2;
 }
 .collection-wrap {
-    padding-top: 60px;
+    padding-top: 20px;
     padding-bottom: 60px;
 }
 .col-prod-nav {
@@ -6780,6 +6781,7 @@ body:not(.touchable) .collection-item:hover {
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 10px;
+    margin-top: 30px;
 }
 .col-prod-nav a {
     color: #a9a9a9;
@@ -9909,6 +9911,18 @@ body:not(.touchable) .reg-succ-mess-wrap a:hover {
 .not-low {
     text-transform: initial !important;
 }
+.gallery-section {
+    background: #F7F7F7;
+    padding: 20px 0 40px;
+    margin-top: 20px;
+}
+.gallery-section h1 {
+    font-size: 26px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-transform: lowercase;
+    margin-top: 10px;
+}
 .gallery {
     background: #F7F7F7;
     padding: 40px 0;
@@ -10105,7 +10119,7 @@ body:not(.touchable) .gallery-tabs li:hover {
     margin-top: 20px;
 }
 .gallery-item-description {
-    margin: 60px auto 0;
+    margin: 40px auto 0;
     max-width: 800px;
     font-size: 18px;
     line-height: 1.4;
@@ -10116,13 +10130,13 @@ body:not(.touchable) .gallery-tabs li:hover {
 .gallery-item-description p:last-child {
     margin-bottom: 0;
 }
-.gallery-item-description a {
+.gallery-item-description p a {
     color: #7BA1A9;
     position: relative;
     border-bottom: 1px solid #7BA1A9;
     padding-bottom: 3px;
 }
-.gallery-item-description span {
+.gallery-item-description p span {
     color: #000;
     margin-right: 5px;
     position: relative;
@@ -10130,7 +10144,7 @@ body:not(.touchable) .gallery-tabs li:hover {
     text-align: center;
     display: inline-block;
 }
-.gallery-item-description span:before {
+.gallery-item-description p span:before {
     content: '';
     display: block;
     width: 22px;
@@ -10145,6 +10159,9 @@ body:not(.touchable) .gallery-tabs li:hover {
     -ms-transform: translate(-50%,-50%);
     -o-transform: translate(-50%,-50%);
     transform: translate(-50%,-50%);
+}
+.gallery-item-description .breadcrumbs {
+    margin-bottom: 20px;
 }
 .gallery-img-wrapper {
     display: flex;
@@ -12243,5 +12260,57 @@ body:not(.touchable) .prod-collect-btn:hover {
 /* --- Gallery ajax --- */
 .gallery-img-resize>span {
     display: none;
+}
+/* --- Breadcrumbs --- */
+.breadcrumbs {
+    width: 100%;
+}
+.breadcrumbs ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+.breadcrumbs ul li {
+    font-size: 14px;
+    font-weight: 400;
+    color: #a9a9a9;
+    position: relative;
+    white-space: nowrap;
+    padding-right: 13px;
+    margin-right: 5px;
+}
+.breadcrumbs ul li:first-child {
+    padding-left: 0;
+    margin-left: 0;
+}
+.breadcrumbs ul li:last-child {
+    pointer-events: none;
+    padding-right: 0;
+    margin-right: 0;
+}
+.breadcrumbs ul li:after {
+    content: '/';
+    width: 6px;
+    height: 16px;
+    position: absolute;
+    top: 3px;
+    right: 0px;
+    border-radius: 100%;
+    color: #a9a9a9;
+    font-size: 8.4px;
+    line-height: 1.2em;
+}
+.breadcrumbs ul li:last-child:after {
+    display: none;
+}
+.breadcrumbs ul li a {
+    color: #a9a9a9;
+    -webkit-transition: .2s;
+    -moz-transition: .2s;
+    -ms-transition: .2s;
+    -o-transition: .2s;
+    transition: .2s;
+}
+.breadcrumbs ul li a:hover {
+    color: #000;
 }
 /* --- // --- */

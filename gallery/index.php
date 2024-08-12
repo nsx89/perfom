@@ -11,6 +11,14 @@ $quant_obj = 8;
 $page = isset($_REQUEST['page']) ? $_REQUEST['page'] : 1;
 $filter = $_REQUEST['filter'];
 $filter = explode(',',$filter);
+
+$breadcrumbs_arr = Array(
+    Array(
+        'name' => 'проекты',
+        'link' => '/gallery/',
+        'title' => 'проекты',
+    ),
+);
 ?>
 
 <div class="main-slider-wrap">
@@ -33,10 +41,9 @@ $filter = explode(',',$filter);
     </div>
 </div>
 
-<br><br>
-
-<section class="gallery">
+<section class="gallery-section">
     <div class="content-wrapper">
+        <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
         <?
         $arOrder = Array('PROPERTY_DATE'=>'desc');
         $arFilter = Array("IBLOCK_CODE"=>"gallery_articles","ACTIVE"=>"Y");

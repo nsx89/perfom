@@ -35,6 +35,19 @@
     //print_r($prod_arr);
 
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
+
+$breadcrumbs_arr = Array(
+    Array(
+        'name' => 'коллекции',
+        'link' => '/collection/',
+        'title' => 'коллекции',
+    ),
+    Array(
+        'name' => 'new art deco',
+        'link' => '/collection/new_art_deco/',
+        'title' => 'new art deco',
+    ),
+);
 ?>
 
 <div class="main-slider-wrap">
@@ -42,7 +55,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
     <div class="main-slider collection-slider has-txt" data-type="main-slider">
         <div class="main-slide">
             <div class="main-slide-caption white">
-                new art deco
+                <h1>new art deco</h1>
                 <div class="main-slide-caption-txt">
                     <p>Бренд «Европласт» представляет новую коллекцию интерьерной лепнины NEW&nbsp;ART&nbsp;DECO.</p>
                     <p>Это коллекция-конструктор, позволяющая дизайнеру выразить себя через многообразие органичных сочетаний, отсутствие ограничений и&nbsp;полноту свободы творчества.</p>
@@ -86,6 +99,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 ?>
 <section class="collection-wrap">
     <div class="content-wrapper">
+
+        <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
+        
         <?if($coll_qty > 0) { ?>
         <div class="col-prod-nav" data-type="col-prod-nav">
             <?foreach($sort_group as $item) { ?>

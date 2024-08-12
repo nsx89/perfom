@@ -26,6 +26,19 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/gallery/img_size.php");
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP_HOST']; 
 
+$breadcrumbs_arr = Array(
+    Array(
+        'name' => 'проекты',
+        'link' => '/gallery/',
+        'title' => 'проекты',
+    ),
+    Array(
+        'name' => $pure_name,
+        'link' => $item['DETAIL_PAGE_URL'],
+        'title' => $pure_name,
+    ),
+);
+
 ?>
 <section class="news-item">
     <div class="main-banner news-banner gallery-banner">
@@ -90,12 +103,19 @@ $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP
 <div class="content-wrapper">
     <?if($item['~DETAIL_TEXT']!='' || $item['SOURCE']['VALUE']!='') { ?>
         <div class="gallery-item-description">
+            
+            <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
+
             <?if($item['~DETAIL_TEXT']!='') echo $item['~DETAIL_TEXT']?>
             <? if($item['SOURCE']['VALUE']!='') { ?>
                 <p class="gallery-item-source">Источник фото - <?=$item['SOURCE']['VALUE']?></p>
             <? } ?>
         </div>
-    <? } ?>
+    <? } else {
+        ?>
+        <br><br>
+        <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php");
+    } ?>
     <div class="gallery-img-wrapper">
         <?
         $arOrder = Array('ID'=>'asc');
