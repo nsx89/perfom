@@ -132,6 +132,8 @@ foreach ($sections_list as $i=>$section_item) {
     echo $main_section;
 }*/
 
+$breadcrumbs_arr = get_breadcrumbs_arr($sections_list);
+
 if (!$is_product) { // каталог
 
     $data_onpage = 12;
@@ -159,6 +161,7 @@ if (!$is_product) { // каталог
     }
    ?>
 <div class="content-wrapper catalogue">
+    <? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
     <div class="cat-top">
         <div class="cat-sections">
             <a href="/karnizy/" class="cat-sections-item<?if($main_section == 'interernyj-dekor') echo ' active'?>">

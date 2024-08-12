@@ -677,6 +677,9 @@ $('.category').on('click','li',function(e) {
             desc += '</div>';
             $('.cat-products').append(desc);
         }
+        if(data.breadcrumbs) {
+            $('.breadcrumbs').replaceWith(data.breadcrumbs);
+        }
         if(window.innerWidth > 1180) {
             wrap.find('.wait').remove();
             sort.html(data.sort);

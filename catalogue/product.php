@@ -56,7 +56,7 @@ $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$item['CODE'].'-f', 'ACTIVE
 if ($item['FLEX']['VALUE'] == 'Y') {
     $is_flex = true;
     $code = str_replace("-f", "", $item['CODE']);
-    $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$code, 'ACTIVE'=>'Y', 'PROPERTY_FLEX'=>'N');
+    $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'CODE'=>$code, 'PROPERTY_FLEX'=>'N');
 }
 $db_list = CIBlockElement::GetList(Array(), $arFilter);
 $item_flex = null;
@@ -175,13 +175,48 @@ if ($last_section['UF_H'] == 1) {
 } else {
     $signTmp = '';
 }
-
 $sellout_class = $item['SELLOUT']['VALUE'] ? ' sellout' : '';
 $prefix = 'prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# product: http://ogp.me/ns/product#"'; //чтобы исправить ОШИБКУ: префикс product неизвестен валидатору, укажите его явно атрибутом prefix
+
+$b_arr = Array(
+    'name' => __get_product_name($item),
+    'link' => __get_product_link($item),
+    'title' => __get_product_name($item),
+);
+
+$breadcrumbs_arr[] = $b_arr;
+// переписываем предпоследний раздел для гибких
+if($is_flex) {
+    $db_list_flex = CIBlockSection::GetList(Array(), Array('IBLOCK_ID'=>IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $item_flex['IBLOCK_SECTION_ID']), false, array('NAME','DEPTH_LEVEL','CODE','IBLOCK_SECTION_ID'));
+    if (intval($db_list_flex->SelectedRowsCount())>0) {
+        $section_item_flex = $db_list_flex->GetNext();
+        $section_parent_name = '';
+        // если фасад раздел м.б. с ":"
+        if($section_item_flex['DEPTH_LEVEL'] > 2) {
+            $db_list_flex_parent = CIBlockSection::GetList(Array(), Array('IBLOCK_ID'=>IB_CATALOGUE, 'ACTIVE' => 'Y', 'ID' => $section_item_flex['IBLOCK_SECTION_ID']), false, array('NAME'));
+            if (intval($db_list_flex_parent->SelectedRowsCount())>0) {
+                $section_item_flex_parent = $db_list_flex_parent->GetNext();
+                $section_parent_name = $section_item_flex_parent['NAME'];
+                if($section_parent_name != 'Композиты' ||
+                   $section_parent_name != 'Фасадный декор' ||
+                   $section_parent_name != 'Интерьерный декор'
+                ) {
+                    $section_parent_name = $section_parent_name.': ';
+                }
+            }
+        }
+        $breadcrumbs_arr[count($breadcrumbs_arr) - 2] = Array(
+            'name' => $section_parent_name.$section_item_flex['NAME'],
+            'link' => '/' .$section_item_flex['CODE'] . '/',
+            'title' => $section_parent_name.$section_item_flex['NAME'],
+        );
+    }
+}
 
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 ?>
 <div class="content-wrapper product">
+<? require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php"); ?>
 <section class="prod-info-wrap<?=$sellout_class?>">
         <div class="prod-info-prev">
             <div class="prod-preload" data-type="prod-preload">
@@ -879,11 +914,13 @@ if ((count($rand_items) > 0) && ($temp_styles_flag))  { ?>
 if(strpos($_SERVER['HTTP_REFERER'],'catalogue') !== false && strpos($_SERVER['HTTP_REFERER'],'?page=') !== false) { ?>
     <a href="<?=$_SERVER['HTTP_REFERER']?>" class="prod-back-cat">В каталог</a>
 <? } else { ?>
+
     <? if ($back_catalogue_path == '/dekorativnye-elementy/') { ?>
         <br><br><br>
     <? } else { ?>
         <a href="<?=$back_catalogue_path?>" class="prod-back-cat">В каталог</a>
     <? } ?>
+    
 <? } ?>
 </div>
 
