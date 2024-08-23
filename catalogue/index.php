@@ -13,12 +13,42 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/catalogue/sort.php");
 
 $sections = $_SERVER['REQUEST_URI'];
 $sections = explode('?', $sections);
-$sections = $sections[0];
+$uri = $sections = $sections[0];
 $sections = explode('/', $sections);
 $sections = array_diff($sections,array(''));
 
 if(!empty($sections)) $sections = explode("|", implode("|", $sections));
 
+/* --- Скрыть лишние категории --- */
+$sections_off = [
+    '/antablementy/arhitravy/', 
+    '/arhitravy/', 
+    '/antablementy/dopolnitelnye-elementy-antablementy/',
+    '/dopolnitelnye-elementy-antablementy/',
+    '/antablementy/frizy/',
+    '/frizy/',
+    '/antablementy/karnizi/',
+    '/karnizi/',
+    '/arochnye-obramlenija/',
+    '/baljustrady/baljasiny/',
+    '/baljasiny/',
+    '/baljustrady/dopolnitelnye-elementy-baljustrady/',
+    '/dopolnitelnye-elementy-baljustrady/',
+    '/baljustrady/kryshki-stolba/',
+    '/kryshki-stolba/',
+    '/baljustrady/montazhnyy-komplekt/',
+    '/montazhnyy-komplekt/',
+    '/baljustrady/osnovanija/',
+    '/osnovanija/',
+    '/baljustrady/poruchni/',
+    '/poruchni/',
+    '/baljustrady/stolby/',
+    '/stolby/',
+];
+if (in_array($uri, $sections_off)) {
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/404.php"); exit;
+}
+/* --- // --- */
 
 global $main_section;
 global $APPLICATION;
