@@ -1,4 +1,12 @@
 <?
+/* --- Город из куков или по поддомену (для роботов) --- */
+
+$CITY_ID = $APPLICATION->get_cookie('my_city');
+if (empty($CITY_ID) && $_SERVER['HTTP_HOST'] <> HTTP_HOST) {
+    $CITY_ID = _get_city_by_subdomen();
+}
+/* --- // --- */
+
 $url = $_SERVER['REQUEST_URI']; 
 $url = explode('?', $url);
 $url = $url[0]; // основной путь без параметров.
@@ -88,7 +96,8 @@ if(isset($is_product)) {
     $fb_img = web_path($is_product);
     $fb_availability = $is_product['COMING_SOON']['VALUE']=='Y' ? 'out of stock' : 'in stock';
     $fb_cost = __get_product_cost($is_product);
-    $fb_city = $APPLICATION->get_cookie('my_city');
+    //$fb_city = $APPLICATION->get_cookie('my_city');
+    $fb_city = $CITY_ID; //для роботов (при первом заходе куков еще нет)
     $fb_og = '<meta property="og:title" content="'.$is_product['NAME'].$ceo_prod_articul.$f.'">';
     $fb_og .= '<meta property="og:image" content="https://perfom-decor.ru'.$fb_img.'">';
     if($fb_cost) {
@@ -203,76 +212,80 @@ include_once 'seo/new.php';
 
 /* --- SEO FOR SUBDOMAINS --- */
 
-if (1 == 1) {
-    $CITY_ID = $APPLICATION->get_cookie('my_city');
-    $arFilter = Array('IBLOCK_ID'=>7, 'ID'=>$CITY_ID);
-    $db_list = CIBlockElement::GetList(Array(), $arFilter);
-    $city_item = $db_list->GetNextElement();
-    if ($city_item) {
-        $city_info = array_merge($city_item->GetFields(), $city_item->GetProperties());
-        $CITY_NAME = $city_info['NAME'];
-        $CITY_NAME_2=$city_info['NAME'];
-        $PROP_NAME = $city_info['name']['VALUE'];
-        if (!empty($PROP_NAME)) $CITY_NAME = $PROP_NAME;
-        // echo $CITY_NAME;
-        //echo '<pre>';print_r($city_info);echo '</pre>';
+$arFilter = Array('IBLOCK_ID'=>7, 'ID'=>$CITY_ID);
+$db_list = CIBlockElement::GetList(Array(), $arFilter);
+$city_item = $db_list->GetNextElement();
+if ($city_item) {
+    $city_info = array_merge($city_item->GetFields(), $city_item->GetProperties());
+    $CITY_NAME = $city_info['NAME'];
+    $CITY_NAME_2=$city_info['NAME'];
+    $PROP_NAME = $city_info['name']['VALUE'];
+    if (!empty($PROP_NAME)) $CITY_NAME = $PROP_NAME;
+    // echo $CITY_NAME;
+    //echo '<pre>';print_r($city_info);echo '</pre>';
+}
+
+$subdomen = _get_city_loc($CITY_ID);
+
+$encoding = 'UTF8';
+if (!empty($subdomen) && !empty($CITY_NAME)) {
+
+    //Если товар
+    if(isset($is_product)) {
+        $is_product_name = mb_strtoupper(mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 0, 1, $encoding), $encoding) .
+            mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 1, mb_strlen($is_product['NAME'].$ceo_prod_articul.$f, $encoding), $encoding);
+        $title =  $is_product_name." из полистирола купить в {$CITY_NAME} от Перфом";
+        $description =$is_product_name." из пенополистирола купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
+        $keywords=$is_product_name.", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, фото, характеристики, 3d модель, инструкция, перфом";
     }
-
-    $subdomen = _get_city_loc($CITY_ID);
-
-    $encoding = 'UTF8';
-    if (!empty($subdomen) && !empty($CITY_NAME)) {
-
-        //Если товар
-        if(isset($is_product)) {
-            $is_product_name = mb_strtoupper(mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 0, 1, $encoding), $encoding) .
-                mb_substr($is_product['NAME'].$ceo_prod_articul.$f, 1, mb_strlen($is_product['NAME'].$ceo_prod_articul.$f, $encoding), $encoding);
-            $title =  $is_product_name." из полистирола купить в {$CITY_NAME} от Перфом";
-            $description =$is_product_name." из пенополистирола купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
-            $keywords=$is_product_name.", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, фото, характеристики, 3d модель, инструкция, перфом";
-        }
-        //Если категория
-        elseif(isset($last_section)) {
-            $title = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
-                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить в {$CITY_NAME} от Перфом";
-            $description = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
-                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
-            $keywords =  mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
-                mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding).", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом";
-        }
-        else {
-            switch ($url) {
-                case '/': $title = 'Официальный сайт Перфом - производство лепнины и архитектурного декора'; $description = 'Купить лепнину Перфом в интернет-магазине, а также в розничных точках по всей территории России, СНГ и стран Балтии.'; $keywords = "карнизы, молдинги, плинтусы, архитравы, угловые элементы, розетки, пилястры, колонны, полуколонны, обрамление арок, обрамление дверей, сандрики, ниши, кессоны, купола, кронштейны, орнаменты, перфом, {$CITY_NAME_2}"; break;
-                case '/contact/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = 'Контакты компании «Перфом» в ' .$CITY_NAME.': адрес, телефон, время работы, филиалы, e-mail'; $keywords = 'контакты, контактная информация, адрес, телефон, время работы, филиалы, e mail, электронная почта, главный офис, перфом, ' .$CITY_NAME_2; break;
-                case '/wheretobuy/': $title = 'Где купить продукцию компании «Перфом» в '.$CITY_NAME; $description = 'Адреса, где можно купить продукцию компании «Перфом» в '.$CITY_NAME; $keywords = "где купить продукцию перфом в {$CITY_NAME}, где купить товар перфом в {$CITY_NAME}"; break;
-            }
-        }
+    //Если категория
+    elseif(isset($last_section)) {
+        $title = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+            mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить в {$CITY_NAME} от Перфом";
+        $description = mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+            mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding)." купить по выгодной цене в {$CITY_NAME}, а также в других городах России от компании Перфом.";
+        $keywords =  mb_strtoupper(mb_substr($last_section['NAME'], 0, 1, $encoding), $encoding) .
+            mb_substr($last_section['NAME'], 1, mb_strlen($last_section['NAME'], $encoding), $encoding).", купить, цена, стоимость, {$CITY_NAME_2}, заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом";
     }
-
-    //Отдельные индивидуальные Meta
-    if (!empty($CITY_NAME)) {
+    else {
         switch ($url) {
-            case '/karnizy/': $title = 'Карнизы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Карнизы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Карнизы, потолочный карниз, карниз на потолок, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/moldingi/': $title = 'Молдинги из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Молдинги из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Молдинги, молдинг на стену, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/plintusy/': $title = 'Плинтусы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Плинтусы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Плинтусы, напольный плинтус, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/rozetki/': $title = 'Розетки из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Розетки из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Розетки, потолочные розетки, розетки под люстру, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/dekorativnii-paneli/': $title = 'Декоративные панели из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Декоративные панели из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Декоративные панели, декоративные панели на стену, стеновая декоративная панель, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/obramlenie-proema/': $title = 'Обрамление проёма из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Обрамление проёма из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Обрамление проёма, обрамление арок, замковый камень, наличники, база, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/kessony-i-kupola/': $title = 'Кессоны и купола из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Кессоны и купола из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Кессоны и купола, кессоны, купола, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/uglovye-jelementy/': $title = 'Угловые элементы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Угловые элементы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Угловые элементы, декоративные угловые элементы, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/podokonnye-elementy/': $title = 'Подоконные элементы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Подоконные элементы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Подоконные элементы, торцевые элементы, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
-            case '/nalichniki/': $title = 'Наличники из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Наличники из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Наличники, декоративные наличники, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+            case '/': $title = 'Официальный сайт Перфом - производство лепнины и архитектурного декора'; $description = 'Купить лепнину Перфом в интернет-магазине, а также в розничных точках по всей территории России, СНГ и стран Балтии.'; $keywords = "карнизы, молдинги, плинтусы, архитравы, угловые элементы, розетки, пилястры, колонны, полуколонны, обрамление арок, обрамление дверей, сандрики, ниши, кессоны, купола, кронштейны, орнаменты, перфом, {$CITY_NAME_2}"; break;
+            case '/contact/': $title = 'Контактная информация компании «Перфом» в '.$CITY_NAME; $description = 'Контакты компании «Перфом» в ' .$CITY_NAME.': адрес, телефон, время работы, филиалы, e-mail'; $keywords = 'контакты, контактная информация, адрес, телефон, время работы, филиалы, e mail, электронная почта, главный офис, перфом, ' .$CITY_NAME_2; break;
+            case '/wheretobuy/': $title = 'Где купить продукцию компании «Перфом» в '.$CITY_NAME; $description = 'Адреса, где можно купить продукцию компании «Перфом» в '.$CITY_NAME; $keywords = "где купить продукцию перфом в {$CITY_NAME}, где купить товар перфом в {$CITY_NAME}"; break;
         }
     }
+}
 
-    //META из админки (для категорий)
-    if(isset($last_section)) {
-        $ipropValues = new \Bitrix\Iblock\InheritedProperty\SectionValues(12, $last_section['ID']);
-        $seo = $ipropValues->getValues();
-        if (!empty($seo['SECTION_META_TITLE'])) $title = $seo['SECTION_META_TITLE'];
-        if (!empty($seo['SECTION_META_KEYWORDS'])) $keywords = $seo['SECTION_META_KEYWORDS'];
-        if (!empty($seo['SECTION_META_DESCRIPTION'])) $description = $seo['SECTION_META_DESCRIPTION'];
+//Отдельные индивидуальные Meta
+if (!empty($CITY_NAME)) {
+    switch ($url) {
+        case '/karnizy/': $title = 'Карнизы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Карнизы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Карнизы, потолочный карниз, карниз на потолок, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/moldingi/': $title = 'Молдинги из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Молдинги из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Молдинги, молдинг на стену, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/plintusy/': $title = 'Плинтусы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Плинтусы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Плинтусы, напольный плинтус, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/rozetki/': $title = 'Розетки из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Розетки из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Розетки, потолочные розетки, розетки под люстру, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/dekorativnii-paneli/': $title = 'Декоративные панели из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Декоративные панели из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Декоративные панели, декоративные панели на стену, стеновая декоративная панель, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/obramlenie-proema/': $title = 'Обрамление проёма из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Обрамление проёма из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Обрамление проёма, обрамление арок, замковый камень, наличники, база, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/kessony-i-kupola/': $title = 'Кессоны и купола из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Кессоны и купола из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Кессоны и купола, кессоны, купола, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/uglovye-jelementy/': $title = 'Угловые элементы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Угловые элементы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Угловые элементы, декоративные угловые элементы, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/podokonnye-elementy/': $title = 'Подоконные элементы из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Подоконные элементы из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Подоконные элементы, торцевые элементы, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
+        case '/nalichniki/': $title = 'Наличники из полистирола купить в '.$CITY_NAME.' от Перфом'; $description = 'Наличники из пенополистирола купить по выгодной цене в '.$CITY_NAME.', а также в других городах России от компании Перфом'; $keywords = 'Наличники, декоративные наличники, купить, цена, стоимость, '.$CITY_NAME_2.', заказ, заказать, оптом, розница, композит, полистирол, пенополистирол, ппс, композитный материал, перфом'; break;
     }
+}
+
+/* --- Meta из файла сеошника по шаблону города --- */
+
+include_once 'seo/new_template.php';
+
+/* --- // --- */
+
+
+//META из админки (для категорий)
+if(isset($last_section)) {
+    $ipropValues = new \Bitrix\Iblock\InheritedProperty\SectionValues(12, $last_section['ID']);
+    $seo = $ipropValues->getValues();
+    if (!empty($seo['SECTION_META_TITLE'])) $title = $seo['SECTION_META_TITLE'];
+    if (!empty($seo['SECTION_META_KEYWORDS'])) $keywords = $seo['SECTION_META_KEYWORDS'];
+    if (!empty($seo['SECTION_META_DESCRIPTION'])) $description = $seo['SECTION_META_DESCRIPTION'];
 }
 
 /* --- // --- */
