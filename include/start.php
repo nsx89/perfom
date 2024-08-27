@@ -142,10 +142,13 @@ global $my_city_fix;
 		$remote_ip = explode(',',$remote_ip);
 		$remote_ip = $remote_ip[0];
 
-		if ($remote_ip == '37.63.9.154') $remote_ip = "93.89.190.134"; // Локальное перенаправление разработчика
+		//if ($remote_ip == '37.63.9.154') $remote_ip = "93.89.190.134"; // Локальное перенаправление разработчика
 
 		if (!empty($_GET['by'])) {
 			$remote_ip = '104.28.247.49';
+		}
+		if (!empty($_GET['kz'])) {
+			$remote_ip = '176.119.227.116';
 		}
 
         //TODO: закрыть $remote_ip на продакшн
@@ -234,11 +237,6 @@ global $my_city_fix;
 			        $my_city = $city;
 				$my_location = $city['map']['VALUE'];
 			}
-
-			if (!empty($_GET['by'])) {
-				//echo $city['ID'];
-			}
-
 		} elseif (($gi_value == 'LT') && (!$USER->IsAuthorized())) { // Литва
 			$arCityFilter = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'CODE' => 'vilnus');
 			$db_city_list = CIBlockElement::GetList(Array('SORT' => 'ASC'), $arCityFilter);
@@ -316,7 +314,7 @@ global $my_city_fix;
 		}
 
 		/* --- У поддоменов теперь нет окна выбора города (доп. проверка если на поддомене то всегда город поддомена автоматом) --- */
-		if ($_SERVER['HTTP_HOST'] <> HTTP_HOST) {
+		if ($_SERVER['HTTP_HOST'] <> HTTP_HOST && !empty($my_city)) {
    			$city_by_subdomen = _get_city_by_subdomen();
    			if (!empty($city_by_subdomen) && $city_by_subdomen <> $my_city) {
    				$my_city = $city_by_subdomen;
@@ -326,11 +324,11 @@ global $my_city_fix;
    		/* --- // --- */
 
 
-		if (!empty($_GET['test2'])) {
-			//echo '<pre>';print_r($_SESSION);echo '</pre>';
-			//echo '<pre>';print_r($_COOKIE);echo '</pre>';
-			//echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
-		}
+		/*if (!empty($_GET['test2'])) {
+			echo '<pre>';print_r($_SESSION);echo '</pre>';
+			echo '<pre>';print_r($_COOKIE);echo '</pre>';
+			echo '<pre>';print_r(HTTP_HOST);echo '</pre>';
+		}*/
 
 
 
