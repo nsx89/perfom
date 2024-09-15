@@ -31,14 +31,7 @@ if(in_array('1',$user_group_arr)) {
 $currency_infо = get_currency_info($loc['country']['VALUE']);
 $curr = $currency_infо['abbr'];
 
-// КАБИНЕТ МОДЕРАТОРА
-if ($USER->IsAuthorized() && in_array($stat,array('mod','admin','moddealer','specdealer','userdealer'))){
-    LocalRedirect("/moderation");
-
-// КАБИНЕТ ПОЛЬЗОВАТЕЛЯ
-} elseif ($USER->IsAuthorized() && in_array(5,$user_group_arr)) { ?>
-
-<? if ($USER->IsAuthorized()) { ?>
+if ($USER->IsAuthorized()) { ?>
 
     <style>
         .content {
@@ -98,8 +91,7 @@ if ($USER->IsAuthorized() && in_array($stat,array('mod','admin','moddealer','spe
 
     </div>
 
-<? }
-// АВТОРИЗАЦИЯ
+<?
 } else {
     include_once($_SERVER["DOCUMENT_ROOT"] . "/personal/auth.php");
 } ?>

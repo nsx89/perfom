@@ -23,19 +23,14 @@ foreach($cart as $citem) {
 $curr = getCurrency($loc['ID']);
 //require($_SERVER["DOCUMENT_ROOT"] . "/include/banners/congratulation.php");
 ?>
-<body>
+<body itemscope="" itemtype="https://schema.org/WebPage">
 <div class="wrapper">
     <div class="content">
 <header>
     <div class="content-wrapper">
         <div class="top-header">
             <a href="/" class="header-logo">
-
-                    <img class="header-logo-img" src="/img/logo23.png" >
-
-
-<!--                <span class="icon-logo-medium">перфом</span>-->
-
+                <i class="icon-perfom-logo"></i>
             </a>
             <div class="top-header-central">
                 <? if($phone) { ?>

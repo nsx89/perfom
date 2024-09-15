@@ -5,7 +5,7 @@
                 <img src="/img/personal/auth.jpg" alt="авторизация">
             </div>
             <div class="user-form-wrapper authorization-cont">
-                <div class="user-form-title">Авторизация</div>
+                <h1 class="user-form-title">Авторизация</h1>
                 <form class="user-form auth-form">
                     <input type="hidden" name="type" value="enter">
                     <div class="input-block">

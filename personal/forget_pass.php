@@ -54,7 +54,7 @@ global $USER;
               <img src="/img/personal/auth.jpg" alt="авторизация">
           </div>
           <div class="user-form-wrapper forget-pass-wrapper">
-              <div class="user-form-title">Запрос пароля</div>
+              <h1 class="user-form-title">Запрос пароля</h1>
               <div class="confirm-reg-succ-title">
                   <p>Если вы забыли пароль, введите свой&nbsp;email.</p>
                   <p>Контрольная строка для&nbsp;смены пароля, а&nbsp;также ваши регистрационные данные, будут высланы вам по&nbsp;email.</p>

@@ -69,7 +69,7 @@ global $USER;
 <? } else { ?>
 
 
-            <div class="user-form-title">Регистрация</div>
+            <h1 class="user-form-title">Регистрация</h1>
             <form class="user-form auth-form reg-form">
                 <div>
                     <input type="hidden" name="type" value="registration">

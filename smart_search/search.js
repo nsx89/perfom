@@ -21,7 +21,7 @@ xhr.onload = function() {
     }
     //console.log(xhr.response);
     smartSearchObj = $.parseJSON(xhr.response);
-    console.log(smartSearchObj);
+    //console.log(smartSearchObj);
 
     /*smartSearchObj.forEach(function(item) {
         smartSearchProdList.push(item.name);
@@ -209,13 +209,20 @@ function debounce(func, ms) {
 //поиск совпадений в объекте
 function findPartial( a, s ) {
     let res = [];
+    let numRes = [];
     let n = 0;
     for (key in a) {
         if( a[key].indexOf(s) >= 0 ) {
-            res.push(key);
+            let show = smartSearchObj[key]['show'];
+            let article = smartSearchObj[key]['article'].trim();
+            if(smartSearchObj[key]['show'] == 'Y') {
+                res.push(key);
+            } else if(s.trim() == article.trim() || s.trim() == a[key].trim()) {
+                numRes.push(key);
+            }
         }
     }
-    return res;
+    return res.concat(numRes);
 }
 
 // основной механизм поиска
@@ -349,17 +356,6 @@ function smartSearchResClearTotal() {
     $('[data-type="smart-search-input"]').val('');
 }
 
-function searchScrollInit(){
-    if(typeof searchScroll === 'undefined') {
-        var searchScroll = $('[data-type="search-scroll"]').jScrollPane({
-            showArrows: false,
-            maintainPosition: false
-        }).data('jsp');
-    } else {
-        searchScroll.reinitialise();
-    }
-}
-
 function smartSearchShortRes() {
 
     let q = $('[data-type="smart-search-input"]').val().trim();
@@ -371,16 +367,20 @@ function smartSearchShortRes() {
                 .then(function(result){
                     $('.smart-search-wait').hide();
                     //console.log("Fulfilled: " + result);
-                    
                     //console.log(result);
-
                     if(result.length > 0) {
                         let smartSearchHtml = getSmartSearchShortPreview(result);
                         $('[data-type="smart-search-items-wrap"]').html(smartSearchHtml);
                         $('.smart-search-short-res').show(function(){
-                            searchScrollInit();
+                            if(typeof searchScroll === 'undefined') {
+                                var searchScroll = $('[data-type="search-scroll"]').jScrollPane({
+                                    showArrows: false,
+                                    maintainPosition: false
+                                }).data('jsp');
+                            } else {
+                                searchScroll.reinitialise();
+                            }
                         });
-                        searchScrollInit();
                         $('.smart-search-result-short-link').show();
                         $('.smart-search-result-qty span').html(result.length);
                         $('.smart-search-result-short').css('display','flex');
@@ -389,47 +389,13 @@ function smartSearchShortRes() {
                             $(this).attr('href','/search/?q='+q).show();
                         })
                     } else {
-
-                        /* --- Точный поиск по артикулу (если ничего не найдено) --- */
-                        $.ajax({
-                            type: "GET",
-                            url: "/smart_search/ajax.php",
-                            data: {
-                                'type': 'get_list_by_articul'
-                                , 'FIND_BY_ARTICUL_VALUE': q
-                            },
-                            success: function(resp){
-                                smartSearchObjArt = $.parseJSON(resp);
-                                if (smartSearchObjArt.length) {
-                                    let smartSearchHtml = getSmartSearchShortPreview(smartSearchObjArt, true);
-                                    $('[data-type="smart-search-items-wrap"]').html(smartSearchHtml);
-                                    $('.smart-search-result-short-link').show();
-                                    $('.smart-search-result-qty span').html(smartSearchObjArt.length);
-                                    $('.smart-search-result-short').css('display','flex');
-                                    $('.smart-search-no-results').hide();
-                                    $('[data-type="smart-search-show-all"]').each(function() {
-                                        $(this).attr('href','/search/?q='+q).show();
-                                    });
-                                    $('.smart-search-short-res').show(function(){
-                                        searchScrollInit();
-                                    });
-                                    searchScrollInit();
-                                    setTimeout(function(){
-                                        searchScrollInit();
-                                    }, 1000);
-                                }
-                                else {
-                                    $('[data-type="smart-search-items-wrap"]').html('');
-                                    $('.smart-search-short-res').hide();
-                                    $('[data-type="smart-search-show-all"]').hide();
-                                    $('.smart-search-result-short-link').hide();
-                                    $('.smart-search-result-qty span').html('0');
-                                    $('.smart-search-result-short').css('display','flex');
-                                    $('.smart-search-no-results').html('Поиск не дал результатов').show();
-                                }
-                            }
-                        });
-                        /* --- // --- */
+                        $('[data-type="smart-search-items-wrap"]').html('');
+                        $('.smart-search-short-res').hide();
+                        $('[data-type="smart-search-show-all"]').hide();
+                        $('.smart-search-result-short-link').hide();
+                        $('.smart-search-result-qty span').html('0');
+                        $('.smart-search-result-short').css('display','flex');
+                        $('.smart-search-no-results').html('Поиск не дал результатов').show();
                     }
                 })
                 .catch(function(err) {
@@ -458,45 +424,32 @@ function smartSearchShortRes() {
 var smartSearchShort = debounce(smartSearchShort, 1000);
 
 // рендерим превьюшки для быстрого поиска
-function getSmartSearchShortPreview(arr, by_articul = false) {
+function getSmartSearchShortPreview(arr) {
     let stop = 11; // сколько товаров выводить в быстром поиске
     let res = '';
     let curr = $('[data-type="header-cart"]').attr('data-curr');
     let user = $('[data-type="personal-data"]').attr('data-user');
     for(let i = 0; i < arr.length && i <= stop; i++) {
-        
-        if (by_articul) var item = arr[i];
-        else var item = smartSearchObj[arr[i]];
-        
-        let cartClass = isInCart(item.id) ? ' active' : '',
-            selloutClass = item.sellout ? ' sellout' : '',
+        let item = smartSearchObj[arr[i]],
+            cartClass = isInCart(item.id) ? ' active' : '',
             inavailableClass = !item.availableToSell ? ' inactive' : '',
             canBuy = item.availableToSell ? 'data-type="cart-add"' : '',
             favClass = isFav(item.id) ? ' active' : '';
-
-        res += '<div class="smart-search-res-item '+selloutClass+'" data-type="prod-prev" data-id="'+item.id+'" data-iscomp="'+item.iscomp+'">';
+        res += '<div class="smart-search-res-item" data-type="prod-prev" data-id="'+item.id+'" data-iscomp="'+item.iscomp+'">';
         res += '<div class="smart-searh-res-img">';
-        if(item.comingSoon != 'Y') {
+        if(!item.comingSoon) {
             res += '<a class="smart-serch-res-link" href="' + item.link + '"></a>';
         }
         res += '<img src="'+item.img+'" alt="'+item.name+'">';
         res += '</div>';
         res += '<div class="smart-search-res-info">';
-        if(item.sellout) {
-            res += '<div class="new-prod sell-out">распродажа</div>';
-        }
-        if(item.comingSoon != 'Y') {
+        if(!item.comingSoon) {
             res += '<a class="smart-serch-res-link" href="' + item.link + '"></a>';
         }
         res += '<p class="smart-search-res-name">'+item.name+'</p>';
-            res += '<div class="smart_search-res-prices">';
-            if(item.price != '') {
-                res += '<p class="smart-search-res-price">' + costFormat(item.price) + '</p>';
-            }
-            if(item.old_price != '') {
-                res += '<p class="smart-search-res-old-price">' + costFormat(item.old_price) + '</p>';
-            }
-            res += '</div>';
+        if(item.price != '') {
+            res += '<p class="smart-search-res-price">' + costFormat(item.price) + '</p>';
+        }
         res += '</div>';
         res += '<div class="ss-icons-wrap">';
         res += '<i class="smart-search-res-fav icon-favorite'+favClass+'" data-type="favorite" data-user="'+user+'" title="Добавить в избранное"></i>';
@@ -546,34 +499,11 @@ function smartSearchFullRes() {
                         $('[data-type="search-resSP-qty"]').show();
                         $('[data-type="search-messSP"]').hide();
                     } else {
-                        /* --- Точный поиск по артикулу (если ничего не найдено) --- */
-                        $.ajax({
-                            type: "GET",
-                            url: "/smart_search/ajax.php",
-                            data: {
-                                'type': 'get_list_by_articul'
-                                , 'FIND_BY_ARTICUL_VALUE': q
-                            },
-                            success: function(resp){
-                                smartSearchObjArt = $.parseJSON(resp);
-                                if (smartSearchObjArt.length) {
-                                    let smartSearchHtml = getSmartSearchFullPreview(smartSearchObjArt, true);
-                                    $('[data-type="search-resSP-prod"]').html(smartSearchHtml);
-                                    $('[data-type="search-resSP"]').show();
-                                    $('[data-type="search-resSP-qty"] span').html(result.length);
-                                    $('[data-type="search-resSP-qty"]').show();
-                                    $('[data-type="search-messSP"]').hide();
-                                }
-                                else {
-                                    $('[data-type="search-resSP-prod"]').html('');
-                                    $('[data-type="search-resSP"]').hide();
-                                    $('[data-type="search-resSP-qty"] span').html('0');
-                                    $('[data-type="search-resSP-qty"]').show();
-                                    $('[data-type="search-messSP"]').html('Поиск не дал результатов').show();
-                                }
-                            }
-                        });
-                        /* --- // --- */
+                        $('[data-type="search-resSP-prod"]').html('');
+                        $('[data-type="search-resSP"]').hide();
+                        $('[data-type="search-resSP-qty"] span').html('0');
+                        $('[data-type="search-resSP-qty"]').show();
+                        $('[data-type="search-messSP"]').html('Поиск не дал результатов').show();
                     }
                 }
             ).catch(function(err) {
@@ -602,28 +532,25 @@ function smartSearchFullRes() {
 var smartSearchFull = debounce(smartSearchFullRes, 1000);
 
 // рендерим превьюшки для страницы поиска
-function getSmartSearchFullPreview(arr, by_articul = false) {
+function getSmartSearchFullPreview(arr) {
     let res = '';
     for(let i = 0; i < arr.length; i++) {
-        
-        if (by_articul) var item = arr[i];
-        else var item = smartSearchObj[arr[i]];
-
-        let curr = $('[data-type="header-cart"]').attr('data-curr'),
-            selloutClass = item.sellout ? ' sellout' : '',
+        let item = smartSearchObj[arr[i]],
+            curr = $('[data-type="header-cart"]').attr('data-curr'),
             favclass = favoriteArr.includes(item.id) ? ' active' : '',
             cartClass = isInCart(item.id) ? ' active' : '',
             inavailableClass = !item.availableToSell ? ' inactive' : '',
             canBuy = item.availableToSell ? 'data-type="cart-add"' : '',
             canBuyOneClick = item.availableToSell ? 'data-type="one-click"' : '';
 
-        res += '<div class="prod-prev'+item.class+' '+selloutClass+'" data-type="prod-prev" data-id="'+item.id+'" data-name="'+item.name+'"  data-code="'+item.code+'" data-price="'+item.price+'" data-curr="'+curr+'" data-cat="'+item.catId+'" data-cat-name="'+item.catName+'" data-iscomp="'+item.iscomp+'"'+item.maur+'>';
-        if(item.comingSoon != 'Y') {
+        res += '<div class="prod-prev'+item.class+'" data-type="prod-prev" data-id="'+item.id+'" data-name="'+item.name+'"  data-code="'+item.code+'" data-price="'+item.price+'" data-curr="'+curr+'" data-cat="'+item.catId+'" data-cat-name="'+item.catName+'" data-iscomp="'+item.iscomp+'"'+item.maur+'>';
+        if(!item.comingSoon) {
             res += '<a href="'+item.link+'"></a>';
         }
         res += '<div class="prod-prev-top">';
         res += '<div class="prod-prev-title">';
-        let itemName = '<span class="prod-prev-name">'+item.name+'</span>';
+        let nameWithoutArticle = item.name.replace(item.article,'');
+        let itemName = '<span class="prod-prev-name">'+nameWithoutArticle+'</span>';
         if(item.catId != 1587) {
             itemName += '<span class="prod-prev-article">';
             itemName += item.article;
@@ -635,9 +562,6 @@ function getSmartSearchFullPreview(arr, by_articul = false) {
         res += itemName;
         if(item.new) {
             res += '<div class="new-prod">новинка</div>';
-        }
-        if(item.sellout) {
-            res += '<div class="new-prod sell-out">распродажа</div>';
         }
         res += '</div>';
         res += '<div class="prod-prev-img">';

@@ -12,11 +12,7 @@
         <div class="content-wrapper">
             <div class="logo-column">
                 <a href="/">
-
-                        <img class="footer-logo-img" src="/img/logo23.png" >
-
-<!--                    <span class="icon-footer-logo">perfom</span>-->
-
+                    <i class="icon-perfom-logo"></i>
                 </a>
             </div>
             <ul class="footer-menu">

@@ -159,7 +159,7 @@ $url = ((!empty($_SERVER['HTTPS'])) ? 'https' : 'http') . '://' . $_SERVER['HTTP
 
 <section class="last-news-items">
     <div class="content-wrapper">
-        <h1>Последние статьи</h1>
+        <div class="last-news-items-head">Последние статьи</div>
         <div data-type="last-news" class="last-news-slider">
             <?
             $res = CIBlock::GetList(Array('sort'=>'asc'),Array('TYPE'=>'news','ACTIVE'=>'Y'), true);

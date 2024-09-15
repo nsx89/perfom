@@ -131,7 +131,7 @@ $breadcrumbs_arr = Array(
             
             //$arFilter = Array('IBLOCK_ID' => $iblockid, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE']);
             
-            $arFilter = Array('IBLOCK_ID' => $iblockid, "!TAGS" => "OFF", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE']);
+            $arFilter = Array('IBLOCK_ID' => $iblockid, "PROPERTY_SHOW_PERFOM" => "Y", "PROPERTY_ARTICUL"=>$point['ARTICLE']['VALUE']);
             
             $db_list = CIBlockElement::GetList(Array("SORT" => "ASC"), $arFilter);
             if ($ob = $db_list->GetNextElement()) {

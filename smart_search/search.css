@@ -203,9 +203,6 @@ body:not(.touchable) .smart-search-result-short-link:hover {
 .smart-search-res-table .jspPane {
     width: 100% !important;
 }
-.smart-search-short-res .jspHorizontalBar {
-    display: none !important;
-}
 
 .smart-search-res-item {
     display: flex;
@@ -369,22 +366,6 @@ body:not(.touchable) .smart-search-res-fav:hover {
 }
 .smart-search-res-fav.active:before {
     content: '\e93b';
-}
-
-.sellout .prod-prev-price, .sellout .smart-search-res-price {
-    color: #E41C1C;
-}
-.smart_search-res-prices {
-    display: flex;
-    align-items: center;
-}
-.smart-search-res-old-price {
-    text-decoration: line-through;
-    color: #a9a9a9;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 12px;
-    margin-top: 1px;
 }
 
 @media screen and (max-width: 1500px) {

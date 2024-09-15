@@ -1,0 +1,245 @@
+/*html {
+    background: url(images/bg0.png);
+}
+div#middle {
+    position: relative;
+    width: auto;
+    height: auto;
+    min-height: 556px;
+}
+div#modules {
+    position: relative;
+    width: 1000px;
+    height: auto;
+    margin: 36px auto 0px auto;
+    border: 1px #eaeaea solid;
+    box-shadow: 0 0 8px 8px #d0cece;
+    -moz-box-shadow: 0 0 8px 8px #d0cece;
+    -webkit-box-shadow: 0 0 8px 8px #d0cece;
+    border-radius: 3px 3px 3px 3px;
+    -moz-border-radius: 3px 3px 3px 3px;
+    -webkit-border-radius: 3px 3px 3px 3px;
+    background: #fff;
+}
+
+div#middle {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+*/
+.ed-cf::after {
+    content:'';
+    display:block;
+    clear:both;
+}
+.ed-articles-wrapper > div {
+    margin: 0px 35px;
+    width: calc(100% - 70px);
+    padding-bottom: 15px;
+}
+.ed-5r {
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.ed-5r p, .ed-5l p {
+    margin:0px;
+    font-size:14px;
+    color:#000;
+    text-indent:30px;
+    font-style:italic;
+    text-align: justify;
+    font-weight: 600;
+}
+.ed-mid .ed-5r p, .ed-mid .ed-5l p {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-size: 12px;
+    font-weight: 400;
+}
+.ed-p-h {
+    border-bottom: 4px solid #f89200;
+    position:relative;
+    //padding-top:47px;
+}
+.ed-p-h.ehed {
+    height:100px;
+}
+.ed-5l, .ed-5r {
+    float:left;
+    width:50%;
+}
+.ed-p-h.ehed .ed-5l, .ed-p-h.ehed .ed-5r {
+    height: 100px;
+}
+.eheh h1 {
+    font-size:24px;
+    color:#f89200;
+    margin: 0px;
+}
+.eheh span {
+    font-size:12px;
+    color:#000;
+    position: absolute;
+    bottom: 5px;
+    font-weight: 600;
+}
+.ed-mid {
+    padding-top: 25px;
+}
+.pr .eheh-imgw {
+    padding: 0px 7px;
+}
+body {
+    font-family: arial;
+}
+.pr .eheh-c-w {
+    padding-right: 15px;
+}
+.pl .eheh-c-w {
+    padding-left:15px;
+}
+.pr .eheh-imgw {
+    padding-bottom:20px;
+}
+.pl .eheh-imgw {
+    padding: 0px 7px;
+    margin-left: 17px;
+}
+.ed-5b.eorb {
+    float:left;
+    width:100%;
+}
+.ed-5b.eorb p {
+    color:#fff;
+    background-color:#f89200;
+    padding:12px;
+    font-size:12px;
+    text-indent: 30px;
+}
+.ed-nullmidimgs {
+    display: flex;
+    margin: 0px !important;
+    width: calc(100% + 30px) !important;
+    justify-content: space-between;
+    padding:0px;
+    padding-bottom: 10px !important;
+}
+.nop p {
+    margin: 0px;
+    font-size:12px;
+}
+.nop {
+    padding: 0px !important;
+}
+.ind {
+    text-indent: 30px;
+}
+.pt10 {
+    padding-top:10px;
+}
+.jfdw {
+    padding: 0px;
+}
+.jfdw .ed-5r p, .jfdw .ed-5l p {
+    margin:0px;
+}
+.pb5 {
+    margin-bottom:7px !important;
+}
+.nml-edo .slider-for-downs div:last-child {
+    margin-left:-35px !important;
+    display: flex;
+    justify-content: space-between;
+}
+.nml-edo p {
+    margin-left:35px;
+}
+.nml-edo .jfdw .ed-5r p, .nml-edo .jfdw .ed-5l p {
+    padding-right: 10px;
+}
+.eheh-imgw-only {
+    padding-bottom: 15px;
+}
+.slider-for-downs {
+    width: 96%;
+}
+.eheh .eheh-imgw-only:last-child {
+    padding: 0px;
+}
+.e-mid.hhs {
+    height: 640px;
+}
+.jfd p {
+    padding-right: 10px;
+    line-height:1.4
+}
+.spaed .pr .eheh-imgw {
+    padding-bottom: 10px;
+}
+.pb10 {
+    padding-bottom: 10px;
+}
+.ml10 {
+    margin-left: 10px;
+}
+.jfdw.nml-edo.hhs > div {
+    height: 630px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    justify-content: space-between;
+}
+.ept1 {
+    padding-top:0px;
+    margin-right: 0px !important;
+    width: calc(100% - 35px) !important;
+}
+.ept1::after {
+    display:block;
+    content:'';
+    clear:both;
+}
+.eptw {
+    float: left;
+    width: calc(34% - 15px);
+    padding-top: 30px;
+    padding-right: 15px;
+}
+.eptw p {
+    font-size:12px;
+    margin:0px;
+    text-indent: 35px;
+    line-height:1.4;
+    text-align: justify;
+}
+.eiw {
+    float:left;
+    width:66%;
+    display: flex;
+    justify-content: space-between;
+}
+.spaed {
+    padding: 0px !important;
+}
+.spaed .pl .eheh-imgw {
+    margin-left:14px;
+    padding-bottom:10px;
+}
+.spaed .pl .eheh-c-w {
+    padding-left: 14px;
+}
+.lastitem {
+    margin:0px !important;
+    width: 100% !important;
+    padding:0px !important;
+}
+.lastitem .ed-5b.eorb {
+    //padding-bottom: 20px;
+    background-color: #fff;
+    margin-bottom:-24px;
+}
+.lastitem .ed-5b.eorb p {
+    text-align: center;
+    font-style: normal !important;
+}

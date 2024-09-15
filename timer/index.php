@@ -17,11 +17,11 @@
     <meta property="og:site_name" content="Перфом - производство полиуретановых изделий, лидер на российском рынке">
     <meta property="og:url" content= "https://perfom-decor.ru/">
 
-    <script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?171',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1869498-hPgXu"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1869498-hPgXu" style="position:fixed; left:-999px;" alt=""/></noscript>
-
 </head>
 
 <body style='-webkit-box-sizing: border-box;box-sizing: border-box;margin: 0;padding: 0;'>
+
+<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?171',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1869498-hPgXu"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1869498-hPgXu" style="position:fixed; left:-999px;" alt=""/></noscript>
 
 <div class='timer-page-main'>
     <div class='timer-block'>

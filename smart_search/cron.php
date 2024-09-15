@@ -2,6 +2,7 @@
 /*ini_set('display_errors', 1);
 error_reporting(E_ALL);*/
 require_once($_SERVER["DOCUMENT_ROOT"] . "/bitrix/modules/main/include/prolog.php");
+require_once($_SERVER["DOCUMENT_ROOT"] . "/include/show_inactive.php");
 require_once($_SERVER["DOCUMENT_ROOT"] . "/smart_search/functions.php");
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog") || !CModule::IncludeModule("search")) {
     exit;
@@ -16,7 +17,7 @@ while ($count_ob = $db_list_country->GetNext()) {
     print_r($count_ob['ID']);
     echo '<br>';
 
-    createProductCache($count_ob['ID'],false);
+    createProductCache($count_ob['ID'],false,$show_inactive);
 
 }
 echo 'end';

@@ -29,106 +29,6 @@
 </script>
 <? } */?>
 
-<? /*
-<script>
-    $(document).ready(function() {
-
-        //Google Tag Manager
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-M25XCJS');
-
-        (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-N96N627');
-
-
-        //Facebook Pixel Code
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '744645889403904');
-        fbq('track', 'PageView');
-
-        <?if ($fbq_ViewContent) { ?>
-        //fbq('track', 'ViewContent');
-        <? } ?>
-
-        //Facebook Pixel Code Olya
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-            n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-            if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-            n.queue=[];t=b.createElement(e);t.async=!0;
-            t.src=v;s=b.getElementsByTagName(e)[0];
-            s.parentNode.insertBefore(t,s)}(window, document,'script',
-            'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '931543860792841');
-        fbq('track', 'PageView');
-
-
-        //Yandex.Metrika counter
-        (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
-            m[i].l=1*new Date();k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
-        (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
-
-        ym(22165486, "init", {
-            id:22165486,
-            clickmap:true,
-            trackLinks:true,
-            accurateTrackBounce:true,
-            webvisor:true,
-            ecommerce:"dataLayer"
-        });
-        window.dataLayer = window.dataLayer || [];
-
-    })
-</script>
-
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-M25XCJS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-
-<noscript>
-    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N96N627" height="0" width="0" style="display:none;visibility:hidden"></iframe>
-</noscript>
-
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=744645889403904&ev=PageView&noscript=1" alt="fb">
-</noscript>
-
-<noscript>
-    <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=931543860792841&ev=PageView&noscript=1" alt="fb">
-</noscript>
-
-<script defer src="https://www.googletagmanager.com/gtag/js?id=UA-45007479-1"></script>
-
-<script>
-window.dataLayer = window.dataLayer || [];
-function gtag(){dataLayer.push(arguments);}
-
-$(document).ready(function() {
-    setTimeout(function(){
-        gtag('js', new Date());
-        gtag('config', 'UA-45007479-1');
-    }, 1500);
-});
-</script>
-
-<noscript>
-    <div><img src="https://mc.yandex.ru/watch/22165486" style="position:absolute; left:-9999px;" alt=""></div>
-</noscript>
-*/ ?>
-
 
 <? 
 $yandexId = $yandexDefaultId = '97077858';
@@ -243,7 +143,9 @@ if ($subdomen <> 'perfom-decor.ru') {
 
        window.dataLayer = window.dataLayer || [];
     </script>
-    <noscript><div><img src="https://mc.yandex.ru/watch/<?= $yandexDefaultId ?>" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+    <noscript>
+	<div><img src="https://mc.yandex.ru/watch/<?= $yandexDefaultId ?>" style="position:absolute; left:-9999px;" alt="" /></div>
+	</noscript>
     <!-- /Yandex.Metrika counter -->
     
 <? } ?>
@@ -270,9 +172,14 @@ if ($subdomen <> 'perfom-decor.ru') {
 <noscript><div><img src="https://mc.yandex.ru/watch/<?= $yandexId ?>" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
 <!-- /Yandex.Metrika counter -->
 
-<!-- Pixel -->
-<script type="text/javascript">!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?173',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1869498-hPgXu"),VK.Retargeting.Hit()},document.head.appendChild(t)}();</script><noscript><img src="https://vk.com/rtrg?p=VK-RTRG-1869498-hPgXu" style="position:fixed; left:-999px;" alt=""/></noscript>
-<!-- /Pixel -->
+<!-- VK-RTRG-1869498-hPgXu -->
+<script type="text/javascript">
+!function(){var t=document.createElement("script");t.type="text/javascript",t.async=!0,t.src='https://vk.com/js/api/openapi.js?173',t.onload=function(){VK.Retargeting.Init("VK-RTRG-1869498-hPgXu"),VK.Retargeting.Hit()},document.head.appendChild(t)}();
+</script>
+<noscript>
+<img src="https://vk.com/rtrg?p=VK-RTRG-1869498-hPgXu" style="position:fixed; left:-999px;" alt=""/>
+</noscript>
+<!-- /VK-RTRG-1869498-hPgXu -->
 
 </body>
 </html>
@@ -280,11 +187,11 @@ if ($subdomen <> 'perfom-decor.ru') {
 <?/*TODO: открыть*/?>
 <? 
 //if (empty($_GET['test'])) {
-    require($_SERVER["DOCUMENT_ROOT"] . "/question_service/achtung_counter.php");
-    require($_SERVER["DOCUMENT_ROOT"] . "/question_service/need_comment.php");
-    require($_SERVER["DOCUMENT_ROOT"] . "/reports/questions_stat_monthly.php");
-    require($_SERVER["DOCUMENT_ROOT"] . "/order_managment/delayed_orders.php");
+    //require($_SERVER["DOCUMENT_ROOT"] . "/question_service/achtung_counter.php");
+    //require($_SERVER["DOCUMENT_ROOT"] . "/question_service/need_comment.php");
+    //require($_SERVER["DOCUMENT_ROOT"] . "/reports/questions_stat_monthly.php");
+    //require($_SERVER["DOCUMENT_ROOT"] . "/order_managment/delayed_orders.php");
 
-    include_once($_SERVER["DOCUMENT_ROOT"].'/cron/urlrewrite/update.php');
+    //include_once($_SERVER["DOCUMENT_ROOT"].'/cron/urlrewrite/update.php'); // 
 //}
 ?>
