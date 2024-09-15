@@ -31,9 +31,13 @@ define("BASKET_EXPIRES", 30); // время жизни куков корзины
 
 define("IB_CATALOGUE",12); // каталог
 
+
+define("TAGGED_CACHE_ON",true); // тегированный кеш, true - включен
+
 /* --- Основной Домен --- */
 
-define("HTTP_HOST", 'perfom-decor.ru');
+//define("HTTP_HOST", 'perfom-decor.ru');
+define("HTTP_HOST", $_SERVER['HTTP_HOST']);
 
 /* --- MEDIA --- */
 
@@ -452,6 +456,7 @@ ob_start(); ?>
         $available_to_sell = false;
         $btns = '';
         ?>
+
         <?if($product['NO_ORDER']['VALUE'] != 'Y' && $cost && $product['COMING_SOON']['VALUE']!='Y') {?>
             <?if($product['OUT_OF_STOCK']['VALUE'] == 'Y' && $my_city == '3109') {
                 $btns = '<div class="prod-prev-no">
@@ -634,6 +639,7 @@ function __random_number_order() {
 // Dem
 function __get_product_cost($item) {
 	$cost = 0;
+
 	// составной
 	if ($item['COMPOSITEPART']['VALUE']) {
 	foreach ($item['COMPOSITEPART']['VALUE'] as $comp_item) {
@@ -646,7 +652,8 @@ function __get_product_cost($item) {
 	}
 	else {
 		$cost_ = _makeprice(CPrice::GetBasePrice($item['ID']));
-		$cost  = $cost_['PRICE'];
+
+        $cost  = $cost_['PRICE'];
 	}
      return $cost;
 }
@@ -1580,7 +1587,7 @@ function build_drop_categories_ids() {
     return $ids;
 }
 
-function build_drop_categories($sections,$collapse = false) {
+function build_drop_categories($collapse = false) {
 
     if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
         return;
@@ -1604,105 +1611,38 @@ function build_drop_categories($sections,$collapse = false) {
     $last_sections = explode('_', $last_sections[count($last_sections)-1]);
 
     ob_start();
-    $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "1", 'CODE' => $sections);
-    $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
-    $ob = $db_list->GetNextElement();
-    /*if ($db_list->SelectedRowsCount() == 0 && $path == '/fasadnyj-dekor/') {
-        header('Location: /404.php'); exit;
-    }*/
-    $l1 = array_merge($ob->GetFields(), $ob->GetProperties());
-
-    $l2_ids = build_drop_categories_ids(); //id категорий для показа
-
-    $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "2", '=SECTION_ID' => $l1['ID'], '=UF_HIDECATALOG' => '0', 'ID' => $l2_ids);
-    $db_list = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilter, false, array('UF_*'));
-
-    $all = (int)$_GET['all'];
-
-    if ($sections == 'interernyj-dekor') { ?>
-        <div>
-            <ul>
-                <?
-                $n = 0;
-                while ($l2 = $db_list->GetNextElement()) {
-                    /*if($n++ == 10) {
-                        echo "</ul><ul>";
-                    }*/
-                    $l2 = array_merge($l2->GetFields(), $l2->GetProperties()); ?>
-                    <? if($collapse && $n++ == 5) { ?>
-                        </ul>
-                        <ul class="cat-collapse-wrap" data-type="cat-collapse-wrap" style="<?= !empty($all) ? 'display: block;' : '' ?>">
-                    <? } ?>
-                    <li <?=(in_array($l2['CODE'],$last_sections))? ' class="active"':''?> <?if($collapse && $n <= 5) echo ' data-type="first-cat"'?>>
-                        <a href="/<?=$l2['CODE']?>/" data-id="<?=$l2['ID']?>">
-                            <?=$l2['NAME']?>
-                        </a>
-                    </li>
- 
-                <? } ?>
-
-            </ul>
-            <? if($collapse) { ?>
-                <? if (!empty($all)) { ?>
-                    <div class="cat-collapse cat-reset-filters" data-type="cat-hide">Свернуть <i class="icon-angle-up"></i></div>
-                <? } else { ?>
-                    <div class="cat-collapse cat-reset-filters" data-type="cat-show">Показать все <i class="icon-angle-down"></i></div>
-                <? } ?>
+    $arFilter = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y',"=UF_SHOW_PERFOM" => "1");
+    $db_list = CIBlockSection::GetList(Array("UF_SORT_PERFOM" => "ASC"), $arFilter, true, array('CODE', 'ID', 'NAME', 'ELEMENT_CNT',"UF_SHOW_PERFOM"));
+    ?>
+    <div>
+        <ul>
+            <?
+            $n = 0;
+            while ($ob = $db_list->GetNextElement()) {
+            $cat = array_merge($ob->GetFields(), $ob->GetProperties());
+            //print_r($cat);
+            ?>
+            <? if($collapse && $n++ == 5) { ?>
+        </ul>
+        <ul class="cat-collapse-wrap" data-type="cat-collapse-wrap" style="<?= !empty($all) ? 'display: block;' : '' ?>">
             <? } ?>
-        </div>
+            <li <?=(in_array($cat['CODE'],$last_sections))? ' class="active"':''?> <?if($collapse && $n <= 5) echo ' data-type="first-cat"'?>>
+                <a href="/<?=$cat['CODE']?>/" data-id="<?=$cat['ID']?>">
+                    <?=$cat['NAME']?>
+                </a>
+            </li>
+            <? } ?>
+        </ul>
+        <? if($collapse) { ?>
+            <? if (!empty($all)) { ?>
+                <div class="cat-collapse cat-reset-filters" data-type="cat-hide">Свернуть <i class="icon-angle-up"></i></div>
+            <? } else { ?>
+                <div class="cat-collapse cat-reset-filters" data-type="cat-show">Показать все <i class="icon-angle-down"></i></div>
+            <? } ?>
+        <? } ?>
+    </div>
 
-    <? } else {
-        //$item_separator = array(4); // сепаратор уровня 2
-        $i = 0;
-        ?>
-        <div>
-            <ul>
-                <?
-                while ($l2 = $db_list->GetNextElement()) {
-                $l2 = array_merge($l2->GetFields(), $l2->GetProperties());
-                $arFilterl2 = Array('IBLOCK_ID' => IB_CATALOGUE, 'GLOBAL_ACTIVE' => 'Y', 'ACTIVE' => 'Y', "DEPTH_LEVEL" => "3", '=SECTION_ID' => $l2['ID'], '=UF_HIDECATALOG' => '0');
-                $db_listl2 = CIBlockSection::GetList(Array("SORT" => "ASC"), $arFilterl2, false, array('UF_*'));
-                $l3list = array();
-                while ($l3 = $db_listl2->GetNextElement()) {
-                    $l3 = array_merge($l3->GetFields(), $l3->GetProperties());
-                    $l3list[] = $l3;
-                }
-                $i++;
-                    if (count($l3list)) { ?>
-                        <li class="has-child first-line">
-                            <span><?=$l2['NAME']?>:</span>
-                            <ul>
-                                <? foreach ($l3list as $l3) { ?>
-                                    <li <?=(in_array($l3['CODE'],$last_sections))? ' class="active"':''?>>
-                                        <a href="/<?=$l2['CODE']?>/<?=$l3['CODE']?>" data-id="<?=$l3['ID']?>"><?=$l3['NAME']?></a></li>
-                                <? } ?>
-                            </ul>
-                        </li>
-                    <? } else { ?>
-
-                        <? if ($l1['ID'] == 1614) { ?>
-
-                            <li class="first-line<?=(in_array($l2['CODE'],$last_sections))? ' active':''?>">
-                                <a href="/<?=$l1['CODE']?>/<?=$l2['CODE']?>/" data-id="<?=$l2['ID']?>"><?=$l2['NAME']?></a>
-                            </li>
-
-                        <? } else { ?>
-                        
-                            <li class="first-line<?=(in_array($l2['CODE'],$last_sections))? ' active':''?>">
-                                <a href="/<?=$l2['CODE']?>/" data-id="<?=$l2['ID']?>"><?=$l2['NAME']?></a>
-                            </li>
-
-                        <? } ?>
-
-                    <? } ?>
-                    <?/* if (in_array($i,$item_separator)) { ?>
-                        </ul>
-                        <ul>
-                    <? } */?>
-                <? } ?>
-            </ul>
-        </div>
-    <? }
+    <?
     $html = ob_get_clean();
     return $html;
 }
@@ -3546,8 +3486,8 @@ function _get_stat_dealer_pdf($id)
     return $html;
 }
 
-
-$city_loc_id = array(
+if (strripos($_SERVER['HTTP_HOST'],'perfom-decor.ru') === false) $city_loc_id = array();
+else $city_loc_id = array(
                 '3196'  => 'spb.perfom-decor.ru',
                 '3331'  => 'lipetsk.perfom-decor.ru',
                 '3152'  => 'krasnoyarsk.perfom-decor.ru',
@@ -3736,4 +3676,70 @@ function _get_city_by_subdomen(){
     $host = $_SERVER['HTTP_HOST'];
     $city_id = array_search($host, $city_loc_id);
     return $city_id;
+}
+
+
+function get_breadcrumbs_arr($sections_list) {
+    //if (empty($_GET['test'])) return;
+    $breadcrumbs_arr = Array();
+    foreach ($sections_list as $i=>$section_item) {
+        $b_arr = Array();
+        if ($i == 0) {
+            if ($section_item['CODE'] == 'interernyj-dekor' || $section_item['CODE'] == 'composite') {
+                $link = '/karnizy/';
+                $b_arr['name'] = "каталог ИНТЕРЬЕР";
+                $b_arr['link'] = $link;
+                $b_arr['title'] = 'каталог ИНТЕРЬЕР - карнизы';
+            } elseif ($section_item['CODE'] == 'fasadnyj-dekor') {
+                $link = '/karnizi/';
+                $b_arr['name'] = "каталог ФАСАД";
+                $b_arr['link'] = $link;
+                $b_arr['title'] = 'каталог ФАСАД - карнизы';
+            } else {
+                $link = '/' . $section_item['CODE'] . '/';
+                $b_arr['name'] = "каталог КОЛЛЕКЦИЯ";
+                $b_arr['link'] = $link;
+                $b_arr['title'] = 'каталог КОЛЛЕКЦИЯ';
+            }
+        } elseif ($i == 1) {
+            if($section_item['CODE'] === 'cornices_composite') { // карнизы композиты
+                $b_arr['name'] = $section_item['NAME'];
+                $b_arr['link'] = '/karnizy/';
+                $b_arr['title'] = $section_item['NAME'];
+            } elseif($section_item['CODE'] === 'mouldings_composite') { // молдинги композиты
+                $b_arr['name'] = $section_item['NAME'];
+                $b_arr['link'] = '/moldingi/';
+                $b_arr['title'] = $section_item['NAME'];
+            } elseif($section_item['CODE'] === 'floor_mouldings_composite') { // плинтусы композиты
+                $b_arr['name'] = $section_item['NAME'];
+                $b_arr['link'] = '/plintusy/';
+                $b_arr['title'] = $section_item['NAME'];
+            } elseif($section_item['CODE'] === 'klei-90') { // клей
+                $breadcrumbs_arr[0] = Array(
+                    'name' => $section_item['NAME'],
+                    'link' => '/adhesive/',
+                    'title' => $section_item['NAME'],
+                );
+                continue;
+            } elseif($section_item['CODE'] === 'dekorativnye-elementy') { // декоративные элементы
+                $b_arr['name'] = $section_item['NAME'];
+                $b_arr['link'] = '/collection/new_art_deco/#dekorativnye-elementy';
+                $b_arr['title'] = $section_item['NAME'];
+            }  else {
+                $link = '/' .$section_item['CODE'] . '/';
+                $b_arr['name'] = $section_item['NAME'];
+                $b_arr['link'] = $link;
+                $b_arr['title'] = $section_item['NAME'];
+            }
+        } elseif ($i == 2) {
+            $link = '/' . $section_item['CODE'] . '/';
+            $b_arr['name'] = $breadcrumbs_arr[1]['name'].': '.$section_item['NAME'];
+            $b_arr['link'] = $link;
+            $b_arr['title'] = $section_item['NAME'];
+            $breadcrumbs_arr[1] = $b_arr;
+            continue;
+        }
+        $breadcrumbs_arr[] = $b_arr;
+    }
+    return $breadcrumbs_arr;
 }

@@ -6,16 +6,7 @@ if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
 
 $type = $_GET['type'];
 
-$base_url = "https://perfom-decor.ru";
-if($_SERVER['HTTP_HOST'] == 'eplast.loc') {
-    $base_url = "http://eplast.loc";
-}
-if($_SERVER['HTTP_HOST'] == 'e.loc') {
-    $base_url = "http://e.loc";
-}
-if($_SERVER['HTTP_HOST'] == 'dev-evroplast.ru') {
-    $base_url = "https://dev-evroplast.ru";
-}
+$base_url = "https://".$_SERVER['HTTP_HOST'];
 
 //проверка авторизации и прав
 global $USER;
@@ -61,7 +52,7 @@ function check_val_reverse($n) {
 	}
 }
 
-//счетчик evroplast.ru
+//счетчик perfom-decor.ru
 function counter() {
 	$db_props = CIBlockElement::GetProperty(38, 41816, array("sort" => "asc"), Array("CODE"=>"COUNT_NUMBER"));
 	if($ar_props = $db_props->Fetch()) {
@@ -112,19 +103,19 @@ function get_email($reg_id) {
 		$reg_mail = $reg_loc['techmail']['VALUE'];
 	}
 	else {
-	  //$reg_mail = "D.Rudykin@decor-evroplast.ru";
-	  $reg_mail = "L.Osetrova@decor-evroplast.ru";
-	  //$reg_mail = "V.Dudnikova@decor-evroplast.ru";
+	  //$reg_mail = "D.Rudykin@decor-perfom-decor.ru";
+	  $reg_mail = "L.Osetrova@decor-perfom-decor.ru";
+	  //$reg_mail = "V.Dudnikova@decor-perfom-decor.ru";
 	}
-	//if($reg_mail == "G.Groian@decor-evroplast.ru") $reg_mail = "D.Rudykin@decor-evroplast.ru";
-	if($reg_mail == "G.Groian@decor-evroplast.ru" ||
-        $reg_mail == "D.Rudykin@decor-evroplast.ru") {
-        $reg_mail = "L.Osetrova@decor-evroplast.ru";
-        //$reg_mail = "V.Dudnikova@decor-evroplast.ru";
+	//if($reg_mail == "G.Groian@decor-perfom-decor.ru") $reg_mail = "D.Rudykin@decor-perfom-decor.ru";
+	if($reg_mail == "G.Groian@decor-perfom-decor.ru" ||
+        $reg_mail == "D.Rudykin@decor-perfom-decor.ru") {
+        $reg_mail = "L.Osetrova@decor-perfom-decor.ru";
+        //$reg_mail = "V.Dudnikova@decor-perfom-decor.ru";
     }
 
     //по 30.04.2021
-    //$reg_mail = $reg_mail == "D.Rudykin@decor-evroplast.ru" ? "n.ovchinnikova@decor-evroplast.ru" : $reg_mail;
+    //$reg_mail = $reg_mail == "D.Rudykin@decor-perfom-decor.ru" ? "n.ovchinnikova@decor-perfom-decor.ru" : $reg_mail;
 
 	return $reg_mail;
 }
@@ -134,71 +125,71 @@ function send_to_spec($spec,$spec_subj,$spec_mail,$templ) {
 foreach($spec as $name) {
 	if($name == "Ольга Гмыря") {
 
-		//$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-		//$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	//CEvent::SendImmediate($templ, s1, $fields, "N");
+		//$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+		//$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	//CEvent::SendImmediate($templ, 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate($templ, s1, $fields, "N");
-        $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate($templ, s1, $fields, "N");
+        $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        CEvent::SendImmediate($templ, 's2', $fields, "N");
+        $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Александра Высоцкая") {
 
-		$fields = array('EMAIL'=>'A.Visotskaya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'A.Visotskaya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Сергей Авдеев") {
 
-		$fields = array('EMAIL'=>'S.Avdeev@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'S.Avdeev@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Наталья Овчинникова") {
 
-		$fields = array('EMAIL'=>'n.ovchinnikova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'n.ovchinnikova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Ольга Кока") {
 
-		$fields = array('EMAIL'=>'O.Koka@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'O.Koka@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Андрей Чиличихин") {
 
-		$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 	if($name == "Дмитрий Рудыкин") {
-		$fields = array('EMAIL'=>'D.Rudykin@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-		//$fields = array('EMAIL'=>'L.Osetrova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        //$fields = array('EMAIL'=>'V.Dudnikova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'D.Rudykin@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+		//$fields = array('EMAIL'=>'L.Osetrova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        //$fields = array('EMAIL'=>'V.Dudnikova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
     if($name == "Любовь Осетрова") {
-        $fields = array('EMAIL'=>'L.Osetrova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        //$fields = array('EMAIL'=>'V.Dudnikova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate($templ, s1, $fields, "N");
+        $fields = array('EMAIL'=>'L.Osetrova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        //$fields = array('EMAIL'=>'V.Dudnikova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        CEvent::SendImmediate($templ, 's2', $fields, "N");
     }
     if($name == "Наталья Рябчикова") {
 
-        $fields = array('EMAIL'=>'N.Ryabchikova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate($templ, s1, $fields, "N");
+        $fields = array('EMAIL'=>'N.Ryabchikova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        CEvent::SendImmediate($templ, 's2', $fields, "N");
     }
     if($name == "Валентина Дудникова") {
-        $fields = array('EMAIL'=>'V.Dudnikova@decor-evroplast.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate($templ, s1, $fields, "N");
+        $fields = array('EMAIL'=>'V.Dudnikova@decor-perfom-decor.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+        CEvent::SendImmediate($templ, 's2', $fields, "N");
     }
 	if($name == "Алексей Брук") {
-		$fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate($templ, s1, $fields, "N");
+		$fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	CEvent::SendImmediate($templ, 's2', $fields, "N");
 	}
 }
 
 // дублирование
-$fields = array('EMAIL'=>'nsxtest@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-CEvent::SendImmediate($templ, s1, $fields, "N");
+$fields = array('EMAIL'=>'nadida.hi@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+CEvent::SendImmediate($templ, 's2', $fields, "N");
 $fields = array('EMAIL'=>'d.portu.by@yandex.ru','SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-//CEvent::SendImmediate($templ, s1, $fields, "N");
+//CEvent::SendImmediate($templ, 's2', $fields, "N");
 
 }
 
@@ -359,6 +350,7 @@ $PROP['QST_SPEC'] = $spec;
 $PROP['QST_DATE'] = $date;
 $PROP['QST_PAGE'] = $_POST['aqs-page'];
 $PROP['QST_LOC'] = $qst_loc;
+$PROP['PERFOM'] = 'Y';
 
 $arLoadProductArray = Array(
   "IBLOCK_SECTION_ID" => false,
@@ -419,9 +411,9 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
    $user_sign .= '<strong>Мы ответим на ваш вопрос в ближайшее время.</strong>';
 
   	$fields = array('EMAIL'=>$mail, 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
-      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail,'SIGN'=>$user_sign);
+      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
    //сотрудникам
       $spec_subj = "Вопрос №".$number.". Поступил новый вопрос.";
@@ -438,24 +430,24 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
  		$mod_mail = $spec_first.$from_ryk.$qst_text.$spec_last;
 
       /*$fields = array('EMAIL'=>$mail, 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-      	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");*/
+      	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");*/
 
-        //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
    	// дублирование
    	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-   	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-   	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-   	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+   	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
     }
     else {
 
@@ -463,27 +455,27 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
     		$mod_mail = $spec_first.$from_ryk.$qst_text.$spec_last;
 
     		/*$fields = array('EMAIL'=>$mail, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");*/
+      	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");*/
 
-        //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-      	$fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      	$fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
       	// дублирование
       	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-      	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
-      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$mod_mail);
+      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
       	$templ = "E_QST_SERV";
 
@@ -690,7 +682,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 	$spec_mail = $spec_first.$from.$qst_text.$spec_last;
 
 	/*$fields = array('EMAIL'=>$mail, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");*/
+   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");*/
 
    $templ = "E_QST_SERV";
 
@@ -712,7 +704,7 @@ if ( $type == "putoff" ) {
     if(!$USER->IsAuthorized() || $USER->IsAuthorized() && !$USER->IsAuthorized()) {
         die();
     }
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 	$send_date = date('d.m.Y H:i:s');
 	$stat = "Вопрос отложен";
 
@@ -729,7 +721,7 @@ if ( $type == "puton" ) {
     if(!$USER->IsAuthorized() || $USER->IsAuthorized() && !$USER->IsAuthorized()) {
         die();
     }
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 	$send_date = date('d.m.Y H:i:s');
 	$stat = "Вопрос прочитан";
 
@@ -749,7 +741,7 @@ if( $type == "answ") {
         die();
     }
 
-	$qst_id = (int)$_GET['id'];
+	$qst_id = $_GET['id'];
 
 	// проверка на спам
     $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$qst_id,'ACTIVE'=>'Y'));
@@ -862,9 +854,9 @@ if( $type == "answ") {
 				    </tr>';
 
 		   $fields = array('EMAIL'=>$mail, 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
-		      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-		   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
-		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+		      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+		   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$user_subj,'TEXT'=>$user_mail);
+		      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 		   //модератору
 		   $mod_link = $base_url."/question_service/answer.php?ext_id=".$ext_id;
@@ -874,27 +866,27 @@ if( $type == "answ") {
 		   $mod_mail = $mod_first.$qst_text.$answ_text.$answ_sign.$mod_last;
 
 		   /*$fields = array('EMAIL'=>$mail, 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-		    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");*/
+		    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");*/
 
 
-        //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-        //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-        //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+        //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+        //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-        $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-		   $fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-		   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+		   $fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+		   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 		   $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+		      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-		   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
-		      	  	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+		   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$mod_subj,'TEXT'=>$mod_mail);
+		      	  	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 	}//endif
 
@@ -909,8 +901,7 @@ if ( $type=="comm" ) {
     }
 
 // проверка на спам
-$id = (int)$_GET['id'];
-$inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
+$inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
 if (intval($inbase->SelectedRowsCount()) == 0) {
     //print 'err!';
     die();
@@ -1030,7 +1021,7 @@ $spec_last .= '<p style="font-size:16px;margin:0;color:#000;">Для ответ�
 $spec_mail = $spec_first.$from.$letter_text.$spec_last;
 
 /*$fields = array('EMAIL'=>$user_mail,'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");*/
+CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");*/
 
 
 $templ = "E_QST_SERV";
@@ -1038,7 +1029,7 @@ $templ = "E_QST_SERV";
 send_to_spec($spec,$spec_subj,$spec_mail,$templ);
 
 $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 echo $who.", ".$comm_date_data;
 
@@ -1083,7 +1074,7 @@ if (intval($inbase->SelectedRowsCount()) == 0) {
 $user_score = "";
 $user_comm = "";
 
-$id = (int)$_GET['id'];
+$id = $_GET['id'];
 
 $res = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
 
@@ -1250,20 +1241,20 @@ $spec_mail = $spec_first.$from.$user_score.$user_comm.$spec_last;
 $templ = "E_QST_SERV";
 
 
-//$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-//$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+//$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+//$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-$fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+$fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 send_to_spec($spec,$spec_subj,$spec_mail,$templ);
 
@@ -1283,25 +1274,25 @@ else {
 	$spec_mail = $spec_first.$user_score.$user_comm.$spec_last;
 
 	$fields = array('EMAIL'=>$user_mail, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-   	CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   	CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 
-    //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-	$fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+	$fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+	   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 	$fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-	$fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-	   CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+	   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+	$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+	   CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 	}
 }
@@ -1315,7 +1306,7 @@ if ( $type == "del" ) {
         die();
     }
 
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 
 	if(CIBlock::GetPermission(37)>='W') {
 		$DB->StartTransaction();
@@ -1339,14 +1330,13 @@ if ( $type == "check" ) {
     }
 
     // проверка на спам
-    $id = (int)$_GET['id'];
-    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
+    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
     if (intval($inbase->SelectedRowsCount()) == 0) {
         //print 'err!';
         die();
     }
 
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 
 	$date = date('d.m.Y H:i:s');
 
@@ -1422,8 +1412,8 @@ if ( $type == "check" ) {
 
 	$spec_mail = $spec_first.$from.$qst_text.$spec_last;
 
-	 $fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+	 $fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
    $templ = "E_QST_SERV";
 	send_to_spec($spec,$spec_subj,$spec_mail,$templ);
@@ -1521,27 +1511,27 @@ CIBlockElement::SetPropertyValuesEX($id,37,array("SEND_DEALER"=>$dealer_mail,"SE
 	$dealer_text = $dealer_first.$from.$qst_text.$dealer_last;
 
 	$fields = array('EMAIL'=>$dealer_mail, 'SUBJ'=>$dealer_subj,'TEXT'=>$dealer_text);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
   	$mod_text = $mod_first.$from.$qst_text.$mod_last;
 
 
-    //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-    //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-    //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+    //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+    //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-   $fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   $fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
    $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$dealer_subj,'TEXT'=>$mod_text);
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
    $data = "Вопрос переадресован дилеру на e-mail: <span>".$dealer_mail."</span>";
 
@@ -1557,7 +1547,7 @@ if ( $type=="edit_answ" ) {
         die();
     }
 
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 
 	if($_POST['edit-text']) $text = $_POST['edit-text'];
 	$text = str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$text);
@@ -1598,7 +1588,7 @@ if ( $type=="edit_add" ) {
         die();
     }
 
-	$id = (int)$_GET['id'];
+	$id = $_GET['id'];
 	$id_add = $_GET['id_add'];
 
 	if($_POST['edit-text-add']) $text = $_POST['edit-text-add'];
@@ -1698,21 +1688,21 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 	$spec_mail = $spec_first.$from;
 
 
-    //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    //$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-    $fields = array('EMAIL'=>'s.burova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    //$fields = array('EMAIL'=>'a.chilichihin@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+    $fields = array('EMAIL'=>'s.burova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-    $fields = array('EMAIL'=>'d.mescheryakova@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    $fields = array('EMAIL'=>'d.mescheryakova@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
-   //$fields = array('EMAIL'=>'A.Bruk@decor-evroplast.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      //CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+   //$fields = array('EMAIL'=>'A.Bruk@decor-perfom-decor.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      //CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
    $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
-   $fields = array('EMAIL'=>'nsxtest@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-      CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+   $fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+      CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 
    echo "ok";
@@ -1724,7 +1714,7 @@ if($PRODUCT_ID = $el->Add($arLoadProductArray)) {
 // ДИЛЕР ПИШЕТ ОТЧЕТ
 if ( $type == "report" ) {
 
-    $id = (int)$_GET['id'];
+    $id = $_GET['id'];
     $dealer_id = isset($_GET['d']) ? $_GET['d'] : '';
 
     $report = $_POST['dealer-report'];
@@ -1748,11 +1738,11 @@ if ( $type == "report" ) {
 
     if($item['MY_CITY']['VALUE'] == 3109) {
         $email_manager = array( '',// 0 - пустой
-            //'store@decor-evroplast.ru',
-            'kdvor@decor-evroplast.ru',
-            'nahim@decor-evroplast.ru',
-            'salonn@decor-evroplast.ru',
-            'shop@decor-evroplast.ru',
+            //'store@decor-perfom-decor.ru',
+            'kdvor@decor-perfom-decor.ru',
+            'nahim@decor-perfom-decor.ru',
+            'salonn@decor-perfom-decor.ru',
+            'shop@decor-perfom-decor.ru',
         );
         $dealer_name = get_dealer_phone($email_manager[$dealer_id])['addr'];
         if($dealer_email == '') $dealer_email = $email_manager[$dealer_id];
@@ -1802,14 +1792,13 @@ if ( $type == "report" ) {
 
 
     // проверка на спам
-    $id = (int)$_GET['id'];
-    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$id,'ACTIVE'=>'Y'));
+    $inbase = CIBlockElement::GetList(Array(),Array('IBLOCK_ID'=>37,'ID'=>$_GET['id'],'ACTIVE'=>'Y'));
     if (intval($inbase->SelectedRowsCount()) == 0) {
         //print 'err!';
         die();
     }
 
-    $id = (int)$_GET['id'];
+    $id = $_GET['id'];
 
     $report = $_POST['dealer-report'];
     $report = str_replace(array("\r\n","\r","\n","\\r","\\n","\\r\\n"),"<br/>",$report);
@@ -1870,11 +1859,11 @@ if ( $type == "report" ) {
     $spec_last .= '<p style="font-size:16px;margin:0;color:#000;">Для детального просмотра <a href="'.$spec_link.'" target="_blank" style="color:#849795;">перейдите по ссылке</a>.</p>';
 
     $spec_mail = $spec_first.$from.$letter_text.$spec_last;
-    $hidden_email = 'nsxtest@yandex.ru';
+    $hidden_email = 'nadida.hi@yandex.ru';
 
-    //$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru,L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    $fields = array('EMAIL'=>'L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-    CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+    //$fields = array('EMAIL'=>'o.gmirya@decor-perfom-decor.ru,L.Osetrova@decor-perfom-decor.ru,d.mescheryakova@decor-perfom-decor.ru,s.burova@decor-perfom-decor.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    $fields = array('EMAIL'=>'L.Osetrova@decor-perfom-decor.ru,d.mescheryakova@decor-perfom-decor.ru,s.burova@decor-perfom-decor.ru','HIDDEN_EMAIL'=>$hidden_email, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
+    CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
 
 
 
@@ -1886,13 +1875,13 @@ if ( $type == "report" ) {
 
 // ЗАПРОШЕН КОММЕНТАРИЙ
 if ( $type == "need_comm" ) {
-    if(!$USER->IsAuthorized()) {
+    /*if(!$USER->IsAuthorized()) {
         print('not authorized');
         die();
     } else {
         print('is authorized');
         die();
-    }
+    }*/
     $id = $_REQUEST['id'];
 
     //собираем данные из вопроса
@@ -1933,11 +1922,11 @@ if ( $type == "need_comm" ) {
     //москва
     if($user_reg == 3109) {
         $email_manager = array( '',// 0 - пустой
-            //'store@decor-evroplast.ru',
-            'kdvor@decor-evroplast.ru',
-            'nahim@decor-evroplast.ru',
-            'salonn@decor-evroplast.ru',
-            'shop@decor-evroplast.ru',
+            //'store@decor-perfom-decor.ru',
+            'kdvor@decor-perfom-decor.ru',
+            'nahim@decor-perfom-decor.ru',
+            'salonn@decor-perfom-decor.ru',
+            'shop@decor-perfom-decor.ru',
         );
         $res = CIBlockElement::GetList(Array(), Array('IBLOCK_CODE' => 'order_counters', 'CODE' => 'dealer_rotation'));
         while($ob = $res->GetNextElement()) {
@@ -1961,50 +1950,52 @@ if ( $type == "need_comm" ) {
         $no_print = true;
 
 
-        require_once($_SERVER["DOCUMENT_ROOT"] . "/ajax/getdealers.php");
+        require_once($_SERVER["DOCUMENT_ROOT"] . "/ajax/get_contacts.php");
 
-        foreach ($items as $k=>$v) {
-            if($k == 'city' || $k == 'discountregion' || $k == 'point') continue;
-            $dealer = $v['point'][0];
-            break;
+        if(!empty($list['main_dealers'])) {
+            $dealer = $list['main_dealers'][0];
+        } elseif(!empty($list['items'])) {
+            $dealer = $list['items'][0];
         }
 
         if($dealer) {
-            //$dealer = $items[0];
-            if($dealer['qs_email']['~VALUE'] != '') {
-                $dealer_email =  $dealer['qs_email']['~VALUE'];
-            } elseif($dealer['orderemail']['~VALUE'] != '') {
-                $dealer_email =  $dealer['orderemail']['~VALUE'];
+            if(!empty($dealer['qs_email'])) {
+                $dealer_email =  $dealer['qs_email'];
+            } elseif(!empty($dealer['orderemail'])) {
+                $dealer_email =  $dealer['orderemail'];
             } else {
-                $dealer_email =  $dealer['email']['~VALUE'];
+                $dealer_email =  $dealer['email'];
             }
-            $dealer_id = $dealer['ID'];
-            $dealer_name = $dealer['NAME'];
+            $dealer_id = $dealer['id'];
+            $dealer_name = $dealer['qs_name'];
         }
     }
-
-    //$dealer_email = '';
 
    if($dealer_email != '') {
         //формируем письмо
         $spec_link = $base_url."/question_service/answer.php?ext_id=".$ext_id.'&d='.$dealer_id.'&stat=dealer';
-        $spec_subj = "На сайте ".$_SERVER['SERVER_NAME']." запрошен комментарий к вопросу №".$number;
+        $spec_subj = "На сайте perfom-decor.ru запрошен комментарий к вопросу №".$number;
 
-        $spec_first = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#000;">Уважаемые партнёры, в&nbsp;службу технической поддержки сайта <a href="https://perfom-decor.ru/"  target="_blank"style="color: #000;">perfom-decor.ru</a> поступил запрос на&nbsp;продукцию Европласт в&nbsp;вашем регионе.</p>';
+        $spec_first = '<p style="margin:0px;margin-top:35px;font-size:16px;color:#000;">Уважаемые партнёры, в&nbsp;службу технической поддержки сайта <a href="https://perfom-decor.ru/"  target="_blank"style="color: #000;">perfom-decor.ru</a> поступил запрос на&nbsp;продукцию Перфом в&nbsp;вашем регионе.</p>';
 
         $spec_last .= '<p style="font-size:16px;margin:0;color:#000;">Просьба связаться с&nbsp;клиентом и&nbsp;заполнить комментарий о&nbsp;проделанной работе <a href="'.$spec_link.'" target="_blank" style="color:#849795;">по&nbsp;ссылке</a>.</p>';
 
         $spec_mail = $spec_first.$spec_last;
 
+        $send_emails = $dealer_email.', L.Osetrova@decor-perfom-decor.ru,d.mescheryakova@decor-perfom-decor.ru,s.burova@decor-perfom-decor.ru';
+        $hidden_emails = 'd.portu.by@yandex.ru, nadida.hi@yandex.ru';
 
-        //$send_emails = $dealer_email.', o.gmirya@decor-evroplast.ru, L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru';
-        $send_emails = $dealer_email.', L.Osetrova@decor-evroplast.ru,d.mescheryakova@decor-evroplast.ru,s.burova@decor-evroplast.ru';
-        $hidden_emails = 'd.portu.by@yandex.ru, nsxtest@yandex.ru';
+        // для отладки
+       //$send_emails = 'nadida.hi@yandex.ru';
+       //$hidden_emails = 'nadida.hi@gmail.com';
+
         $fields = array('EMAIL'=>$send_emails, 'HIDDEN_EMAIL'=>$hidden_emails, 'SUBJ'=>$spec_subj,'TEXT'=>$spec_mail);
-        CEvent::SendImmediate("E_QST_SERV", s1, $fields, "N");
+        CEvent::SendImmediate("E_QST_SERV", 's2', $fields, "N");
+
+
 
         //сохраняем в бд
-        CIBlockElement::SetPropertyValuesEX($id,37,array("REQ_COMM"=>'Y','REQ_COMM_EMAIL'=>$dealer_email,'REQ_COMM_ID'=>$dealer_id,'REQ_COMM_DATE'=> date($DB->DateFormatToPHP(FORMAT_DATETIME)),'QST_UPLOAD'=>'N'));
+       CIBlockElement::SetPropertyValuesEX($id,37,array("REQ_COMM"=>'Y','REQ_COMM_EMAIL'=>$dealer_email,'REQ_COMM_ID'=>$dealer_id,'REQ_COMM_DATE'=> date($DB->DateFormatToPHP(FORMAT_DATETIME)),'QST_UPLOAD'=>'N'));
     }
 
 

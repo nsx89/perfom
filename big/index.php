@@ -15,7 +15,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 <link href="/big/css/main.css?v=1" type="text/css"  rel="stylesheet"/>
 <link href="/big/css/responsive.css" type="text/css"  rel="stylesheet"/>
 <div class="main-slider-wrap">
-    <noindex><div class="main-slider-preloader"><img src="/img/preloader.gif" alt="Подождите..."></div></noindex>
+    <div class="main-slider-preloader"><img src="/img/preloader.gif" alt="Подождите..."></div>
     <div class="main-slider" data-type="main-slider">
         <div class="main-slide">
             <div class="main-slide-caption">стиль, <br>отточенный <br>временем</div>

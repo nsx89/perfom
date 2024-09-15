@@ -2,11 +2,6 @@
 function FilterRegion($CATALOG_FILTER) {
     global $APPLICATION;
 
-    return $CATALOG_FILTER;
-
-    /*
-    Убираем различия по регионам 
-
     $my_city = $APPLICATION->get_cookie('my_city');
 
     $arFilter_city = Array('IBLOCK_ID' => 7, 'ACTIVE' => 'Y', 'ID' => $my_city);
@@ -19,13 +14,12 @@ function FilterRegion($CATALOG_FILTER) {
         $arFilter_element = $currency_infо['filter'];
         if($arFilter_element) $CATALOG_FILTER[] = array("LOGIC" => "OR", $arFilter_element, array(">PROPERTY_COMPOSITEPART" => 0));
     }
-    */
     return $CATALOG_FILTER;
 }
 
 function CatalogFilter($section_id,$filter = null,$classes = null,$styles = null) {
     //$CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
-    $CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "TAGS" => "Y");
+    $CATALOG_FILTER = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_SHOW_PERFOM" => "Y");
     $CATALOG_FILTER = FilterRegion($CATALOG_FILTER);
 
     foreach ($filter as $k => $itemf) {
@@ -76,15 +70,14 @@ function CatalogFilter($section_id,$filter = null,$classes = null,$styles = null
 }
 
 function CatalogFullFilter($section_id,$filter = null,$classes = null,$styles = null) {
-    //$CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "!PROPERTY_HIDE_GENERAL" => "Y");
-    $CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "TAGS" => "Y");
+    $CATALOG_FILTER_FULL = Array('IBLOCK_ID' => IB_CATALOGUE, "SECTION_ID" => $section_id, 'INCLUDE_SUBSECTIONS' => 'Y', "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", "PROPERTY_SHOW_PERFOM" => "Y");
     $CATALOG_FILTER_FULL = FilterRegion($CATALOG_FILTER_FULL);
     
 			$classes = explode(',', $classes);
 			$styles = explode(',', $styles);
 			// Пока не разделяем, фильтр в один массив $classes нет необходимости
-			
-			/*	
+
+			/*
 			$temp_classes['LOGIC'] = 'OR';
 			if (count($classes) > 0) {
 				foreach ($classes as $c) {
@@ -95,7 +88,7 @@ function CatalogFullFilter($section_id,$filter = null,$classes = null,$styles = 
 			*/
 			/*
 			$temp_f['LOGIC'] = 'AND';
-			
+
 			$temp_classes['LOGIC'] = 'OR';
 			if (count($classes) > 0) {
 				foreach ($classes as $c) {
@@ -103,7 +96,7 @@ function CatalogFullFilter($section_id,$filter = null,$classes = null,$styles = 
 				}
 				$temp_f[] = $temp_classes;
             }
-			
+
 			$temp_styles['LOGIC'] = 'OR';
 			if (count($styles) > 0) {
 				foreach ($styles as $c) {
@@ -111,10 +104,10 @@ function CatalogFullFilter($section_id,$filter = null,$classes = null,$styles = 
 				}
 				$temp_f[] = $temp_styles;
             }
-			
+
 			$CATALOG_FILTER_FULL[] = $temp_f;
 			*/
-			
+
     return $CATALOG_FILTER_FULL;
 }
 
@@ -278,7 +271,7 @@ if($gr_class_f || $gr_style_f || count($all)) { ?>
 
                 <?
                 /*
-                1. Класс "с арнаментом" убрать в категориях "молдинги" и "карнизы".
+                1. Класс "с орнаментом" убрать в категориях "карнизы".
                 2. В категории "карнизы" убираем стили "классика" и "барокко"
                 3. В категории "молдинги" классы убираем
                 4. В категории "плинтусы" стили "классика" и "барокко" убираем
@@ -287,7 +280,7 @@ if($gr_class_f || $gr_style_f || count($all)) { ?>
                 1544 - молдинги
                 1546 - плинтусы
                 1550 - розетки
-                1552 - кессины
+                1552 - кессоны
                 1548 - угловые
                 */
                 $SECT_ID = 0; //id категории

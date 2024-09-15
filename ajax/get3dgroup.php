@@ -14,23 +14,30 @@ $models_web_path = "/cron/catalog/data/models";
 $products = array();
 $arFilter_element = null; // фильтровать страны - доработать
 
-$_element = CIBlockElement::GetList(array('PROPERTY_ARTICUL'=>'ASC'), array('SECTION_ID' => $group, 'ACTIVE' => 'Y', 'INCLUDE_SUBSECTIONS' => 'Y', $arFilter_element));
-    while ($item = $_element->GetNextElement()) {
-        $item = array_merge($item->GetFields(), $item->GetProperties());
+$prod_arr_first = Array();
+$prod_arr_second = Array();
+$arFilter = array('IBLOCK_ID'=>IB_CATALOGUE, 'SECTION_ID' => $group,'ACTIVE' => 'Y', 'INCLUDE_SUBSECTIONS' => 'Y', $arFilter_element, "PROPERTY_SHOW_PERFOM" => "Y");
+$_element = CIBlockElement::GetList(array('SORT'=>'ASC', 'PROPERTY_ARTICUL'=>'ASC'), $arFilter, false, false, array("ID", "IBLOCK_ID", "PROPERTY_ARTICUL"));
+while ($item = $_element->GetNextElement()) {
 
+    $item = $item->fields;
 
         $model_files = array();
         foreach (array('max','gsm','dwg','3ds','obj') as $m_pre) {
-            $path = $models_path . "/" . $m_pre . "/" . $item['ARTICUL']['VALUE'] . '.'.$m_pre;
-            $web_path = $item['ARTICUL']['VALUE'] . '.'.$m_pre;
+            $path = $models_path . "/" . $m_pre . "/" . $item['PROPERTY_ARTICUL_VALUE'] . '.'.$m_pre;
+            $web_path = $item['PROPERTY_ARTICUL_VALUE'] . '.'.$m_pre;
             if (!file_exists($path)) {
                 continue;
             }
             $model_files[$m_pre] = array('FILE'=>$web_path,'data_val'=> 'd3'.$m_pre.'['.$web_path.']','data_type'=> 'd3'.$m_pre);
         }
-	$products[] = array('ARTICUL'=>$item['ARTICUL']['VALUE'], 'FILES'=>$model_files);
+    if(str_split($item['PROPERTY_ARTICUL_VALUE'],1)[0] == 6) {
+        $prod_arr_first[] = array('ARTICUL'=>$item['PROPERTY_ARTICUL_VALUE'], 'FILES'=>$model_files);
+    } else {
+        $prod_arr_second[] = array('ARTICUL'=>$item['PROPERTY_ARTICUL_VALUE'], 'FILES'=>$model_files);
     }
-
+}
+$products = array_merge($prod_arr_first, $prod_arr_second);
 ob_start();
 $n = 0;
 foreach($products as $item_data) { ?>

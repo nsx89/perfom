@@ -5,10 +5,11 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/catalogue/sort.php");
 if (!CModule::IncludeModule('iblock') || !CModule::IncludeModule("catalog")) {
     exit;
 }
-require($_SERVER["DOCUMENT_ROOT"] . "/include/top-current-location.php");
-global $my_city;
 
+global $APPLICATION;
+global $my_city;
 $my_city = $APPLICATION->get_cookie('my_city');
+require($_SERVER["DOCUMENT_ROOT"] . "/include/top-current-location.php");
 
 $page = $_GET['page'];
 $section_id = explode(',',$_GET['sections']);
@@ -22,9 +23,12 @@ $sec_desc = '';
 if(count($section_id) == 1) {
     //раздел
     $arFilter = Array('IBLOCK_ID'=>IB_CATALOGUE, 'ID'=>$section_id, 'ACTIVE'=>'Y');
-    $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array());
+    $db_list = CIBlockSection::GetList(Array(), $arFilter, false, array("IBLOCK_ID","UF_DESCRIPTION_PERFOM","DESCRIPTION"));
     while($section_item = $db_list->GetNext()) {
-        if($section_item['~DESCRIPTION']) {
+        //print_r($section_item);
+        if(!empty($section_item['UF_DESCRIPTION_PERFOM'])) {
+            $sec_desc = htmlspecialchars_decode($section_item['UF_DESCRIPTION_PERFOM']);
+        } elseif(!empty($section_item['~DESCRIPTION'])) {
             $sec_desc = $section_item['~DESCRIPTION'];
         }
     }
@@ -62,6 +66,10 @@ while($ob = $db_list->GetNextElement()) {
         $product_items[] = $product;
     }
 }*/
+//print_r($SORTING);
+//print_r($CATALOG_FILTER);
+//print_r($arNavStartParams);
+//var_dump($my_city);
 ob_start();
 
 $from = ($page - 1) * $data_onpage;
@@ -105,7 +113,15 @@ if(!$type) {
     }
     $sort = renderSort($section_id);
     $filters = renderFilters($section_id,$product_items_full);
-    print json_encode(Array('items'=>$html,'sort'=>$sort,'filters'=>$filters,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING));
+
+    // меняем хлебные крошки
+    $sec_list = CIBlockSection::GetNavChain(IB_CATALOGUE, $section_id[0], array('NAME','CODE'), true);
+    $breadcrumbs_arr = get_breadcrumbs_arr($sec_list);
+    ob_start();
+    require_once($_SERVER["DOCUMENT_ROOT"] . "/include/breadcrumbs.php");
+    $breadcumbs = ob_get_clean();
+
+    print json_encode(Array('items'=>$html,'sort'=>$sort,'filters'=>$filters,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING, 'breadcrumbs' => $breadcumbs));
 } elseif($type == 'newFilters') {
     print json_encode(Array('items'=>$html,'qty'=>$item_count,'desc'=>$sec_desc,'sorting'=>$SORTING));
 }

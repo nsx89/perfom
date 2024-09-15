@@ -75,7 +75,7 @@ function get_objects_gallery($items = array()) {
     
     //$arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "ACTIVE" => "Y", "ACTIVE_DATE" => "Y", $arProps);
 
-    $arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "!TAGS" => "OFF", $arProps);
+    $arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, "PROPERTY_SHOW_PERFOM" => "Y", $arProps);
     
     //$arFilterItems = Array('IBLOCK_ID' => IB_CATALOGUE, $arProps);
     $db_list = CIBlockElement::GetList(array(), $arFilterItems, false);

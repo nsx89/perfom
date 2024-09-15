@@ -39,8 +39,8 @@ if ($_POST['privatePolicy']=='N') {
 require($_SERVER["DOCUMENT_ROOT"] . '/bitrix/modules/main/include/prolog_before.php');
 if (!CModule::IncludeModule('iblock')) exit;
 
-$models_path = $_SERVER["DOCUMENT_ROOT"] . "/cron/catalog/data/models2";
-$models_web_path = "/cron/catalog/data/models2";
+$models_path = $_SERVER["DOCUMENT_ROOT"] . "/cron/catalog/data/models_2d";
+$models_web_path = "/cron/catalog/data/models_2d";
 
 set_time_limit(6000);
 
@@ -192,7 +192,7 @@ if(file_exists($zipName)) {
 
 
  $fields = array('EMAIL'=>$_POST['email'],'LINK_ALL' => $link_all,'LINK_OTHER'=>$link_other);
- CEvent::SendImmediate("EUROPLAST_DOWNLOAD_2D", s1, $fields, "N");
+ CEvent::SendImmediate("EUROPLAST_DOWNLOAD_2D", 's2', $fields, "N");
 }
 
 } else {

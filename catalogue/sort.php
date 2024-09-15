@@ -118,33 +118,15 @@ function getSort($section_id,$get_sort_params = false) {
 
         /* --- СОРТИРОВКА НОВАЯ ДЛЯ 6. --- */
 
-        $CATEGORY_ID = (int)$section_id;
-        switch ($CATEGORY_ID) {
-            case '1542': 
-                $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
-                break;
-            case '1544': 
-                $SORT_CATEGORY = array('PROPERTY_SORT2'=>'DESC');
-                break;
-            case '1546': 
-                $SORT_CATEGORY = array('PROPERTY_SORT3'=>'DESC');
-                break;
-            case '1601': 
-                $SORT_CATEGORY = array('PROPERTY_SORT4'=>'DESC');
-                break;
-            default: 
-                $SORT_CATEGORY = array('PROPERTY_SORT1'=>'DESC');
-                break;
-        }
-
-        $SORT_FIRST = array('PROPERTY_SORT_FIRST'=>'DESC');
-        $SORT_SECOND = array('PROPERTY_SORT'=>'DESC');
+        $SORT_CATEGORY = array('PROPERTY_SORT_GROUPS_PERFOM'=>'DESC');
+        $SORT_FIRST = array('PROPERTY_SORT_FIRST_PERFOM'=>'DESC');
+        $SORT_SECOND = array('PROPERTY_SORT_PERFOM'=>'DESC');
 
         if ($is_popular) {
-            $SORTING = array_merge($SORT_FIRST, $SORT_CATEGORY, $SORT_SECOND, $wtf);
+            $SORTING = array_merge($SORT_FIRST, $SORT_CATEGORY, $SORT_SECOND, $wtf, Array("ID" => "DESC"));
         }
         else {
-            $SORTING = array_merge($SORT_FIRST, $wtf, $SORT_SECOND, $SORT_CATEGORY);
+            $SORTING = array_merge($SORT_FIRST, $wtf, $SORT_SECOND, $SORT_CATEGORY, Array("ID" => "DESC"));
         }
 
         /* --- // --- */

@@ -153,6 +153,7 @@ $PROP['USER_APRT'] = $_REQUEST['aprt'];
 $PROP['DELIVERY_KM'] = $_REQUEST['km'];
 $PROP['mb5'] = $mb5_crc;
 $PROP['MOUNTING'] = $_REQUEST['mounting'];
+$PROP['PERFOM'] = 'Y';
 
 $delivery_price = 0;
 if($_REQUEST['km'] != '' && $_REQUEST['del'] == 'del') {

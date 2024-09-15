@@ -17,6 +17,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
     </div>
     <section class="dealers-main-txt">
         <div class="content-wrapper">
+            <h1 class="hidden">Инновации в декоре</h1>
             <p>
                 «Европласт» производит архитектурный декор из пенополиуретана и перфома. Перфом – это новый материал, разработанный в России специалистами нашей компании. 
             </p>

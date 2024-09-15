@@ -99,7 +99,7 @@ use Media\Media;
 <section class="main-pref">
     <div class="content-wrapper">
         <div class="main-pref-txt">
-            <h2>Перфом</h2>
+            <h1>Перфом</h1>
             <p class="main-pref-annotation">
                 Перфом — это новый материал,<br>разработанный в России
                 специалистами компании Европласт.<br>
@@ -305,7 +305,7 @@ use Media\Media;
                         <article>
                             <a href="<?= $item_link ?>"></a>
                             
-                            <div class="main-news-slide-img-back" style="background: url(<?= $img_path ?>) no-repeat center center; background-size: cover;">
+                            <div class="main-news-slide-img-back" style="background: url(<?= $img_path ?>) no-repeat right center; background-size: cover;">
                                 <img src="<?= MEDIA_FOLDER ?>/upload/v.png" alt="<?= $item['name'] ?>">
                             </div>
                             

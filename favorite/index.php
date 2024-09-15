@@ -23,6 +23,7 @@ if($_REQUEST['all']) {
 
 <?if( empty($favorite) ) { ?>
     <div class="wishlist-desc">
+        <h1 class="hidden">Избранные товары</h1>
         <div class="no-fav">нет избранных товаров</div>
         <div class="no-fav-desc">подберите для&nbsp;себя подходящий товар у&nbsp;нас&nbsp;в&nbsp;каталоге</div>
         <a href="/karnizy/">в каталог</a>

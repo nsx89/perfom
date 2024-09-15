@@ -22,6 +22,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             <img src="/img/preloader.gif" alt="wait" class="search-wait">
             <i class="icon-search"></i>
         </form>
+        <h1 class="hidden">Поиск</h1>
         <div class="search-mess" data-type="search-messSP">по данному запросу нет&nbsp;результатов</div>
         <div class="search-result" data-type="search-resSP-wrap">
             <div class="search-resSP-qty" data-type="search-resSP-qty">Результаты поиска: <span>0</span></div>

@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'icomoon';
-  src:  url('/css/fonts/icomoon/icomoon.eot?mm49fr');
-  src:  url('/css/fonts/icomoon/icomoon.eot?mm49fr#iefix') format('embedded-opentype'),
-    url('/css/fonts/icomoon/icomoon.ttf?mm49fr') format('truetype'),
-    url('/css/fonts/icomoon/icomoon.woff?mm49fr') format('woff'),
-    url('/css/fonts/icomoon/icomoon.svg?mm49fr#icomoon') format('svg');
+  src:  url('/css/fonts/icomoon/icomoon.eot?mm50fr');
+  src:  url('/css/fonts/icomoon/icomoon.eot?mm50fr#iefix') format('embedded-opentype'),
+    url('/css/fonts/icomoon/icomoon.ttf?mm50fr') format('truetype'),
+    url('/css/fonts/icomoon/icomoon.woff?mm50fr') format('woff'),
+    url('/css/fonts/icomoon/icomoon.svg?mm50fr#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -358,6 +358,9 @@ i {
   content: "\e92a";
   color: #000;
   margin-left: -5.1669921875em;
+}
+.icon-perfom-logo:before {
+  content: "\e96b";
 }
 .icon-t:before {
   content: "\e92c";

@@ -333,20 +333,20 @@
             require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 
             $fields = array('EMAIL'=>$_REQUEST['email'], 'EMAIL_D' => $email_manager[$email_number], 'PRODUCT_LIST' => $pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$email_manager[$email_number]);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE_CLIENT", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE_CLIENT", 's2', $fields, "N");
             $from .= $from_plus;
 
             $fields = array('EMAIL'=>$email_manager[$email_number], 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
             $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
             $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'PAYMENT_MESS'=>$payment_mess);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
             //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
             $dealer_email = $email_manager[$email_number];
 
@@ -358,16 +358,16 @@
             require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 
             $fields = array('EMAIL'=>$_REQUEST['email'], 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>'store@decor-evroplast.ru');
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             $from .= $from_plus;
             $fields = array('EMAIL'=>'store@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
             $dealer_email = 'store@decor-evroplast.ru';
         }
@@ -376,11 +376,11 @@
             $subj = "Запрос на расчет монтажа";
             if($_REQUEST['mounting'] != 'Y') $subj = "Клиент интересовался калькулятором.";
             $fields = array('EMAIL'=>'G.Paskar@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             $fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
             $fields = array('EMAIL'=>'A.Visotskaya@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $subj, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
         }
 
     } else { // Другие регионы
@@ -450,12 +450,12 @@
                     $dealer .= 'E-mail: <b>'. $email . '</b><br>';
                     $dealer_contacts .= '<br><b>E-mail: </b>'. $email;
                     $fields = array('EMAIL'=>$email, 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
-                    CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+                    CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
                     /* --- Для СПБ скрытая копия с 11.07.2024 --- */
                     if ($my_city == 3196) {
-                        $fields = array('EMAIL'=>'piterra2012@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
-                        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+                        $fields = array('EMAIL'=>'piterra2012@yandex.ru, shop@piterra.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
+                        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
                     }
                     /* --- // --- */
                 }
@@ -497,7 +497,7 @@
                     $dealer .= 'E-mail: <b>'. $email . '</b><br>';
                     $dealer_contacts .= '<br><b>E-mail: </b>'.$email;
                     $fields = array('EMAIL'=>$email, 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=> $dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$_REQUEST['email']);
-                    CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+                    CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
                 }
             }
             $dealer_email = $email;
@@ -506,24 +506,24 @@
         require_once($_SERVER["DOCUMENT_ROOT"] . "/cart/save_order.php");
 
         $fields = array('EMAIL'=>$_REQUEST['email'], 'EMAIL_D'=>$email, 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts,'RESPOND'=>$email);
-        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
         $from .= $from_plus;
 
         $fields = array('EMAIL'=>'d.portu.by@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+        CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 
         //$fields = array('EMAIL'=>'nadida.hi@yandex.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>$dealer, 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-        //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");
+        //CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
 	
         /*
     	// дублирование заказов с комментами
     	if ($_REQUEST['comment']) {
     	
     		$fields = array('EMAIL'=>'a.chilichihin@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-    		CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");	
+    		CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
     		
     		$fields = array('EMAIL'=>'o.gmirya@decor-evroplast.ru', 'PRODUCT_LIST'=>$pr_list, 'NUM_Z' => $number_l, 'DEALER_INFO'=>'', 'CLIENT'=>$from, 'DEALER_CONTACTS'=>$dealer_contacts);
-    		CEvent::SendImmediate("EUROPLAST_ORDER_SALE", s1, $fields, "N");	
+    		CEvent::SendImmediate("EUROPLAST_ORDER_SALE", 's2', $fields, "N");
     	}
     	*/
 
@@ -565,13 +565,13 @@
         $subj = 'Калькулятор стоимости монтажа № '.$number_r;
         foreach($emails_arr as $email) {
             $fields = array('EMAIL'=>$email, 'MESS'=>$mess, 'SUBJ' => $subj);
-            CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", s1, $fields, "N");
+            CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", 's2', $fields, "N");
         }
 
         $mess = '<p style="font: 16px Arial, Helvetica, sans-serif;color: #4e4e4e;margin-bottom:0;">На сайте <a href="https://perfom-decor.ru/" target="_blank">perfom-decor.ru</a> вы воспользовались калькулятором расчета стоимости монтажа <br>во время оформления заказа № <b>'.$number_r.'</b>.</p><br>';
         $mess .= getEmailList();
         $fields = array('EMAIL'=>$_REQUEST['email'], 'MESS'=>$mess, 'SUBJ' => $subj);
-        CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", s1, $fields, "N");
+        CEvent::SendImmediate("EUROPLAST_MOUNT_CALC", 's2', $fields, "N");
     }
     ?>
     <?

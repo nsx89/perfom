@@ -12,6 +12,7 @@ $glue_arr = get_glue_arr();
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");?>
 
 <div class="content-wrapper catalogue">
+    <h1 class="hidden">Клей</h1>
     <div class="cat-top">
         <div class="cat-sections">
             <a href="/karnizy/" class="cat-sections-item">
@@ -31,7 +32,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");?>
     <section class="adh-wrap full-screen">
         <?
         $arOrder = Array("SORT"=>"ASC");
-        $arFilter = Array("IBLOCK_ID"=>IB_CATALOGUE,"SECTION_CODE"=>"klei-90","ACTIVE"=>"Y");
+        $arFilter = Array("IBLOCK_ID"=>IB_CATALOGUE,"SECTION_CODE"=>"klei-90","ACTIVE"=>"Y","!SHOW_PERFOM"=>"OFF");
         $arNavStartParams = Array();
         $arSelect = Array();
         $ar_res = CIBlockElement::GetList($arOrder,$arFilter,false,$arNavStartParams,$arSelect);

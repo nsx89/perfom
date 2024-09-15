@@ -25,6 +25,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 <section class="main-pref designer-pref">
     <div class="content-wrapper">
         <div class="main-pref-txt">
+            <h1 class="hidden">уют в каждой детали</h1>
             <h2>дизайнерам и архитекторам</h2>
             <p class="main-pref-annotation" style="padding-right: 12px;">
                 Сотрудничество с нами — это легкость и удобство на каждом этапе.

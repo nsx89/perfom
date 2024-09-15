@@ -206,5 +206,7 @@ Disallow: /arochnye-obramlenija/4-87-031/
 Disallow: /arochnye-obramlenija/4-87-032/
 Disallow: /arochnye-obramlenija/4-87-033/
 
+Clean-param: my_city_change /
+
 Host: https://perfom-decor.ru/
 Sitemap: https://perfom-decor.ru/sitemap.xml

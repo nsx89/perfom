@@ -21,7 +21,9 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
     <div class="content-wrapper">
         <div class="dwnld-cont dwnld-cont-cat" data-type="main-tab-cont" id="cat">
 
-         <? require($_SERVER["DOCUMENT_ROOT"] . "/download/catalogs.php");?>   
+        <h1 class="hidden">Файлы для скачивания</h1>
+
+         <? require($_SERVER["DOCUMENT_ROOT"] . "/download/catalogs.php");?>
 			
         </div>
         <div class="dwnld-cont prices" data-type="main-tab-cont" id="price">
@@ -77,7 +79,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                     <div class="dwnld-models-filt-wrap active" id="3d-int" data-type="3d-tab-item">
                         <? /*<div class="dwnld-models-filt-title" data-type="dwnld-filt">элементы интерьера <i class="icomoon icon-angle-down-2"></i></div>*/ ?>
                         <div class="dwnld-models-filt-cont dwnld-models-filt-cont1">
-                            <?=build_drop_categories('interernyj-dekor');?>
+                            <?=build_drop_categories(false);?>
                         </div>
                     </div>
                     <? /*
@@ -186,7 +188,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                     <div class="dwnld-models-left-column">
                         <div class="dwnld-models-filt-wrap active" id="2d-int" data-type="2d-tab-item">
                             <div class="dwnld-models-filt-cont dwnld-models-filt-cont2">
-                                <?=build_drop_categories('interernyj-dekor');?>
+                                <?=build_drop_categories(false);?>
                             </div>
                         </div>
                     </div>
@@ -202,7 +204,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
                             </div>
                             */ ?>
                             <button class="dwnld-models-btn" data-type="dwnld-2d"><i class="icon-download"></i>скачать модели</button>
-                            <div class="dwnld-3d-err" data-type="dform-err2">необходимо выбрать 3d&nbsp;модели для&nbsp;скачивания</div>
+                            <div class="dwnld-3d-err" data-type="dform-err2">необходимо выбрать 2d&nbsp;модели для&nbsp;скачивания</div>
                         </div>
                         <div class="dwnld-3d-table dwnld-3d-table2">
                             <table>
@@ -238,7 +240,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             */ ?>
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_plintusy.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_skirting_apr2024_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж плинтуса <br>напольного</span>
                 <div class="dwnld-instr-item-img end">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-2.png" alt="Монтаж плинтуса напольного">
@@ -250,7 +252,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             </div>
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_karnizy_l.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_light-cornice_apr2024_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж карниза <br>для скрытого освещения</span>
                 <div class="dwnld-instr-item-img end">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-3.png" alt="Монтаж карниза для скрытого освещения">
@@ -262,7 +264,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             </div>
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_karnizy.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_cornice_apr2024_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж карниза <br>потолочного</span>
                 <div class="dwnld-instr-item-img end">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-4_new.png" alt="Монтаж карниза потолочного">
@@ -288,7 +290,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             */ ?>
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_moldingi.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_moulding_aprt2024_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж молдинга <br>настенного</span>
                 <div class="dwnld-instr-item-img end">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-8_new.png" alt="Монтаж молдинга настенного">
@@ -300,7 +302,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
             </div>
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_rozetki.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_rozetka_apr24_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж розетки <br>потолочной</span>
                 <div class="dwnld-instr-item-img">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-7.png" alt="Монтаж розетки потолочной">
@@ -313,7 +315,7 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
 
             <div class="dwnld-instr-item">
-                <a href="/download/manual_nails.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
+                <a href="/download/files/INSTALL_cornice_NAILS_apr2024_web.pdf" target="_blank" title="Скачать инструкцию по монтажу"></a>
                 <span class="dwnld-instr-item-title">Монтаж лепнины <br>с применением <br>финишных гвоздей</span>
                 <div class="dwnld-instr-item-img end">
                     <img class="img-load" src="/img/1x1.png" data-src="/download/images/instr-6_new.png" alt="Монтаж лепнины с применением финишных гвоздей">

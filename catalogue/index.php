@@ -13,45 +13,16 @@ require_once($_SERVER["DOCUMENT_ROOT"] . "/catalogue/sort.php");
 
 $sections = $_SERVER['REQUEST_URI'];
 $sections = explode('?', $sections);
-$uri = $sections = $sections[0];
+$sections = $sections[0];
 $sections = explode('/', $sections);
 $sections = array_diff($sections,array(''));
 
 if(!empty($sections)) $sections = explode("|", implode("|", $sections));
 
-/* --- Скрыть лишние категории --- */
-$sections_off = [
-    '/antablementy/arhitravy/', 
-    '/arhitravy/', 
-    '/antablementy/dopolnitelnye-elementy-antablementy/',
-    '/dopolnitelnye-elementy-antablementy/',
-    '/antablementy/frizy/',
-    '/frizy/',
-    '/antablementy/karnizi/',
-    '/karnizi/',
-    '/arochnye-obramlenija/',
-    '/baljustrady/baljasiny/',
-    '/baljasiny/',
-    '/baljustrady/dopolnitelnye-elementy-baljustrady/',
-    '/dopolnitelnye-elementy-baljustrady/',
-    '/baljustrady/kryshki-stolba/',
-    '/kryshki-stolba/',
-    '/baljustrady/montazhnyy-komplekt/',
-    '/montazhnyy-komplekt/',
-    '/baljustrady/osnovanija/',
-    '/osnovanija/',
-    '/baljustrady/poruchni/',
-    '/poruchni/',
-    '/baljustrady/stolby/',
-    '/stolby/',
-];
-if (in_array($uri, $sections_off)) {
-    require_once($_SERVER["DOCUMENT_ROOT"] . "/404.php"); exit;
-}
-/* --- // --- */
 
 global $main_section;
 global $APPLICATION;
+
 $main_section = 'interernyj-dekor';//для подсветки меню
 
 $section_first = $sections[count($sections)-1];
@@ -61,7 +32,6 @@ if($section_first == 'klei-90') LocalRedirect('/adhesive');
 if ($section_first == 'catalogue') {$sections[0] = 'interernyj-dekor'; $sections[1] = 'karnizy';}
 if ($section_first == 'interernyj-dekor') {$sections[1] = 'karnizy';}
 if ($section_first == 'fasadnyj-dekor') {$sections[1] = 'antablementy'; $sections[2] = 'karnizi';}
-
 for ($i = count($sections)-1; $i >= 0; $i--) {
     if($i == count($sections)-1) {
         $sec_arr = explode('_', $sections[$i]);
@@ -126,7 +96,7 @@ for ($i = count($sections)-1; $i >= 0; $i--) {
             $is_product = array_merge($product_item->GetFields(), $product_item->GetProperties());
             $section_id = Array($is_product['IBLOCK_SECTION_ID']);
 
-            if ($is_product['ACTIVE'] == 'N') {
+            if ($is_product['SHOW_PERFOM']['VALUE'] !== 'Y') {
                 $APPLICATION->SetPageProperty("robots", "noindex, nofollow");
             }
 
@@ -225,30 +195,14 @@ if (!$is_product) { // каталог
     <div class="cat-wrap">
         <div class="cat-filters">
             <i class="icon-close close-filt-mob" data-type="close-filt-mob"></i>
-            <? /* <a href="/collection/new_art_deco/" class="filt-collection-link">новая коллекция <span>NEW&nbsp;ART&nbsp;DECO</span> <i class="icon-angle-right"></i></a> */ ?>
 
-            <? if ($main_section == 'composite') { ?>
-                <? /*
-                <div class="cat-filt-item mob-filt-wrap active cat-filt-item-category" data-type="filt-item">
-                    <div class="cat-filt-item-title mob-filters-title" data-type="filt-title">Категории <i class="icon-angle-down-2"></i></div>
-                    <div class="cat-filt-item-cont mob-filt-cont category" data-type="filt-cont">
-                        <?= build_drop_categories('composite') ?>
-                    </div>
-                </div>
-                */ ?>
-            <? } else { ?>
                 <div class="cat-filt-item mob-filt-wrap active cat-filt-item-category" data-type="filt-item">
                     <div class="cat-filt-item-title mob-filters-title" data-type="filt-title">Элементы лепнины <i class="icon-angle-down-2"></i></div>
                     <div class="cat-filt-item-cont mob-filt-cont category" data-type="filt-cont">
-                        <? if ($main_section == 'interernyj-dekor') {
-                            echo build_drop_categories('interernyj-dekor',true);
-                        } else {
-                            echo build_drop_categories('fasadnyj-dekor');
-                        }
-                        ?>
+                            <? echo build_drop_categories(true); ?>
                     </div>
                 </div>
-            <? } ?>
+
 
             <?=renderFilters($section_id,$product_items_full,$filter,$classes,$styles)?>
 
@@ -312,16 +266,13 @@ if (!$is_product) { // каталог
             </div>
 
                 <? 
-                $section_id = (int)$section_id;
-                /*if (!empty($_GET['test'])) {
-                    print_r($section_id);
-                }*/
-                $section_ids = array('1601', '1542', '1544', '1546');
-                $section_text_show = false;
-                if (in_array($section_id, $section_ids)) $section_text_show = true;
-                if($last_section['~DESCRIPTION'] && $section_text_show) { ?>
+                if(!empty($last_section['UF_DESCRIPTION_PERFOM'])) { ?>
                     <div class="last-sec-desc" data-type="last-sec-desc">
-                        <? echo $last_section['~DESCRIPTION']; ?>
+                        <? echo htmlspecialchars_decode($last_section['UF_DESCRIPTION_PERFOM']); ?>
+                    </div>
+                <? } elseif($last_section['~DESCRIPTION']) { ?>
+                    <div class="last-sec-desc" data-type="last-sec-desc">
+                        <? echo htmlspecialchars_decode($last_section['~DESCRIPTION']); ?>
                     </div>
                 <? } ?>
 

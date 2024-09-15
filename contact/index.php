@@ -42,8 +42,16 @@ require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
 /* --- Свои контакты (для каждого города) --- */
 
+$is_subdomen = false;
+if ($_SERVER['HTTP_HOST'] <> HTTP_HOST) {
+    $is_subdomen = true;
+}
+
 $is_moscow = false;
 if ($my_city == 3109) $is_moscow = true;
+
+$is_spb = false;
+if ($my_city == 3196) $is_spb = true;
 
 global $dealer;
 $address = $dealer['address']['~VALUE'] ?? null;
@@ -120,24 +128,35 @@ if (!$is_moscow) {
 ?>
     <section class="contact-info contact-page">
         <div class="content-wrapper">
+            <h1 class="hidden">Контакты</h1>
             <div class="contact-wrap <?= $is_moscow ? 'contact-wrap-moscow' : '' ?>" data-type="main-tab-cont">
                 <div class="head-office-wrap">
                     <ul class="head-office-list" data-type="main-off">
                         <? if (!$is_moscow) { ?>
-                            <li class="active" data-val="h-off-11" data-id='1' data-type="h-off-tab">Представитель в регионе</li>
+                            <li class="active" data-val="h-off-11" data-id='1' data-type="h-off-tab">
+                                <? if ($is_subdomen) { ?>
+                                    Эксклюзивный представитель в регионе
+                                <? } else { ?>
+                                    Представитель в регионе
+                                <? } ?>
+                            </li>
                         <? } ?>
-                        <li class="head-office-main <?= $is_moscow ? 'active' : '' ?>" data-val="h-off-1" data-id='0' data-type="h-off-tab">головной офис</li>
-                        <li data-val="h-off-2" data-id='1' data-type="h-off-tab">Служба качества</li>
-                        <li data-val="h-off-3" data-id='1' data-type="h-off-tab">Производство</li>
-                        <li data-val="h-off-4" data-id='2' data-type="h-off-tab">Складской комплекс</li>
-                        <li data-val="h-off-5" data-id='0' data-type="h-off-tab">Дилерам</li>
-                        <li data-val="h-off-6" data-id='0' data-type="h-off-tab">Строителям</li>
-                        <li data-val="h-off-7" data-id='0' data-type="h-off-tab">Дизайнерам и&nbsp;архитекторам</li>
-                        <li data-val="h-off-8" data-id='0' data-type="h-off-tab">Пресс-служба</li>
+                        <? if (!$is_subdomen) { ?>
+                            <li class="head-office-main <?= $is_moscow ? 'active' : '' ?>" data-val="h-off-1" data-id='0' data-type="h-off-tab">головной офис</li>
+                            <li data-val="h-off-2" data-id='1' data-type="h-off-tab">Служба качества</li>
+                            <li data-val="h-off-3" data-id='1' data-type="h-off-tab">Производство</li>
+                            <li data-val="h-off-4" data-id='2' data-type="h-off-tab">Складской комплекс</li>
+                            <li data-val="h-off-5" data-id='0' data-type="h-off-tab">Дилерам</li>
+                            <li data-val="h-off-6" data-id='0' data-type="h-off-tab">Строителям</li>
+                            <li data-val="h-off-7" data-id='0' data-type="h-off-tab">Дизайнерам и&nbsp;архитекторам</li>
+                            <li data-val="h-off-8" data-id='0' data-type="h-off-tab">Пресс-служба</li>
+                        <? } ?>
                         <? if ($is_moscow) { ?>
                             <li data-val="h-off-9" data-id='1' data-type="h-off-tab">Отдел персонала</li>
                         <? } ?>
-                        <li data-val="h-off-10" data-id='0' data-type="h-off-tab">Интернет-магазин</li>
+                        <? if (!$is_subdomen) { ?>
+                            <li data-val="h-off-10" data-id='0' data-type="h-off-tab">Интернет-магазин</li>
+                        <? } ?>
                     </ul>
                     <div class="head-office-cont">
 
@@ -189,7 +208,7 @@ if (!$is_moscow) {
                             </div>
                             <div>
                                 <span class="head-office-item-title">Телефон/факс</span>
-                                <p class="head-office-item-val">+7 495 789-62-70</p>
+                                <p class="head-office-item-val">+7 (495) 789-62-70</p>
                             </div>
                         </div>
 
@@ -209,6 +228,14 @@ if (!$is_moscow) {
                                 </div>
                                 */ ?>
                             </div>
+
+                            <div>
+                                <div>
+                                    <span class="head-office-item-title">Телефон/факс</span>
+                                    <p class="head-office-item-val">+7 (495) 315 30 40</p>
+                                </div>
+                            </div>
+
                             <? /*
                             <div>
                                 <span class="head-office-item-title">схема проезда</span>

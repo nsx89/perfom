@@ -570,7 +570,7 @@ $('#email2').on('click',function() {
 })
 $('.dform_policy_label').on('click',function() {
     $(this).removeClass('error');
-    $('[data-type="dform-submit2"]').removeAttr("disabled");
+    $('[data-type="dform-submit2"]').removeAttr("disabled"); 
 })
 $('[data-type="dform-submit2"]').on('click',function() {
 

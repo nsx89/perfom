@@ -1,11 +1,23 @@
 <div class="main-catalogue-slide">
     <article>
+        <img src="/img/download/Perfom_composite_2024.jpg" alt="Антивандальная интерьерная лепнина">
+        <div class="article-txt">
+            <h2>Антивандальная интерьерная лепнина</h2>
+            <p>Каталог Перфом</p>
+            <a href="https://<?= $_SERVER['SERVER_NAME'] ?>/download/Perfom_2024.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
+        </div>
+    </article>
+</div>
+
+
+<div class="main-catalogue-slide">
+    <article>
         <div class="new-cat">Новинка</div>
         <img src="/img/download/Evroplast_NAD_2023-cover.jpg" alt="NEW ART DECO">
         <div class="article-txt">
             <h2>NEW ART DECO</h2>
             <p>Европласт <br>от Виктора Дембовского</p>
-            <a href="https://<?= $_SERVER['SERVER_NAME'] ?>/download/Evroplas_NewArtDeco_2023-2_web.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
+            <a href="/download/Evroplast_NewArtDeco.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
         </div>
     </article>
 </div>
@@ -64,22 +76,11 @@
 
 <div class="main-catalogue-slide">
     <article>
-        <img src="/img/download/Evroplast_Interior_2023-cover.jpg" alt="Интерьерная лепнина">
+        <img src="/img/download/Evroplast_Interior_2024-cover.jpg" alt="Интерьерная лепнина">
         <div class="article-txt">
             <h2>Интерьерная лепнина</h2>
             <p>Каталог Европласт</p>
-            <a href="https://<?= $_SERVER['SERVER_NAME'] ?>/download/Evroplast_interior-mini_2022-2_web.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
-        </div>
-    </article>
-</div>
-
-<div class="main-catalogue-slide">
-    <article>
-        <img src="/img/download/Perfom_composite_2024.jpg" alt="Композит">
-        <div class="article-txt">
-            <h2>Композит</h2>
-            <p>Каталог Перфом</p>
-            <a href="https://<?= $_SERVER['SERVER_NAME'] ?>/download/Perfom_composite_2024.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
+            <a href="/download/Evroplast_interior.pdf" class="main-events-catalogues-link main-catalogue-link-1" target="_blank" title="Загрузить каталог">Скачать</a>
         </div>
     </article>
 </div>
