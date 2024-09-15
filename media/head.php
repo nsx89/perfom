@@ -7,6 +7,9 @@ use Media\Media;
 
 Media::setMeta();
 
+//Временно закрыть весь раздел от индексации
+$APPLICATION->SetPageProperty("robots", "noindex, nofollow");
+
 require($_SERVER["DOCUMENT_ROOT"] . "/include/header.php");
 
 $APPLICATION->SetAdditionalCSS(MEDIA_FOLDER."/css/plyr.css", true);
